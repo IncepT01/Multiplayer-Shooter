@@ -14,6 +14,7 @@
     <ProjectReference Include="C:\Program Files\Epic Games\UE_5.5\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.csproj"><Private>false</Private></ProjectReference>
   </ItemGroup>
   <ItemGroup>
+  <Compile Include="..\..\..\..\Plugins\MultiplayerSessions\Source\MultiplayerSessions\MultiplayerSessions.Build.cs"><Link>Plugins\MultiplayerSessions\Source\MultiplayerSessions\MultiplayerSessions.Build.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\MultiplayerShooter.Target.cs"><Link>Source\MultiplayerShooter.Target.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\MultiplayerShooterEditor.Target.cs"><Link>Source\MultiplayerShooterEditor.Target.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\MultiplayerShooter\MultiplayerShooter.Build.cs"><Link>Source\MultiplayerShooter\MultiplayerShooter.Build.cs</Link></Compile>

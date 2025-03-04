@@ -1,6 +1,7 @@
 {
 	"SourceFiles": [
 		"D:\\Projects\\MultiplayerShooter\\Multiplayer-Shooter\\MultiplayerShooter\\Source\\MultiplayerShooter\\MultiplayerShooter.Build.cs",
+		"D:\\Projects\\MultiplayerShooter\\Multiplayer-Shooter\\MultiplayerShooter\\Plugins\\MultiplayerSessions\\Source\\MultiplayerSessions\\MultiplayerSessions.Build.cs",
 		"D:\\Projects\\MultiplayerShooter\\Multiplayer-Shooter\\MultiplayerShooter\\Source\\MultiplayerShooter.Target.cs",
 		"D:\\Projects\\MultiplayerShooter\\Multiplayer-Shooter\\MultiplayerShooter\\Source\\MultiplayerShooterEditor.Target.cs"
 	],
