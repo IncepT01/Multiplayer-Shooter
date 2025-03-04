@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MultiplayerShooter.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Projects\MultiplayerShooter\Multiplayer-Shooter\MultiplayerShooter\Intermediate\Build\Win64\x64\MultiplayerShooterEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"D:\Projects\MultiplayerShooter\Multiplayer-Shooter\MultiplayerShooter\Intermediate\Build\Win64\x64\UnrealEditor\Development\MultiplayerShooter\MultiplayerShooter.cpp.obj"
+"D:\Projects\MultiplayerShooter\Multiplayer-Shooter\MultiplayerShooter\Intermediate\Build\Win64\x64\UnrealEditor\Development\MultiplayerShooter\PerModuleInline.gen.cpp.obj"
+"D:\Projects\MultiplayerShooter\Multiplayer-Shooter\MultiplayerShooter\Intermediate\Build\Win64\x64\UnrealEditor\Development\MultiplayerShooter\Default.rc2.res"
+/OUT:"D:\Projects\MultiplayerShooter\Multiplayer-Shooter\MultiplayerShooter\Intermediate\Build\Win64\x64\UnrealEditor\Development\MultiplayerShooter\UnrealEditor-MultiplayerShooter.lib"

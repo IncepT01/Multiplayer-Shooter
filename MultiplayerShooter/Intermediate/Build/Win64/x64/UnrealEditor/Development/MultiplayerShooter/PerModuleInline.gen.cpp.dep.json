@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\multiplayershooter\\multiplayer-shooter\\multiplayershooter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\multiplayershooter\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\multiplayershooter\\multiplayer-shooter\\multiplayershooter\\intermediate\\build\\win64\\x64\\multiplayershootereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\multiplayershooter\\multiplayer-shooter\\multiplayershooter\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\multiplayershooter\\definitions.multiplayershooter.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
