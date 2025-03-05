@@ -87,6 +87,15 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\MultiplayerShooter.h">
       <Filter>Source\MultiplayerShooter</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\GameMode">
+      <UniqueIdentifier>{CAB1BC10-849D-3AFF-BE1D-E626A63A0027}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\GameMode\LobbyGameMode.cpp">
+      <Filter>Source\MultiplayerShooter\GameMode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\GameMode\LobbyGameMode.h">
+      <Filter>Source\MultiplayerShooter\GameMode</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\MainCharacter">
       <UniqueIdentifier>{8586C310-F7F9-37CB-9483-9D5631B672EC}</UniqueIdentifier>
     </Filter>
