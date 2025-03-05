@@ -87,5 +87,20 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\MultiplayerShooter.h">
       <Filter>Source\MultiplayerShooter</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\MainCharacter">
+      <UniqueIdentifier>{8586C310-F7F9-37CB-9483-9D5631B672EC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MainCharacter.cpp">
+      <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MainCharacter.h">
+      <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MyAnimInstance.cpp">
+      <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MyAnimInstance.h">
+      <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
