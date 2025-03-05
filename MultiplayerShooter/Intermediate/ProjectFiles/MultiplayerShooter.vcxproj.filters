@@ -96,6 +96,15 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\GameMode\LobbyGameMode.h">
       <Filter>Source\MultiplayerShooter\GameMode</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\HUD">
+      <UniqueIdentifier>{2B2B6DE5-F8FA-3BA0-9AF5-5E8D70C4516A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\OverheadWidget.cpp">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\OverheadWidget.h">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\MainCharacter">
       <UniqueIdentifier>{8586C310-F7F9-37CB-9483-9D5631B672EC}</UniqueIdentifier>
     </Filter>
