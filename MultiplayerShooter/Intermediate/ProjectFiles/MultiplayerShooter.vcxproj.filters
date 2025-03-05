@@ -87,6 +87,15 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\MultiplayerShooter.h">
       <Filter>Source\MultiplayerShooter</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\BaseWeapon">
+      <UniqueIdentifier>{61702348-5A5B-37CF-81E4-2962B3829B18}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\BaseWeapon.cpp">
+      <Filter>Source\MultiplayerShooter\BaseWeapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\BaseWeapon.h">
+      <Filter>Source\MultiplayerShooter\BaseWeapon</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\GameMode">
       <UniqueIdentifier>{CAB1BC10-849D-3AFF-BE1D-E626A63A0027}</UniqueIdentifier>
     </Filter>
