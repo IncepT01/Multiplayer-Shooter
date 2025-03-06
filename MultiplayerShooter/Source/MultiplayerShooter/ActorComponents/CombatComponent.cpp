@@ -6,6 +6,7 @@
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "Components/SphereComponent.h"
+#include "Net/UnrealNetwork.h"
 
 UCombatComponent::UCombatComponent()
 {
@@ -44,5 +45,12 @@ void UCombatComponent::EquipWeapon(ABaseWeapon* WeaponToEquip)
 	}
 	EquippedWeapon->SetOwner(Character);
 
+}
+
+void UCombatComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(UCombatComponent, EquippedWeapon);
 }
 

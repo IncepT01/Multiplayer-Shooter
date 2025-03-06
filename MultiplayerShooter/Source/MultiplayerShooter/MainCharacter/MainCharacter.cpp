@@ -48,6 +48,9 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AMainCharacter::LookUp);
 
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &AMainCharacter::EquipButtonPressed);
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AMainCharacter::CrouchButtonPressed);
+
+	GetCharacterMovement()->NavAgentProps.bCanCrouch = true;
 }
 
 // Called when the game starts or when spawned
@@ -93,6 +96,7 @@ void AMainCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
 
 void AMainCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -145,12 +149,26 @@ void AMainCharacter::EquipButtonPressed()
 	}
 }
 
+void AMainCharacter::CrouchButtonPressed() {
+	if (bIsCrouched) {
+		UnCrouch();
+	}
+	else {
+		Crouch();
+	}
+}
+
 void AMainCharacter::ServerEquipButtonPressed_Implementation()
 {
 	if (Combat)
 	{
 		Combat->EquipWeapon(OverlappingWeapon);
 	}
+}
+
+bool AMainCharacter::IsWeaponEquipped()
+{
+	return (Combat && Combat->EquippedWeapon);
 }
 
 void AMainCharacter::PostInitializeComponents()

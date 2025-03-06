@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MultiplayerShooterModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+214b85451ca043522e3f2e237a7bb666ad0e2e69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+049612f36b1de79944293daae3816a91a959d332")]
 [assembly: System.Reflection.AssemblyProductAttribute("MultiplayerShooterModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MultiplayerShooterModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

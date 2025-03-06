@@ -34,6 +34,7 @@ protected:
 	void Turn(float Value);
 	void LookUp(float Value);
 	void EquipButtonPressed();
+	void CrouchButtonPressed();
 
 	UPROPERTY(ReplicatedUsing = OnRep_OverlappingWeapon)
 	class ABaseWeapon* OverlappingWeapon;
@@ -46,6 +47,7 @@ protected:
 
 public:
 	void SetOverlappingWeapon(ABaseWeapon* Weapon);
+	bool IsWeaponEquipped();
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
