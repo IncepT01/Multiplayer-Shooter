@@ -87,6 +87,15 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\MultiplayerShooter.h">
       <Filter>Source\MultiplayerShooter</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\ActorComponents">
+      <UniqueIdentifier>{0E6884E2-05A8-3D6F-BFB4-048E357E2B21}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\CombatComponent.cpp">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\CombatComponent.h">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\BaseWeapon">
       <UniqueIdentifier>{61702348-5A5B-37CF-81E4-2962B3829B18}</UniqueIdentifier>
     </Filter>
