@@ -46,6 +46,9 @@ protected:
 	void ServerEquipButtonPressed();
 
 public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
+	TSubclassOf<ABaseWeapon> WeaponBlueprintClass;
+
 	void SetOverlappingWeapon(ABaseWeapon* Weapon);
 	bool IsWeaponEquipped();
 

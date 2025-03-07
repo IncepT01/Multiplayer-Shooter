@@ -9,6 +9,7 @@
 #include "Net/UnrealNetwork.h"
 #include "MultiplayerShooter/BaseWeapon/BaseWeapon.h"
 #include "MultiplayerShooter/ActorComponents/CombatComponent.h"
+#include "UObject/ConstructorHelpers.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -34,6 +35,17 @@ AMainCharacter::AMainCharacter()
 	Combat = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComponent"));
 	Combat->SetIsReplicated(true);
 
+	static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_BaseWeapon.BP_BaseWeapon_C'"));
+	if (WeaponFinder.Succeeded())
+	{
+		WeaponBlueprintClass = WeaponFinder.Class;
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Weapon Blueprint not found!"));
+	}
+
+	
 }
 
 void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -51,6 +63,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AMainCharacter::CrouchButtonPressed);
 
 	GetCharacterMovement()->NavAgentProps.bCanCrouch = true;
+
 }
 
 // Called when the game starts or when spawned
@@ -58,6 +71,27 @@ void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	if (WeaponBlueprintClass && GetWorld()) // Check if class and world exist
+	{
+		FVector SpawnLocation(0.0f, 0.0f, 0.0f);
+		FRotator SpawnRotation(0.0f, 0.0f, 0.0f);
+
+		OverlappingWeapon = GetWorld()->SpawnActor<ABaseWeapon>(WeaponBlueprintClass, SpawnLocation, SpawnRotation);
+
+		if (OverlappingWeapon)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Weapon spawned successfully!"));
+			AMainCharacter::EquipButtonPressed();
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Failed to spawn weapon!"));
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("WeaponClassFinder.Class is NULL or GetWorld() is not valid!"));
+	}
 }
 
 void AMainCharacter::MoveForward(float Value)
@@ -178,4 +212,6 @@ void AMainCharacter::PostInitializeComponents()
 	{
 		Combat->Character = this;
 	}
+
+	
 }
