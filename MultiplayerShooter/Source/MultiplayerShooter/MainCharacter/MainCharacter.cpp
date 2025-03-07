@@ -62,6 +62,9 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &AMainCharacter::EquipButtonPressed);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AMainCharacter::CrouchButtonPressed);
 
+	PlayerInputComponent->BindAction("Aim", IE_Pressed, this, &AMainCharacter::AimButtonPressed);
+	PlayerInputComponent->BindAction("Aim", IE_Released, this, &AMainCharacter::AimButtonReleased);
+
 	GetCharacterMovement()->NavAgentProps.bCanCrouch = true;
 
 }
@@ -76,21 +79,18 @@ void AMainCharacter::BeginPlay()
 		FVector SpawnLocation(0.0f, 0.0f, 0.0f);
 		FRotator SpawnRotation(0.0f, 0.0f, 0.0f);
 
-		OverlappingWeapon = GetWorld()->SpawnActor<ABaseWeapon>(WeaponBlueprintClass, SpawnLocation, SpawnRotation);
+		if (HasAuthority()) {
+			OverlappingWeapon = GetWorld()->SpawnActor<ABaseWeapon>(WeaponBlueprintClass, SpawnLocation, SpawnRotation);
+		}
 
 		if (OverlappingWeapon)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Weapon spawned successfully!"));
 			AMainCharacter::EquipButtonPressed();
 		}
 		else
 		{
 			UE_LOG(LogTemp, Error, TEXT("Failed to spawn weapon!"));
 		}
-	}
-	else
-	{
-		UE_LOG(LogTemp, Error, TEXT("WeaponClassFinder.Class is NULL or GetWorld() is not valid!"));
 	}
 }
 
@@ -212,6 +212,25 @@ void AMainCharacter::PostInitializeComponents()
 	{
 		Combat->Character = this;
 	}
+}
 
-	
+void AMainCharacter::AimButtonPressed()
+{
+	if (Combat)
+	{
+		Combat->SetAiming(true);
+	}
+}
+
+void AMainCharacter::AimButtonReleased()
+{
+	if (Combat)
+	{
+		Combat->SetAiming(false);
+	}
+}
+
+bool AMainCharacter::IsAiming()
+{
+	return (Combat && Combat->bAiming);
 }

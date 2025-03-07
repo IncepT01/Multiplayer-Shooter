@@ -30,4 +30,5 @@ void UMyAnimInstance::NativeUpdateAnimation(float DeltaTime)
 	bIsAccelerating = MainCharacter->GetCharacterMovement()->GetCurrentAcceleration().Size() > 0.f ? true : false;
 	bWeaponEquipped = MainCharacter->IsWeaponEquipped();
 	bIsCrouched = MainCharacter->bIsCrouched;
+	bAiming = MainCharacter->IsAiming();
 }
