@@ -138,5 +138,11 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MyAnimInstance.h">
       <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\Types">
+      <UniqueIdentifier>{2A7DF824-0EBF-32ED-8AE9-47A3F3F2EAB3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Types\TurningInPlace.h">
+      <Filter>Source\MultiplayerShooter\Types</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
