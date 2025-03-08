@@ -5,6 +5,7 @@
 #include "MainCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "MultiplayerShooter/BaseWeapon/BaseWeapon.h"
 
 void UMyAnimInstance::NativeInitializeAnimation()
 {
@@ -32,6 +33,7 @@ void UMyAnimInstance::NativeUpdateAnimation(float DeltaTime)
 	bWeaponEquipped = MainCharacter->IsWeaponEquipped();
 	bIsCrouched = MainCharacter->bIsCrouched;
 	bAiming = MainCharacter->IsAiming();
+	EquippedWeapon = MainCharacter->GetEquippedWeapon();
 
 	// Offset Yaw for Strafing
 	FRotator AimRotation = MainCharacter->GetBaseAimRotation();
@@ -49,4 +51,14 @@ void UMyAnimInstance::NativeUpdateAnimation(float DeltaTime)
 
 	AO_Yaw = MainCharacter->GetAO_Yaw();
 	AO_Pitch = MainCharacter->GetAO_Pitch();
+
+	if (bWeaponEquipped && EquippedWeapon && EquippedWeapon->GetWeaponMesh() && MainCharacter->GetMesh())
+	{
+		LeftHandTransform = EquippedWeapon->GetWeaponMesh()->GetSocketTransform(FName("LeftHandSocket"), ERelativeTransformSpace::RTS_World);
+		FVector OutPosition;
+		FRotator OutRotation;
+		MainCharacter->GetMesh()->TransformToBoneSpace(FName("hand_r"), LeftHandTransform.GetLocation(), FRotator::ZeroRotator, OutPosition, OutRotation);
+		LeftHandTransform.SetLocation(OutPosition);
+		LeftHandTransform.SetRotation(FQuat(OutRotation));
+	}
 }

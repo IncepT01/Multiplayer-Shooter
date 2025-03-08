@@ -9,6 +9,8 @@
 /**
  * 
  */
+
+
 UCLASS()
 class MULTIPLAYERSHOOTER_API UMyAnimInstance : public UAnimInstance
 {
@@ -54,4 +56,9 @@ private:
  
 	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	float AO_Pitch;
+
+	class ABaseWeapon* EquippedWeapon;
+
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+	FTransform LeftHandTransform;
 };
