@@ -10,6 +10,7 @@
 #include "MultiplayerShooter/BaseWeapon/BaseWeapon.h"
 #include "MultiplayerShooter/ActorComponents/CombatComponent.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Components/CapsuleComponent.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -45,7 +46,8 @@ AMainCharacter::AMainCharacter()
 		UE_LOG(LogTemp, Error, TEXT("Weapon Blueprint not found!"));
 	}
 
-	
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
+	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 }
 
 void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
