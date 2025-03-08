@@ -39,6 +39,7 @@ protected:
 	void AimButtonPressed();
 	void AimButtonReleased();
 	void AimOffset(float DeltaTime);
+	virtual void Jump() override;
 	
 	UPROPERTY(ReplicatedUsing = OnRep_OverlappingWeapon)
 	class ABaseWeapon* OverlappingWeapon;
@@ -87,3 +88,5 @@ private:
 	class UCombatComponent* Combat;
 
 };
+
+
