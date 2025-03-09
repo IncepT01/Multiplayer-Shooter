@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "NiagaraComponent.h"
+#include "NiagaraSystem.h"
 #include "BaseWeapon.generated.h"
 
 
