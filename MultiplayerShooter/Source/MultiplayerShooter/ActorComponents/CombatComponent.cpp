@@ -97,11 +97,12 @@ void UCombatComponent::FireButtonPressed(bool bPressed)
 	bFireButtonPressed = bPressed;
 	if (bFireButtonPressed)
 	{
-		EquippedWeapon->StartFiring();
+		EquippedWeapon->Server_StartFiring();
 	}
 	else
 	{
-		EquippedWeapon->StopFiring();
+		EquippedWeapon->Server_StopFiring();
 	}
 }
+
 

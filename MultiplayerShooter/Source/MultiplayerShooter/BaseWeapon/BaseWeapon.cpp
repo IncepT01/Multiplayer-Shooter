@@ -114,43 +114,48 @@ void ABaseWeapon::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void ABaseWeapon::StartFiring()
+void ABaseWeapon::Server_StartFiring_Implementation()
 {
 	if (MuzzleFlashNiagaraSystem && WeaponMesh)
 	{
-		// Spawn the Niagara particle system at the muzzle socket and set it to loop
-		MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
-			MuzzleFlashNiagaraSystem,
-			WeaponMesh,
-			"Muzzle",  // Socket name
-			FVector::ZeroVector,
-			FRotator::ZeroRotator,
-			EAttachLocation::SnapToTarget,
-			true
-		);
-
-		if (MuzzleFlashComponent)
-		{
-			// Optionally, you can set the system to continuously loop here.
-			MuzzleFlashComponent->SetNiagaraVariableBool("bLooping", true);
-		}
-
-		UE_LOG(LogTemp, Warning, TEXT("Started firing, particle system spawning."));
+		Multicast_SpawnMuzzleFlash();
+		//UE_LOG(LogTemp, Warning, TEXT("Started firing, particle system spawning."));
 	}
 }
 
 // Function to stop firing and stop the particle system
-void ABaseWeapon::StopFiring()
+void ABaseWeapon::Server_StopFiring_Implementation()
 {
-	
-	// Destroy the particle component to stop the effect
+	Multicast_DestroyMuzzleFlash();
+}
+
+void ABaseWeapon::Multicast_SpawnMuzzleFlash_Implementation()
+{
+	// Spawn the Niagara particle system at the muzzle socket and set it to loop
+	MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
+		MuzzleFlashNiagaraSystem,
+		WeaponMesh,
+		"Muzzle",  // Socket name
+		FVector::ZeroVector,
+		FRotator::ZeroRotator,
+		EAttachLocation::SnapToTarget,
+		true
+	);
+
+	if (MuzzleFlashComponent)
+	{
+		// Optionally, you can set the system to continuously loop here.
+		MuzzleFlashComponent->SetNiagaraVariableBool("bLooping", true);
+	}
+
+}
+
+void ABaseWeapon::Multicast_DestroyMuzzleFlash_Implementation()
+{
 	if (MuzzleFlashComponent)
 	{
 		MuzzleFlashComponent->Deactivate();  // Deactivate the Niagara system
 		MuzzleFlashComponent->DestroyComponent();  // Destroy the component
 		MuzzleFlashComponent = nullptr;
 	}
-
-	UE_LOG(LogTemp, Warning, TEXT("Stopped firing, particle system stopped."));
-
 }

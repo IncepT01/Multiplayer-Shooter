@@ -31,10 +31,18 @@ public:
 	void ShowPickupWidget(bool bShowWidget);
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+	UFUNCTION(Server, Reliable)
+	void Server_StartFiring();
+
+	UFUNCTION(Server, Reliable)
+	void Server_StopFiring();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void Multicast_SpawnMuzzleFlash();
 	
-	void StartFiring();
-	
-	void StopFiring();
+	UFUNCTION(NetMulticast, Reliable)
+	void Multicast_DestroyMuzzleFlash();
 
 protected:
 	virtual void BeginPlay() override;
