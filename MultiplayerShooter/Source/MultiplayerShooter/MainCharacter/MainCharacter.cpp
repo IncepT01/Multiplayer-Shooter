@@ -37,7 +37,8 @@ AMainCharacter::AMainCharacter()
 	Combat = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComponent"));
 	Combat->SetIsReplicated(true);
 
-	static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_BaseWeapon.BP_BaseWeapon_C'"));
+	//static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_BaseWeapon.BP_BaseWeapon_C'"));
+	static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_AssaultRifle.BP_AssaultRifle_C'"));
 	if (WeaponFinder.Succeeded())
 	{
 		WeaponBlueprintClass = WeaponFinder.Class;
@@ -88,16 +89,18 @@ void AMainCharacter::BeginPlay()
 
 		if (HasAuthority()) {
 			OverlappingWeapon = GetWorld()->SpawnActor<ABaseWeapon>(WeaponBlueprintClass, SpawnLocation, SpawnRotation);
+
+			if (OverlappingWeapon)
+			{
+				AMainCharacter::EquipButtonPressed();
+			}
+			else
+			{
+				UE_LOG(LogTemp, Error, TEXT("Failed to spawn weapon!"));
+			}
 		}
 
-		if (OverlappingWeapon)
-		{
-			AMainCharacter::EquipButtonPressed();
-		}
-		else
-		{
-			UE_LOG(LogTemp, Error, TEXT("Failed to spawn weapon!"));
-		}
+		
 	}
 }
 
