@@ -108,6 +108,20 @@ void ABaseWeapon::OnRep_WeaponState()
 void ABaseWeapon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+}
+
+void ABaseWeapon::StartFiring()
+{
+
+
+	UE_LOG(LogTemp, Warning, TEXT("Started firing, particle system spawning."));
 
 }
 
+// Function to stop firing and stop the particle system
+void ABaseWeapon::StopFiring()
+{
+
+	UE_LOG(LogTemp, Warning, TEXT("Stopped firing, particle system stopped."));
+	
+}

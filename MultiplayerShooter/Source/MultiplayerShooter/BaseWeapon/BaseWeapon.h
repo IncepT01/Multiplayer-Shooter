@@ -31,6 +31,10 @@ public:
 	void ShowPickupWidget(bool bShowWidget);
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+	
+	void StartFiring();
+	
+	void StopFiring();
 
 protected:
 	virtual void BeginPlay() override;
