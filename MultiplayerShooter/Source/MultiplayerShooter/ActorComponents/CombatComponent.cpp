@@ -92,3 +92,16 @@ void UCombatComponent::OnRep_EquippedWeapon()
 	}
 }
 
+void UCombatComponent::FireButtonPressed(bool bPressed)
+{
+	bFireButtonPressed = bPressed;
+	if (bFireButtonPressed)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Started Firing"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Stopped Firing"));
+	}
+}
+

@@ -324,3 +324,19 @@ inline void AMainCharacter::Jump()
 		Super::Jump();
 	}
 }
+
+void AMainCharacter::FireButtonPressed()
+{
+	if (Combat)
+	{
+		Combat->FireButtonPressed(true);
+	}
+}
+ 
+void AMainCharacter::FireButtonReleased()
+{
+	if (Combat)
+	{
+		Combat->FireButtonPressed(false);
+	}
+}

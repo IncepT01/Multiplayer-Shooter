@@ -105,6 +105,21 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\BaseWeapon.h">
       <Filter>Source\MultiplayerShooter\BaseWeapon</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons">
+      <UniqueIdentifier>{1F8879B7-1B7A-38CB-89CF-BD210E9D5A46}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\Projectile.cpp">
+      <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\Projectile.h">
+      <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\ProjectileWeapon.cpp">
+      <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\ProjectileWeapon.h">
+      <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\GameMode">
       <UniqueIdentifier>{CAB1BC10-849D-3AFF-BE1D-E626A63A0027}</UniqueIdentifier>
     </Filter>
