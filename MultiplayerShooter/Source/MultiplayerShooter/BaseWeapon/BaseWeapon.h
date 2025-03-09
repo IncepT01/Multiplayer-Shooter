@@ -4,10 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "NiagaraComponent.h"
-#include "NiagaraSystem.h"
 #include "BaseWeapon.generated.h"
 
+class UNiagaraComponent;
+class UNiagaraSystem;
 
 UENUM(BlueprintType)
 enum class EWeaponState : uint8
@@ -69,6 +69,12 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
 	class UWidgetComponent* PickupWidget;
+
+	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
+	UNiagaraComponent* MuzzleFlashNiagaraSystem;
+
+	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
+	UNiagaraSystem* ParticleEmitter;
 
 	UFUNCTION()
 	void OnRep_WeaponState();

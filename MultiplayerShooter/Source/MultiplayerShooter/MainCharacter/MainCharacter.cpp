@@ -38,6 +38,7 @@ AMainCharacter::AMainCharacter()
 	Combat->SetIsReplicated(true);
 
 	//static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_BaseWeapon.BP_BaseWeapon_C'"));
+	/*
 	static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_AssaultRifle.BP_AssaultRifle_C'"));
 	if (WeaponFinder.Succeeded())
 	{
@@ -47,6 +48,7 @@ AMainCharacter::AMainCharacter()
 	{
 		UE_LOG(LogTemp, Error, TEXT("Weapon Blueprint not found!"));
 	}
+	*/
 
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
@@ -85,13 +87,13 @@ void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	if (WeaponBlueprintClass && GetWorld()) // Check if class and world exist
+	if (StarterWeapon && GetWorld()) // Check if class and world exist
 	{
 		FVector SpawnLocation(0.0f, 0.0f, 0.0f);
 		FRotator SpawnRotation(0.0f, 0.0f, 0.0f);
 
 		if (HasAuthority()) {
-			OverlappingWeapon = GetWorld()->SpawnActor<ABaseWeapon>(WeaponBlueprintClass, SpawnLocation, SpawnRotation);
+			OverlappingWeapon = GetWorld()->SpawnActor<ABaseWeapon>(StarterWeapon, SpawnLocation, SpawnRotation);
 
 			if (OverlappingWeapon)
 			{

@@ -6,6 +6,8 @@
 #include "Components/WidgetComponent.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Net/UnrealNetwork.h"
+#include "NiagaraComponent.h" 
+#include "NiagaraSystem.h"     
 
 // Sets default values
 ABaseWeapon::ABaseWeapon()
@@ -112,9 +114,6 @@ void ABaseWeapon::Tick(float DeltaTime)
 
 void ABaseWeapon::StartFiring()
 {
-
-
-	UE_LOG(LogTemp, Warning, TEXT("Started firing, particle system spawning."));
 
 }
 

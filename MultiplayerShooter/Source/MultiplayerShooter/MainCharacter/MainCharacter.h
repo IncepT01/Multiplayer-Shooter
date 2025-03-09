@@ -63,8 +63,9 @@ protected:
 	ETurningInPlace TurningInPlace;
 
 public:
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
-	TSubclassOf<ABaseWeapon> WeaponBlueprintClass;
+	TSubclassOf<ABaseWeapon> StarterWeapon;
 
 	void SetOverlappingWeapon(ABaseWeapon* Weapon);
 	bool IsWeaponEquipped();
@@ -90,6 +91,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	class UCombatComponent* Combat;
+	
 
 };
 
