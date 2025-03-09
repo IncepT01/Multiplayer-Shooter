@@ -95,14 +95,20 @@ void UCombatComponent::OnRep_EquippedWeapon()
 void UCombatComponent::FireButtonPressed(bool bPressed)
 {
 	bFireButtonPressed = bPressed;
-	if (bFireButtonPressed)
+	Server_Fire(bFireButtonPressed);
+}
+
+void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed)
+{
+	//bLocalFireButtonPressed means it is used in this Function only
+	UE_LOG(LogTemp, Display, TEXT("Server bLocalFIreButtonPressed %hs"), bLocalFireButtonPressed ? "true" : "false");
+	if (bLocalFireButtonPressed)
 	{
-		EquippedWeapon->Server_StartFiring();
+		EquippedWeapon->Multicast_StartFiring();
 	}
 	else
 	{
-		EquippedWeapon->Server_StopFiring();
+		EquippedWeapon->Multicast_StopFiring();
 	}
 }
-
 

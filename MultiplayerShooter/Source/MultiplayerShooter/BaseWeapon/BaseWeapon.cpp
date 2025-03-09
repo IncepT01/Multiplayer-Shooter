@@ -114,43 +114,32 @@ void ABaseWeapon::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void ABaseWeapon::Server_StartFiring_Implementation()
+void ABaseWeapon::Multicast_StartFiring_Implementation()
 {
 	if (MuzzleFlashNiagaraSystem && WeaponMesh)
 	{
-		Multicast_SpawnMuzzleFlash();
-		//UE_LOG(LogTemp, Warning, TEXT("Started firing, particle system spawning."));
+		// Spawn the Niagara particle system at the muzzle socket and set it to loop
+		MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
+			MuzzleFlashNiagaraSystem,
+			WeaponMesh,
+			"Muzzle",  // Socket name
+			FVector::ZeroVector,
+			FRotator::ZeroRotator,
+			EAttachLocation::SnapToTarget,
+			true
+		);
+
+		if (MuzzleFlashComponent)
+		{
+			// Optionally, you can set the system to continuously loop here.
+			MuzzleFlashComponent->SetNiagaraVariableBool("bLooping", true);
+		}
 	}
-}
-
-// Function to stop firing and stop the particle system
-void ABaseWeapon::Server_StopFiring_Implementation()
-{
-	Multicast_DestroyMuzzleFlash();
-}
-
-void ABaseWeapon::Multicast_SpawnMuzzleFlash_Implementation()
-{
-	// Spawn the Niagara particle system at the muzzle socket and set it to loop
-	MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
-		MuzzleFlashNiagaraSystem,
-		WeaponMesh,
-		"Muzzle",  // Socket name
-		FVector::ZeroVector,
-		FRotator::ZeroRotator,
-		EAttachLocation::SnapToTarget,
-		true
-	);
-
-	if (MuzzleFlashComponent)
-	{
-		// Optionally, you can set the system to continuously loop here.
-		MuzzleFlashComponent->SetNiagaraVariableBool("bLooping", true);
-	}
+	
 
 }
 
-void ABaseWeapon::Multicast_DestroyMuzzleFlash_Implementation()
+void ABaseWeapon::Multicast_StopFiring_Implementation()
 {
 	if (MuzzleFlashComponent)
 	{

@@ -31,6 +31,9 @@ protected:
 	UFUNCTION()
 	void OnRep_EquippedWeapon();
 
+	UFUNCTION(Server, Reliable)
+	void Server_Fire(bool bLocalFireButtonPressed);
+	
 	void FireButtonPressed(bool bPressed);
 
 private:
