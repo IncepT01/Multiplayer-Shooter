@@ -71,10 +71,10 @@ private:
 	class UWidgetComponent* PickupWidget;
 
 	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
-	UNiagaraComponent* MuzzleFlashNiagaraSystem;
+	UNiagaraComponent* MuzzleFlashComponent;
 
-	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
-	UNiagaraSystem* ParticleEmitter;
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+	UNiagaraSystem* MuzzleFlashNiagaraSystem;
 
 	UFUNCTION()
 	void OnRep_WeaponState();

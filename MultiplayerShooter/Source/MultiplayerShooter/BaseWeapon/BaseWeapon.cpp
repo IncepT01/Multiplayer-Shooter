@@ -7,7 +7,9 @@
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Net/UnrealNetwork.h"
 #include "NiagaraComponent.h" 
-#include "NiagaraSystem.h"     
+#include "NiagaraSystem.h"
+#include "NiagaraFunctionLibrary.h"
+
 
 // Sets default values
 ABaseWeapon::ABaseWeapon()
@@ -114,13 +116,41 @@ void ABaseWeapon::Tick(float DeltaTime)
 
 void ABaseWeapon::StartFiring()
 {
+	if (MuzzleFlashNiagaraSystem && WeaponMesh)
+	{
+		// Spawn the Niagara particle system at the muzzle socket and set it to loop
+		MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
+			MuzzleFlashNiagaraSystem,
+			WeaponMesh,
+			"Muzzle",  // Socket name
+			FVector::ZeroVector,
+			FRotator::ZeroRotator,
+			EAttachLocation::SnapToTarget,
+			true
+		);
 
+		if (MuzzleFlashComponent)
+		{
+			// Optionally, you can set the system to continuously loop here.
+			MuzzleFlashComponent->SetNiagaraVariableBool("bLooping", true);
+		}
+
+		UE_LOG(LogTemp, Warning, TEXT("Started firing, particle system spawning."));
+	}
 }
 
 // Function to stop firing and stop the particle system
 void ABaseWeapon::StopFiring()
 {
+	
+	// Destroy the particle component to stop the effect
+	if (MuzzleFlashComponent)
+	{
+		MuzzleFlashComponent->Deactivate();  // Deactivate the Niagara system
+		MuzzleFlashComponent->DestroyComponent();  // Destroy the component
+		MuzzleFlashComponent = nullptr;
+	}
 
 	UE_LOG(LogTemp, Warning, TEXT("Stopped firing, particle system stopped."));
-	
+
 }

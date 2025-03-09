@@ -97,11 +97,11 @@ void UCombatComponent::FireButtonPressed(bool bPressed)
 	bFireButtonPressed = bPressed;
 	if (bFireButtonPressed)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Started Firing"));
+		EquippedWeapon->StartFiring();
 	}
 	else
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Stopped Firing"));
+		EquippedWeapon->StopFiring();
 	}
 }
 
