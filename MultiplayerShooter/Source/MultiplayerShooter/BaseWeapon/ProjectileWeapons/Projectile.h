@@ -6,6 +6,10 @@
 #include "GameFramework/Actor.h"
 #include "Projectile.generated.h"
 
+
+class UNiagaraComponent;
+class UNiagaraSystem;
+
 UCLASS()
 class MULTIPLAYERSHOOTER_API AProjectile : public AActor
 {
@@ -25,6 +29,12 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	class UProjectileMovementComponent* ProjectileMovementComponent;
+
+	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
+	UNiagaraComponent* TracerComponent;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+	UNiagaraSystem* TracerNiagaraSystem;
 
 public:	
 	// Called every frame
