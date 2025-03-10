@@ -91,12 +91,11 @@ void UCombatComponent::TraceUnderCrosshairs(FHitResult& TraceHitResult)
 		{
 			//UE_LOG(LogTemp, Warning, TEXT("Nothing is hit!"));
 			TraceHitResult.ImpactPoint = End;
-			HitTarget = End;
 		}
 		else
 		{
 			//UE_LOG(LogTemp, Warning, TEXT("DrawingSphere"));
-			HitTarget = TraceHitResult.ImpactPoint;
+			/*
 			DrawDebugSphere(
 				GetWorld(),
 				TraceHitResult.ImpactPoint,
@@ -104,6 +103,7 @@ void UCombatComponent::TraceUnderCrosshairs(FHitResult& TraceHitResult)
 				12,
 				FColor::Red
 			);
+			*/
 		}
 	}
 }
@@ -117,8 +117,8 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	FHitResult HitResult;
-	TraceUnderCrosshairs(HitResult);
+	//FHitResult HitResult;
+	//TraceUnderCrosshairs(HitResult);
 	
 }
 
@@ -182,16 +182,22 @@ void UCombatComponent::OnRep_EquippedWeapon()
 void UCombatComponent::FireButtonPressed(bool bPressed)
 {
 	bFireButtonPressed = bPressed;
-	Server_Fire(bFireButtonPressed);
+	FHitResult HitResult;
+	if (bFireButtonPressed)
+	{
+		TraceUnderCrosshairs(HitResult);
+	}
+	
+	Server_Fire(bFireButtonPressed, HitResult.ImpactPoint);
 }
 
-void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed)
+void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed, const FVector_NetQuantize& TracerTarget)
 {
 	//bLocalFireButtonPressed means it is used in this Function only
 	UE_LOG(LogTemp, Display, TEXT("Server bLocalFIreButtonPressed %hs"), bLocalFireButtonPressed ? "true" : "false");
 	if (bLocalFireButtonPressed)
 	{
-		EquippedWeapon->Multicast_StartFiring(HitTarget);
+		EquippedWeapon->Multicast_StartFiring(TracerTarget);
 	}
 	else
 	{

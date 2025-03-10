@@ -34,7 +34,7 @@ protected:
 	void OnRep_EquippedWeapon();
 
 	UFUNCTION(Server, Reliable)
-	void Server_Fire(bool bLocalFireButtonPressed);
+	void Server_Fire(bool bLocalFireButtonPressed, const FVector_NetQuantize& TracerTarget);
 	
 	void FireButtonPressed(bool bPressed);
 
@@ -56,6 +56,5 @@ private:
 	float AimWalkSpeed;
 
 	bool bFireButtonPressed;
-
-	 FVector HitTarget;
+	
 };
