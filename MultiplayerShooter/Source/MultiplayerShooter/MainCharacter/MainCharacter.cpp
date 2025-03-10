@@ -144,6 +144,13 @@ void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	
+	if (Combat)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Manually calling CombatComponent Tick!"));
+		Combat->TickComponent(DeltaTime, LEVELTICK_All, nullptr);
+	}
+
 	AimOffset(DeltaTime);
 }
 

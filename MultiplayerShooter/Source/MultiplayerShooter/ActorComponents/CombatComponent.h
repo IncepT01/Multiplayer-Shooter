@@ -6,6 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "CombatComponent.generated.h"
 
+#define TRACE_LENGTH 80000.f
+
 //Forward declair
 class ABaseWeapon;
 
@@ -35,6 +37,8 @@ protected:
 	void Server_Fire(bool bLocalFireButtonPressed);
 	
 	void FireButtonPressed(bool bPressed);
+
+	void TraceUnderCrosshairs(FHitResult& TraceHitResult);
 
 private:
 	class AMainCharacter* Character;
