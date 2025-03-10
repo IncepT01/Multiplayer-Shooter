@@ -33,10 +33,10 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	UFUNCTION(NetMulticast, Reliable)
-	void Multicast_StopFiring();
+	virtual void Multicast_StopFiring();
 	
 	UFUNCTION(NetMulticast, Reliable)
-	void Multicast_StartFiring();
+	virtual void Multicast_StartFiring(const FVector& HitTarget);
 
 protected:
 	virtual void BeginPlay() override;

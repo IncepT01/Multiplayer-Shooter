@@ -114,7 +114,7 @@ void ABaseWeapon::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void ABaseWeapon::Multicast_StartFiring_Implementation()
+void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 {
 	if (MuzzleFlashNiagaraSystem && WeaponMesh)
 	{

@@ -58,7 +58,7 @@ void UCombatComponent::BeginPlay()
 
 void UCombatComponent::TraceUnderCrosshairs(FHitResult& TraceHitResult)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Traceing!"));
+	//UE_LOG(LogTemp, Warning, TEXT("Traceing!"));
 	FVector2D ViewportSize;
 	if (GEngine && GEngine->GameViewport)
 	{
@@ -89,12 +89,14 @@ void UCombatComponent::TraceUnderCrosshairs(FHitResult& TraceHitResult)
 		);
 		if (!TraceHitResult.bBlockingHit)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Nothing is hit!"));
+			//UE_LOG(LogTemp, Warning, TEXT("Nothing is hit!"));
 			TraceHitResult.ImpactPoint = End;
+			HitTarget = End;
 		}
 		else
 		{
-			UE_LOG(LogTemp, Warning, TEXT("DrawingSphere"));
+			//UE_LOG(LogTemp, Warning, TEXT("DrawingSphere"));
+			HitTarget = TraceHitResult.ImpactPoint;
 			DrawDebugSphere(
 				GetWorld(),
 				TraceHitResult.ImpactPoint,
@@ -114,12 +116,10 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	}
 	
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	
 
-	UE_LOG(LogTemp, Warning, TEXT("Ticking!"));
-	
 	FHitResult HitResult;
 	TraceUnderCrosshairs(HitResult);
+	
 }
 
 void UCombatComponent::EquipWeapon(ABaseWeapon* WeaponToEquip)
@@ -191,7 +191,7 @@ void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed)
 	UE_LOG(LogTemp, Display, TEXT("Server bLocalFIreButtonPressed %hs"), bLocalFireButtonPressed ? "true" : "false");
 	if (bLocalFireButtonPressed)
 	{
-		EquippedWeapon->Multicast_StartFiring();
+		EquippedWeapon->Multicast_StartFiring(HitTarget);
 	}
 	else
 	{
