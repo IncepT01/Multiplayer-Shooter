@@ -352,3 +352,9 @@ void AMainCharacter::FireButtonReleased()
 		Combat->FireButtonPressed(false);
 	}
 }
+
+FVector AMainCharacter::GetHitTarget() const
+{
+	if (Combat == nullptr) return FVector();
+	return Combat->HitTarget;
+}

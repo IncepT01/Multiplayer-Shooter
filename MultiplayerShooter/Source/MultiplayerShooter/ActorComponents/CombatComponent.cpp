@@ -123,7 +123,13 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	//TraceUnderCrosshairs(HitResult);
 
 	SetHUDCrosshairs(DeltaTime);
-	
+
+	if (Character && Character->IsLocallyControlled())
+	{
+		FHitResult HitResult;
+		TraceUnderCrosshairs(HitResult);
+		HitTarget = HitResult.ImpactPoint;
+	}
 }
 
 void UCombatComponent::EquipWeapon(ABaseWeapon* WeaponToEquip)
