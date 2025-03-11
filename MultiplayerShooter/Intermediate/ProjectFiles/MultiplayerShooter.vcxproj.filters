@@ -132,6 +132,12 @@
     <Filter Include="Source\MultiplayerShooter\HUD">
       <UniqueIdentifier>{2B2B6DE5-F8FA-3BA0-9AF5-5E8D70C4516A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\MainHUD.cpp">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\MainHUD.h">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\OverheadWidget.cpp">
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>
@@ -152,6 +158,15 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MyAnimInstance.h">
       <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
+    </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\PlayerController">
+      <UniqueIdentifier>{182FE8DE-D5E7-3026-8281-503CF45E9B56}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\PlayerController\MyPlayerController.cpp">
+      <Filter>Source\MultiplayerShooter\PlayerController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\PlayerController\MyPlayerController.h">
+      <Filter>Source\MultiplayerShooter\PlayerController</Filter>
     </ClCompile>
     <Filter Include="Source\MultiplayerShooter\Types">
       <UniqueIdentifier>{2A7DF824-0EBF-32ED-8AE9-47A3F3F2EAB3}</UniqueIdentifier>

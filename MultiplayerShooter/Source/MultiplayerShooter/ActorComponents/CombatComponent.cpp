@@ -91,6 +91,7 @@ void UCombatComponent::TraceUnderCrosshairs(FHitResult& TraceHitResult)
 		{
 			float DistanceToCharacter = (Character->GetActorLocation() - Start).Size();
 			Start += CrosshairWorldDirection * (DistanceToCharacter + 100.f);
+			//DrawDebugSphere(GetWorld(), Start, 16.f, 12, FColor::Red);
 		}
  
 		FVector End = Start + CrosshairWorldDirection * TRACE_LENGTH;
@@ -205,6 +206,7 @@ void UCombatComponent::OnRep_EquippedWeapon()
 void UCombatComponent::FireButtonPressed(bool bPressed)
 {
 	bFireButtonPressed = bPressed;
+	
 	FHitResult HitResult;
 	if (bFireButtonPressed)
 	{
@@ -226,6 +228,11 @@ void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed, 
 	if (bLocalFireButtonPressed)
 	{
 		EquippedWeapon->Multicast_StartFiring(TracerTarget);
+		if (Character)
+		{
+			//Enable to player Fire Montage
+			Character->MulticastFire();
+		}
 	}
 	else
 	{

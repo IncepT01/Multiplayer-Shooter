@@ -27,7 +27,11 @@ public:
 
 	virtual void PostInitializeComponents() override;
 
+	UFUNCTION(NetMulticast, Unreliable)
+	void MulticastFire();
 	
+	UFUNCTION(NetMulticast, Unreliable)
+	void MulticastHit();
 
 protected:
 	// Called when the game starts or when spawned
@@ -68,6 +72,9 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float CameraThreshold = 200.f;
 
+	void PlayFireMontage(bool bAiming);
+	void PlayHitReactMontage();
+
 public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
@@ -80,6 +87,12 @@ public:
 	FORCEINLINE float GetAO_Yaw() const { return AO_Yaw; }
 	FORCEINLINE float GetAO_Pitch() const { return AO_Pitch; }
 	FORCEINLINE ETurningInPlace GetTurningInPlace() const { return TurningInPlace; }
+
+	UPROPERTY(EditAnywhere, Category = Combat)
+	class UAnimMontage* FireWeaponMontage;
+
+	UPROPERTY(EditAnywhere, Category = Combat)
+	UAnimMontage* HitReactMontage;
 
 	FVector GetHitTarget() const;
 

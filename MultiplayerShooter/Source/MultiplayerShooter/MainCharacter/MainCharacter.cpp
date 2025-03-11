@@ -12,6 +12,7 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Components/CapsuleComponent.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "MultiplayerShooter/MultiplayerShooter.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -51,6 +52,7 @@ AMainCharacter::AMainCharacter()
 	*/
 
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
+	GetMesh()->SetCollisionObjectType(ECC_SkeletalMesh);
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Block);
 	GetCharacterMovement()->RotationRate = FRotator(0.f,0.f,720.f);
@@ -381,4 +383,44 @@ void AMainCharacter::HideCameraIfCharacterClose()
 			Combat->EquippedWeapon->GetWeaponMesh()->bOwnerNoSee = false;
 		}
 	}
+}
+
+void AMainCharacter::PlayFireMontage(bool bAiming)
+{
+	if (Combat == nullptr || Combat->EquippedWeapon == nullptr) return;
+ 
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance && FireWeaponMontage)
+	{
+		AnimInstance->Montage_Play(FireWeaponMontage);
+		FName SectionName;
+		SectionName = bAiming ? FName("RifleAim") : FName("RifleHip");
+		AnimInstance->Montage_JumpToSection(SectionName);
+	}
+}
+
+void AMainCharacter::PlayHitReactMontage()
+{
+	if (Combat == nullptr || Combat->EquippedWeapon == nullptr) return;
+	{
+		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+
+		if (AnimInstance && HitReactMontage)
+		{
+			AnimInstance->Montage_Play(HitReactMontage);
+			FName SectionName = ("FromFront");
+			AnimInstance->Montage_JumpToSection(SectionName);
+			UE_LOG(LogTemp, Warning, TEXT("Playing hit Montage"))
+		}
+	}
+}
+
+void AMainCharacter::MulticastHit_Implementation()
+{
+	PlayHitReactMontage();
+}
+
+void AMainCharacter::MulticastFire_Implementation()
+{
+	PlayFireMontage(IsAiming());
 }
