@@ -33,6 +33,7 @@ protected:
 
 	UFUNCTION()
 	void OnRep_EquippedWeapon();
+	void Fire();
 
 	UFUNCTION(Server, Reliable)
 	void Server_Fire(bool bLocalFireButtonPressed, const FVector_NetQuantize& TracerTarget);
@@ -82,5 +83,13 @@ private:
 	float ZoomInterpSpeed = 20.f;
  
 	void InterpFOV(float DeltaTime);
+	
+	 //Automatic fire 
+ 
+	FTimerHandle FireTimer;
+	bool bCanFire = true;
+ 
+	void StartFireTimer();
+	void FireTimerFinished();
 	
 };

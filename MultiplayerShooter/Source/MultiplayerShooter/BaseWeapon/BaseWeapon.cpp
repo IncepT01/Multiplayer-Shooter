@@ -128,12 +128,6 @@ void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 			EAttachLocation::SnapToTarget,
 			true
 		);
-
-		if (MuzzleFlashComponent)
-		{
-			// Optionally, you can set the system to continuously loop here.
-			MuzzleFlashComponent->SetNiagaraVariableBool("bLooping", true);
-		}
 	}
 	
 
