@@ -33,6 +33,8 @@ public:
 	UFUNCTION(NetMulticast, Unreliable)
 	void MulticastHit();
 
+	virtual void OnRep_ReplicatedMovement() override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -46,6 +48,8 @@ protected:
 	void AimButtonPressed();
 	void AimButtonReleased();
 	void AimOffset(float DeltaTime);
+	void CalculateAO_Pitch();
+	void SimProxiesTurn();
 	virtual void Jump() override;
 	void FireButtonPressed();
 	void FireButtonReleased();
@@ -75,6 +79,14 @@ protected:
 	void PlayFireMontage(bool bAiming);
 	void PlayHitReactMontage();
 
+	bool bRotateRootBone;
+	float TurnThreshold = 0.5f;
+	FRotator ProxyRotationLastFrame;
+	FRotator ProxyRotation;
+	float ProxyYaw;
+	float TimeSinceLastMovementReplication;
+	float CalculateSpeed();
+
 public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
@@ -97,6 +109,8 @@ public:
 	FVector GetHitTarget() const;
 
 	FORCEINLINE UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+	
+	FORCEINLINE bool ShouldRotateRootBone() const { return bRotateRootBone; }
 
 	void TurnInPlace(float DeltaTime);
 
