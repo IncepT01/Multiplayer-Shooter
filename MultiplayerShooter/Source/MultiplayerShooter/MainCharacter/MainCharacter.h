@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "MultiplayerShooter/Types/TurningInPlace.h"
+#include "Camera/CameraComponent.h"
 #include "MainCharacter.generated.h"
 
 UCLASS()
@@ -76,6 +77,8 @@ public:
 	FORCEINLINE ETurningInPlace GetTurningInPlace() const { return TurningInPlace; }
 
 	FVector GetHitTarget() const;
+
+	FORCEINLINE UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 	void TurnInPlace(float DeltaTime);
 
