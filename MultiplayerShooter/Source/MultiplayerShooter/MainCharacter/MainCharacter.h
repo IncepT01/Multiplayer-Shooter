@@ -63,6 +63,11 @@ protected:
 
 	ETurningInPlace TurningInPlace;
 
+	void HideCameraIfCharacterClose();
+ 
+	UPROPERTY(EditAnywhere)
+	float CameraThreshold = 200.f;
+
 public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")

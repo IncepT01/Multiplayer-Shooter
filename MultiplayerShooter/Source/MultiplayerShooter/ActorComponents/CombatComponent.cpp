@@ -12,7 +12,6 @@
  #include "DrawDebugHelpers.h"
 #include "Math/UnitConversion.h"
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
-#include "MultiplayerShooter/HUD/MainHUD.h"
 #include "Camera/CameraComponent.h"
 
 
@@ -87,6 +86,12 @@ void UCombatComponent::TraceUnderCrosshairs(FHitResult& TraceHitResult)
 	if (bScreenToWorld)
 	{
 		FVector Start = CrosshairWorldPosition;
+
+		if (Character)
+		{
+			float DistanceToCharacter = (Character->GetActorLocation() - Start).Size();
+			Start += CrosshairWorldDirection * (DistanceToCharacter + 100.f);
+		}
  
 		FVector End = Start + CrosshairWorldDirection * TRACE_LENGTH;
  
@@ -204,6 +209,11 @@ void UCombatComponent::FireButtonPressed(bool bPressed)
 	if (bFireButtonPressed)
 	{
 		TraceUnderCrosshairs(HitResult);
+
+		if (EquippedWeapon)
+		{
+			CrosshairShootingFactor = .75f;
+		}
 	}
 	
 	Server_Fire(bFireButtonPressed, HitResult.ImpactPoint);
@@ -233,7 +243,6 @@ void UCombatComponent::SetHUDCrosshairs(float DeltaTime)
 		HUD = HUD == nullptr ? Cast<AMainHUD>(Controller->GetHUD()) : HUD;
 		if (HUD)
 		{
-			FHUDPackage HUDPackage;
 			if (EquippedWeapon)
 			{
 				HUDPackage.CrosshairsCenter = EquippedWeapon->CrosshairsCenter;
@@ -269,7 +278,23 @@ void UCombatComponent::SetHUDCrosshairs(float DeltaTime)
 				CrosshairInAirFactor = FMath::FInterpTo(CrosshairInAirFactor, 0.f, DeltaTime, 30.f);
 			}
  
-			HUDPackage.CrosshairSpread = CrosshairVelocityFactor + CrosshairInAirFactor;
+			if (bAiming)
+			{
+				CrosshairAimFactor = FMath::FInterpTo(CrosshairAimFactor, 0.58f, DeltaTime, 30.f);
+			}
+			else
+			{
+				CrosshairAimFactor = FMath::FInterpTo(CrosshairAimFactor, 0.f, DeltaTime, 30.f);
+			}
+ 
+			CrosshairShootingFactor = FMath::FInterpTo(CrosshairShootingFactor, 0.f, DeltaTime, 40.f);
+ 
+			HUDPackage.CrosshairSpread = 
+				0.5f + 
+				CrosshairVelocityFactor + 
+				CrosshairInAirFactor -
+				CrosshairAimFactor +
+				CrosshairShootingFactor;
 			
 			HUD->SetHUDPackage(HUDPackage);
 		}
