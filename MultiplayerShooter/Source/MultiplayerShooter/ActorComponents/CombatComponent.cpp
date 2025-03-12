@@ -229,7 +229,7 @@ void UCombatComponent::FireButtonPressed(bool bPressed)
 	}
 	else
 	{
-		Server_Fire(bFireButtonPressed, HitTarget);	
+		//Server_Fire(bFireButtonPressed, HitTarget);	
 	}
 	
 }
@@ -249,7 +249,7 @@ void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed, 
 	}
 	else
 	{
-		EquippedWeapon->Multicast_StopFiring();
+		//EquippedWeapon->Multicast_StopFiring();
 	}
 }
 
