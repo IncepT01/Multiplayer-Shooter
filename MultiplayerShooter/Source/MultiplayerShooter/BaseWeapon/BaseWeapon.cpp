@@ -140,13 +140,3 @@ void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 	
 
 }
-
-void ABaseWeapon::Multicast_StopFiring_Implementation()
-{
-	if (MuzzleFlashComponent)
-	{
-		MuzzleFlashComponent->Deactivate();  // Deactivate the Niagara system
-		MuzzleFlashComponent->DestroyComponent();  // Destroy the component
-		MuzzleFlashComponent = nullptr;
-	}
-}

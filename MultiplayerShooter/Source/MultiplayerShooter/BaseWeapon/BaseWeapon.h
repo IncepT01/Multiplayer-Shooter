@@ -31,9 +31,6 @@ public:
 	void ShowPickupWidget(bool bShowWidget);
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-	UFUNCTION(NetMulticast, Reliable)
-	virtual void Multicast_StopFiring();
 	
 	UFUNCTION(NetMulticast, Reliable)
 	virtual void Multicast_StartFiring(const FVector& HitTarget);

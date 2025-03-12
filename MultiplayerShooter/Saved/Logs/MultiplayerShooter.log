@@ -19383,3 +19383,977 @@ Scale3D: 1.000000 1.000000 1.000000
 [2025.03.12-00.06.32:440][860]LogPlayLevel: Display: Destroying online subsystem :Context_118
 [2025.03.12-00.06.33:618][925]LogSlate: Window 'Message Log' being destroyed
 [2025.03.12-00.06.33:622][925]LogSlate: Window 'Message Log' being destroyed
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: ================================================
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Total job queries 357, among them cache hits 54 (15.13%), DDC hits 266 (74.51%), Duplicates 3 (0.84%)
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Tracking 300 distinct input hashes that result in 247 distinct outputs (82.33%)
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: RAM used: 148,99 KiB of 1,60 GiB budget. Usage: 0.01%
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Shaders Compiled: 34
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Jobs assigned 34, completed 34 (100%)
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Average time worker was idle: 1.48 s
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Time job spent in pending queue: average 0.06 s, longest 0.11 s
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Job execution time: average 0.38 s, max 1.22 s
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Job life time (pending + execution): average 0.44 s, max 1.24
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Shader code size: average 27,688 KiB, min 10,001 KiB, max 65,697 KiB
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 8.53 s
+[2025.03.12-00.07.24:732][121]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.00%
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Jobs were issued in 34 batches (only local compilation was used), average 1.00 jobs/batch
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Average processing rate: 3.99 jobs/sec
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Total thread time: 6,372 s
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Total thread preprocess time: 4,037 s
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Percentage time preprocessing: 63.36%
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Effective parallelization: 0.75 (times faster than compiling all shaders on one thread). Compare with number of workers: 14
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                               FNiagaraShader (compiled   34 times, average 0.19 sec, max 0.60 sec, min 0.06 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                      FLandscapeGrassWeightPS (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                             FDebugViewModeVS (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                               FNiagaraShader - 100.00% of total time (compiled   34 times, average 0.19 sec, max 0.60 sec, min 0.06 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 0.00% of total time (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                      FLandscapeGrassWeightPS - 0.00% of total time (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                             FDebugViewModeVS - 0.00% of total time (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display:                                                 FLumenCardVS - 0.00% of total time (compiled    0 times, average 0.00 sec, max 0.00 sec, min 0.00 sec)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: === Material stats ===
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Materials Translated:    144
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Material Total Translate Time: 0.06 s
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Material Translation Only: 0.02 s (43%)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (3%)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: Material Cache Hits: 48 (33%)
+[2025.03.12-00.07.24:733][121]LogShaderCompilers: Display: ================================================
+[2025.03.12-00.08.08:087][251]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 6889.994629
+[2025.03.12-00.08.09:089][254]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.03.12-00.08.09:089][254]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 6890.662109, Update Interval: 310.342102
+[2025.03.12-00.09.01:134][410]LogHotReload: New module detected: UnrealEditor-MultiplayerShooter-0027.dll
+[2025.03.12-00.09.01:471][411]LogHotReload: Starting Hot-Reload from IDE
+[2025.03.12-00.09.01:537][411]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2025.03.12-00.09.01:616][411]LogClass: UPackage /Script/MultiplayerShooter Reload.
+[2025.03.12-00.09.01:616][411]LogClass: UClass BaseWeapon Reload.
+[2025.03.12-00.09.01:616][411]LogClass: UClass ProjectileWeapon Reload.
+[2025.03.12-00.09.01:616][411]LogClass: Could not find existing class BaseWeapon in package /Script/MultiplayerShooter for reload, assuming new or modified class
+[2025.03.12-00.09.01:616][411]LogClass: Function Multicast_StartFiring is new or belongs to a modified class.
+[2025.03.12-00.09.01:616][411]LogClass: Function OnRep_WeaponState is new or belongs to a modified class.
+[2025.03.12-00.09.01:616][411]LogClass: Function OnSphereEndOverlap is new or belongs to a modified class.
+[2025.03.12-00.09.01:616][411]LogClass: Function OnSphereOverlap is new or belongs to a modified class.
+[2025.03.12-00.09.01:626][411]LogClass: Could not find existing class ProjectileWeapon in package /Script/MultiplayerShooter for reload, assuming new or modified class
+[2025.03.12-00.09.01:638][411]Re-instancing BaseWeapon after reload.
+[2025.03.12-00.09.01:678][411]Re-instancing ProjectileWeapon after reload.
+[2025.03.12-00.09.01:892][411]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2025.03.12-00.09.01:915][411]Display: HotReload took  0.4s.
+[2025.03.12-00.09.01:915][411]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed, 8 classes unchanged, 2 enums unchanged, 1 scriptstruct unchanged, 9 functions remapped, 1 scriptstruct remapped
+[2025.03.12-00.09.04:629][434]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.03.12-00.09.04:634][434]LogUMGEditor: Disabling Slate Post Buffers for multi-window PIE session, currently not supported.
+[2025.03.12-00.09.04:634][434]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.03.12-00.09.04:634][434]PIE: Warning: Not enough login credentials to launch all PIE instances, change editor settings
+[2025.03.12-00.09.04:634][434]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Level1
+[2025.03.12-00.09.04:636][434]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001657s)
+[2025.03.12-00.09.04:636][434]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Level1.Level1 to /Game/Maps/UEDPIE_0_Level1.Level1 (0.001680s)
+[2025.03.12-00.09.04:697][434]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2025.03.12-00.09.04:703][434]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.12-00.09.04:704][434]LogPlayLevel: PIE: World Init took: (0.001314s)
+[2025.03.12-00.09.04:705][434]LogAudio: Display: Creating Audio Device:                 Id: 99, Scope: Unique, Realtime: True
+[2025.03.12-00.09.04:705][434]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.12-00.09.04:705][434]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.12-00.09.04:705][434]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.12-00.09.04:705][434]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.12-00.09.04:705][434]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.12-00.09.04:705][434]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.12-00.09.04:705][434]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.12-00.09.04:705][434]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.12-00.09.04:705][434]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.12-00.09.04:705][434]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.12-00.09.04:705][434]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.12-00.09.04:707][434]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.12-00.09.04:721][434]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.12-00.09.04:721][434]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.12-00.09.04:721][434]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.12-00.09.04:721][434]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.12-00.09.04:722][434]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=99
+[2025.03.12-00.09.04:722][434]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=99
+[2025.03.12-00.09.04:723][434]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=99
+[2025.03.12-00.09.04:723][434]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=99
+[2025.03.12-00.09.04:723][434]LogInit: FAudioDevice initialized with ID 99.
+[2025.03.12-00.09.04:723][434]LogAudio: Display: Audio Device (ID: 99) registered with world 'Level1'.
+[2025.03.12-00.09.04:723][434]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 99
+[2025.03.12-00.09.04:725][434]LogLoad: Game class is 'BP_Level1GameMode_C'
+[2025.03.12-00.09.04:726][434]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 60) at 2025.03.12-01.09.04
+[2025.03.12-00.09.04:728][434]LogOnline: OSS: Created online subsystem instance for: :Context_121
+[2025.03.12-00.09.04:728][434]LogWorld: Bringing up level for play took: 0.002622
+[2025.03.12-00.09.04:729][434]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.03.12-00.09.04:729][434]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.03.12-00.09.04:729][434]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.12-00.09.04:729][434]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.12-00.09.04:729][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.12-00.09.04:730][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.12-00.09.04:730][434]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.03.12-00.09.04:730][434]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.03.12-00.09.04:730][434]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.12-00.09.04:730][434]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78 IpNetDriver listening on port 17777
+[2025.03.12-00.09.04:730][434]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2025.03.12-00.09.04:730][434]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2025.03.12-00.09.04:730][434]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2025.03.12-00.09.04:731][434]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2025.03.12-00.09.04:732][434]PIE: Server logged in
+[2025.03.12-00.09.04:733][434]PIE: Play in editor total start time 0,099 seconds.
+[2025.03.12-00.09.04:733][434]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2025.03.12-00.09.04:734][434]LogPlayLevel: PIE: World Init took: (0.000936s)
+[2025.03.12-00.09.04:735][434]LogAudio: Display: Creating Audio Device:                 Id: 100, Scope: Unique, Realtime: True
+[2025.03.12-00.09.04:735][434]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.12-00.09.04:735][434]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.12-00.09.04:735][434]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.12-00.09.04:735][434]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.12-00.09.04:735][434]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.12-00.09.04:735][434]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.12-00.09.04:735][434]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.12-00.09.04:735][434]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.12-00.09.04:735][434]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.12-00.09.04:735][434]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.12-00.09.04:735][434]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.12-00.09.04:736][434]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.12-00.09.04:749][434]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.12-00.09.04:749][434]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.12-00.09.04:749][434]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.12-00.09.04:749][434]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.12-00.09.04:750][434]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=100
+[2025.03.12-00.09.04:750][434]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=100
+[2025.03.12-00.09.04:752][434]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=100
+[2025.03.12-00.09.04:752][434]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=100
+[2025.03.12-00.09.04:752][434]LogInit: FAudioDevice initialized with ID 100.
+[2025.03.12-00.09.04:752][434]LogAudio: Display: Audio Device (ID: 100) registered with world 'Untitled'.
+[2025.03.12-00.09.04:752][434]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 100
+[2025.03.12-00.09.04:777][434]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.12-00.09.04:777][434]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/Maps/StartupMap"
+[2025.03.12-00.09.04:777][434]LogNet: Browse: 127.0.0.1:17777/Game/Maps/StartupMap
+[2025.03.12-00.09.04:777][434]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.12-00.09.04:777][434]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.12-00.09.04:777][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.12-00.09.04:778][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.12-00.09.04:778][434]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2025.03.12-00.09.04:778][434]LogNet: Created socket for bind address: 0.0.0.0:0
+[2025.03.12-00.09.04:778][434]LogNet: IpConnection_104 setting maximum channels to: 32767
+[2025.03.12-00.09.04:778][434]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.12-00.09.04:778][434]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 7
+[2025.03.12-00.09.04:778][434]LogNet: Game client on port 17777, rate 100000
+[2025.03.12-00.09.04:781][434]PIE: Client logged in
+[2025.03.12-00.09.04:783][434]PIE: Play in editor total start time 0,149 seconds.
+[2025.03.12-00.09.04:783][434]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2025.03.12-00.09.04:784][434]LogPlayLevel: PIE: World Init took: (0.001004s)
+[2025.03.12-00.09.04:785][434]LogAudio: Display: Creating Audio Device:                 Id: 101, Scope: Unique, Realtime: True
+[2025.03.12-00.09.04:785][434]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.12-00.09.04:785][434]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.12-00.09.04:785][434]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.12-00.09.04:785][434]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.12-00.09.04:785][434]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.12-00.09.04:785][434]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.12-00.09.04:785][434]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.12-00.09.04:785][434]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.12-00.09.04:785][434]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.12-00.09.04:785][434]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.12-00.09.04:785][434]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.12-00.09.04:786][434]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.12-00.09.04:798][434]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.12-00.09.04:799][434]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.12-00.09.04:799][434]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.12-00.09.04:799][434]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.12-00.09.04:799][434]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=101
+[2025.03.12-00.09.04:799][434]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=101
+[2025.03.12-00.09.04:801][434]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=101
+[2025.03.12-00.09.04:801][434]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=101
+[2025.03.12-00.09.04:801][434]LogInit: FAudioDevice initialized with ID 101.
+[2025.03.12-00.09.04:801][434]LogAudio: Display: Audio Device (ID: 101) registered with world 'Untitled'.
+[2025.03.12-00.09.04:801][434]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 101
+[2025.03.12-00.09.04:825][434]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.12-00.09.04:825][434]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/Maps/StartupMap"
+[2025.03.12-00.09.04:825][434]LogNet: Browse: 127.0.0.1:17777/Game/Maps/StartupMap
+[2025.03.12-00.09.04:826][434]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.12-00.09.04:826][434]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.12-00.09.04:826][434]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.12-00.09.04:826][434]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2025.03.12-00.09.04:826][434]LogNet: Created socket for bind address: 0.0.0.0:0
+[2025.03.12-00.09.04:826][434]LogNet: IpConnection_105 setting maximum channels to: 32767
+[2025.03.12-00.09.04:826][434]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.12-00.09.04:826][434]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 0
+[2025.03.12-00.09.04:827][434]LogNet: Game client on port 17777, rate 100000
+[2025.03.12-00.09.04:829][434]PIE: Client logged in
+[2025.03.12-00.09.04:831][434]PIE: Play in editor total start time 0,197 seconds.
+[2025.03.12-00.09.05:339][460]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.05:804][488]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62304
+[2025.03.12-00.09.05:804][488]LogHandshake: SendConnectChallenge. Timestamp: 1.196695, Cookie: 217235237083160144106118050031174111232086152071145059104058
+[2025.03.12-00.09.05:805][488]LogHandshake: Cached server SessionID: 0
+[2025.03.12-00.09.05:805][488]LogHandshake: SendChallengeResponse. Timestamp: 1.196695, Cookie: 217235237083160144106118050031174111232086152071145059104058
+[2025.03.12-00.09.05:821][489]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62304
+[2025.03.12-00.09.05:821][489]LogHandshake: SendChallengeAck. InCookie: 217235237083160144106118050031174111232086152071145059104058
+[2025.03.12-00.09.05:821][489]LogNet: Server accepting post-challenge connection from: 127.0.0.1:62304
+[2025.03.12-00.09.05:821][489]LogNet: IpConnection_106 setting maximum channels to: 32767
+[2025.03.12-00.09.05:821][489]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.12-00.09.05:821][489]LogNet: NotifyAcceptedConnection: Name: Level1, TimeStamp: 03/12/25 01:09:05, [UNetConnection] RemoteAddr: 127.0.0.1:62304, Name: IpConnection_106, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.12-00.09.05:821][489]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:62304, Name: IpConnection_106, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.12-00.09.05:822][489]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_104, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_79, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.12-00.09.05:837][490]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_Level1.Level1: Accepted
+[2025.03.12-00.09.05:837][490]LogNet: Remote platform little endian=1
+[2025.03.12-00.09.05:837][490]LogNet: This platform little endian=1
+[2025.03.12-00.09.05:840][490]LogOnline: OSS: Created online subsystem instance for: :Context_122
+[2025.03.12-00.09.05:853][491]LogNet: Login request: ?Name=DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF userId: NULL:DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF platform: NULL
+[2025.03.12-00.09.05:854][491]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62305
+[2025.03.12-00.09.05:854][491]LogHandshake: SendConnectChallenge. Timestamp: 1.246696, Cookie: 244246050024146098209142207053068166142073245249148224036025
+[2025.03.12-00.09.05:854][491]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_Level1, Game: /Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C)
+[2025.03.12-00.09.05:854][491]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/Level1?game=/Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C
+[2025.03.12-00.09.05:854][491]LogWorld: BeginTearingDown for /Temp/Untitled_53
+[2025.03.12-00.09.05:855][491]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.03.12-00.09.05:855][491]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.12-00.09.05:888][491]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.03.12-00.09.05:899][491]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2025.03.12-00.09.05:910][491]LogAudio: Display: Audio Device (ID: 100) registered with world 'Level1'.
+[2025.03.12-00.09.05:910][491]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.12-00.09.05:911][491]LogPlayLevel: PIE: World Init took: (0.000944s)
+[2025.03.12-00.09.05:911][491]LogWorld: Bringing World /Game/Maps/UEDPIE_1_Level1.Level1 up for play (max tick rate 60) at 2025.03.12-01.09.05
+[2025.03.12-00.09.05:911][491]LogWorld: Bringing up level for play took: 0.000645
+[2025.03.12-00.09.05:912][491]LogLoad: Took 0.056899 seconds to LoadMap(/Game/Maps/Level1)
+[2025.03.12-00.09.05:912][491]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/Level1
+[2025.03.12-00.09.05:912][491]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2025.03.12-00.09.05:912][491]LogHandshake: Cached server SessionID: 0
+[2025.03.12-00.09.05:912][491]LogHandshake: SendChallengeResponse. Timestamp: 1.246696, Cookie: 244246050024146098209142207053068166142073245249148224036025
+[2025.03.12-00.09.05:922][492]LogNet: Client netspeed is 100000
+[2025.03.12-00.09.05:922][492]LogNet: Join request: /Game/Maps/StartupMap?Name=DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF?SplitscreenCount=1
+[2025.03.12-00.09.05:925][492]LogNet: Join succeeded: DESKTOP-NVQ7O0J-AAD7
+[2025.03.12-00.09.05:925][492]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:62305
+[2025.03.12-00.09.05:925][492]LogHandshake: SendChallengeAck. InCookie: 244246050024146098209142207053068166142073245249148224036025
+[2025.03.12-00.09.05:925][492]LogNet: Server accepting post-challenge connection from: 127.0.0.1:62305
+[2025.03.12-00.09.05:925][492]LogNet: IpConnection_107 setting maximum channels to: 32767
+[2025.03.12-00.09.05:925][492]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.12-00.09.05:925][492]LogNet: NotifyAcceptedConnection: Name: Level1, TimeStamp: 03/12/25 01:09:05, [UNetConnection] RemoteAddr: 127.0.0.1:62305, Name: IpConnection_107, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.12-00.09.05:925][492]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:62305, Name: IpConnection_107, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.12-00.09.05:925][492]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.05:925][492]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.05:928][492]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_105, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_80, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.12-00.09.05:979][493]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_Level1.Level1: Accepted
+[2025.03.12-00.09.05:979][493]LogNet: Remote platform little endian=1
+[2025.03.12-00.09.05:979][493]LogNet: This platform little endian=1
+[2025.03.12-00.09.05:985][493]LogNetPackageMap: Warning: Forged object: got BP_AssaultRifle_C /Game/Maps/UEDPIE_1_Level1.Level1:PersistentLevel.BP_AssaultRifle_C_0, expecting Class /Engine/Transient.HOTRELOAD_BaseWeapon_3
+[2025.03.12-00.09.05:987][493]LogOnline: OSS: Created online subsystem instance for: :Context_123
+[2025.03.12-00.09.06:004][494]LogNet: Login request: ?Name=DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98 userId: NULL:DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98 platform: NULL
+[2025.03.12-00.09.06:007][494]LogNetPackageMap: Warning: Forged object: got BP_AssaultRifle_C /Game/Maps/UEDPIE_1_Level1.Level1:PersistentLevel.BP_AssaultRifle_C_2, expecting Class /Engine/Transient.HOTRELOAD_BaseWeapon_3
+[2025.03.12-00.09.06:007][494]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_Level1, Game: /Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C)
+[2025.03.12-00.09.06:007][494]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/Level1?game=/Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C
+[2025.03.12-00.09.06:007][494]LogWorld: BeginTearingDown for /Temp/Untitled_54
+[2025.03.12-00.09.06:007][494]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.03.12-00.09.06:007][494]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.12-00.09.06:037][494]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.03.12-00.09.06:038][494]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2025.03.12-00.09.06:045][494]LogAudio: Display: Audio Device (ID: 101) registered with world 'Level1'.
+[2025.03.12-00.09.06:045][494]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.12-00.09.06:046][494]LogPlayLevel: PIE: World Init took: (0.001056s)
+[2025.03.12-00.09.06:047][494]LogWorld: Bringing World /Game/Maps/UEDPIE_2_Level1.Level1 up for play (max tick rate 60) at 2025.03.12-01.09.06
+[2025.03.12-00.09.06:047][494]LogWorld: Bringing up level for play took: 0.000645
+[2025.03.12-00.09.06:047][494]LogLoad: Took 0.040067 seconds to LoadMap(/Game/Maps/Level1)
+[2025.03.12-00.09.06:047][494]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/Level1
+[2025.03.12-00.09.06:047][494]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2025.03.12-00.09.06:053][495]LogNet: Client netspeed is 100000
+[2025.03.12-00.09.06:054][495]LogNet: Join request: /Game/Maps/StartupMap?Name=DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98?SplitscreenCount=1
+[2025.03.12-00.09.06:056][495]LogNet: Join succeeded: DESKTOP-NVQ7O0J-CE01
+[2025.03.12-00.09.06:059][495]LogNetPackageMap: Warning: Forged object: got BP_AssaultRifle_C /Game/Maps/UEDPIE_1_Level1.Level1:PersistentLevel.BP_AssaultRifle_C_4, expecting Class /Engine/Transient.HOTRELOAD_BaseWeapon_3
+[2025.03.12-00.09.06:062][495]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.06:120][496]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.06:120][496]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.06:120][496]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.06:121][496]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.06:124][496]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.06:125][496]LogNetPackageMap: Warning: Forged object: got BP_AssaultRifle_C /Game/Maps/UEDPIE_2_Level1.Level1:PersistentLevel.BP_AssaultRifle_C_0, expecting Class /Engine/Transient.HOTRELOAD_BaseWeapon_3
+[2025.03.12-00.09.06:129][496]LogNetPackageMap: Warning: Forged object: got BP_AssaultRifle_C /Game/Maps/UEDPIE_2_Level1.Level1:PersistentLevel.BP_AssaultRifle_C_0, expecting Class /Engine/Transient.HOTRELOAD_BaseWeapon_3
+[2025.03.12-00.09.06:148][497]LogNetPackageMap: Warning: Forged object: got BP_AssaultRifle_C /Game/Maps/UEDPIE_2_Level1.Level1:PersistentLevel.BP_AssaultRifle_C_4, expecting Class /Engine/Transient.HOTRELOAD_BaseWeapon_3
+[2025.03.12-00.09.06:148][497]LogNetPackageMap: Warning: Forged object: got BP_AssaultRifle_C /Game/Maps/UEDPIE_2_Level1.Level1:PersistentLevel.BP_AssaultRifle_C_2, expecting Class /Engine/Transient.HOTRELOAD_BaseWeapon_3
+[2025.03.12-00.09.06:169][498]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.06:535][520]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.07:793][595]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.08:027][609]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.08:027][609]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:027][609]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:030][609]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:030][609]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:032][609]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:032][609]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:179][618]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.08:179][618]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:179][618]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:180][618]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:181][618]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:183][618]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:183][618]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:335][627]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.08:335][627]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:336][627]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:337][627]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:337][627]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:339][627]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:339][627]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:492][636]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.08:492][636]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:492][636]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:493][636]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:493][636]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:495][636]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:495][636]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:648][645]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.08:648][645]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:648][645]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:649][645]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:649][645]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:651][645]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:651][645]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:801][654]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.08:802][654]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:802][654]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:803][654]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:803][654]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:805][654]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:805][654]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:959][663]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.08:959][663]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:959][663]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:960][663]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:960][663]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.08:962][663]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.08:962][663]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:114][672]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.09:115][672]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:115][672]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:116][672]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:116][672]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:118][672]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:118][672]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:271][681]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.09:271][681]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:271][681]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:272][681]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:272][681]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:274][681]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:274][681]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:423][690]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.09:423][690]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:423][690]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:424][690]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:424][690]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:427][690]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:427][690]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:579][699]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.09:579][699]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:579][699]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:580][699]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:580][699]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:582][699]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:582][699]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:739][708]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.09:739][708]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:739][708]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:740][708]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:740][708]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:742][708]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:742][708]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:895][717]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.09:895][717]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:895][717]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:896][717]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:896][717]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.09:898][717]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.09:898][717]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:048][726]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.10:048][726]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:048][726]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:050][726]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:050][726]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:052][726]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:052][726]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:204][735]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.10:204][735]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:204][735]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:205][735]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:206][735]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:207][735]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:208][735]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:361][744]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.10:362][744]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:362][744]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:363][744]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:363][744]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.10:365][744]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.10:365][744]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.11:303][800]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.11:303][800]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.11:303][800]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.11:305][800]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.11:306][800]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.11:308][800]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.11:308][800]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.11:721][825]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.11:721][825]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.11:721][825]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.11:723][825]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.11:723][825]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.11:725][825]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.11:725][825]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.12:137][850]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.12:137][850]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.12:137][850]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.12:139][850]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.12:139][850]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.12:141][850]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.12:141][850]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.12:603][878]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.12:604][878]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.12:604][878]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.12:605][878]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.12:606][878]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.12:607][878]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.12:607][878]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.12:756][887]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.13:456][929]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.13:655][941]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.13:655][941]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.13:655][941]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.13:657][941]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.13:657][941]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.13:659][941]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.13:659][941]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.14:086][967]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.14:596][997]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.14:744][  6]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.14:744][  6]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.14:744][  6]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.14:746][  6]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.14:746][  6]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.14:748][  6]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.14:748][  6]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.15:095][ 27]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.15:712][ 64]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.16:143][ 90]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.16:144][ 90]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:144][ 90]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:146][ 90]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:146][ 90]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:148][ 90]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:148][ 90]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:293][ 99]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.16:293][ 99]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:293][ 99]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:294][ 99]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:294][ 99]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:296][ 99]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:296][ 99]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:444][108]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.16:444][108]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:444][108]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:445][108]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:445][108]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:447][108]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:447][108]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:593][117]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.16:593][117]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:593][117]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:595][117]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:595][117]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:596][117]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:596][117]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:743][126]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.16:744][126]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:744][126]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:745][126]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:745][126]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:747][126]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:747][126]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:893][135]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.16:893][135]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:893][135]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:895][135]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:895][135]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.16:897][135]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.16:897][135]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:043][144]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.17:043][144]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:043][144]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:045][144]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:045][144]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:047][144]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:047][144]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:195][153]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.17:196][153]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:196][153]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:197][153]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:197][153]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:199][153]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:199][153]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:351][162]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.17:351][162]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:351][162]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:352][162]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:352][162]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:354][162]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:354][162]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:503][171]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.17:504][171]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:504][171]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:505][171]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:505][171]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:507][171]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:507][171]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:660][180]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.17:660][180]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:660][180]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:662][180]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:662][180]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:664][180]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:664][180]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:819][189]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.17:819][189]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:819][189]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:820][189]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:820][189]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:822][189]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:822][189]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:977][198]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.17:977][198]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:977][198]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:979][198]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:979][198]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.17:981][198]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.17:981][198]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:132][207]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.18:132][207]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:132][207]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:133][207]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:133][207]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:135][207]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:135][207]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:291][216]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.18:291][216]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:291][216]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:292][216]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:292][216]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:294][216]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:294][216]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:448][225]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.18:448][225]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:448][225]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:449][225]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:449][225]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:452][225]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:452][225]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:606][234]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.18:606][234]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:606][234]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:608][234]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:608][234]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:610][234]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:610][234]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:763][243]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.18:763][243]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:763][243]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:765][243]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:765][243]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:767][243]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:767][243]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:920][252]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.18:920][252]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:920][252]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:921][252]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:921][252]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.18:923][252]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.18:923][252]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:079][261]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.19:079][261]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:079][261]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:081][261]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:081][261]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:083][261]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:083][261]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:237][270]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.19:237][270]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:237][270]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:239][270]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:239][270]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:241][270]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:241][270]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:393][279]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.19:393][279]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:393][279]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:394][279]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:394][279]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:396][279]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.19:396][279]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.19:651][294]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.20:108][321]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.20:250][328]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.20:250][328]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:250][328]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:252][328]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:252][328]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:255][328]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:255][328]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:399][337]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.20:399][337]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:399][337]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:400][337]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:400][337]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:402][337]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:402][337]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:557][346]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.20:557][346]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:557][346]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:558][346]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:559][346]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:561][346]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:561][346]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:714][355]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.20:714][355]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:714][355]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:716][355]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:716][355]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:718][355]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.20:718][355]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.20:888][365]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.21:277][388]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.21:478][400]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.21:478][400]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:478][400]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:481][400]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:481][400]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:483][400]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:483][400]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:631][409]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.21:631][409]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:631][409]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:632][409]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:632][409]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:635][409]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:635][409]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:788][418]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.21:788][418]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:788][418]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:789][418]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:789][418]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.21:791][418]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.21:791][418]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.22:018][432]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.22:688][472]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.22:772][477]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.22:773][477]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.22:773][477]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.22:775][477]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.22:775][477]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.22:777][477]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.22:777][477]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.22:922][486]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.22:922][486]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.22:922][486]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.22:924][486]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.22:924][486]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.22:926][486]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.22:926][486]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.23:073][495]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.23:073][495]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.23:073][495]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.23:074][495]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.23:074][495]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.23:076][495]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.23:076][495]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.23:224][504]LogTemp: Display: Server bLocalFIreButtonPressed true
+[2025.03.12-00.09.23:224][504]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.23:224][504]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.23:225][504]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.23:225][504]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.23:227][504]LogTemp: Warning: MuzzleFlash stopped
+[2025.03.12-00.09.23:228][504]LogTemp: Warning: MuzzleFlash spawning
+[2025.03.12-00.09.23:415][516]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.12-00.09.24:786][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.12-00.09.24:786][534]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_2_Level1
+[2025.03.12-00.09.24:786][534]LogSlate: Window 'MultiplayerShooter Preview [NetMode: Client 2]  (64-bit/PC D3D SM6)' being destroyed
+[2025.03.12-00.09.24:791][534]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.12-00.09.24:792][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.12-00.09.24:793][534]LogNet: World NetDriver shutdown IpNetDriver_80 [GameNetDriver]
+[2025.03.12-00.09.24:793][534]LogNet: DestroyNamedNetDriver IpNetDriver_80 [GameNetDriver]
+[2025.03.12-00.09.24:793][534]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_105, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_80, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98, Channels: 20, Time: 2025.03.12-00.09.24
+[2025.03.12-00.09.24:793][534]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_105, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_80, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98
+[2025.03.12-00.09.24:793][534]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_80 shut down
+[2025.03.12-00.09.24:797][534]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_Level1
+[2025.03.12-00.09.24:797][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.12-00.09.24:797][534]LogSlate: Window 'MultiplayerShooter Preview [NetMode: Client 1]  (64-bit/PC D3D SM6)' being destroyed
+[2025.03.12-00.09.24:801][534]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.12-00.09.24:802][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.12-00.09.24:803][534]LogNet: World NetDriver shutdown IpNetDriver_79 [GameNetDriver]
+[2025.03.12-00.09.24:803][534]LogNet: DestroyNamedNetDriver IpNetDriver_79 [GameNetDriver]
+[2025.03.12-00.09.24:803][534]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_104, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_79, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF, Channels: 20, Time: 2025.03.12-00.09.24
+[2025.03.12-00.09.24:804][534]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_104, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_79, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF
+[2025.03.12-00.09.24:804][534]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_79 shut down
+[2025.03.12-00.09.24:806][534]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Level1
+[2025.03.12-00.09.24:807][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.12-00.09.24:807][534]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.12-00.09.24:808][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.12-00.09.24:809][534]LogNet: World NetDriver shutdown IpNetDriver_78 [GameNetDriver]
+[2025.03.12-00.09.24:809][534]LogNet: DestroyNamedNetDriver IpNetDriver_78 [GameNetDriver]
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::SendCloseReason:
+[2025.03.12-00.09.24:809][534]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::SendCloseReason:
+[2025.03.12-00.09.24:809][534]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:62305, Name: IpConnection_107, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:62305, Name: IpConnection_107, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98, Channels: 21, Time: 2025.03.12-00.09.24
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::SendCloseReason:
+[2025.03.12-00.09.24:809][534]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2025.03.12-00.09.24:809][534]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:62305, Name: IpConnection_107, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98
+[2025.03.12-00.09.24:809][534]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:62305 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:62305, Name: IpConnection_107, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-CE01EB1F46C119A177A3A7A6D1BC2A98
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:62304, Name: IpConnection_106, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:62304, Name: IpConnection_106, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF, Channels: 21, Time: 2025.03.12-00.09.24
+[2025.03.12-00.09.24:809][534]LogNet: UNetConnection::SendCloseReason:
+[2025.03.12-00.09.24:809][534]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2025.03.12-00.09.24:809][534]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:62304, Name: IpConnection_106, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF
+[2025.03.12-00.09.24:809][534]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:62304 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:62304, Name: IpConnection_106, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-AAD716FA4C731C5D69E072B1A81ECDBF
+[2025.03.12-00.09.24:809][534]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_78 shut down
+[2025.03.12-00.09.24:812][534]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.03.12-00.09.24:815][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.12-00.09.24:831][534]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.03.12-00.09.24:832][534]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 99
+[2025.03.12-00.09.24:832][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=99
+[2025.03.12-00.09.24:834][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=99
+[2025.03.12-00.09.24:839][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.12-00.09.24:839][534]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 101
+[2025.03.12-00.09.24:839][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=101
+[2025.03.12-00.09.24:840][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=101
+[2025.03.12-00.09.24:843][534]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 100
+[2025.03.12-00.09.24:843][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=100
+[2025.03.12-00.09.24:844][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=100
+[2025.03.12-00.09.24:851][534]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2025.03.12-00.09.24:941][535]LogPlayLevel: Display: Destroying online subsystem :Context_123
+[2025.03.12-00.09.24:941][535]LogPlayLevel: Display: Destroying online subsystem :Context_122
+[2025.03.12-00.09.24:941][535]LogPlayLevel: Display: Destroying online subsystem :Context_121
+[2025.03.12-00.09.29:118][714]LogSlate: Window 'Message Log' being destroyed
+[2025.03.12-00.09.29:120][714]LogSlate: Window 'Message Log' being destroyed
+[2025.03.12-00.09.31:735][733]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.03.12-00.09.31:763][733]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Level1" FILE="D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Content/Maps/Level1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2025.03.12-00.09.31:808][733]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2025.03.12-00.09.31:815][733]LogSavePackage: Moving output files for package: /Game/Maps/Level1
+[2025.03.12-00.09.31:816][733]LogSavePackage: Moving 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Saved/Level1E21C3A8342805176C1C2CDA9612BD3E8.tmp' to 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Content/Maps/Level1.umap'
+[2025.03.12-00.09.31:835][733]LogFileHelpers: Saving map 'Level1' took 0.072
+[2025.03.12-00.09.31:842][733]LogFileHelpers: InternalPromptForCheckoutAndSave took 106.474 ms (total: 1.36 sec)
+[2025.03.12-00.09.31:879][733]LogContentValidation: Display: Starting to validate 1 assets
+[2025.03.12-00.09.31:879][733]LogContentValidation: Enabled validators:
+[2025.03.12-00.09.31:879][733]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.03.12-00.09.31:879][733]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.03.12-00.09.31:879][733]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.03.12-00.09.31:879][733]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.03.12-00.09.31:880][733]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.03.12-00.09.31:880][733]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.03.12-00.09.31:880][733]AssetCheck: /Game/Maps/Level1 Validating asset
+[2025.03.12-00.09.36:629][ 17]LogSlate: Window 'Message Log' being destroyed
+[2025.03.12-00.09.36:633][ 17]LogSlate: Window 'Message Log' being destroyed

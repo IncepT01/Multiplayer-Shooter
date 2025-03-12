@@ -223,14 +223,7 @@ void UCombatComponent::FireButtonPressed(bool bPressed)
 {
 	bFireButtonPressed = bPressed;
 	
-	if (bFireButtonPressed)
-	{
-		Fire();
-	}
-	else
-	{
-		//Server_Fire(bFireButtonPressed, HitTarget);	
-	}
+	Fire();
 	
 }
 
