@@ -36,6 +36,7 @@ void UMyAnimInstance::NativeUpdateAnimation(float DeltaTime)
 	EquippedWeapon = MainCharacter->GetEquippedWeapon();
 	TurningInPlace = MainCharacter->GetTurningInPlace();
 	bRotateRootBone = MainCharacter->ShouldRotateRootBone();
+	bElimmed = MainCharacter->IsElimmed();
 
 	// Offset Yaw for Strafing
 	FRotator AimRotation = MainCharacter->GetBaseAimRotation();

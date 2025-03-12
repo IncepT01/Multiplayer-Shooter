@@ -13,12 +13,14 @@
 #include "Components/CapsuleComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "MultiplayerShooter/MultiplayerShooter.h"
-#include "MultiplayerShooter//PlayerController/MyPlayerController.h"
+#include "MultiplayerShooter/PlayerController/MyPlayerController.h"
+#include "MultiplayerShooter/GameMode/MainGameMode.h"
+#include "TimerManager.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -30,7 +32,7 @@ AMainCharacter::AMainCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 	bUseControllerRotationYaw = false;
-	
+
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 
 	OverheadWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("OverheadWidget"));
@@ -56,7 +58,7 @@ AMainCharacter::AMainCharacter()
 	GetMesh()->SetCollisionObjectType(ECC_SkeletalMesh);
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Block);
-	GetCharacterMovement()->RotationRate = FRotator(0.f,0.f,720.f);
+	GetCharacterMovement()->RotationRate = FRotator(0.f, 0.f, 720.f);
 
 	TurningInPlace = ETurningInPlace::ETIP_NotTurning;
 	SetNetUpdateFrequency(66.f);
@@ -82,7 +84,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMainCharacter::FireButtonPressed);
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AMainCharacter::FireButtonReleased);
-	
+
 	GetCharacterMovement()->NavAgentProps.bCanCrouch = true;
 }
 
@@ -97,13 +99,15 @@ void AMainCharacter::BeginPlay()
 	{
 		OnTakeAnyDamage.AddDynamic(this, &AMainCharacter::ReceiveDamage);
 	}
-	
-	if (StarterWeapon && GetWorld()) // Check if class and world exist
+
+	//Spawn Starter weapon
+	if (StarterWeapon && GetWorld())
 	{
 		FVector SpawnLocation(0.0f, 0.0f, 0.0f);
 		FRotator SpawnRotation(0.0f, 0.0f, 0.0f);
 
-		if (HasAuthority()) {
+		if (HasAuthority())
+		{
 			OverlappingWeapon = GetWorld()->SpawnActor<ABaseWeapon>(StarterWeapon, SpawnLocation, SpawnRotation);
 
 			if (OverlappingWeapon)
@@ -115,8 +119,6 @@ void AMainCharacter::BeginPlay()
 				UE_LOG(LogTemp, Error, TEXT("Failed to spawn weapon!"));
 			}
 		}
-
-		
 	}
 }
 
@@ -175,7 +177,7 @@ void AMainCharacter::Tick(float DeltaTime)
 		}
 		CalculateAO_Pitch();
 	}
-	
+
 	HideCameraIfCharacterClose();
 }
 
@@ -232,11 +234,14 @@ void AMainCharacter::EquipButtonPressed()
 	}
 }
 
-void AMainCharacter::CrouchButtonPressed() {
-	if (bIsCrouched) {
+void AMainCharacter::CrouchButtonPressed()
+{
+	if (bIsCrouched)
+	{
 		UnCrouch();
 	}
-	else {
+	else
+	{
 		Crouch();
 	}
 }
@@ -289,7 +294,7 @@ void AMainCharacter::AimOffset(float DeltaTime)
 	if (Combat && Combat->EquippedWeapon == nullptr) return;
 	float Speed = CalculateSpeed();
 	bool bIsInAir = GetCharacterMovement()->IsFalling();
- 
+
 	if (Speed == 0.f && !bIsInAir) // standing still, not jumping
 	{
 		bRotateRootBone = true;
@@ -311,7 +316,7 @@ void AMainCharacter::AimOffset(float DeltaTime)
 		bUseControllerRotationYaw = true;
 		TurningInPlace = ETurningInPlace::ETIP_NotTurning;
 	}
- 
+
 	CalculateAO_Pitch();
 }
 
@@ -382,7 +387,7 @@ void AMainCharacter::FireButtonPressed()
 		Combat->FireButtonPressed(true);
 	}
 }
- 
+
 void AMainCharacter::FireButtonReleased()
 {
 	if (Combat)
@@ -392,12 +397,60 @@ void AMainCharacter::FireButtonReleased()
 }
 
 void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType,
-	class AController* InstigatorController, AActor* DamageCauser)
+                                   class AController* InstigatorController, AActor* DamageCauser)
 {
 	Health = FMath::Clamp(Health - Damage, 0.f, MaxHealth);
 	UpdateHUDHealth();
-	PlayHitReactMontage();
+	//This call here does not update on clients
+	//PlayHitReactMontage();
+
+	if (Health <= 0.f)
+	{
+		AMainGameMode* MainGameMode = GetWorld()->GetAuthGameMode<AMainGameMode>();
+		if (MainGameMode)
+		{
+			MyPlayerController = MyPlayerController == nullptr
+				                     ? Cast<AMyPlayerController>(Controller)
+				                     : MyPlayerController;
+			AMyPlayerController* AttackerController = Cast<AMyPlayerController>(InstigatorController);
+			MainGameMode->PlayerEliminated(this, MyPlayerController, AttackerController);
+		}
+	}
 }
+
+///Elimination
+
+void AMainCharacter::Elim()
+{
+	if (HasAuthority())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Calling Elim from the server"));
+	}
+	Multicast_Elim();
+	GetWorldTimerManager().SetTimer(
+		ElimTimer,
+		this,
+		&AMainCharacter::ElimTimerFinished,
+		ElimDelay
+	);
+}
+
+void AMainCharacter::Multicast_Elim_Implementation()
+{
+	bElimmed = true;
+	PlayElimMontage();
+}
+
+void AMainCharacter::ElimTimerFinished()
+{
+	AMainGameMode* MainGameMode = GetWorld()->GetAuthGameMode<AMainGameMode>();
+	if (MainGameMode)
+	{
+		MainGameMode->RequestRespawn(this, Controller);
+	}
+}
+
+///End elimination
 
 FVector AMainCharacter::GetHitTarget() const
 {
@@ -430,7 +483,7 @@ void AMainCharacter::HideCameraIfCharacterClose()
 void AMainCharacter::PlayFireMontage(bool bAiming)
 {
 	if (Combat == nullptr || Combat->EquippedWeapon == nullptr) return;
- 
+
 	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 	if (AnimInstance && FireWeaponMontage)
 	{
@@ -452,10 +505,23 @@ void AMainCharacter::PlayHitReactMontage()
 			AnimInstance->Montage_Play(HitReactMontage);
 			FName SectionName = ("FromFront");
 			AnimInstance->Montage_JumpToSection(SectionName);
-			UE_LOG(LogTemp, Warning, TEXT("Playing hit Montage"))
+			//UE_LOG(LogTemp, Warning, TEXT("Playing hit react Montage"))
 		}
 	}
 }
+
+
+void AMainCharacter::PlayElimMontage()
+{
+
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance && ElimMontage)
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Montage start!"))
+		AnimInstance->Montage_Play(ElimMontage);
+	}
+}
+
 
 void AMainCharacter::SimProxiesTurn()
 {
@@ -467,13 +533,13 @@ void AMainCharacter::SimProxiesTurn()
 		TurningInPlace = ETurningInPlace::ETIP_NotTurning;
 		return;
 	}
- 
+
 	ProxyRotationLastFrame = ProxyRotation;
 	ProxyRotation = GetActorRotation();
 	ProxyYaw = UKismetMathLibrary::NormalizedDeltaRotator(ProxyRotation, ProxyRotationLastFrame).Yaw;
- 
+
 	//UE_LOG(LogTemp, Warning, TEXT("ProxyYaw: %f"), ProxyYaw);
- 
+
 	if (FMath::Abs(ProxyYaw) > TurnThreshold)
 	{
 		if (ProxyYaw > TurnThreshold)
@@ -491,7 +557,6 @@ void AMainCharacter::SimProxiesTurn()
 		return;
 	}
 	TurningInPlace = ETurningInPlace::ETIP_NotTurning;
- 
 }
 
 void AMainCharacter::UpdateHUDHealth()
@@ -513,13 +578,14 @@ void AMainCharacter::OnRep_ReplicatedMovement()
 void AMainCharacter::OnRep_Health()
 {
 	UpdateHUDHealth();
-	PlayHitReactMontage();
+	if (Health > 0)
+	{
+		PlayHitReactMontage();
+	}
+	//PlayHitReactMontage();
 }
 
 void AMainCharacter::MulticastFire_Implementation()
 {
 	PlayFireMontage(IsAiming());
 }
-
-
-

@@ -121,12 +121,12 @@ void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 		MuzzleFlashComponent->Deactivate();  // Deactivate the Niagara system
 		MuzzleFlashComponent->DestroyComponent();  // Destroy the component
 		MuzzleFlashComponent = nullptr;
-		UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash stopped"));
+		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash stopped"));
 	}
 	if (MuzzleFlashNiagaraSystem && WeaponMesh)
 	{
 		// Spawn the Niagara particle system at the muzzle socket and set it to loop
-		UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
+		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
 		MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
 			MuzzleFlashNiagaraSystem,
 			WeaponMesh,

@@ -114,6 +114,12 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\Projectile.h">
       <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\ProjectileBullet.cpp">
+      <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\ProjectileBullet.h">
+      <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\ProjectileWeapon.cpp">
       <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
     </ClCompile>
@@ -129,9 +135,21 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\GameMode\LobbyGameMode.h">
       <Filter>Source\MultiplayerShooter\GameMode</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\GameMode\MainGameMode.cpp">
+      <Filter>Source\MultiplayerShooter\GameMode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\GameMode\MainGameMode.h">
+      <Filter>Source\MultiplayerShooter\GameMode</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\HUD">
       <UniqueIdentifier>{2B2B6DE5-F8FA-3BA0-9AF5-5E8D70C4516A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\CharacterOverlay.cpp">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\CharacterOverlay.h">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\MainHUD.cpp">
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>

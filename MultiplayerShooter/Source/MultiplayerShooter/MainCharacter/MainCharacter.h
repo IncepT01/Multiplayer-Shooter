@@ -32,6 +32,11 @@ public:
 
 	virtual void OnRep_ReplicatedMovement() override;
 
+	void Elim();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void Multicast_Elim();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -78,6 +83,8 @@ protected:
 
 	void PlayFireMontage(bool bAiming);
 	void PlayHitReactMontage();
+	
+	void PlayElimMontage();
 
 	bool bRotateRootBone;
 	float TurnThreshold = 0.5f;
@@ -86,6 +93,15 @@ protected:
 	float ProxyYaw;
 	float TimeSinceLastMovementReplication;
 	float CalculateSpeed();
+
+	bool bElimmed = false;
+
+	FTimerHandle ElimTimer;
+ 
+	UPROPERTY(EditDefaultsOnly)
+	float ElimDelay = 3.f;
+ 
+	void ElimTimerFinished();
 
 	/**
 	 * Player health
@@ -120,6 +136,9 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = Combat)
 	UAnimMontage* HitReactMontage;
+	
+	UPROPERTY(EditAnywhere, Category = Combat)
+	UAnimMontage* ElimMontage;
 
 	FVector GetHitTarget() const;
 
@@ -130,6 +149,8 @@ public:
 	void TurnInPlace(float DeltaTime);
 
 	ABaseWeapon* GetEquippedWeapon();
+
+	FORCEINLINE bool IsElimmed() const { return bElimmed; }
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
