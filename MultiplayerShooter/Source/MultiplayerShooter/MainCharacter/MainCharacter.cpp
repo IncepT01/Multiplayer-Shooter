@@ -91,10 +91,11 @@ void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	BlasterPlayerController = Cast<AMyPlayerController>(Controller);
-	if (BlasterPlayerController)
+	UpdateHUDHealth();
+
+	if (HasAuthority())
 	{
-		BlasterPlayerController->SetHUDHealth(Health, MaxHealth);
+		OnTakeAnyDamage.AddDynamic(this, &AMainCharacter::ReceiveDamage);
 	}
 	
 	if (StarterWeapon && GetWorld()) // Check if class and world exist
@@ -390,6 +391,14 @@ void AMainCharacter::FireButtonReleased()
 	}
 }
 
+void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType,
+	class AController* InstigatorController, AActor* DamageCauser)
+{
+	Health = FMath::Clamp(Health - Damage, 0.f, MaxHealth);
+	UpdateHUDHealth();
+	PlayHitReactMontage();
+}
+
 FVector AMainCharacter::GetHitTarget() const
 {
 	if (Combat == nullptr) return FVector();
@@ -485,6 +494,15 @@ void AMainCharacter::SimProxiesTurn()
  
 }
 
+void AMainCharacter::UpdateHUDHealth()
+{
+	MyPlayerController = MyPlayerController == nullptr ? Cast<AMyPlayerController>(Controller) : MyPlayerController;
+	if (MyPlayerController)
+	{
+		MyPlayerController->SetHUDHealth(Health, MaxHealth);
+	}
+}
+
 void AMainCharacter::OnRep_ReplicatedMovement()
 {
 	Super::OnRep_ReplicatedMovement();
@@ -494,11 +512,7 @@ void AMainCharacter::OnRep_ReplicatedMovement()
 
 void AMainCharacter::OnRep_Health()
 {
- 
-}
-
-void AMainCharacter::MulticastHit_Implementation()
-{
+	UpdateHUDHealth();
 	PlayHitReactMontage();
 }
 
@@ -506,5 +520,6 @@ void AMainCharacter::MulticastFire_Implementation()
 {
 	PlayFireMontage(IsAiming());
 }
+
 
 
