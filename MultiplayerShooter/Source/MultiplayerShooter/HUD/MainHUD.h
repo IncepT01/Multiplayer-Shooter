@@ -31,6 +31,16 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	float CrosshairSpreadMax = 16.f;
+
+	UPROPERTY(EditAnywhere, Category = "Player Stats")
+	TSubclassOf<class UUserWidget> CharacterOverlayClass;
+ 
+	class UCharacterOverlay* CharacterOverlay;
+	
+protected:
+	virtual void BeginPlay() override;
+	void AddCharacterOverlay();
+	
 private:
 	FHUDPackage HUDPackage;
 public:

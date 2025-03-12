@@ -177,6 +177,7 @@ void AMainCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME_CONDITION(AMainCharacter, OverlappingWeapon, COND_OwnerOnly);
+	DOREPLIFETIME(AMainCharacter, Health);
 }
 
 void AMainCharacter::SetOverlappingWeapon(ABaseWeapon* Weapon)
@@ -482,6 +483,11 @@ void AMainCharacter::OnRep_ReplicatedMovement()
 	Super::OnRep_ReplicatedMovement();
 	SimProxiesTurn();
 	TimeSinceLastMovementReplication = 0.f;
+}
+
+void AMainCharacter::OnRep_Health()
+{
+ 
 }
 
 void AMainCharacter::MulticastHit_Implementation()
