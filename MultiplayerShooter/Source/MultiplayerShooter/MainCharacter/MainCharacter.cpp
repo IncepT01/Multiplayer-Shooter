@@ -13,6 +13,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "MultiplayerShooter/MultiplayerShooter.h"
+#include "MultiplayerShooter//PlayerController/MyPlayerController.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -89,6 +90,12 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	BlasterPlayerController = Cast<AMyPlayerController>(Controller);
+	if (BlasterPlayerController)
+	{
+		BlasterPlayerController->SetHUDHealth(Health, MaxHealth);
+	}
 	
 	if (StarterWeapon && GetWorld()) // Check if class and world exist
 	{

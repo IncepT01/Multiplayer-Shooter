@@ -99,6 +99,8 @@ protected:
  
 	UFUNCTION()
 	void OnRep_Health();
+	
+	class AMyPlayerController* BlasterPlayerController;
 
 public:
 	
