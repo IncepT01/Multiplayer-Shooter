@@ -422,9 +422,9 @@ void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDa
 
 void AMainCharacter::Elim()
 {
-	if (HasAuthority())
+	if (Combat && Combat->EquippedWeapon)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Calling Elim from the server"));
+		Combat->EquippedWeapon->Dropped();
 	}
 	Multicast_Elim();
 	GetWorldTimerManager().SetTimer(
@@ -439,6 +439,17 @@ void AMainCharacter::Multicast_Elim_Implementation()
 {
 	bElimmed = true;
 	PlayElimMontage();
+
+	//Disable Character Movement
+	GetCharacterMovement()->DisableMovement();
+	GetCharacterMovement()->StopMovementImmediately();
+	if (MyPlayerController)
+	{
+		DisableInput(MyPlayerController);
+	}
+	// Disable collision
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
 void AMainCharacter::ElimTimerFinished()
