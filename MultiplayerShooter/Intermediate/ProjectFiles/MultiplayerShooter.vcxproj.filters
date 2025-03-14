@@ -186,6 +186,15 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\PlayerController\MyPlayerController.h">
       <Filter>Source\MultiplayerShooter\PlayerController</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\PlayerState">
+      <UniqueIdentifier>{F5EEB444-268E-317F-9CD2-84BB7E718F3F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\PlayerState\MainPlayerState.cpp">
+      <Filter>Source\MultiplayerShooter\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\PlayerState\MainPlayerState.h">
+      <Filter>Source\MultiplayerShooter\PlayerState</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\Types">
       <UniqueIdentifier>{2A7DF824-0EBF-32ED-8AE9-47A3F3F2EAB3}</UniqueIdentifier>
     </Filter>
