@@ -14,4 +14,16 @@ class MULTIPLAYERSHOOTER_API AMainPlayerState : public APlayerState
 {
 	GENERATED_BODY()
 	
+public:
+	virtual void GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const override;
+ 
+	/**
+	* Replication notifies
+	*/
+	virtual void OnRep_Score() override;
+ 
+	void AddToScore(float ScoreAmount);
+private:
+	class AMainCharacter* Character;
+	class AMyPlayerController* Controller;
 };

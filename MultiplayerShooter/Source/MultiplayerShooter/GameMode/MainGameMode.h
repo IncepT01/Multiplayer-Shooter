@@ -14,6 +14,7 @@ class MULTIPLAYERSHOOTER_API AMainGameMode : public AGameMode
 {
 	GENERATED_BODY()
 public:
-	virtual void PlayerEliminated(class AMainCharacter* ElimmedCharacter, class AMyPlayerController* VictimController, AMyPlayerController* AttackerController);
+	virtual void PlayerEliminated(class AMainCharacter* ElimmedCharacter, class AMyPlayerController* VictimController, AMyPlayerController*
+	                              AttackerController);
 	virtual void RequestRespawn(ACharacter* ElimmedCharacter, AController* ElimmedController);
 };

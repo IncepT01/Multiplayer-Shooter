@@ -9,39 +9,31 @@
   <component name="ChangeListManager">
     <list default="true" id="39f109ad-91b8-40b1-8474-f1146e0be311" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiplayerShooter.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiplayerShooter.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor.modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameModes/BP_Level1GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameModes/BP_Level1GameMode.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/HUD/WBP_CharacterOverlay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/HUD/WBP_CharacterOverlay.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MainCharacter/Animation/MainCharacterAnim_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MainCharacter/Animation/MainCharacterAnim_BP.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Lobby.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Lobby.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MultiplayerShooterModuleRules.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/MultiplayerShooterModuleRules.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/ActionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/ActionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/MultiplayerShooterEditor/Development/MultiplayerShooterEditor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/MultiplayerShooterEditor/Development/MultiplayerShooterEditor.uhtmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/MultiplayerShooterEditor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/MultiplayerShooterEditor/Development/Makefile.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/ActionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/ActionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/LiveCodingInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/LiveCodingInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/MultiplayerShooter.cpp.dep.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/MultiplayerShooter.cpp.obj.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/MultiplayerShooter.cpp.sarif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.dll.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.dll.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.lib.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.lib.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Win64/Development/Editor/MultiplayerShooter.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Win64/Development/Editor/UE5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Win64/Development/Editor/UnrealEditor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/root.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerShooter.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerShooter.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerShooter.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/MultiplayerShooter.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ReimportCache/3688439234.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ReimportCache/3688439234.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/TargetInfo.Engine.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/TargetInfo.MultiplayerShooter.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/CombatComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/CombatComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/CharacterOverlay.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/CharacterOverlay.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/MainCharacter/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/MainCharacter/MainCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/MainCharacter/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/MainCharacter/MainCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerState/MainPlayerState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerState/MainPlayerState.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerState/MainPlayerState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerState/MainPlayerState.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +46,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/AIModule/Private/AIController.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Classes/GameFramework/PlayerState.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Public/TimerManager.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Slate/Private/Widgets/Notifications/SProgressBar.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/UMG/Private/Components/ProgressBar.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -67,19 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MultiplayerShooter" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -171,6 +165,10 @@
       <workItem from="1741900990283" duration="1751000" />
       <workItem from="1741904282342" duration="69000" />
       <workItem from="1741905101320" duration="6167000" />
+      <workItem from="1743273756232" duration="452000" />
+      <workItem from="1743274270228" duration="72000" />
+      <workItem from="1743275006503" duration="1294000" />
+      <workItem from="1743276407739" duration="3627000" />
     </task>
     <servers />
   </component>

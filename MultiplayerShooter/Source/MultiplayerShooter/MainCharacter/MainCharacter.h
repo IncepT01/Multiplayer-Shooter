@@ -58,6 +58,7 @@ protected:
 	UFUNCTION()
 	void ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* InstigatorController, AActor* DamageCauser);
 	void UpdateHUDHealth();
+	void PollInit();
 	
 	UPROPERTY(ReplicatedUsing = OnRep_OverlappingWeapon)
 	class ABaseWeapon* OverlappingWeapon;
@@ -154,6 +155,8 @@ public:
 	
 	FORCEINLINE float GetHealth() const { return Health; }
 	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
+
+	class AMainPlayerState* MainPlayerState;
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = Camera)

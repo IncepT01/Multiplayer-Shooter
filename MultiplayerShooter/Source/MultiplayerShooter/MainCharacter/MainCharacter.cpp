@@ -16,6 +16,7 @@
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
 #include "MultiplayerShooter/GameMode/MainGameMode.h"
 #include "TimerManager.h"
+#include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -178,7 +179,21 @@ void AMainCharacter::Tick(float DeltaTime)
 		CalculateAO_Pitch();
 	}
 
+	PollInit();
+
 	HideCameraIfCharacterClose();
+}
+
+void AMainCharacter::PollInit()
+{
+	if (MainPlayerState == nullptr)
+	{
+		MainPlayerState = GetPlayerState<AMainPlayerState>();
+		if (MainPlayerState)
+		{
+			MainPlayerState->AddToScore(0.f);
+		}
+	}
 }
 
 

@@ -46,34 +46,42 @@ void AMyPlayerController::SetHUDHealth(float Health, float MaxHealth)
 
 void AMyPlayerController::SetHUDHealth(float Health, float MaxHealth)
  {
- 	// Ensure MainHUD is valid
  	if (!IsValid(MainHUD))
  	{
  		MainHUD = Cast<AMainHUD>(GetHUD());
  	}
-
- 	// Check if all HUD components are valid using IsValid() instead of direct null checks
+ 	
  	if (IsValid(MainHUD) && IsValid(MainHUD->CharacterOverlay) && IsValid(MainHUD->CharacterOverlay->HealthText))
  	{
  		const float HealthPercent = Health / MaxHealth;
-
- 		// Update HealthText (the actual update line is commented out, but it's ready to use when needed)
+ 		
  		FString HealthText = FString::Printf(TEXT("%d"), FMath::CeilToInt(Health));
  		MainHUD->CharacterOverlay->HealthText->SetText(FText::FromString(HealthText));
-
- 		// Optionally, set the health bar if available (this line is also commented out, but you can uncomment it)
+ 		
  		// MainHUD->CharacterOverlay->HealthBar->SetPercent(HealthPercent);
  	}
  	else
  	{
- 		// If any of the components are invalid, retry on the next tick
- 		/*
- 		GetWorldTimerManager().SetTimerForNextTick([this, Health, MaxHealth]()
-		 {
-			 SetHUDHealth(Health, MaxHealth);
-		 });
-		*/
  		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
  	}
  	
+ }
+
+void AMyPlayerController::SetHUDScore(float Score)
+ {
+ 	if (!IsValid(MainHUD))
+ 	{
+ 		MainHUD = Cast<AMainHUD>(GetHUD());
+ 	}
+ 	
+ 	if (IsValid(MainHUD) && IsValid(MainHUD->CharacterOverlay) && IsValid(MainHUD->CharacterOverlay->ScoreAmount))
+ 	{
+ 		FString ScoreText = FString::Printf(TEXT("%d"), FMath::CeilToInt(Score));
+ 		MainHUD->CharacterOverlay->ScoreAmount->SetText(FText::FromString(ScoreText));
+
+ 	}
+ 	else
+ 	{
+ 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 	}
  }

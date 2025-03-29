@@ -161,7 +161,7 @@ void UCombatComponent::EquipWeapon(ABaseWeapon* WeaponToEquip)
 	const USkeletalMeshSocket* HandSocket = Character->GetMesh()->GetSocketByName(FName("RightHandSocket"));
 	if (HandSocket)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, FString(TEXT("Gun picked up")));
+		//GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, FString(TEXT("Gun picked up")));
 		HandSocket->AttachActor(EquippedWeapon, Character->GetMesh());
 	}
 	else {
