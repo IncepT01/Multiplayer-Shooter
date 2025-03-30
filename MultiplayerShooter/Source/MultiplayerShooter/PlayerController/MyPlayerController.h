@@ -43,7 +43,8 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	void ClientReportServerTime(float TimeOfClientRequest, float TimeServerReceivedClientRequest);
  
  	float ClientServerDelta = 0.f; // difference between client and server time
- 
+
+ 	//How often we want to resync the client timer with the server. (Recalculate the RTT)
  	UPROPERTY(EditAnywhere, Category = Time)
  	float TimeSyncFrequency = 5.f;
  

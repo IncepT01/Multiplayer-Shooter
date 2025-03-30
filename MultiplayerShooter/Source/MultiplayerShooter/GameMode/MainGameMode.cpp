@@ -8,6 +8,32 @@
  #include "GameFramework/PlayerStart.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 
+AMainGameMode::AMainGameMode()
+{
+	bDelayedStart = true;
+}
+ 
+void AMainGameMode::BeginPlay()
+{
+	Super::BeginPlay();
+ 
+	LevelStartingTime = GetWorld()->GetTimeSeconds();
+}
+ 
+void AMainGameMode::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+ 
+	if (MatchState == MatchState::WaitingToStart)
+	{
+		CountdownTime = WarmupTime - GetWorld()->GetTimeSeconds() + LevelStartingTime;
+		if (CountdownTime <= 0.f)
+		{
+			StartMatch();
+		}
+	}
+}
+
 void AMainGameMode::PlayerEliminated(class AMainCharacter* ElimmedCharacter, class AMyPlayerController* VictimController, AMyPlayerController* AttackerController)
  {
  	if (AttackerController == nullptr || AttackerController->PlayerState == nullptr) return;

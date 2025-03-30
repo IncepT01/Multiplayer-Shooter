@@ -25,14 +25,14 @@
 			"ProjectileBullet.cpp.obj",
 			"ProjectileWeapon.cpp.obj",
 			"LobbyGameMode.cpp.obj",
-			"MainGameMode.cpp.obj",
 			"CharacterOverlay.cpp.obj",
-			"MainHUD.cpp.obj",
 			"OverheadWidget.cpp.obj",
 			"MainCharacter.cpp.obj",
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
 			"MainPlayerState.cpp.obj",
+			"MainGameMode.cpp.obj",
+			"MainHUD.cpp.obj",
 			"MyPlayerController.cpp.obj"
 		]
 	}

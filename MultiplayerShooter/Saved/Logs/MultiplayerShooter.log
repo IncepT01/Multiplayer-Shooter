@@ -5380,3 +5380,1127 @@ Script Stack (0 frames) :
 [2025.03.30-14.16.16:854][852]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
 [2025.03.30-14.16.16:855][852]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
 [2025.03.30-14.16.16:855][852]AssetCheck: /Game/Maps/Level1 Validating asset
+[2025.03.30-14.16.47:336][205]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.03.30-14.16.47:340][205]LogUMGEditor: Disabling Slate Post Buffers for multi-window PIE session, currently not supported.
+[2025.03.30-14.16.47:340][205]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.03.30-14.16.47:341][205]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Level1
+[2025.03.30-14.16.47:342][205]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001655s)
+[2025.03.30-14.16.47:342][205]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Level1.Level1 to /Game/Maps/UEDPIE_0_Level1.Level1 (0.001679s)
+[2025.03.30-14.16.47:354][205]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2025.03.30-14.16.47:355][205]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.30-14.16.47:356][205]LogPlayLevel: PIE: World Init took: (0.001052s)
+[2025.03.30-14.16.47:357][205]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2025.03.30-14.16.47:357][205]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.30-14.16.47:357][205]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.30-14.16.47:357][205]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.30-14.16.47:357][205]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.30-14.16.47:357][205]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.30-14.16.47:357][205]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.30-14.16.47:357][205]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.30-14.16.47:357][205]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.30-14.16.47:357][205]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.30-14.16.47:357][205]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.30-14.16.47:357][205]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.30-14.16.47:359][205]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.30-14.16.47:371][205]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.30-14.16.47:371][205]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.30-14.16.47:371][205]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.30-14.16.47:371][205]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.30-14.16.47:372][205]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=22
+[2025.03.30-14.16.47:372][205]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=22
+[2025.03.30-14.16.47:373][205]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=22
+[2025.03.30-14.16.47:373][205]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=22
+[2025.03.30-14.16.47:373][205]LogInit: FAudioDevice initialized with ID 22.
+[2025.03.30-14.16.47:373][205]LogAudio: Display: Audio Device (ID: 22) registered with world 'Level1'.
+[2025.03.30-14.16.47:373][205]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 22
+[2025.03.30-14.16.47:375][205]LogLoad: Game class is 'BP_Level1GameMode_C'
+[2025.03.30-14.16.47:376][205]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2025.03.30-16.16.47
+[2025.03.30-14.16.47:377][205]LogOnline: OSS: Created online subsystem instance for: :Context_29
+[2025.03.30-14.16.47:378][205]LogWorld: Bringing up level for play took: 0.002308
+[2025.03.30-14.16.47:378][205]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.03.30-14.16.47:378][205]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.03.30-14.16.47:378][205]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.30-14.16.47:378][205]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.30-14.16.47:378][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.30-14.16.47:379][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.30-14.16.47:379][205]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.03.30-14.16.47:379][205]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.03.30-14.16.47:379][205]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.16.47:379][205]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18 IpNetDriver listening on port 17777
+[2025.03.30-14.16.47:379][205]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2025.03.30-14.16.47:379][205]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2025.03.30-14.16.47:379][205]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2025.03.30-14.16.47:380][205]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.47:381][205]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2025.03.30-14.16.47:381][205]PIE: Server logged in
+[2025.03.30-14.16.47:382][205]PIE: Play in editor total start time 0,042 seconds.
+[2025.03.30-14.16.47:382][205]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2025.03.30-14.16.47:383][205]LogPlayLevel: PIE: World Init took: (0.000900s)
+[2025.03.30-14.16.47:384][205]LogAudio: Display: Creating Audio Device:                 Id: 23, Scope: Unique, Realtime: True
+[2025.03.30-14.16.47:384][205]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.30-14.16.47:384][205]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.30-14.16.47:384][205]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.30-14.16.47:384][205]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.30-14.16.47:384][205]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.30-14.16.47:384][205]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.30-14.16.47:384][205]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.30-14.16.47:384][205]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.30-14.16.47:384][205]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.30-14.16.47:384][205]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.30-14.16.47:384][205]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.30-14.16.47:385][205]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.30-14.16.47:398][205]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.30-14.16.47:398][205]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.30-14.16.47:398][205]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.30-14.16.47:398][205]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.30-14.16.47:399][205]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=23
+[2025.03.30-14.16.47:399][205]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=23
+[2025.03.30-14.16.47:400][205]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=23
+[2025.03.30-14.16.47:400][205]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=23
+[2025.03.30-14.16.47:400][205]LogInit: FAudioDevice initialized with ID 23.
+[2025.03.30-14.16.47:400][205]LogAudio: Display: Audio Device (ID: 23) registered with world 'Untitled'.
+[2025.03.30-14.16.47:400][205]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 23
+[2025.03.30-14.16.47:425][205]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.16.47:425][205]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/Maps/StartupMap"
+[2025.03.30-14.16.47:425][205]LogNet: Browse: 127.0.0.1:17777/Game/Maps/StartupMap
+[2025.03.30-14.16.47:425][205]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.30-14.16.47:425][205]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.30-14.16.47:425][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.30-14.16.47:426][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.30-14.16.47:426][205]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2025.03.30-14.16.47:426][205]LogNet: Created socket for bind address: 0.0.0.0:0
+[2025.03.30-14.16.47:426][205]LogNet: IpConnection_24 setting maximum channels to: 32767
+[2025.03.30-14.16.47:426][205]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.16.47:426][205]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 5
+[2025.03.30-14.16.47:426][205]LogNet: Game client on port 17777, rate 100000
+[2025.03.30-14.16.47:428][205]PIE: Client logged in
+[2025.03.30-14.16.47:431][205]PIE: Play in editor total start time 0,09 seconds.
+[2025.03.30-14.16.47:431][205]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2025.03.30-14.16.47:432][205]LogPlayLevel: PIE: World Init took: (0.001144s)
+[2025.03.30-14.16.47:433][205]LogAudio: Display: Creating Audio Device:                 Id: 24, Scope: Unique, Realtime: True
+[2025.03.30-14.16.47:433][205]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.30-14.16.47:433][205]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.30-14.16.47:433][205]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.30-14.16.47:433][205]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.30-14.16.47:433][205]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.30-14.16.47:433][205]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.30-14.16.47:433][205]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.30-14.16.47:433][205]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.30-14.16.47:433][205]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.30-14.16.47:433][205]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.30-14.16.47:433][205]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.30-14.16.47:434][205]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.30-14.16.47:446][205]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.30-14.16.47:446][205]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.30-14.16.47:446][205]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.30-14.16.47:446][205]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.30-14.16.47:447][205]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=24
+[2025.03.30-14.16.47:447][205]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=24
+[2025.03.30-14.16.47:449][205]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=24
+[2025.03.30-14.16.47:449][205]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=24
+[2025.03.30-14.16.47:449][205]LogInit: FAudioDevice initialized with ID 24.
+[2025.03.30-14.16.47:449][205]LogAudio: Display: Audio Device (ID: 24) registered with world 'Untitled'.
+[2025.03.30-14.16.47:449][205]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 24
+[2025.03.30-14.16.47:475][205]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.16.47:475][205]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/Maps/StartupMap"
+[2025.03.30-14.16.47:475][205]LogNet: Browse: 127.0.0.1:17777/Game/Maps/StartupMap
+[2025.03.30-14.16.47:475][205]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.30-14.16.47:475][205]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.30-14.16.47:475][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.30-14.16.47:476][205]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.30-14.16.47:476][205]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2025.03.30-14.16.47:477][205]LogNet: Created socket for bind address: 0.0.0.0:0
+[2025.03.30-14.16.47:477][205]LogNet: IpConnection_25 setting maximum channels to: 32767
+[2025.03.30-14.16.47:477][205]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.16.47:513][205]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 6
+[2025.03.30-14.16.47:513][205]LogNet: Game client on port 17777, rate 100000
+[2025.03.30-14.16.47:515][205]PIE: Client logged in
+[2025.03.30-14.16.47:517][205]PIE: Play in editor total start time 0,177 seconds.
+[2025.03.30-14.16.48:447][307]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51075
+[2025.03.30-14.16.48:447][307]LogHandshake: SendConnectChallenge. Timestamp: 1.119187, Cookie: 122015049172251193094005159078102142125142195020037188063114
+[2025.03.30-14.16.48:448][307]LogHandshake: Cached server SessionID: 0
+[2025.03.30-14.16.48:448][307]LogHandshake: SendChallengeResponse. Timestamp: 1.119187, Cookie: 122015049172251193094005159078102142125142195020037188063114
+[2025.03.30-14.16.48:456][308]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51075
+[2025.03.30-14.16.48:456][308]LogHandshake: SendChallengeAck. InCookie: 122015049172251193094005159078102142125142195020037188063114
+[2025.03.30-14.16.48:456][308]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51075
+[2025.03.30-14.16.48:456][308]LogNet: IpConnection_26 setting maximum channels to: 32767
+[2025.03.30-14.16.48:456][308]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.16.48:456][308]LogNet: NotifyAcceptedConnection: Name: Level1, TimeStamp: 03/30/25 16:16:48, [UNetConnection] RemoteAddr: 127.0.0.1:51075, Name: IpConnection_26, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.16.48:456][308]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51075, Name: IpConnection_26, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.16.48:457][308]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_19, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.16.48:464][309]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_Level1.Level1: Accepted
+[2025.03.30-14.16.48:464][309]LogNet: Remote platform little endian=1
+[2025.03.30-14.16.48:464][309]LogNet: This platform little endian=1
+[2025.03.30-14.16.48:467][309]LogOnline: OSS: Created online subsystem instance for: :Context_30
+[2025.03.30-14.16.48:474][310]LogNet: Login request: ?Name=DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD userId: NULL:DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD platform: NULL
+[2025.03.30-14.16.48:474][310]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_Level1, Game: /Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C)
+[2025.03.30-14.16.48:475][310]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/Level1?game=/Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C
+[2025.03.30-14.16.48:475][310]LogWorld: BeginTearingDown for /Temp/Untitled_13
+[2025.03.30-14.16.48:475][310]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.16.48:475][310]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.16.48:488][310]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.03.30-14.16.48:489][310]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2025.03.30-14.16.48:492][310]LogAudio: Display: Audio Device (ID: 23) registered with world 'Level1'.
+[2025.03.30-14.16.48:492][310]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.30-14.16.48:493][310]LogPlayLevel: PIE: World Init took: (0.000862s)
+[2025.03.30-14.16.48:494][310]LogWorld: Bringing World /Game/Maps/UEDPIE_1_Level1.Level1 up for play (max tick rate 0) at 2025.03.30-16.16.48
+[2025.03.30-14.16.48:494][310]LogWorld: Bringing up level for play took: 0.000594
+[2025.03.30-14.16.48:494][310]LogLoad: Took 0.019223 seconds to LoadMap(/Game/Maps/Level1)
+[2025.03.30-14.16.48:494][310]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/Level1
+[2025.03.30-14.16.48:494][310]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2025.03.30-14.16.48:501][311]LogNet: Client netspeed is 100000
+[2025.03.30-14.16.48:501][311]LogNet: Join request: /Game/Maps/StartupMap?Name=DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD?SplitscreenCount=1
+[2025.03.30-14.16.48:503][311]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:503][311]LogNet: Join succeeded: DESKTOP-NVQ7O0J-4A2F
+[2025.03.30-14.16.48:504][311]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:504][311]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:505][311]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:561][313]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51076
+[2025.03.30-14.16.48:561][313]LogHandshake: SendConnectChallenge. Timestamp: 1.231592, Cookie: 030046047033151036205202078211007077229166009181077144197040
+[2025.03.30-14.16.48:565][313]LogHandshake: Cached server SessionID: 0
+[2025.03.30-14.16.48:565][313]LogHandshake: SendChallengeResponse. Timestamp: 1.231592, Cookie: 030046047033151036205202078211007077229166009181077144197040
+[2025.03.30-14.16.48:573][314]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51076
+[2025.03.30-14.16.48:573][314]LogHandshake: SendChallengeAck. InCookie: 030046047033151036205202078211007077229166009181077144197040
+[2025.03.30-14.16.48:573][314]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51076
+[2025.03.30-14.16.48:573][314]LogNet: IpConnection_27 setting maximum channels to: 32767
+[2025.03.30-14.16.48:573][314]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.16.48:573][314]LogNet: NotifyAcceptedConnection: Name: Level1, TimeStamp: 03/30/25 16:16:48, [UNetConnection] RemoteAddr: 127.0.0.1:51076, Name: IpConnection_27, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.16.48:573][314]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51076, Name: IpConnection_27, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.16.48:576][314]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_25, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_20, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.16.48:578][314]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.16.48:584][315]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_Level1.Level1: Accepted
+[2025.03.30-14.16.48:584][315]LogNet: Remote platform little endian=1
+[2025.03.30-14.16.48:584][315]LogNet: This platform little endian=1
+[2025.03.30-14.16.48:587][315]LogOnline: OSS: Created online subsystem instance for: :Context_31
+[2025.03.30-14.16.48:599][316]LogNet: Login request: ?Name=DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED userId: NULL:DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED platform: NULL
+[2025.03.30-14.16.48:600][316]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_Level1, Game: /Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C)
+[2025.03.30-14.16.48:600][316]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/Level1?game=/Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C
+[2025.03.30-14.16.48:600][316]LogWorld: BeginTearingDown for /Temp/Untitled_14
+[2025.03.30-14.16.48:600][316]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.16.48:600][316]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.16.48:622][316]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.03.30-14.16.48:623][316]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2025.03.30-14.16.48:625][316]LogAudio: Display: Audio Device (ID: 24) registered with world 'Level1'.
+[2025.03.30-14.16.48:625][316]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.30-14.16.48:626][316]LogPlayLevel: PIE: World Init took: (0.000838s)
+[2025.03.30-14.16.48:627][316]LogWorld: Bringing World /Game/Maps/UEDPIE_2_Level1.Level1 up for play (max tick rate 0) at 2025.03.30-16.16.48
+[2025.03.30-14.16.48:627][316]LogWorld: Bringing up level for play took: 0.000613
+[2025.03.30-14.16.48:627][316]LogLoad: Took 0.026742 seconds to LoadMap(/Game/Maps/Level1)
+[2025.03.30-14.16.48:627][316]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/Level1
+[2025.03.30-14.16.48:627][316]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2025.03.30-14.16.48:634][317]LogNet: Client netspeed is 100000
+[2025.03.30-14.16.48:634][317]LogNet: Join request: /Game/Maps/StartupMap?Name=DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED?SplitscreenCount=1
+[2025.03.30-14.16.48:636][317]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:636][317]LogNet: Join succeeded: DESKTOP-NVQ7O0J-02CC
+[2025.03.30-14.16.48:636][317]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:636][317]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:640][317]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.48:707][320]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.16.49:253][365]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.16.49:341][372]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.49:341][372]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.49:652][397]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.16.50:333][453]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.50:333][453]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.50:707][484]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.16.51:335][535]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.51:335][535]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.51:484][547]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.51:498][548]LogTemp: Warning: Setting HUD Ammo for: 59. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.51:498][548]LogTemp: Warning: Setting HUD Ammo for: 59. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.51:562][553]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.51:640][559]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.51:652][560]LogTemp: Warning: Setting HUD Ammo for: 58. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.51:653][560]LogTemp: Warning: Setting HUD Ammo for: 58. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.51:717][565]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.51:796][571]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.51:809][572]LogTemp: Warning: Setting HUD Ammo for: 57. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.51:810][572]LogTemp: Warning: Setting HUD Ammo for: 57. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.51:951][583]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.51:964][584]LogTemp: Warning: Setting HUD Ammo for: 56. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.51:965][584]LogTemp: Warning: Setting HUD Ammo for: 56. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:030][589]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.52:107][595]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.52:120][596]LogTemp: Warning: Setting HUD Ammo for: 55. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:121][596]LogTemp: Warning: Setting HUD Ammo for: 55. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:187][601]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.52:266][607]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.52:278][608]LogTemp: Warning: Setting HUD Ammo for: 54. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:279][608]LogTemp: Warning: Setting HUD Ammo for: 54. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:331][612]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.52:331][612]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.52:331][612]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.52:331][612]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.52:425][619]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.52:438][620]LogTemp: Warning: Setting HUD Ammo for: 53. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:439][620]LogTemp: Warning: Setting HUD Ammo for: 53. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:582][631]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.52:584][631]LogTemp: Warning: Setting HUD Ammo for: 52. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:586][631]LogTemp: Warning: Setting HUD Ammo for: 52. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:739][643]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.52:741][643]LogTemp: Warning: Setting HUD Ammo for: 51. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:742][643]LogTemp: Warning: Setting HUD Ammo for: 51. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:751][644]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.16.52:753][644]LogTemp: Warning: Setting HUD Ammo for: 50. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:753][644]LogTemp: Warning: Setting HUD Ammo for: 50. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.16.52:843][651]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.16.53:536][681]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.53:536][681]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.16.54:320][683]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.16.54:320][683]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_2_Level1
+[2025.03.30-14.16.54:320][683]LogSlate: Window 'MultiplayerShooter Preview [NetMode: Client 2]  (64-bit/PC D3D SM6)' being destroyed
+[2025.03.30-14.16.54:323][683]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.16.54:323][683]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.16.54:324][683]LogNet: World NetDriver shutdown IpNetDriver_20 [GameNetDriver]
+[2025.03.30-14.16.54:324][683]LogNet: DestroyNamedNetDriver IpNetDriver_20 [GameNetDriver]
+[2025.03.30-14.16.54:324][683]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_25, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_20, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED, Channels: 23, Time: 2025.03.30-14.16.54
+[2025.03.30-14.16.54:324][683]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_25, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_20, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED
+[2025.03.30-14.16.54:324][683]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_20 shut down
+[2025.03.30-14.16.54:326][683]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_Level1
+[2025.03.30-14.16.54:326][683]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.16.54:326][683]LogSlate: Window 'MultiplayerShooter Preview [NetMode: Client 1]  (64-bit/PC D3D SM6)' being destroyed
+[2025.03.30-14.16.54:329][683]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.16.54:329][683]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.16.54:330][683]LogNet: World NetDriver shutdown IpNetDriver_19 [GameNetDriver]
+[2025.03.30-14.16.54:330][683]LogNet: DestroyNamedNetDriver IpNetDriver_19 [GameNetDriver]
+[2025.03.30-14.16.54:330][683]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_19, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD, Channels: 23, Time: 2025.03.30-14.16.54
+[2025.03.30-14.16.54:330][683]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_19, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD
+[2025.03.30-14.16.54:330][683]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_19 shut down
+[2025.03.30-14.16.54:331][683]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Level1
+[2025.03.30-14.16.54:332][683]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.16.54:332][683]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.16.54:332][683]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.16.54:333][683]LogNet: World NetDriver shutdown IpNetDriver_18 [GameNetDriver]
+[2025.03.30-14.16.54:333][683]LogNet: DestroyNamedNetDriver IpNetDriver_18 [GameNetDriver]
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.16.54:333][683]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.16.54:333][683]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:51076, Name: IpConnection_27, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51076, Name: IpConnection_27, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED, Channels: 23, Time: 2025.03.30-14.16.54
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.16.54:333][683]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2025.03.30-14.16.54:333][683]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51076, Name: IpConnection_27, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED
+[2025.03.30-14.16.54:333][683]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:51076 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:51076, Name: IpConnection_27, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-02CC5C7C4D4E6A33FDE8D3AEC5F398ED
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:51075, Name: IpConnection_26, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51075, Name: IpConnection_26, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD, Channels: 23, Time: 2025.03.30-14.16.54
+[2025.03.30-14.16.54:333][683]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.16.54:333][683]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2025.03.30-14.16.54:333][683]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51075, Name: IpConnection_26, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD
+[2025.03.30-14.16.54:333][683]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:51075 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:51075, Name: IpConnection_26, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-4A2F9A774D500861D1C20B88E1DD8FAD
+[2025.03.30-14.16.54:333][683]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_18 shut down
+[2025.03.30-14.16.54:335][683]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.03.30-14.16.54:337][683]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.16.54:361][683]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 24
+[2025.03.30-14.16.54:361][683]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2025.03.30-14.16.54:363][683]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2025.03.30-14.16.54:366][683]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 23
+[2025.03.30-14.16.54:366][683]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2025.03.30-14.16.54:368][683]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2025.03.30-14.16.54:371][683]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.16.54:371][683]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 22
+[2025.03.30-14.16.54:371][683]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2025.03.30-14.16.54:372][683]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2025.03.30-14.16.54:378][683]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2025.03.30-14.16.54:399][684]LogPlayLevel: Display: Destroying online subsystem :Context_31
+[2025.03.30-14.16.54:399][684]LogPlayLevel: Display: Destroying online subsystem :Context_30
+[2025.03.30-14.16.54:399][684]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2025.03.30-14.17.24:695][318]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2464.364746
+[2025.03.30-14.17.24:877][340]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.03.30-14.17.24:878][340]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2464.539795, Update Interval: 335.640747
+[2025.03.30-14.18.41:950][109]LogHotReload: New module detected: UnrealEditor-MultiplayerShooter-0006.dll
+[2025.03.30-14.18.42:288][110]LogHotReload: Starting Hot-Reload from IDE
+[2025.03.30-14.18.42:335][110]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2025.03.30-14.18.42:397][110]LogClass: UPackage /Script/MultiplayerShooter Reload.
+[2025.03.30-14.18.42:397][110]LogClass: UClass MyPlayerController Reload.
+[2025.03.30-14.18.42:416][110]LogClass: Could not find existing class MyPlayerController in package /Script/MultiplayerShooter for reload, assuming new or modified class
+[2025.03.30-14.18.42:416][110]LogClass: Function ClientReportServerTime is new or belongs to a modified class.
+[2025.03.30-14.18.42:416][110]LogClass: Function ServerRequestServerTime is new or belongs to a modified class.
+[2025.03.30-14.18.42:445][110]Re-instancing MyPlayerController after reload.
+[2025.03.30-14.18.42:585][110]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2025.03.30-14.18.42:614][110]Display: HotReload took  0.3s.
+[2025.03.30-14.18.42:614][110]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 13 classes unchanged, 2 enums unchanged, 1 scriptstruct unchanged, 16 functions remapped, 1 scriptstruct remapped
+[2025.03.30-14.23.35:819][990]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2835.482422
+[2025.03.30-14.23.36:819][993]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.03.30-14.23.36:819][994]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2836.148682, Update Interval: 345.499451
+[2025.03.30-14.30.09:980][172]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3229.643311
+[2025.03.30-14.30.10:978][175]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.03.30-14.30.10:979][175]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3230.306641, Update Interval: 344.655304
+[2025.03.30-14.35.53:804][203]LogHotReload: New module detected: UnrealEditor-MultiplayerShooter-0008.dll
+[2025.03.30-14.35.54:142][204]LogHotReload: Starting Hot-Reload from IDE
+[2025.03.30-14.35.54:245][204]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2025.03.30-14.35.54:323][204]LogClass: UPackage /Script/MultiplayerShooter Reload.
+[2025.03.30-14.35.54:323][204]LogClass: UClass MainGameMode Reload.
+[2025.03.30-14.35.54:323][204]LogClass: UClass MainHUD Reload.
+[2025.03.30-14.35.54:332][204]LogClass: Could not find existing class MainGameMode in package /Script/MultiplayerShooter for reload, assuming new or modified class
+[2025.03.30-14.35.54:332][204]LogClass: Could not find existing class MainHUD in package /Script/MultiplayerShooter for reload, assuming new or modified class
+[2025.03.30-14.35.54:363][204]Re-instancing MainGameMode after reload.
+[2025.03.30-14.35.54:392][204]Re-instancing MainHUD after reload.
+[2025.03.30-14.35.54:592][204]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2025.03.30-14.35.54:622][204]Display: HotReload took  0.5s.
+[2025.03.30-14.35.54:622][204]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed, 12 classes unchanged, 2 enums unchanged, 1 scriptstruct unchanged, 18 functions remapped, 1 scriptstruct remapped
+[2025.03.30-14.36.33:715][322]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 3613.371826
+[2025.03.30-14.36.34:715][325]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.03.30-14.36.34:715][325]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 3614.039551, Update Interval: 327.074799
+[2025.03.30-14.36.46:788][573]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode
+[2025.03.30-14.36.46:788][573]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_11
+[2025.03.30-14.36.59:181][ 19]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2025.03.30-14.36.59:407][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2025.03.30-14.37.16:783][ 90]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.03.30-14.37.16:787][ 90]LogUMGEditor: Disabling Slate Post Buffers for multi-window PIE session, currently not supported.
+[2025.03.30-14.37.16:787][ 90]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.03.30-14.37.16:833][ 90]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Level1
+[2025.03.30-14.37.16:835][ 90]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001812s)
+[2025.03.30-14.37.16:835][ 90]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Level1.Level1 to /Game/Maps/UEDPIE_0_Level1.Level1 (0.001846s)
+[2025.03.30-14.37.16:853][ 90]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2025.03.30-14.37.16:856][ 90]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.30-14.37.16:857][ 90]LogPlayLevel: PIE: World Init took: (0.001063s)
+[2025.03.30-14.37.16:858][ 90]LogAudio: Display: Creating Audio Device:                 Id: 25, Scope: Unique, Realtime: True
+[2025.03.30-14.37.16:858][ 90]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.30-14.37.16:858][ 90]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.30-14.37.16:858][ 90]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.30-14.37.16:858][ 90]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.30-14.37.16:858][ 90]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.30-14.37.16:858][ 90]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.30-14.37.16:858][ 90]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.30-14.37.16:858][ 90]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.30-14.37.16:858][ 90]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.30-14.37.16:858][ 90]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.30-14.37.16:858][ 90]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.30-14.37.16:859][ 90]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.30-14.37.16:873][ 90]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.30-14.37.16:873][ 90]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.30-14.37.16:873][ 90]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.30-14.37.16:873][ 90]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.30-14.37.16:873][ 90]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=25
+[2025.03.30-14.37.16:873][ 90]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=25
+[2025.03.30-14.37.16:875][ 90]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=25
+[2025.03.30-14.37.16:875][ 90]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=25
+[2025.03.30-14.37.16:875][ 90]LogInit: FAudioDevice initialized with ID 25.
+[2025.03.30-14.37.16:875][ 90]LogAudio: Display: Audio Device (ID: 25) registered with world 'Level1'.
+[2025.03.30-14.37.16:875][ 90]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 25
+[2025.03.30-14.37.16:877][ 90]LogLoad: Game class is 'BP_Level1GameMode_C'
+[2025.03.30-14.37.16:878][ 90]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2025.03.30-16.37.16
+[2025.03.30-14.37.16:880][ 90]LogOnline: OSS: Created online subsystem instance for: :Context_33
+[2025.03.30-14.37.16:880][ 90]LogWorld: Bringing up level for play took: 0.002449
+[2025.03.30-14.37.16:881][ 90]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.03.30-14.37.16:881][ 90]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.03.30-14.37.16:881][ 90]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.30-14.37.16:881][ 90]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.30-14.37.16:881][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.30-14.37.16:881][ 90]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.03.30-14.37.16:881][ 90]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.03.30-14.37.16:881][ 90]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.37.16:881][ 90]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21 IpNetDriver listening on port 17777
+[2025.03.30-14.37.16:881][ 90]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2025.03.30-14.37.16:882][ 90]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2025.03.30-14.37.16:882][ 90]PIE: Server logged in
+[2025.03.30-14.37.16:883][ 90]PIE: Play in editor total start time 0,097 seconds.
+[2025.03.30-14.37.16:883][ 90]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2025.03.30-14.37.16:884][ 90]LogPlayLevel: PIE: World Init took: (0.000864s)
+[2025.03.30-14.37.16:885][ 90]LogAudio: Display: Creating Audio Device:                 Id: 26, Scope: Unique, Realtime: True
+[2025.03.30-14.37.16:885][ 90]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.30-14.37.16:885][ 90]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.30-14.37.16:885][ 90]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.30-14.37.16:885][ 90]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.30-14.37.16:885][ 90]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.30-14.37.16:885][ 90]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.30-14.37.16:885][ 90]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.30-14.37.16:885][ 90]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.30-14.37.16:885][ 90]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.30-14.37.16:885][ 90]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.30-14.37.16:885][ 90]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.30-14.37.16:886][ 90]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.30-14.37.16:898][ 90]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.30-14.37.16:898][ 90]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.30-14.37.16:898][ 90]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.30-14.37.16:898][ 90]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.30-14.37.16:899][ 90]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=26
+[2025.03.30-14.37.16:899][ 90]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=26
+[2025.03.30-14.37.16:901][ 90]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=26
+[2025.03.30-14.37.16:901][ 90]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=26
+[2025.03.30-14.37.16:901][ 90]LogInit: FAudioDevice initialized with ID 26.
+[2025.03.30-14.37.16:901][ 90]LogAudio: Display: Audio Device (ID: 26) registered with world 'Untitled'.
+[2025.03.30-14.37.16:901][ 90]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 26
+[2025.03.30-14.37.16:922][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.37.16:922][ 90]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/Maps/StartupMap"
+[2025.03.30-14.37.16:923][ 90]LogNet: Browse: 127.0.0.1:17777/Game/Maps/StartupMap
+[2025.03.30-14.37.16:923][ 90]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.30-14.37.16:923][ 90]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.30-14.37.16:923][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.30-14.37.16:923][ 90]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2025.03.30-14.37.16:923][ 90]LogNet: Created socket for bind address: 0.0.0.0:0
+[2025.03.30-14.37.16:923][ 90]LogNet: IpConnection_28 setting maximum channels to: 32767
+[2025.03.30-14.37.16:923][ 90]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.37.16:923][ 90]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 7
+[2025.03.30-14.37.16:923][ 90]LogNet: Game client on port 17777, rate 100000
+[2025.03.30-14.37.16:926][ 90]PIE: Client logged in
+[2025.03.30-14.37.16:928][ 90]PIE: Play in editor total start time 0,142 seconds.
+[2025.03.30-14.37.16:928][ 90]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2025.03.30-14.37.16:929][ 90]LogPlayLevel: PIE: World Init took: (0.000967s)
+[2025.03.30-14.37.16:930][ 90]LogAudio: Display: Creating Audio Device:                 Id: 27, Scope: Unique, Realtime: True
+[2025.03.30-14.37.16:930][ 90]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.03.30-14.37.16:930][ 90]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.03.30-14.37.16:930][ 90]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.03.30-14.37.16:930][ 90]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.03.30-14.37.16:930][ 90]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.03.30-14.37.16:930][ 90]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.03.30-14.37.16:930][ 90]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.03.30-14.37.16:930][ 90]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.03.30-14.37.16:930][ 90]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.03.30-14.37.16:930][ 90]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.03.30-14.37.16:930][ 90]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.03.30-14.37.16:932][ 90]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.03.30-14.37.16:944][ 90]LogAudioMixer: Display: Using Audio Hardware Device CABLE Input (VB-Audio Virtual Cable)
+[2025.03.30-14.37.16:944][ 90]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.03.30-14.37.16:944][ 90]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.03.30-14.37.16:944][ 90]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.03.30-14.37.16:944][ 90]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=27
+[2025.03.30-14.37.16:944][ 90]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=27
+[2025.03.30-14.37.16:946][ 90]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=27
+[2025.03.30-14.37.16:946][ 90]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=27
+[2025.03.30-14.37.16:946][ 90]LogInit: FAudioDevice initialized with ID 27.
+[2025.03.30-14.37.16:946][ 90]LogAudio: Display: Audio Device (ID: 27) registered with world 'Untitled'.
+[2025.03.30-14.37.16:946][ 90]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 27
+[2025.03.30-14.37.16:972][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.37.16:972][ 90]LogGlobalStatus: UEngine::Browse Started Browse: "127.0.0.1:17777/Game/Maps/StartupMap"
+[2025.03.30-14.37.16:972][ 90]LogNet: Browse: 127.0.0.1:17777/Game/Maps/StartupMap
+[2025.03.30-14.37.16:972][ 90]LogPushModel: PushModel HandleCreation is now enabled
+[2025.03.30-14.37.16:972][ 90]LogNet: InitBase PendingNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.03.30-14.37.16:972][ 90]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.03.30-14.37.16:972][ 90]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2025.03.30-14.37.16:972][ 90]LogNet: Created socket for bind address: 0.0.0.0:0
+[2025.03.30-14.37.16:972][ 90]LogNet: IpConnection_29 setting maximum channels to: 32767
+[2025.03.30-14.37.16:972][ 90]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.37.16:972][ 90]LogHandshake: Stateless Handshake: NetDriverDefinition 'GameNetDriver' CachedClientID: 0
+[2025.03.30-14.37.16:972][ 90]LogNet: Game client on port 17777, rate 100000
+[2025.03.30-14.37.16:975][ 90]PIE: Client logged in
+[2025.03.30-14.37.16:977][ 90]PIE: Play in editor total start time 0,191 seconds.
+[2025.03.30-14.37.17:940][197]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54999
+[2025.03.30-14.37.17:940][197]LogHandshake: SendConnectChallenge. Timestamp: 1.164241, Cookie: 085103051012215014185006013212165234056168072130048025173099
+[2025.03.30-14.37.17:941][197]LogHandshake: Cached server SessionID: 0
+[2025.03.30-14.37.17:941][197]LogHandshake: SendChallengeResponse. Timestamp: 1.164241, Cookie: 085103051012215014185006013212165234056168072130048025173099
+[2025.03.30-14.37.17:949][198]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:54999
+[2025.03.30-14.37.17:949][198]LogHandshake: SendChallengeAck. InCookie: 085103051012215014185006013212165234056168072130048025173099
+[2025.03.30-14.37.17:949][198]LogNet: Server accepting post-challenge connection from: 127.0.0.1:54999
+[2025.03.30-14.37.17:949][198]LogNet: IpConnection_30 setting maximum channels to: 32767
+[2025.03.30-14.37.17:949][198]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.37.17:949][198]LogNet: NotifyAcceptedConnection: Name: Level1, TimeStamp: 03/30/25 16:37:17, [UNetConnection] RemoteAddr: 127.0.0.1:54999, Name: IpConnection_30, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.37.17:949][198]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:54999, Name: IpConnection_30, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.37.17:949][198]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_22, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.37.17:956][199]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_Level1.Level1: Accepted
+[2025.03.30-14.37.17:956][199]LogNet: Remote platform little endian=1
+[2025.03.30-14.37.17:956][199]LogNet: This platform little endian=1
+[2025.03.30-14.37.17:958][199]LogOnline: OSS: Created online subsystem instance for: :Context_34
+[2025.03.30-14.37.17:965][200]LogNet: Login request: ?Name=DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA userId: NULL:DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA platform: NULL
+[2025.03.30-14.37.17:966][200]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_Level1, Game: /Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C)
+[2025.03.30-14.37.17:966][200]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/Level1?game=/Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C
+[2025.03.30-14.37.17:966][200]LogWorld: BeginTearingDown for /Temp/Untitled_15
+[2025.03.30-14.37.17:966][200]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.37.17:966][200]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.37.17:981][200]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.03.30-14.37.17:982][200]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2025.03.30-14.37.17:985][200]LogAudio: Display: Audio Device (ID: 26) registered with world 'Level1'.
+[2025.03.30-14.37.17:985][200]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.30-14.37.17:986][200]LogPlayLevel: PIE: World Init took: (0.000978s)
+[2025.03.30-14.37.17:987][200]LogWorld: Bringing World /Game/Maps/UEDPIE_1_Level1.Level1 up for play (max tick rate 0) at 2025.03.30-16.37.17
+[2025.03.30-14.37.17:987][200]LogWorld: Bringing up level for play took: 0.000687
+[2025.03.30-14.37.17:987][200]LogLoad: Took 0.021268 seconds to LoadMap(/Game/Maps/Level1)
+[2025.03.30-14.37.17:987][200]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/Level1
+[2025.03.30-14.37.17:987][200]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2025.03.30-14.37.17:996][201]LogNet: Client netspeed is 100000
+[2025.03.30-14.37.17:996][201]LogNet: Join request: /Game/Maps/StartupMap?Name=DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA?SplitscreenCount=1
+[2025.03.30-14.37.17:996][201]LogNet: Join succeeded: DESKTOP-NVQ7O0J-6E98
+[2025.03.30-14.37.17:996][201]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55000
+[2025.03.30-14.37.17:996][201]LogHandshake: SendConnectChallenge. Timestamp: 1.220015, Cookie: 013073013116138083020068076186155155243164133238152165209018
+[2025.03.30-14.37.17:996][201]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.17:997][201]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.17:998][201]LogHandshake: Cached server SessionID: 0
+[2025.03.30-14.37.17:998][201]LogHandshake: SendChallengeResponse. Timestamp: 1.220015, Cookie: 013073013116138083020068076186155155243164133238152165209018
+[2025.03.30-14.37.18:037][202]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55000
+[2025.03.30-14.37.18:037][202]LogHandshake: SendChallengeAck. InCookie: 013073013116138083020068076186155155243164133238152165209018
+[2025.03.30-14.37.18:037][202]LogNet: Server accepting post-challenge connection from: 127.0.0.1:55000
+[2025.03.30-14.37.18:037][202]LogNet: IpConnection_31 setting maximum channels to: 32767
+[2025.03.30-14.37.18:037][202]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.03.30-14.37.18:037][202]LogNet: NotifyAcceptedConnection: Name: Level1, TimeStamp: 03/30/25 16:37:18, [UNetConnection] RemoteAddr: 127.0.0.1:55000, Name: IpConnection_31, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.37.18:037][202]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:55000, Name: IpConnection_31, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.37.18:039][202]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_29, Driver: Name:PendingNetDriver Def:GameNetDriver IpNetDriver_23, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2025.03.30-14.37.18:049][203]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_Level1.Level1: Accepted
+[2025.03.30-14.37.18:049][203]LogNet: Remote platform little endian=1
+[2025.03.30-14.37.18:049][203]LogNet: This platform little endian=1
+[2025.03.30-14.37.18:053][203]LogOnline: OSS: Created online subsystem instance for: :Context_35
+[2025.03.30-14.37.18:060][204]LogNet: Login request: ?Name=DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF userId: NULL:DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF platform: NULL
+[2025.03.30-14.37.18:061][204]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_Level1, Game: /Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C)
+[2025.03.30-14.37.18:061][204]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/Level1?game=/Game/Blueprints/GameModes/BP_Level1GameMode.BP_Level1GameMode_C
+[2025.03.30-14.37.18:061][204]LogWorld: BeginTearingDown for /Temp/Untitled_16
+[2025.03.30-14.37.18:061][204]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.37.18:062][204]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.37.18:085][204]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.03.30-14.37.18:086][204]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2025.03.30-14.37.18:089][204]LogAudio: Display: Audio Device (ID: 27) registered with world 'Level1'.
+[2025.03.30-14.37.18:089][204]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2025.03.30-14.37.18:089][204]LogPlayLevel: PIE: World Init took: (0.000868s)
+[2025.03.30-14.37.18:090][204]LogWorld: Bringing World /Game/Maps/UEDPIE_2_Level1.Level1 up for play (max tick rate 0) at 2025.03.30-16.37.18
+[2025.03.30-14.37.18:090][204]LogWorld: Bringing up level for play took: 0.000601
+[2025.03.30-14.37.18:090][204]LogLoad: Took 0.028848 seconds to LoadMap(/Game/Maps/Level1)
+[2025.03.30-14.37.18:090][204]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/Level1
+[2025.03.30-14.37.18:090][204]LogGlobalStatus: UPendingNetGame::TravelCompleted Pending net game travel completed
+[2025.03.30-14.37.18:098][205]LogNet: Client netspeed is 100000
+[2025.03.30-14.37.18:098][205]LogNet: Join request: /Game/Maps/StartupMap?Name=DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF?SplitscreenCount=1
+[2025.03.30-14.37.18:099][205]LogNet: Join succeeded: DESKTOP-NVQ7O0J-2FC1
+[2025.03.30-14.37.18:099][205]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.18:100][205]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.18:782][261]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.18:782][261]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.19:780][346]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.19:780][346]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.20:786][431]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.20:786][431]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.21:787][515]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.21:787][515]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.22:779][599]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.22:779][599]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.23:776][685]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.23:776][685]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.24:783][771]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.24:783][771]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.25:779][855]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.25:779][855]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.26:782][940]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.26:782][940]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2025.03.30-14.37.26:785][940]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.26:786][940]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.26:786][940]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2025.03.30-14.37.26:786][940]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.26:787][940]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.26:787][940]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.26:803][941]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.37.26:805][941]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.37.27:785][ 22]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.27:785][ 22]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.28:787][104]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.28:787][104]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.29:148][133]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.37.29:482][160]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.37.29:485][160]LogTemp: Warning: Setting HUD Ammo for: 59. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.29:486][160]LogTemp: Warning: Setting HUD Ammo for: 59. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.29:563][166]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.29:640][172]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.37.29:642][172]LogTemp: Warning: Setting HUD Ammo for: 58. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.29:644][172]LogTemp: Warning: Setting HUD Ammo for: 58. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.29:724][178]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.29:779][182]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.29:779][182]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.29:792][183]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.37.29:794][183]LogTemp: Warning: Setting HUD Ammo for: 57. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.29:795][183]LogTemp: Warning: Setting HUD Ammo for: 57. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.29:875][189]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.29:942][194]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.37.29:955][195]LogTemp: Warning: Setting HUD Ammo for: 56. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.29:956][195]LogTemp: Warning: Setting HUD Ammo for: 56. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.30:023][200]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.30:064][203]LogTemp: Warning: Firing (CombatComponent.cpp/Fire)
+[2025.03.30-14.37.30:065][203]LogTemp: Warning: Setting HUD Ammo for: 55. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.30:065][203]LogTemp: Warning: Setting HUD Ammo for: 55. (BaseWeapon.cpp/OnRepAmmo)
+[2025.03.30-14.37.30:290][220]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.03.30-14.37.30:896][242]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.30:896][242]LogTemp: Warning: HUD components are invalid, setting timer to retry.
+[2025.03.30-14.37.31:682][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.37.31:682][244]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_2_Level1
+[2025.03.30-14.37.31:682][244]LogSlate: Window 'MultiplayerShooter Preview [NetMode: Client 2]  (64-bit/PC D3D SM6)' being destroyed
+[2025.03.30-14.37.31:686][244]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.37.31:687][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.37.31:687][244]LogNet: World NetDriver shutdown IpNetDriver_23 [GameNetDriver]
+[2025.03.30-14.37.31:687][244]LogNet: DestroyNamedNetDriver IpNetDriver_23 [GameNetDriver]
+[2025.03.30-14.37.31:687][244]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_29, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_23, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF, Channels: 20, Time: 2025.03.30-14.37.31
+[2025.03.30-14.37.31:687][244]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_29, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_23, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF
+[2025.03.30-14.37.31:687][244]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_23 shut down
+[2025.03.30-14.37.31:689][244]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_Level1
+[2025.03.30-14.37.31:689][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.37.31:690][244]LogSlate: Window 'MultiplayerShooter Preview [NetMode: Client 1]  (64-bit/PC D3D SM6)' being destroyed
+[2025.03.30-14.37.31:692][244]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.37.31:692][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.37.31:693][244]LogNet: World NetDriver shutdown IpNetDriver_22 [GameNetDriver]
+[2025.03.30-14.37.31:693][244]LogNet: DestroyNamedNetDriver IpNetDriver_22 [GameNetDriver]
+[2025.03.30-14.37.31:693][244]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_22, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA, Channels: 20, Time: 2025.03.30-14.37.31
+[2025.03.30-14.37.31:693][244]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_22, IsServer: NO, PC: BP_MyPlayerController_C_0, Owner: BP_MyPlayerController_C_0, UniqueId: NULL:DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA
+[2025.03.30-14.37.31:693][244]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_22 shut down
+[2025.03.30-14.37.31:694][244]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Level1
+[2025.03.30-14.37.31:695][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.37.31:695][244]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2025.03.30-14.37.31:696][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.37.31:696][244]LogNet: World NetDriver shutdown IpNetDriver_21 [GameNetDriver]
+[2025.03.30-14.37.31:696][244]LogNet: DestroyNamedNetDriver IpNetDriver_21 [GameNetDriver]
+[2025.03.30-14.37.31:696][244]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.37.31:696][244]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2025.03.30-14.37.31:696][244]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.37.31:696][244]LogNet:  - Result=HostClosedConnection, ErrorContext="HostClosedConnection"
+[2025.03.30-14.37.31:696][244]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:54999, Name: IpConnection_30, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA
+[2025.03.30-14.37.31:696][244]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:54999, Name: IpConnection_30, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA, Channels: 20, Time: 2025.03.30-14.37.31
+[2025.03.30-14.37.31:697][244]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.37.31:697][244]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2025.03.30-14.37.31:697][244]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:54999, Name: IpConnection_30, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA
+[2025.03.30-14.37.31:697][244]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:54999 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:54999, Name: IpConnection_30, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_1, Owner: BP_MyPlayerController_C_1, UniqueId: NULL:DESKTOP-NVQ7O0J-6E98C26946D0BEE3BE5AA48C66FB65BA
+[2025.03.30-14.37.31:697][244]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:55000, Name: IpConnection_31, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF
+[2025.03.30-14.37.31:697][244]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:55000, Name: IpConnection_31, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF, Channels: 20, Time: 2025.03.30-14.37.31
+[2025.03.30-14.37.31:697][244]LogNet: UNetConnection::SendCloseReason:
+[2025.03.30-14.37.31:697][244]LogNet:  - Result=Cleanup, ErrorContext="Cleanup"
+[2025.03.30-14.37.31:697][244]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:55000, Name: IpConnection_31, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF
+[2025.03.30-14.37.31:697][244]LogNet: UNetDriver::RemoveClientConnection - Removed address 127.0.0.1:55000 from MappedClientConnections for: [UNetConnection] RemoteAddr: 127.0.0.1:55000, Name: IpConnection_31, Driver: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21, IsServer: YES, PC: BP_MyPlayerController_C_2, Owner: BP_MyPlayerController_C_2, UniqueId: NULL:DESKTOP-NVQ7O0J-2FC1F33A4A661722715BB2BF2700ECBF
+[2025.03.30-14.37.31:697][244]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_21 shut down
+[2025.03.30-14.37.31:699][244]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.03.30-14.37.31:701][244]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.03.30-14.37.31:718][244]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 27
+[2025.03.30-14.37.31:718][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=27
+[2025.03.30-14.37.31:720][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=27
+[2025.03.30-14.37.31:723][244]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 26
+[2025.03.30-14.37.31:723][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=26
+[2025.03.30-14.37.31:724][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=26
+[2025.03.30-14.37.31:727][244]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.03.30-14.37.31:727][244]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 25
+[2025.03.30-14.37.31:727][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2025.03.30-14.37.31:729][244]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2025.03.30-14.37.31:735][244]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2025.03.30-14.37.31:751][245]LogPlayLevel: Display: Destroying online subsystem :Context_35
+[2025.03.30-14.37.31:751][245]LogPlayLevel: Display: Destroying online subsystem :Context_34
+[2025.03.30-14.37.31:751][245]LogPlayLevel: Display: Destroying online subsystem :Context_33
+[2025.03.30-14.37.33:603][467]LogDerivedDataCache: C:/Users/tisza/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2025.03.30-14.37.54:762][960]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2025.03.30-14.37.54:764][960]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.03.30-14.37.54:792][960]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/GameModes/BP_Level1GameMode] ([2] browsable assets)...
+[2025.03.30-14.37.54:792][960]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/GameModes/BP_Level1GameMode]
+[2025.03.30-14.37.54:794][960]LogSavePackage: Moving output files for package: /Game/Blueprints/GameModes/BP_Level1GameMode
+[2025.03.30-14.37.54:795][960]LogSavePackage: Moving 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Saved/BP_Level1GameMode361464C04FA671FB497BEFAFB498419F.tmp' to 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Content/Blueprints/GameModes/BP_Level1GameMode.uasset'
+[2025.03.30-14.37.54:801][960]LogFileHelpers: InternalPromptForCheckoutAndSave took 37.062 ms (total: 409.107 ms)
+[2025.03.30-14.37.54:832][960]LogContentValidation: Display: Starting to validate 1 assets
+[2025.03.30-14.37.54:832][960]LogContentValidation: Enabled validators:
+[2025.03.30-14.37.54:832][960]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.03.30-14.37.54:832][960]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.03.30-14.37.54:832][960]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.03.30-14.37.54:832][960]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.03.30-14.37.54:832][960]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.03.30-14.37.54:832][960]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.03.30-14.37.54:832][960]AssetCheck: /Game/Blueprints/GameModes/BP_Level1GameMode Validating asset

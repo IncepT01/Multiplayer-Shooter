@@ -7,6 +7,7 @@
  #include "Components/ProgressBar.h"
  #include "Components/TextBlock.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
+#include "Net/UnrealNetwork.h"
  
  void AMyPlayerController::BeginPlay()
  {
