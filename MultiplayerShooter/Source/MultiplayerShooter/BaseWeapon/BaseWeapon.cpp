@@ -9,6 +9,7 @@
 #include "NiagaraComponent.h" 
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
+#include "MultiplayerShooter/PlayerController/MyPlayerController.h"
 
 
 // Sets default values
@@ -85,6 +86,7 @@ void ABaseWeapon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ABaseWeapon, WeaponState);
+	DOREPLIFETIME(ABaseWeapon, Ammo);
 }
 
 void ABaseWeapon::SetWeaponState(EWeaponState State)
@@ -165,6 +167,50 @@ void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 			true
 		);
 	}
-	
+}
 
+void ABaseWeapon::SetHUDAmmo()
+{
+	OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
+	if (OwnerCharacter)
+	{
+		OwnerController = OwnerController == nullptr ? Cast<AMyPlayerController>(OwnerCharacter->Controller) : OwnerController;
+		if (OwnerController)
+		{
+			OwnerController->SetHUDWeaponAmmo(Ammo);
+		}
+	}
+}
+ 
+void ABaseWeapon::SpendRound()
+{
+	Ammo = FMath::Clamp(Ammo - 1, 0, MagCapacity);
+	SetHUDAmmo();
+}
+ 
+void ABaseWeapon::OnRep_Ammo()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Setting HUD Ammo for: %d. (BaseWeapon.cpp/OnRepAmmo)"), Ammo);
+	OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
+	SetHUDAmmo();
+}
+ 
+void ABaseWeapon::OnRep_Owner()
+{
+	Super::OnRep_Owner();
+	if (Owner == nullptr)
+	{
+		OwnerCharacter = nullptr;
+		OwnerController = nullptr;
+	}
+	else
+	{
+		SetHUDAmmo();
+	}
+}
+
+
+bool ABaseWeapon::IsEmpty()
+{
+	return Ammo <= 0;
 }

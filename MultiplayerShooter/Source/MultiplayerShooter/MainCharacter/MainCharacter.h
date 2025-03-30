@@ -116,7 +116,8 @@ protected:
  
 	UFUNCTION()
 	void OnRep_Health();
-	
+
+	UPROPERTY()
 	class AMyPlayerController* MyPlayerController;
 
 public:
@@ -156,6 +157,7 @@ public:
 	FORCEINLINE float GetHealth() const { return Health; }
 	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
 
+	UPROPERTY()
 	class AMainPlayerState* MainPlayerState;
 
 private:

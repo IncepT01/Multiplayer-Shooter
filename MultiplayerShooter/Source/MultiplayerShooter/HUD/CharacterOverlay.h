@@ -22,5 +22,10 @@ public:
 
 	UPROPERTY(meta = (BindWidget))
 	UTextBlock* ScoreAmount;
+
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* WeaponAmmoAmount;
 	
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* MatchCountdownText;
 };

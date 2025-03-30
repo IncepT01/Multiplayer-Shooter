@@ -452,6 +452,11 @@ void AMainCharacter::Elim()
 
 void AMainCharacter::Multicast_Elim_Implementation()
 {
+	if (MyPlayerController)
+	{
+		MyPlayerController->SetHUDWeaponAmmo(0);
+	}
+	
 	bElimmed = true;
 	PlayElimMontage();
 

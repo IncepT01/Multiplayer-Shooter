@@ -16,10 +16,19 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  public:
  	void SetHUDHealth(float Health, float MaxHealth);
  	void SetHUDScore(float Score);
+ 	void SetHUDWeaponAmmo(int32 Ammo);
+ 	void SetHUDMatchCountdown(float CountdownTime);
+
+ 	virtual void Tick(float DeltaTime) override;
  protected:
  	virtual void BeginPlay() override;
  	virtual void OnPossess(APawn* InPawn) override;
- 
+
+ 	void SetHUDTime();
  private:
+ 	UPROPERTY()
  	class AMainHUD* MainHUD;
+
+ 	float MatchTime = 300.f;
+ 	uint32 CountdownInt = 0;
  };

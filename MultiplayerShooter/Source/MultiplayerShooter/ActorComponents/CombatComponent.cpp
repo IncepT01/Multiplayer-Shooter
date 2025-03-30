@@ -168,6 +168,7 @@ void UCombatComponent::EquipWeapon(ABaseWeapon* WeaponToEquip)
 		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, FString(TEXT("No hand socket found")));
 	}
 	EquippedWeapon->SetOwner(Character);
+	EquippedWeapon->SetHUDAmmo();
 	Character->GetCharacterMovement()->bOrientRotationToMovement = false;
 	Character->bUseControllerRotationYaw = true;
 
@@ -218,9 +219,11 @@ void UCombatComponent::OnRep_EquippedWeapon()
 
 void UCombatComponent::Fire()
 {
-	if (bCanFire)
+	if (CanFire())
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Firing (CombatComponent.cpp/Fire)"));
 		bCanFire = false;
+		EquippedWeapon->SpendRound();
 		Server_Fire(bFireButtonPressed, HitTarget);
 		if (EquippedWeapon)
 		{
@@ -242,7 +245,8 @@ void UCombatComponent::FireButtonPressed(bool bPressed)
 void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed, const FVector_NetQuantize& TracerTarget)
 {
 	//bLocalFireButtonPressed means it is used in this Function only
-	UE_LOG(LogTemp, Display, TEXT("Server bLocalFIreButtonPressed %hs"), bLocalFireButtonPressed ? "true" : "false");
+	//UE_LOG(LogTemp, Warning, TEXT("Firing (CombatComponent.cpp/Server_Fire)"));
+	//UE_LOG(LogTemp, Display, TEXT("Server bLocalFIreButtonPressed %hs"), bLocalFireButtonPressed ? "true" : "false");
 	if (bLocalFireButtonPressed)
 	{
 		EquippedWeapon->Multicast_StartFiring(TracerTarget);
@@ -363,5 +367,11 @@ void UCombatComponent::FireTimerFinished()
 	{
 		Fire();
 	}
+}
+
+bool UCombatComponent::CanFire()
+{
+	if (EquippedWeapon == nullptr) return false;
+	return !EquippedWeapon->IsEmpty() || !bCanFire;
 }
 

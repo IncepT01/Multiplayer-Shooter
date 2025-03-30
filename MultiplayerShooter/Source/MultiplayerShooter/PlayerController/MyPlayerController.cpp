@@ -15,6 +15,13 @@
  	MainHUD = Cast<AMainHUD>(GetHUD());
  }
 
+void AMyPlayerController::Tick(float DeltaTime)
+ {
+ 	Super::Tick(DeltaTime);
+ 
+ 	SetHUDTime();
+ }
+
 void AMyPlayerController::OnPossess(APawn* InPawn)
  {
  	Super::OnPossess(InPawn);
@@ -24,25 +31,6 @@ void AMyPlayerController::OnPossess(APawn* InPawn)
  		SetHUDHealth(MainCharacter->GetHealth(), MainCharacter->GetMaxHealth());
  	}
  }
-
-/*
-void AMyPlayerController::SetHUDHealth(float Health, float MaxHealth)
- {
- 	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
- 
- 	bool bHUDValid = MainHUD && 
-		 MainHUD->CharacterOverlay && 
-		 MainHUD->CharacterOverlay->HealthBar && 
-		 MainHUD->CharacterOverlay->HealthText;
- 	if (bHUDValid)
- 	{
- 		const float HealthPercent = Health / MaxHealth;
- 		//MainHUD->CharacterOverlay->HealthBar->SetPercent(HealthPercent);
- 		FString HealthText = FString::Printf(TEXT("%d/%d"), FMath::CeilToInt(Health), FMath::CeilToInt(MaxHealth));
- 		MainHUD->CharacterOverlay->HealthText->SetText(FText::FromString(HealthText));
- 	}
- }
-*/
 
 void AMyPlayerController::SetHUDHealth(float Health, float MaxHealth)
  {
@@ -84,4 +72,57 @@ void AMyPlayerController::SetHUDScore(float Score)
  	{
  		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
  	}
+ }
+
+void AMyPlayerController::SetHUDWeaponAmmo(int32 Ammo)
+ {
+ 	if (!IsValid(MainHUD))
+ 	{
+ 		MainHUD = Cast<AMainHUD>(GetHUD());
+ 	}
+ 	
+ 	if (IsValid(MainHUD) && IsValid(MainHUD->CharacterOverlay) && IsValid(MainHUD->CharacterOverlay->WeaponAmmoAmount))
+ 	{
+ 		FString AmmoText = FString::Printf(TEXT("%d"), Ammo);
+ 		MainHUD->CharacterOverlay->WeaponAmmoAmount->SetText(FText::FromString(AmmoText));
+
+ 	}
+ 	else
+ 	{
+ 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 	}
+ }
+
+void AMyPlayerController::SetHUDMatchCountdown(float CountdownTime)
+ {
+ 	if (!IsValid(MainHUD))
+ 	{
+ 		MainHUD = Cast<AMainHUD>(GetHUD());
+ 	}
+ 	
+ 	if (IsValid(MainHUD) && IsValid(MainHUD->CharacterOverlay) && IsValid(MainHUD->CharacterOverlay->MatchCountdownText))
+ 	{
+ 		int32 Minutes = FMath::FloorToInt(CountdownTime / 60.f);
+ 		int32 Seconds = CountdownTime - Minutes * 60;
+ 
+ 		FString CountdownText = FString::Printf(TEXT("%02d:%02d"), Minutes, Seconds);
+ 		MainHUD->CharacterOverlay->MatchCountdownText->SetText(FText::FromString(CountdownText));
+
+ 	}
+ 	else
+ 	{
+ 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 	}
+ }
+
+
+void AMyPlayerController::SetHUDTime()
+ {
+ 	uint32 SecondsLeft = FMath::CeilToInt(MatchTime - GetWorld()->GetTimeSeconds());
+ 	if (CountdownInt != SecondsLeft)
+ 	{
+ 		SetHUDMatchCountdown(MatchTime - GetWorld()->GetTimeSeconds());
+ 	}
+ 
+ 	CountdownInt = SecondsLeft;
  }

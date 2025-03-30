@@ -45,8 +45,13 @@ protected:
 	void SetHUDCrosshairs(float DeltaTime);
 
 private:
+	UPROPERTY()
 	class AMainCharacter* Character;
+
+	UPROPERTY()
 	class AMyPlayerController* Controller;
+
+	UPROPERTY()
 	class AMainHUD* HUD;
 
 	UPROPERTY(ReplicatedUsing=OnRep_EquippedWeapon)
@@ -91,5 +96,7 @@ private:
  
 	void StartFireTimer();
 	void FireTimerFinished();
+	
+	bool CanFire();
 	
 };

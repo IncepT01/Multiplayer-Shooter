@@ -26,6 +26,12 @@ class MULTIPLAYERSHOOTER_API ABaseWeapon : public AActor
 	
 public:
 	ABaseWeapon();
+
+	void SpendRound();
+	
+	virtual void OnRep_Owner() override;
+	void SetHUDAmmo();
+	
 	virtual void Tick(float DeltaTime) override;
 
 	void ShowPickupWidget(bool bShowWidget);
@@ -109,6 +115,20 @@ private:
 	UFUNCTION()
 	void OnRep_WeaponState();
 
+	UPROPERTY(EditAnywhere, ReplicatedUsing = OnRep_Ammo)
+	int32 Ammo;
+ 
+	UFUNCTION()
+	void OnRep_Ammo();
+ 
+	UPROPERTY(EditAnywhere)
+	int32 MagCapacity;
+ 
+	UPROPERTY()
+	class AMainCharacter* OwnerCharacter;
+	UPROPERTY()
+	class AMyPlayerController* OwnerController;
+
 
 public:
 
@@ -118,4 +138,5 @@ public:
 	FORCEINLINE float GetZoomedFOV() const { return ZoomedFOV; }
 	FORCEINLINE float GetZoomInterpSpeed() const { return ZoomInterpSpeed; }
 
+	bool IsEmpty();
 };

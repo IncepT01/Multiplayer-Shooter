@@ -16,7 +16,7 @@ void AMainPlayerState::AddToScore(float ScoreAmount)
  {
  	SetScore(GetScore() + ScoreAmount);
  	Character = Character == nullptr ? Cast<AMainCharacter>(GetPawn()) : Character;
- 	if (Character && Character->Controller)
+ 	if (Character)
  	{
  		Controller = Controller == nullptr ? Cast<AMyPlayerController>(Character->Controller) : Controller;
  		if (Controller)
@@ -31,7 +31,7 @@ void AMainPlayerState::OnRep_Score()
  	Super::OnRep_Score();
  
  	Character = Character == nullptr ? Cast<AMainCharacter>(GetPawn()) : Character;
- 	if (Character && Character->Controller)
+ 	if (Character)
  	{
  		Controller = Controller == nullptr ? Cast<AMyPlayerController>(Character->Controller) : Controller;
  		if (Controller)

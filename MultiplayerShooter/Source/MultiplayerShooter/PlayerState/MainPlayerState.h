@@ -24,6 +24,10 @@ public:
  
 	void AddToScore(float ScoreAmount);
 private:
+	
+	UPROPERTY()
 	class AMainCharacter* Character;
+
+	UPROPERTY()
 	class AMyPlayerController* Controller;
 };
