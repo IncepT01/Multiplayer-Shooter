@@ -8,12 +8,27 @@
  #include "Components/TextBlock.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Net/UnrealNetwork.h"
+#include "MultiplayerShooter/GameMode/MainGameMode.h"
+ #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
+#include "MultiplayerShooter/HUD/Announcement.h"
+ #include "Kismet/GameplayStatics.h"
+
+void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
  
+	DOREPLIFETIME(AMyPlayerController, MatchState);
+}
+
  void AMyPlayerController::BeginPlay()
  {
  	Super::BeginPlay();
  
  	MainHUD = Cast<AMainHUD>(GetHUD());
+	if (MainHUD)
+	{
+		MainHUD->AddAnnouncement();
+	}
  }
 
 void AMyPlayerController::Tick(float DeltaTime)
@@ -22,7 +37,24 @@ void AMyPlayerController::Tick(float DeltaTime)
  
  	SetHUDTime();
  	CheckTimeSync(DeltaTime);
+	PollInit();
  }
+
+void AMyPlayerController::PollInit()
+{
+	if (CharacterOverlay == nullptr)
+	{
+		if (MainHUD && MainHUD->CharacterOverlay)
+		{
+			CharacterOverlay = MainHUD->CharacterOverlay;
+			if (CharacterOverlay)
+			{
+				SetHUDHealth(HUDHealth, HUDMaxHealth);
+				SetHUDScore(HUDScore);
+			}
+		}
+	}
+}
 
 void AMyPlayerController::CheckTimeSync(float DeltaTime)
  {
@@ -32,6 +64,7 @@ void AMyPlayerController::CheckTimeSync(float DeltaTime)
  		ServerRequestServerTime(GetWorld()->GetTimeSeconds());
  		TimeSyncRunningTime = 0.f;
  	}
+ 	
  }
 
 void AMyPlayerController::OnPossess(APawn* InPawn)
@@ -62,7 +95,9 @@ void AMyPlayerController::SetHUDHealth(float Health, float MaxHealth)
  	}
  	else
  	{
- 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 		bInitializeCharacterOverlay = true;
+ 		HUDHealth = Health;
+ 		HUDMaxHealth = MaxHealth;
  	}
  	
  }
@@ -82,7 +117,9 @@ void AMyPlayerController::SetHUDScore(float Score)
  	}
  	else
  	{
- 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 		bInitializeCharacterOverlay = true;
+ 		HUDScore = Score;
+ 		//UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
  	}
  }
 
@@ -166,3 +203,34 @@ void AMyPlayerController::ReceivedPlayer()
  		ServerRequestServerTime(GetWorld()->GetTimeSeconds());
  	}
  }
+
+void AMyPlayerController::OnMatchStateSet(FName State)
+ {
+ 	MatchState = State;
+ 
+ 	if (MatchState == MatchState::InProgress)
+ 	{
+ 		HandleMatchHasStarted();
+ 	}
+ }
+ 
+void AMyPlayerController::OnRep_MatchState()
+ {
+ 	if (MatchState == MatchState::InProgress)
+ 	{
+ 		HandleMatchHasStarted();
+ 	}
+ }
+
+void AMyPlayerController::HandleMatchHasStarted()
+{
+	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
+	if (MainHUD)
+	{
+		MainHUD->AddCharacterOverlay();
+		if (MainHUD->Announcement)
+		{
+			MainHUD->Announcement->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
+}

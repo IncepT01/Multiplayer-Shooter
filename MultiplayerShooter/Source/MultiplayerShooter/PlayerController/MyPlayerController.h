@@ -18,17 +18,22 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	void SetHUDScore(float Score);
  	void SetHUDWeaponAmmo(int32 Ammo);
  	void SetHUDMatchCountdown(float CountdownTime);
+ 	void HandleMatchHasStarted();
 
  	virtual void Tick(float DeltaTime) override;
+ 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
  	virtual float GetServerTime(); // Synced with server world clock
  	virtual void ReceivedPlayer() override; // Sync with server clock as soon as possible
+
+ 	void OnMatchStateSet(FName State);
  	
  protected:
  	virtual void BeginPlay() override;
  	virtual void OnPossess(APawn* InPawn) override;
 
  	void SetHUDTime();
+ 	void PollInit();
 
  	/** 
 	 * Sync time between client and server
@@ -56,4 +61,19 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
 
  	float MatchTime = 300.f;
  	uint32 CountdownInt = 0;
+
+ 	UPROPERTY(ReplicatedUsing = OnRep_MatchState)
+ 	FName MatchState;
+ 
+ 	UFUNCTION()
+ 	void OnRep_MatchState();
+ 
+ 	UPROPERTY()
+ 	class UCharacterOverlay* CharacterOverlay;
+ 	bool bInitializeCharacterOverlay = false;
+ 
+ 	float HUDHealth;
+ 	float HUDMaxHealth;
+ 	float HUDScore;
+ 	int32 HUDDefeats;
  };

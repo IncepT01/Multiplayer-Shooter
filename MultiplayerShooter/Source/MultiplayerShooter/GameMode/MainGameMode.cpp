@@ -69,3 +69,17 @@ void AMainGameMode::RequestRespawn(ACharacter* ElimmedCharacter, AController* El
  		RestartPlayerAtPlayerStart(ElimmedController, PlayerStarts[Selection]);
  	}
  }
+
+void AMainGameMode::OnMatchStateSet()
+{
+	Super::OnMatchStateSet();
+ 
+	for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
+	{
+		AMyPlayerController* Player = Cast<AMyPlayerController>(*It);
+		if (Player)
+		{
+			Player->OnMatchStateSet(MatchState);
+		}
+	}
+}

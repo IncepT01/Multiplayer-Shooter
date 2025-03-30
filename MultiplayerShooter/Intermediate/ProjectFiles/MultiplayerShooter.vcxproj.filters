@@ -144,6 +144,12 @@
     <Filter Include="Source\MultiplayerShooter\HUD">
       <UniqueIdentifier>{2B2B6DE5-F8FA-3BA0-9AF5-5E8D70C4516A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\Announcement.cpp">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\Announcement.h">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\CharacterOverlay.cpp">
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>

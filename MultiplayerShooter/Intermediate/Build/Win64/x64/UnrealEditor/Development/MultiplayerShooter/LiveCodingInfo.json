@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.MultiplayerShooter.cpp.obj": [
+			"Announcement.gen.cpp.obj",
 			"BaseWeapon.gen.cpp.obj",
 			"CharacterOverlay.gen.cpp.obj",
 			"CombatComponent.gen.cpp.obj",
@@ -18,7 +19,6 @@
 			"ProjectileBullet.gen.cpp.obj",
 			"ProjectileWeapon.gen.cpp.obj",
 			"TurningInPlace.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
 			"CombatComponent.cpp.obj",
 			"BaseWeapon.cpp.obj",
 			"Projectile.cpp.obj",
@@ -31,7 +31,9 @@
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
 			"MainPlayerState.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"MainGameMode.cpp.obj",
+			"Announcement.cpp.obj",
 			"MainHUD.cpp.obj",
 			"MyPlayerController.cpp.obj"
 		]

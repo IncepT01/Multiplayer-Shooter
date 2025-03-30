@@ -4,12 +4,12 @@
 #include "MainHUD.h"
 #include "GameFramework/PlayerController.h"
 #include "CharacterOverlay.h"
+#include "Announcement.h"
 
  void AMainHUD::BeginPlay()
  {
  	Super::BeginPlay();
- 
- 	AddCharacterOverlay();
+
  }
  
 void AMainHUD::AddCharacterOverlay()
@@ -85,3 +85,13 @@ void AMainHUD::DrawCrosshair(UTexture2D* Texture, FVector2D ViewportCenter, FVec
 		FLinearColor::White
 	);
 }
+
+void AMainHUD::AddAnnouncement()
+ {
+ 	APlayerController* PlayerController = GetOwningPlayerController();
+ 	if (PlayerController && AnnouncementClass)
+ 	{
+ 		Announcement = CreateWidget<UAnnouncement>(PlayerController, AnnouncementClass);
+ 		Announcement->AddToViewport();
+ 	}
+ }
