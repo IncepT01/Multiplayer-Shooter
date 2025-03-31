@@ -25,10 +25,7 @@ void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
  	Super::BeginPlay();
  
  	MainHUD = Cast<AMainHUD>(GetHUD());
-	if (MainHUD)
-	{
-		MainHUD->AddAnnouncement();
-	}
+	ServerCheckMatchState();
  }
 
 void AMyPlayerController::Tick(float DeltaTime)
@@ -167,10 +164,21 @@ void AMyPlayerController::SetHUDMatchCountdown(float CountdownTime)
 
 void AMyPlayerController::SetHUDTime()
  {
- 	uint32 SecondsLeft = FMath::CeilToInt(MatchTime - GetServerTime());
+	float TimeLeft = 0.f;
+	if (MatchState == MatchState::WaitingToStart) TimeLeft = WarmupTime - GetServerTime() + LevelStartingTime;
+	else if (MatchState == MatchState::InProgress) TimeLeft = WarmupTime + MatchTime - GetServerTime() + LevelStartingTime;
+ 
+	uint32 SecondsLeft = FMath::CeilToInt(TimeLeft);
  	if (CountdownInt != SecondsLeft)
  	{
- 		SetHUDMatchCountdown(MatchTime - GetServerTime());
+ 		if (MatchState == MatchState::WaitingToStart)
+ 		{
+ 			SetHUDAnnouncementCountdown(TimeLeft);
+ 		}
+ 		if (MatchState == MatchState::InProgress)
+ 		{
+ 			SetHUDMatchCountdown(TimeLeft);
+ 		}
  	}
  
  	CountdownInt = SecondsLeft;
@@ -232,5 +240,47 @@ void AMyPlayerController::HandleMatchHasStarted()
 		{
 			MainHUD->Announcement->SetVisibility(ESlateVisibility::Hidden);
 		}
+	}
+}
+
+void AMyPlayerController::ServerCheckMatchState_Implementation()
+{
+	AMainGameMode* GameMode = Cast<AMainGameMode>(UGameplayStatics::GetGameMode(this));
+	if (GameMode)
+	{
+		WarmupTime = GameMode->WarmupTime;
+		MatchTime = GameMode->MatchTime;
+		LevelStartingTime = GameMode->LevelStartingTime;
+		MatchState = GameMode->GetMatchState();
+		ClientJoinMidgame(MatchState, WarmupTime, MatchTime, LevelStartingTime);
+	}
+}
+ 
+void AMyPlayerController::ClientJoinMidgame_Implementation(FName StateOfMatch, float Warmup, float Match, float StartingTime)
+{
+	WarmupTime = Warmup;
+	MatchTime = Match;
+	LevelStartingTime = StartingTime;
+	MatchState = StateOfMatch;
+	OnMatchStateSet(MatchState);
+	if (MainHUD && MatchState == MatchState::WaitingToStart)
+	{
+		MainHUD->AddAnnouncement();
+	}
+}
+
+void AMyPlayerController::SetHUDAnnouncementCountdown(float CountdownTime)
+{
+	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
+	bool bHUDValid = MainHUD &&
+		MainHUD->Announcement &&
+		MainHUD->Announcement->WarmupTime;
+	if (bHUDValid)
+	{
+		int32 Minutes = FMath::FloorToInt(CountdownTime / 60.f);
+		int32 Seconds = CountdownTime - Minutes * 60;
+ 
+		FString CountdownText = FString::Printf(TEXT("%02d:%02d"), Minutes, Seconds);
+		MainHUD->Announcement->WarmupTime->SetText(FText::FromString(CountdownText));
 	}
 }

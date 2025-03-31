@@ -15,8 +15,8 @@ class MULTIPLAYERSHOOTER_API UOverheadWidget : public UUserWidget
 	GENERATED_BODY()
 	
 public:
-	UPROPERTY(meta = (BindWidget))
-	class UTextBlock* DisplayText;
+	//UPROPERTY(meta = (BindWidget))
+	//class UTextBlock* DisplayText;
 
 	void SetDisplayText(FString TextToDisplay);
 

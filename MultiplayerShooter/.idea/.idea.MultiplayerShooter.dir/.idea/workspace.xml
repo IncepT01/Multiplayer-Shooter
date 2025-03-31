@@ -10,6 +10,10 @@
     <list default="true" id="39f109ad-91b8-40b1-8474-f1146e0be311" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiplayerShooter.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiplayerShooter.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor.modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GameModes/BP_Level1GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GameModes/BP_Level1GameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/HUD/WBP_CharacterOverlay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/HUD/WBP_CharacterOverlay.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/HUD/WBP_OverheadWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/HUD/WBP_OverheadWidget.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MainCharacter/BP_MainCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MainCharacter/BP_MainCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/ActionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/ActionHistory.bin" afterDir="false" />
@@ -19,12 +23,13 @@
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/LiveCodingInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/LiveCodingInfo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.dll.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.dll.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.lib.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.lib.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/CombatComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/CombatComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/MainHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/MainHUD.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/MainHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/MainHUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/OverheadWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/OverheadWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/OverheadWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/HUD/OverheadWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.h" afterDir="false" />
     </list>
@@ -165,6 +170,7 @@
       <workItem from="1743276407739" duration="4003000" />
       <workItem from="1743337929847" duration="3083000" />
       <workItem from="1743341847445" duration="7400000" />
+      <workItem from="1743444248193" duration="2558000" />
     </task>
     <servers />
   </component>
