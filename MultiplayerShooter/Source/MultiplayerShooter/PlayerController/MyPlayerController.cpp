@@ -220,6 +220,10 @@ void AMyPlayerController::OnMatchStateSet(FName State)
  	{
  		HandleMatchHasStarted();
  	}
+ 	else if (MatchState == MatchState::Cooldown)
+ 	{
+ 		HandleCooldown();
+ 	}
  }
  
 void AMyPlayerController::OnRep_MatchState()
@@ -227,6 +231,10 @@ void AMyPlayerController::OnRep_MatchState()
  	if (MatchState == MatchState::InProgress)
  	{
  		HandleMatchHasStarted();
+ 	}
+ 	else if (MatchState == MatchState::Cooldown)
+ 	{
+ 		HandleCooldown();
  	}
  }
 
@@ -282,5 +290,18 @@ void AMyPlayerController::SetHUDAnnouncementCountdown(float CountdownTime)
  
 		FString CountdownText = FString::Printf(TEXT("%02d:%02d"), Minutes, Seconds);
 		MainHUD->Announcement->WarmupTime->SetText(FText::FromString(CountdownText));
+	}
+}
+
+void AMyPlayerController::HandleCooldown()
+{
+	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
+	if (MainHUD)
+	{
+		MainHUD->CharacterOverlay->RemoveFromParent();
+		if (MainHUD->Announcement)
+		{
+			MainHUD->Announcement->SetVisibility(ESlateVisibility::Visible);
+		}
 	}
 }

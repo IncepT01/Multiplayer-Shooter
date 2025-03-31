@@ -18,8 +18,8 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	void SetHUDScore(float Score);
  	void SetHUDWeaponAmmo(int32 Ammo);
  	void SetHUDMatchCountdown(float CountdownTime);
- 	void HandleMatchHasStarted();
  	void SetHUDAnnouncementCountdown(float CountdownTime);
+ 	void HandleMatchHasStarted();
 
  	virtual void Tick(float DeltaTime) override;
  	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
@@ -28,6 +28,7 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	virtual void ReceivedPlayer() override; // Sync with server clock as soon as possible
 
  	void OnMatchStateSet(FName State);
+ 	void HandleCooldown();
  	
  protected:
  	virtual void BeginPlay() override;
@@ -62,7 +63,6 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  
  	UFUNCTION(Client, Reliable)
  	void ClientJoinMidgame(FName StateOfMatch, float Warmup, float Match, float StartingTime);
- 	
  private:
  	UPROPERTY()
  	class AMainHUD* MainHUD;
