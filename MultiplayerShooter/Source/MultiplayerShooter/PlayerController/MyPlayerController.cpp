@@ -13,6 +13,7 @@
 #include "MultiplayerShooter/BaseWeapon/BaseWeapon.h"
 #include "MultiplayerShooter/HUD/Announcement.h"
 #include "Kismet/GameplayStatics.h"
+#include "Math/UnitConversion.h"
 #include "MultiplayerShooter/GameState/MainGameState.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 
@@ -26,9 +27,22 @@ void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
  void AMyPlayerController::BeginPlay()
  {
  	Super::BeginPlay();
- 
+
+	
  	MainHUD = Cast<AMainHUD>(GetHUD());
-	ServerCheckMatchState();
+
+	/*
+	GetWorldTimerManager().SetTimer(
+		CheckMatchStateTimerHandle, 
+		this, 
+		&AMyPlayerController::ServerCheckMatchState, 
+		0.5f, 
+		false
+	);*/
+	
+	//ServerCheckMatchState();
+
+	ServerTryCheckMatchState();
  }
 
 void AMyPlayerController::Tick(float DeltaTime)
@@ -119,7 +133,7 @@ void AMyPlayerController::SetHUDScore(float Score)
  	{
  		bInitializeCharacterOverlay = true;
  		HUDScore = Score;
- 		//UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDScore"));
  	}
  }
 
@@ -138,7 +152,7 @@ void AMyPlayerController::SetHUDWeaponAmmo(int32 Ammo)
  	}
  	else
  	{
- 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDWeaponAmmo"));
  	}
  }
 
@@ -151,9 +165,10 @@ void AMyPlayerController::SetHUDMatchCountdown(float CountdownTime)
  	
  	if (IsValid(MainHUD) && IsValid(MainHUD->CharacterOverlay) && IsValid(MainHUD->CharacterOverlay->MatchCountdownText))
  	{
+ 		//UE_LOG(LogTemp, Warning, TEXT("CountdownTime: %f"), CountdownTime);
  		if (CountdownTime < 0.f)
  		{
- 			MainHUD->CharacterOverlay->MatchCountdownText->SetText(FText());
+ 			MainHUD->CharacterOverlay->MatchCountdownText->SetText(FText::FromString("Alma"));
  			return;
  		}
  		
@@ -166,7 +181,7 @@ void AMyPlayerController::SetHUDMatchCountdown(float CountdownTime)
  	}
  	else
  	{
- 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid, setting timer to retry."));
+ 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDMatchCountdown"));
  	}
  }
 
@@ -177,7 +192,7 @@ void AMyPlayerController::SetHUDTime()
 	if (MatchState == MatchState::WaitingToStart) TimeLeft = WarmupTime - GetServerTime() + LevelStartingTime;
 	else if (MatchState == MatchState::InProgress) TimeLeft = WarmupTime + MatchTime - GetServerTime() + LevelStartingTime;
 	else if (MatchState == MatchState::Cooldown) TimeLeft = CooldownTime + WarmupTime + MatchTime - GetServerTime() + LevelStartingTime;
- 
+
 	uint32 SecondsLeft = FMath::CeilToInt(TimeLeft);
  	if (CountdownInt != SecondsLeft)
  	{
@@ -250,10 +265,15 @@ void AMyPlayerController::OnRep_MatchState()
 
 void AMyPlayerController::HandleMatchHasStarted()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Match has started!"));
 	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
+	//MainHUD = Cast<AMainHUD>(GetHUD());
 	if (MainHUD)
 	{
-		MainHUD->AddCharacterOverlay();
+		if (!MainHUD->CharacterOverlay)
+		{
+			MainHUD->AddCharacterOverlay();
+		}
 		if (MainHUD->Announcement)
 		{
 			MainHUD->Announcement->SetVisibility(ESlateVisibility::Hidden);
@@ -263,7 +283,8 @@ void AMyPlayerController::HandleMatchHasStarted()
 
 void AMyPlayerController::ServerCheckMatchState_Implementation()
 {
-	AMainGameMode* GameMode = Cast<AMainGameMode>(UGameplayStatics::GetGameMode(this));
+	//AMainGameMode* GameMode = Cast<AMainGameMode>(UGameplayStatics::GetGameMode(this));
+	AMainGameMode* GameMode = Cast<AMainGameMode>(GetWorld()->GetAuthGameMode());
 	if (GameMode)
 	{
 		WarmupTime = GameMode->WarmupTime;
@@ -271,7 +292,12 @@ void AMyPlayerController::ServerCheckMatchState_Implementation()
 		CooldownTime = GameMode->CooldownTime;
 		LevelStartingTime = GameMode->LevelStartingTime;
 		MatchState = GameMode->GetMatchState();
+
 		ClientJoinMidgame(MatchState, WarmupTime, MatchTime, CooldownTime, LevelStartingTime);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("There is no game Mode"));
 	}
 }
  
@@ -300,6 +326,8 @@ void AMyPlayerController::SetHUDAnnouncementCountdown(float CountdownTime)
 		if (CountdownTime < 0.f)
 		{
 			MainHUD->Announcement->WarmupTime->SetText(FText());
+			MainHUD->Announcement->AnnouncementText->SetText(FText());
+			MainHUD->Announcement->InfoText->SetText(FText());
 			return;
 		}
 		
@@ -313,29 +341,39 @@ void AMyPlayerController::SetHUDAnnouncementCountdown(float CountdownTime)
 
 void AMyPlayerController::HandleCooldown()
 {
+	UE_LOG(LogTemp, Warning, TEXT("End of match!"));
 	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
 	if (MainHUD)
 	{
 		MainHUD->CharacterOverlay->RemoveFromParent();
-		bool bHUDValid = MainHUD->Announcement && 
-			 MainHUD->Announcement->AnnouncementText;
+
+		if (!IsValid(MainHUD->Announcement))
+		{
+			MainHUD->AddAnnouncement();
+		}
+		
+		bool bHUDValid = IsValid(MainHUD->Announcement) && 
+			 IsValid(MainHUD->Announcement->AnnouncementText);
  
 		if (bHUDValid)
 		{
 			MainHUD->Announcement->SetVisibility(ESlateVisibility::Visible);
 			FString AnnouncementText("New Match Starts In:");
-			//MainHUD->Announcement->AnnouncementText->SetText(FText::FromString(AnnouncementText));
-			AMainGameState* BlasterGameState = Cast<AMainGameState>(UGameplayStatics::GetGameState(this));
-			AMainPlayerState* BlasterPlayerState = GetPlayerState<AMainPlayerState>();
-			if (BlasterGameState && BlasterPlayerState)
+			MainHUD->Announcement->AnnouncementText->SetText(FText::FromString(AnnouncementText));
+	
+			SetHUDAnnouncementCountdown(CooldownTime);
+			
+			AMainGameState* MainGameState = Cast<AMainGameState>(UGameplayStatics::GetGameState(this));
+			AMainPlayerState* MainPlayerState = GetPlayerState<AMainPlayerState>();
+			if (MainGameState && MainPlayerState)
 			{
-				TArray<AMainPlayerState*> TopPlayers = BlasterGameState->TopScoringPlayers;
+				TArray<AMainPlayerState*> TopPlayers = MainGameState->TopScoringPlayers;
 				FString InfoTextString;
 				if (TopPlayers.Num() == 0)
 				{
 					InfoTextString = FString("There is no winner.");
 				}
-				else if (TopPlayers.Num() == 1 && TopPlayers[0] == BlasterPlayerState)
+				else if (TopPlayers.Num() == 1 && TopPlayers[0] == MainPlayerState)
 				{
 					InfoTextString = FString("You are the winner!");
 				}
@@ -355,12 +393,52 @@ void AMyPlayerController::HandleCooldown()
 				MainHUD->Announcement->InfoText->SetText(FText::FromString(InfoTextString));
 			}
 		}
+		else
+		{
+			if (IsValid(MainHUD->Announcement))
+			{
+				if (IsValid(MainHUD->Announcement->AnnouncementText))
+				{
+				}
+				else
+				{
+					UE_LOG(LogTemp, Warning, TEXT("EoM: bHUDValid (AnnouncementText) is false!"));
+				}
+			}
+			else
+			{
+				UE_LOG(LogTemp, Warning, TEXT("EoM: bHUDValid (Announcement) is false!"));
+			}
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("EoM: MainHUD is null!"));
 	}
 
-	AMainCharacter* BlasterCharacter = Cast<AMainCharacter>(GetPawn());
-	if (BlasterCharacter && BlasterCharacter->GetCombat())
+	AMainCharacter* MainCharacter = Cast<AMainCharacter>(GetPawn());
+	if (MainCharacter && MainCharacter->GetCombat())
 	{
-		BlasterCharacter->bDisableGameplay = true;
-		BlasterCharacter->GetCombat()->FireButtonPressed(false);
+		MainCharacter->bDisableGameplay = true;
+		MainCharacter->GetCombat()->FireButtonPressed(false);
 	}
+}
+
+void AMyPlayerController::ServerTryCheckMatchState_Implementation()
+{
+	AMainGameMode* GameMode = Cast<AMainGameMode>(GetWorld()->GetAuthGameMode());
+	if (!GameMode)
+	{
+		FTimerHandle TimerHandle;
+		GetWorldTimerManager().SetTimer(
+			TimerHandle,
+			this,
+			&AMyPlayerController::ServerTryCheckMatchState,
+			0.5f, // Retry after 0.5 seconds
+			false
+		);
+		return;
+	}
+    
+	ServerCheckMatchState();
 }

@@ -64,6 +64,9 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	UFUNCTION(Client, Reliable)
  	void ClientJoinMidgame(FName StateOfMatch, float Warmup, float Match, float Cooldown, float StartingTime);
  private:
+ 	UFUNCTION(Server, Reliable)
+ 	void ServerTryCheckMatchState();
+ 	
  	UPROPERTY()
  	class AMainHUD* MainHUD;
 

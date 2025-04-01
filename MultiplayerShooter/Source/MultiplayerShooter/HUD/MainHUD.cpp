@@ -5,8 +5,9 @@
 #include "GameFramework/PlayerController.h"
 #include "CharacterOverlay.h"
 #include "Announcement.h"
+#include "Components/TextBlock.h"
 
- void AMainHUD::BeginPlay()
+void AMainHUD::BeginPlay()
  {
  	Super::BeginPlay();
 
@@ -18,7 +19,15 @@ void AMainHUD::AddCharacterOverlay()
  	if (PlayerController && CharacterOverlayClass)
  	{
  		CharacterOverlay = CreateWidget<UCharacterOverlay>(PlayerController, CharacterOverlayClass);
- 		CharacterOverlay->AddToViewport();
+ 		if (CharacterOverlay)
+ 		{
+ 			UE_LOG(LogTemp, Warning, TEXT("Creating CharacterOverlay Widget and adding it to viewport"));
+ 			CharacterOverlay->AddToViewport();
+ 		}
+ 		else
+ 		{
+ 			UE_LOG(LogTemp, Warning, TEXT("Failed to create CharacterOverlay Widget"));
+ 		}
  	}
  }
 
@@ -88,10 +97,23 @@ void AMainHUD::DrawCrosshair(UTexture2D* Texture, FVector2D ViewportCenter, FVec
 
 void AMainHUD::AddAnnouncement()
  {
+
+	if (Announcement)
+	{
+		return;
+	}
  	APlayerController* PlayerController = GetOwningPlayerController();
  	if (PlayerController && AnnouncementClass)
  	{
  		Announcement = CreateWidget<UAnnouncement>(PlayerController, AnnouncementClass);
- 		Announcement->AddToViewport();
+ 		if (Announcement)
+ 		{
+ 			Announcement->AddToViewport();
+ 			UE_LOG(LogTemp, Warning, TEXT("Announcement widget successfully created and added to viewport"));
+ 		}
+ 		else
+ 		{
+ 			UE_LOG(LogTemp, Warning, TEXT("Failed to create Announcement widget"));
+ 		}
  	}
  }

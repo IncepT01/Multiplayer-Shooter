@@ -190,7 +190,7 @@ void ABaseWeapon::SpendRound()
  
 void ABaseWeapon::OnRep_Ammo()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Setting HUD Ammo for: %d. (BaseWeapon.cpp/OnRepAmmo)"), Ammo);
+	//UE_LOG(LogTemp, Warning, TEXT("Setting HUD Ammo for: %d. (BaseWeapon.cpp/OnRepAmmo)"), Ammo);
 	OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
 	SetHUDAmmo();
 }
