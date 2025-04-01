@@ -477,7 +477,8 @@ void AMainCharacter::Multicast_Elim_Implementation()
 	}
 	
 	// Disable collision
-	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	//GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Pawn, ECR_Ignore);
 	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
