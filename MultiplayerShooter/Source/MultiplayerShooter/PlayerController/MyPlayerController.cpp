@@ -3,15 +3,16 @@
 
 #include "MyPlayerController.h"
 #include "MultiplayerShooter/HUD/MainHUD.h"
- #include "MultiplayerShooter//HUD/CharacterOverlay.h"
- #include "Components/ProgressBar.h"
- #include "Components/TextBlock.h"
+#include "MultiplayerShooter//HUD/CharacterOverlay.h"
+#include "Components/ProgressBar.h"
+#include "Components/TextBlock.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Net/UnrealNetwork.h"
 #include "MultiplayerShooter/GameMode/MainGameMode.h"
- #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
+#include "MultiplayerShooter/ActorComponents/CombatComponent.h"
+#include "MultiplayerShooter/BaseWeapon/BaseWeapon.h"
 #include "MultiplayerShooter/HUD/Announcement.h"
- #include "Kismet/GameplayStatics.h"
+#include "Kismet/GameplayStatics.h"
 
 void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -323,5 +324,12 @@ void AMyPlayerController::HandleCooldown()
 			FString AnnouncementText("New Match Starts In:");
 			MainHUD->Announcement->AnnouncementText->SetText(FText::FromString(AnnouncementText));
 		}
+	}
+
+	AMainCharacter* BlasterCharacter = Cast<AMainCharacter>(GetPawn());
+	if (BlasterCharacter && BlasterCharacter->GetCombat())
+	{
+		BlasterCharacter->bDisableGameplay = true;
+		BlasterCharacter->GetCombat()->FireButtonPressed(false);
 	}
 }

@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "MultiplayerShooter/Types/TurningInPlace.h"
 #include "Camera/CameraComponent.h"
+#include "MultiplayerShooter/ActorComponents/CombatComponent.h"
 #include "MainCharacter.generated.h"
 
 UCLASS()
@@ -36,6 +37,9 @@ public:
 
 	UFUNCTION(NetMulticast, Reliable)
 	void Multicast_Elim();
+
+	UPROPERTY(Replicated)
+	bool bDisableGameplay = false;
 
 protected:
 	// Called when the game starts or when spawned
@@ -120,6 +124,8 @@ protected:
 	UPROPERTY()
 	class AMyPlayerController* MyPlayerController;
 
+	void RotateInPlace(float DeltaTime);
+
 public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon")
@@ -156,6 +162,9 @@ public:
 	
 	FORCEINLINE float GetHealth() const { return Health; }
 	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
+
+	FORCEINLINE UCombatComponent* GetCombat() const { return Combat; }
+	FORCEINLINE bool GetDisableGameplay() const { return bDisableGameplay; }
 
 	UPROPERTY()
 	class AMainPlayerState* MainPlayerState;

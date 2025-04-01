@@ -23,6 +23,8 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 	friend class AMainCharacter;
 
+	void FireButtonPressed(bool bPressed);
+
 	void EquipWeapon(ABaseWeapon* WeaponToEquip);
 protected:
 	virtual void BeginPlay() override;
@@ -37,8 +39,6 @@ protected:
 
 	UFUNCTION(Server, Reliable)
 	void Server_Fire(bool bLocalFireButtonPressed, const FVector_NetQuantize& TracerTarget);
-	
-	void FireButtonPressed(bool bPressed);
 
 	void TraceUnderCrosshairs(FHitResult& TraceHitResult);
 

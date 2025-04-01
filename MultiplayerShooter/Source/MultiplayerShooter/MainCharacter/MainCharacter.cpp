@@ -42,19 +42,6 @@ AMainCharacter::AMainCharacter()
 	Combat = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComponent"));
 	Combat->SetIsReplicated(true);
 
-	//static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_BaseWeapon.BP_BaseWeapon_C'"));
-	/*
-	static ConstructorHelpers::FClassFinder<ABaseWeapon> WeaponFinder(TEXT("BlueprintGeneratedClass'/Game/Blueprints/BaseWeapon/BP_AssaultRifle.BP_AssaultRifle_C'"));
-	if (WeaponFinder.Succeeded())
-	{
-		WeaponBlueprintClass = WeaponFinder.Class;
-	}
-	else
-	{
-		UE_LOG(LogTemp, Error, TEXT("Weapon Blueprint not found!"));
-	}
-	*/
-
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	GetMesh()->SetCollisionObjectType(ECC_SkeletalMesh);
 	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
@@ -64,6 +51,7 @@ AMainCharacter::AMainCharacter()
 	TurningInPlace = ETurningInPlace::ETIP_NotTurning;
 	SetNetUpdateFrequency(66.f);
 	SetMinNetUpdateFrequency(33.f);
+	
 }
 
 void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -125,6 +113,7 @@ void AMainCharacter::BeginPlay()
 
 void AMainCharacter::MoveForward(float Value)
 {
+	if (bDisableGameplay) return;
 	if (Controller != nullptr && Value != 0.f)
 	{
 		const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
@@ -135,6 +124,7 @@ void AMainCharacter::MoveForward(float Value)
 
 void AMainCharacter::MoveRight(float Value)
 {
+	if (bDisableGameplay) return;
 	if (Controller != nullptr && Value != 0.f)
 	{
 		const FRotator YawRotation(0.f, Controller->GetControlRotation().Yaw, 0.f);
@@ -165,6 +155,19 @@ void AMainCharacter::Tick(float DeltaTime)
 		Combat->TickComponent(DeltaTime, LEVELTICK_All, nullptr);
 	}
 
+	RotateInPlace(DeltaTime);
+	HideCameraIfCharacterClose();
+	PollInit();
+}
+
+void AMainCharacter::RotateInPlace(float DeltaTime)
+{
+	if (bDisableGameplay)
+	{
+		bUseControllerRotationYaw = false;
+		TurningInPlace = ETurningInPlace::ETIP_NotTurning;
+		return;
+	}
 	if (GetLocalRole() > ENetRole::ROLE_SimulatedProxy && IsLocallyControlled())
 	{
 		AimOffset(DeltaTime);
@@ -178,11 +181,8 @@ void AMainCharacter::Tick(float DeltaTime)
 		}
 		CalculateAO_Pitch();
 	}
-
-	PollInit();
-
-	HideCameraIfCharacterClose();
 }
+
 
 void AMainCharacter::PollInit()
 {
@@ -203,6 +203,7 @@ void AMainCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLi
 
 	DOREPLIFETIME_CONDITION(AMainCharacter, OverlappingWeapon, COND_OwnerOnly);
 	DOREPLIFETIME(AMainCharacter, Health);
+	DOREPLIFETIME(AMainCharacter, bDisableGameplay);
 }
 
 void AMainCharacter::SetOverlappingWeapon(ABaseWeapon* Weapon)
@@ -236,6 +237,7 @@ void AMainCharacter::OnRep_OverlappingWeapon(ABaseWeapon* LastWeapon)
 
 void AMainCharacter::EquipButtonPressed()
 {
+	if (bDisableGameplay) return;
 	if (Combat)
 	{
 		if (HasAuthority())
@@ -251,6 +253,7 @@ void AMainCharacter::EquipButtonPressed()
 
 void AMainCharacter::CrouchButtonPressed()
 {
+	if (bDisableGameplay) return;
 	if (bIsCrouched)
 	{
 		UnCrouch();
@@ -285,6 +288,7 @@ void AMainCharacter::PostInitializeComponents()
 
 void AMainCharacter::AimButtonPressed()
 {
+	if (bDisableGameplay) return;
 	if (Combat)
 	{
 		Combat->SetAiming(true);
@@ -293,6 +297,7 @@ void AMainCharacter::AimButtonPressed()
 
 void AMainCharacter::AimButtonReleased()
 {
+	if (bDisableGameplay) return;
 	if (Combat)
 	{
 		Combat->SetAiming(false);
@@ -385,6 +390,7 @@ void AMainCharacter::TurnInPlace(float DeltaTime)
 
 inline void AMainCharacter::Jump()
 {
+	if (bDisableGameplay) return;
 	if (bIsCrouched)
 	{
 		UnCrouch();
@@ -397,6 +403,7 @@ inline void AMainCharacter::Jump()
 
 void AMainCharacter::FireButtonPressed()
 {
+	if (bDisableGameplay) return;
 	if (Combat)
 	{
 		Combat->FireButtonPressed(true);
@@ -405,6 +412,7 @@ void AMainCharacter::FireButtonPressed()
 
 void AMainCharacter::FireButtonReleased()
 {
+	if (bDisableGameplay) return;
 	if (Combat)
 	{
 		Combat->FireButtonPressed(false);
@@ -461,12 +469,8 @@ void AMainCharacter::Multicast_Elim_Implementation()
 	PlayElimMontage();
 
 	//Disable Character Movement
-	GetCharacterMovement()->DisableMovement();
-	GetCharacterMovement()->StopMovementImmediately();
-	if (MyPlayerController)
-	{
-		DisableInput(MyPlayerController);
-	}
+	bDisableGameplay = true;
+	
 	// Disable collision
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
