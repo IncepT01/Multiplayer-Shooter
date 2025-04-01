@@ -13,6 +13,8 @@
 #include "MultiplayerShooter/BaseWeapon/BaseWeapon.h"
 #include "MultiplayerShooter/HUD/Announcement.h"
 #include "Kismet/GameplayStatics.h"
+#include "MultiplayerShooter/GameState/MainGameState.h"
+#include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 
 void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -322,7 +324,36 @@ void AMyPlayerController::HandleCooldown()
 		{
 			MainHUD->Announcement->SetVisibility(ESlateVisibility::Visible);
 			FString AnnouncementText("New Match Starts In:");
-			MainHUD->Announcement->AnnouncementText->SetText(FText::FromString(AnnouncementText));
+			//MainHUD->Announcement->AnnouncementText->SetText(FText::FromString(AnnouncementText));
+			AMainGameState* BlasterGameState = Cast<AMainGameState>(UGameplayStatics::GetGameState(this));
+			AMainPlayerState* BlasterPlayerState = GetPlayerState<AMainPlayerState>();
+			if (BlasterGameState && BlasterPlayerState)
+			{
+				TArray<AMainPlayerState*> TopPlayers = BlasterGameState->TopScoringPlayers;
+				FString InfoTextString;
+				if (TopPlayers.Num() == 0)
+				{
+					InfoTextString = FString("There is no winner.");
+				}
+				else if (TopPlayers.Num() == 1 && TopPlayers[0] == BlasterPlayerState)
+				{
+					InfoTextString = FString("You are the winner!");
+				}
+				else if (TopPlayers.Num() == 1)
+				{
+					InfoTextString = FString::Printf(TEXT("Winner: \n%s"), *TopPlayers[0]->GetPlayerName());
+				}
+				else if (TopPlayers.Num() > 1)
+				{
+					InfoTextString = FString("Players tied for the win:\n");
+					for (auto TiedPlayer : TopPlayers)
+					{
+						InfoTextString.Append(FString::Printf(TEXT("%s\n"), *TiedPlayer->GetPlayerName()));
+					}
+				}
+ 
+				MainHUD->Announcement->InfoText->SetText(FText::FromString(InfoTextString));
+			}
 		}
 	}
 

@@ -17,6 +17,7 @@
 #include "MultiplayerShooter/GameMode/MainGameMode.h"
 #include "TimerManager.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
+#include "MultiplayerShooter/ActorComponents/CombatComponent.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -470,6 +471,10 @@ void AMainCharacter::Multicast_Elim_Implementation()
 
 	//Disable Character Movement
 	bDisableGameplay = true;
+	if (Combat)
+	{
+		Combat->FireButtonPressed(false);
+	}
 	
 	// Disable collision
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);

@@ -6,6 +6,7 @@
 #include "MultiplayerShooter/PlayerController/MYPlayerController.h"
 #include "Kismet/GameplayStatics.h"
  #include "GameFramework/PlayerStart.h"
+#include "MultiplayerShooter/GameState/MainGameState.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 
 namespace MatchState
@@ -61,10 +62,12 @@ void AMainGameMode::PlayerEliminated(class AMainCharacter* ElimmedCharacter, cla
  	if (VictimController == nullptr || VictimController->PlayerState == nullptr) return;
  	AMainPlayerState* AttackerPlayerState = AttackerController ? Cast<AMainPlayerState>(AttackerController->PlayerState) : nullptr;
  	AMainPlayerState* VictimPlayerState = VictimController ? Cast<AMainPlayerState>(VictimController->PlayerState) : nullptr;
- 
- 	if (AttackerPlayerState && AttackerPlayerState != VictimPlayerState)
+
+	AMainGameState* MainGameState = GetGameState<AMainGameState>();
+ 	if (AttackerPlayerState && AttackerPlayerState != VictimPlayerState && MainGameState)
  	{
  		AttackerPlayerState->AddToScore(1.f);
+ 		MainGameState->UpdateTopScore(AttackerPlayerState);
  	}
 	
  	 
