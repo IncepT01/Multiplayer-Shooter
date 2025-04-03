@@ -238,6 +238,8 @@ void UCombatComponent::Fire()
 
 void UCombatComponent::LocalFire(const FVector_NetQuantize& fnHitTarget)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Round spent in local fire"));
+	EquippedWeapon->SpendRound();
 	if (EquippedWeapon->MuzzleFlashComponent)
 	{
 		EquippedWeapon->MuzzleFlashComponent->Deactivate(); // Deactivate the Niagara system

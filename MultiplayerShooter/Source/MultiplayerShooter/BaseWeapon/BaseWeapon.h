@@ -27,7 +27,12 @@ class MULTIPLAYERSHOOTER_API ABaseWeapon : public AActor
 public:
 	ABaseWeapon();
 
+	UFUNCTION(Client, Reliable)
+	void ClientUpdateAmmo(int32 ServerAmmo);
+	
 	void SpendRound();
+	
+	int32 Sequence = 0;
 	
 	virtual void OnRep_Owner() override;
 	void SetHUDAmmo();
@@ -115,11 +120,8 @@ public:
 	UFUNCTION()
 	void OnRep_WeaponState();
 
-	UPROPERTY(EditAnywhere, ReplicatedUsing = OnRep_Ammo)
+	UPROPERTY(EditAnywhere)
 	int32 Ammo;
- 
-	UFUNCTION()
-	void OnRep_Ammo();
  
 	UPROPERTY(EditAnywhere)
 	int32 MagCapacity;

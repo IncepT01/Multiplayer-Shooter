@@ -83,7 +83,6 @@ void ABaseWeapon::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ABaseWeapon, WeaponState);
-	DOREPLIFETIME(ABaseWeapon, Ammo);
 }
 
 void ABaseWeapon::SetWeaponState(EWeaponState State)
@@ -144,10 +143,12 @@ void ABaseWeapon::Tick(float DeltaTime)
 //Reducing Ammo
 void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 {
+	//SpendRound();
+	
 	if (HasAuthority())
 	{
 		//UE_LOG(LogTemp, Warning, TEXT("Spending rounds"));
-		SpendRound();
+		//SpendRound();
 	}
 }
 
@@ -166,16 +167,32 @@ void ABaseWeapon::SetHUDAmmo()
 	}
 }
 
+//Being called locally in CombatComponent, then it is corrected by the server
 void ABaseWeapon::SpendRound()
 {
+	//UE_LOG(LogTemp, Warning, TEXT("Spending round"));
 	Ammo = FMath::Clamp(Ammo - 1, 0, MagCapacity);
 	SetHUDAmmo();
+	if (HasAuthority())
+	{
+		ClientUpdateAmmo(Ammo);
+	}
+	else
+	{
+		Sequence++;
+	}
+	
 }
 
-void ABaseWeapon::OnRep_Ammo()
+void ABaseWeapon::ClientUpdateAmmo_Implementation(int32 ServerAmmo)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("Setting HUD Ammo for: %d. (BaseWeapon.cpp/OnRepAmmo)"), Ammo);
-	OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
+	if (HasAuthority())
+	{
+		return;
+	}
+	Ammo = ServerAmmo;
+	--Sequence;
+	Ammo -= Sequence;
 	SetHUDAmmo();
 }
 
