@@ -141,6 +141,15 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\GameMode\MainGameMode.h">
       <Filter>Source\MultiplayerShooter\GameMode</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\GameState">
+      <UniqueIdentifier>{035F31C4-B502-3B2B-8910-CC56C975DDFD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\GameState\MainGameState.cpp">
+      <Filter>Source\MultiplayerShooter\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\GameState\MainGameState.h">
+      <Filter>Source\MultiplayerShooter\GameState</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\HUD">
       <UniqueIdentifier>{2B2B6DE5-F8FA-3BA0-9AF5-5E8D70C4516A}</UniqueIdentifier>
     </Filter>

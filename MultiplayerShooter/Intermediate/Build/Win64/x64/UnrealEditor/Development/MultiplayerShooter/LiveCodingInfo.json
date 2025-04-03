@@ -20,9 +20,6 @@
 			"ProjectileBullet.gen.cpp.obj",
 			"ProjectileWeapon.gen.cpp.obj",
 			"TurningInPlace.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
-			"CombatComponent.cpp.obj",
-			"BaseWeapon.cpp.obj",
 			"Projectile.cpp.obj",
 			"ProjectileBullet.cpp.obj",
 			"ProjectileWeapon.cpp.obj",
@@ -30,13 +27,16 @@
 			"MainGameMode.cpp.obj",
 			"MainGameState.cpp.obj",
 			"Announcement.cpp.obj",
-			"MainHUD.cpp.obj",
+			"CharacterOverlay.cpp.obj",
 			"OverheadWidget.cpp.obj",
 			"MainCharacter.cpp.obj",
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
 			"MainPlayerState.cpp.obj",
-			"CharacterOverlay.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"CombatComponent.cpp.obj",
+			"BaseWeapon.cpp.obj",
+			"MainHUD.cpp.obj",
 			"MyPlayerController.cpp.obj"
 		]
 	}

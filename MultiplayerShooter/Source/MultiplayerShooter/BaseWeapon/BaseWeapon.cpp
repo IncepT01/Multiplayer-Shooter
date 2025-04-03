@@ -6,7 +6,7 @@
 #include "Components/WidgetComponent.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Net/UnrealNetwork.h"
-#include "NiagaraComponent.h" 
+#include "NiagaraComponent.h"
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
@@ -32,7 +32,6 @@ ABaseWeapon::ABaseWeapon()
 
 	PickupWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("PickupWidget"));
 	PickupWidget->SetupAttachment(RootComponent);
-
 }
 
 void ABaseWeapon::BeginPlay()
@@ -55,8 +54,9 @@ void ABaseWeapon::BeginPlay()
 }
 
 void ABaseWeapon::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
-
+                                  UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep,
+                                  const FHitResult& SweepResult)
+{
 	AMainCharacter* Character = Cast<AMainCharacter>(OtherActor);
 	if (Character)
 	{
@@ -64,7 +64,8 @@ void ABaseWeapon::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 	}
 }
 
-void ABaseWeapon::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void ABaseWeapon::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+                                     UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	AMainCharacter* Character = Cast<AMainCharacter>(OtherActor);
 	if (Character)
@@ -144,28 +145,13 @@ void ABaseWeapon::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+//Reducing Ammo
 void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 {
-	if (MuzzleFlashComponent)
+	if (HasAuthority())
 	{
-		MuzzleFlashComponent->Deactivate();  // Deactivate the Niagara system
-		MuzzleFlashComponent->DestroyComponent();  // Destroy the component
-		MuzzleFlashComponent = nullptr;
-		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash stopped"));
-	}
-	if (MuzzleFlashNiagaraSystem && WeaponMesh)
-	{
-		// Spawn the Niagara particle system at the muzzle socket and set it to loop
-		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
-		MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
-			MuzzleFlashNiagaraSystem,
-			WeaponMesh,
-			"Muzzle",  // Socket name
-			FVector::ZeroVector,
-			FRotator::ZeroRotator,
-			EAttachLocation::SnapToTarget,
-			true
-		);
+		//UE_LOG(LogTemp, Warning, TEXT("Spending rounds"));
+		SpendRound();
 	}
 }
 
@@ -174,27 +160,29 @@ void ABaseWeapon::SetHUDAmmo()
 	OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
 	if (OwnerCharacter)
 	{
-		OwnerController = OwnerController == nullptr ? Cast<AMyPlayerController>(OwnerCharacter->Controller) : OwnerController;
+		OwnerController = OwnerController == nullptr
+			                  ? Cast<AMyPlayerController>(OwnerCharacter->Controller)
+			                  : OwnerController;
 		if (OwnerController)
 		{
 			OwnerController->SetHUDWeaponAmmo(Ammo);
 		}
 	}
 }
- 
+
 void ABaseWeapon::SpendRound()
 {
 	Ammo = FMath::Clamp(Ammo - 1, 0, MagCapacity);
 	SetHUDAmmo();
 }
- 
+
 void ABaseWeapon::OnRep_Ammo()
 {
 	//UE_LOG(LogTemp, Warning, TEXT("Setting HUD Ammo for: %d. (BaseWeapon.cpp/OnRepAmmo)"), Ammo);
 	OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
 	SetHUDAmmo();
 }
- 
+
 void ABaseWeapon::OnRep_Owner()
 {
 	Super::OnRep_Owner();

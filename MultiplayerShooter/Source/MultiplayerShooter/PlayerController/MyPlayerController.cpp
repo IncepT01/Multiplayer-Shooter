@@ -134,7 +134,7 @@ void AMyPlayerController::SetHUDScore(float Score)
  	{
  		bInitializeCharacterOverlay = true;
  		HUDScore = Score;
- 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDScore"));
+ 		//UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDScore"));
  	}
  }
 
@@ -153,7 +153,7 @@ void AMyPlayerController::SetHUDWeaponAmmo(int32 Ammo)
  	}
  	else
  	{
- 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDWeaponAmmo"));
+ 		//UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDWeaponAmmo"));
  	}
  }
 
@@ -182,7 +182,7 @@ void AMyPlayerController::SetHUDMatchCountdown(float CountdownTime)
  	}
  	else
  	{
- 		UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDMatchCountdown"));
+ 		//UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDMatchCountdown"));
  	}
  }
 

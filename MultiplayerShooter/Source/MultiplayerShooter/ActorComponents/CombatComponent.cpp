@@ -10,6 +10,8 @@
 #include "Net/UnrealNetwork.h"
 #include "Kismet/GameplayStatics.h"
  #include "DrawDebugHelpers.h"
+#include "NiagaraComponent.h"
+#include "NiagaraFunctionLibrary.h"
 #include "Math/UnitConversion.h"
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
 #include "Camera/CameraComponent.h"
@@ -223,8 +225,8 @@ void UCombatComponent::Fire()
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Firing (CombatComponent.cpp/Fire)"));
 		bCanFire = false;
-		EquippedWeapon->SpendRound();
 		Server_Fire(bFireButtonPressed, HitTarget);
+		LocalFire(HitTarget);
 		if (EquippedWeapon)
 		{
 			CrosshairShootingFactor = .75f;
@@ -232,6 +234,31 @@ void UCombatComponent::Fire()
 		StartFireTimer();
 	}
 	
+}
+
+void UCombatComponent::LocalFire(const FVector_NetQuantize& fnHitTarget)
+{
+	if (EquippedWeapon->MuzzleFlashComponent)
+	{
+		EquippedWeapon->MuzzleFlashComponent->Deactivate(); // Deactivate the Niagara system
+		EquippedWeapon->MuzzleFlashComponent->DestroyComponent(); // Destroy the component
+		EquippedWeapon->MuzzleFlashComponent = nullptr;
+		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash stopped"));
+	}
+	if (EquippedWeapon->MuzzleFlashNiagaraSystem && EquippedWeapon->WeaponMesh)
+	{
+		// Spawn the Niagara particle system at the muzzle socket and set it to loop
+		UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
+		EquippedWeapon->MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
+			EquippedWeapon->MuzzleFlashNiagaraSystem,
+			EquippedWeapon->WeaponMesh,
+			"Muzzle", // Socket name
+			FVector::ZeroVector,
+			FRotator::ZeroRotator,
+			EAttachLocation::SnapToTarget,
+			true
+		);
+	}
 }
 
 void UCombatComponent::FireButtonPressed(bool bPressed)
@@ -260,6 +287,17 @@ void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed, 
 	{
 		//EquippedWeapon->Multicast_StopFiring();
 	}
+}
+
+void UCombatComponent::Multicast_StartFiring_Implementation(const FVector& fnHitTarget)
+{
+	if (Character && Character->IsLocallyControlled() && !Character->HasAuthority())
+	{
+		return;
+	}
+
+	LocalFire(fnHitTarget);
+		
 }
 
 void UCombatComponent::SetHUDCrosshairs(float DeltaTime)

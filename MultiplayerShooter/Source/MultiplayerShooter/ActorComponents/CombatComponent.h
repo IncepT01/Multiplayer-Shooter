@@ -36,6 +36,10 @@ protected:
 	UFUNCTION()
 	void OnRep_EquippedWeapon();
 	void Fire();
+	void LocalFire(const FVector_NetQuantize& fnHitTarget);
+
+	UFUNCTION(NetMulticast, Reliable)
+	virtual void Multicast_StartFiring(const FVector& fnHitTarget);
 
 	UFUNCTION(Server, Reliable)
 	void Server_Fire(bool bLocalFireButtonPressed, const FVector_NetQuantize& TracerTarget);

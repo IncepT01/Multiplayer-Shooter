@@ -93,7 +93,7 @@ protected:
 		int32 OtherBodyIndex
 	);
 
-private:
+public:
 	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
 	USkeletalMeshComponent* WeaponMesh;
 

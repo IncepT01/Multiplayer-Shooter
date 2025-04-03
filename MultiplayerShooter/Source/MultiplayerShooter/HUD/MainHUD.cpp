@@ -21,12 +21,12 @@ void AMainHUD::AddCharacterOverlay()
  		CharacterOverlay = CreateWidget<UCharacterOverlay>(PlayerController, CharacterOverlayClass);
  		if (CharacterOverlay)
  		{
- 			UE_LOG(LogTemp, Warning, TEXT("Creating CharacterOverlay Widget and adding it to viewport"));
+ 			//UE_LOG(LogTemp, Warning, TEXT("Creating CharacterOverlay Widget and adding it to viewport"));
  			CharacterOverlay->AddToViewport();
  		}
  		else
  		{
- 			UE_LOG(LogTemp, Warning, TEXT("Failed to create CharacterOverlay Widget"));
+ 			//UE_LOG(LogTemp, Warning, TEXT("Failed to create CharacterOverlay Widget"));
  		}
  	}
  }
@@ -109,11 +109,11 @@ void AMainHUD::AddAnnouncement()
  		if (Announcement)
  		{
  			Announcement->AddToViewport();
- 			UE_LOG(LogTemp, Warning, TEXT("Announcement widget successfully created and added to viewport"));
+ 			//UE_LOG(LogTemp, Warning, TEXT("Announcement widget successfully created and added to viewport"));
  		}
  		else
  		{
- 			UE_LOG(LogTemp, Warning, TEXT("Failed to create Announcement widget"));
+ 			//UE_LOG(LogTemp, Warning, TEXT("Failed to create Announcement widget"));
  		}
  	}
  }
