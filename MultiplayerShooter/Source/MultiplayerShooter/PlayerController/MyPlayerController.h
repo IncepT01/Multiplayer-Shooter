@@ -63,6 +63,11 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  
  	UFUNCTION(Client, Reliable)
  	void ClientJoinMidgame(FName StateOfMatch, float Warmup, float Match, float Cooldown, float StartingTime);
+
+ 	void HighPingWarning();
+ 	void StopHighPingWarning();
+ 	void CheckPing(float DeltaTime);
+ 	
  private:
  	UFUNCTION(Server, Reliable)
  	void ServerTryCheckMatchState();
@@ -90,4 +95,12 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	float HUDMaxHealth;
  	float HUDScore;
  	int32 HUDDefeats;
+ 
+ 	float HighPingRunningTime = 0.f;
+ 
+ 	UPROPERTY(EditAnywhere)
+ 	float CheckPingFrequency = 20.f;
+ 
+ 	UPROPERTY(EditAnywhere)
+ 	float HighPingThreshold = 50.f;
  };

@@ -52,6 +52,7 @@ void AMyPlayerController::Tick(float DeltaTime)
  	SetHUDTime();
  	CheckTimeSync(DeltaTime);
 	PollInit();
+	CheckPing(DeltaTime);
  }
 
 void AMyPlayerController::PollInit()
@@ -441,4 +442,50 @@ void AMyPlayerController::ServerTryCheckMatchState_Implementation()
 	}
     
 	ServerCheckMatchState();
+}
+
+
+void AMyPlayerController::CheckPing(float DeltaTime)
+{
+	HighPingRunningTime += DeltaTime;
+	if (HighPingRunningTime > CheckPingFrequency)
+	{
+		PlayerState = PlayerState == nullptr ? TObjectPtr<APlayerState>(GetPlayerState<APlayerState>()) : PlayerState;
+		if (PlayerState)
+		{
+			if (PlayerState->ExactPing > HighPingThreshold) // ping is compressed; it's actually ping / 4
+			{
+				HighPingWarning();
+			}
+			else
+			{
+				StopHighPingWarning();
+			}
+		}
+		HighPingRunningTime = 0.f;
+	}
+}
+
+void AMyPlayerController::HighPingWarning()
+{
+	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
+	bool bHUDValid = MainHUD &&
+		MainHUD->CharacterOverlay &&
+		MainHUD->CharacterOverlay->HighPingText;
+	if (bHUDValid)
+	{
+		MainHUD->CharacterOverlay->HighPingText->SetOpacity(1.f);
+	}
+}
+ 
+void AMyPlayerController::StopHighPingWarning()
+{
+	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
+	bool bHUDValid = MainHUD &&
+		MainHUD->CharacterOverlay &&
+		MainHUD->CharacterOverlay->HighPingText;
+	if (bHUDValid)
+	{
+		MainHUD->CharacterOverlay->HighPingText->SetOpacity(0.f);
+	}
 }
