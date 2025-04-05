@@ -34,12 +34,12 @@
 			"CharacterOverlay.cpp.obj",
 			"MainHUD.cpp.obj",
 			"OverheadWidget.cpp.obj",
+			"MainCharacter.cpp.obj",
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
 			"MyPlayerController.cpp.obj",
 			"MainPlayerState.cpp.obj",
-			"LagCompensationComponent.cpp.obj",
-			"MainCharacter.cpp.obj"
+			"LagCompensationComponent.cpp.obj"
 		]
 	}
 }
