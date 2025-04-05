@@ -44,6 +44,9 @@ public:
 	UPROPERTY()
 	TMap<FName, class UBoxComponent*> HitCollisionBoxes;
 
+	UPROPERTY(VisibleAnywhere)
+	class ULagCompensationComponent* LagCompensation;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -169,6 +172,8 @@ public:
 	FORCEINLINE UCombatComponent* GetCombat() const { return Combat; }
 	FORCEINLINE bool GetDisableGameplay() const { return bDisableGameplay; }
 
+	FORCEINLINE ULagCompensationComponent* GetLagCompensation() const { return LagCompensation; }
+
 	UPROPERTY()
 	class AMainPlayerState* MainPlayerState;
 
@@ -236,11 +241,6 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	class UCombatComponent* Combat;
-
-	UPROPERTY(VisibleAnywhere)
-	class ULagCompensationComponent* LagCompensation;
-	
-
 };
 
 
