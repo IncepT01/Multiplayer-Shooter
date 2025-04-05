@@ -144,11 +144,30 @@ void ABaseWeapon::Tick(float DeltaTime)
 void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 {
 	//SpendRound();
-	
-	if (HasAuthority())
+	if (OwnerCharacter->IsLocallyControlled())
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("Spending rounds"));
-		//SpendRound();
+		return;
+	}
+	if (MuzzleFlashComponent)
+	{
+		MuzzleFlashComponent->Deactivate(); // Deactivate the Niagara system
+		MuzzleFlashComponent->DestroyComponent(); // Destroy the component
+		MuzzleFlashComponent = nullptr;
+		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash stopped"));
+	}
+	if (MuzzleFlashNiagaraSystem && WeaponMesh)
+	{
+		// Spawn the Niagara particle system at the muzzle socket and set it to loop
+		UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
+		MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
+			MuzzleFlashNiagaraSystem,
+			WeaponMesh,
+			"Muzzle", // Socket name
+			FVector::ZeroVector,
+			FRotator::ZeroRotator,
+			EAttachLocation::SnapToTarget,
+			true
+		);
 	}
 }
 
