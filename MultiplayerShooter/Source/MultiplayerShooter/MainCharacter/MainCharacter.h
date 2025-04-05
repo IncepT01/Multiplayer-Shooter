@@ -41,6 +41,9 @@ public:
 	UPROPERTY(Replicated)
 	bool bDisableGameplay = false;
 
+	UPROPERTY()
+	TMap<FName, class UBoxComponent*> HitCollisionBoxes;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -174,10 +177,10 @@ public:
 	 */
  
 	UPROPERTY(EditAnywhere)
-	class USphereComponent* head;
+	class UBoxComponent* head;
  
 	UPROPERTY(EditAnywhere)
-	class UBoxComponent* pelvis;
+	UBoxComponent* pelvis;
  
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* spine_02;
@@ -233,6 +236,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	class UCombatComponent* Combat;
+
+	UPROPERTY(VisibleAnywhere)
+	class ULagCompensationComponent* LagCompensation;
 	
 
 };

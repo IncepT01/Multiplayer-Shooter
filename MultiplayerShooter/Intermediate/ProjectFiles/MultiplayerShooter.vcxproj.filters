@@ -96,6 +96,12 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\CombatComponent.h">
       <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\LagCompensationComponent.cpp">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\LagCompensationComponent.h">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\BaseWeapon">
       <UniqueIdentifier>{61702348-5A5B-37CF-81E4-2962B3829B18}</UniqueIdentifier>
     </Filter>
