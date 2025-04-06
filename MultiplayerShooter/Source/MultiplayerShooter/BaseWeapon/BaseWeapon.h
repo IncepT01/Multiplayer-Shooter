@@ -98,6 +98,17 @@ protected:
 		int32 OtherBodyIndex
 	);
 
+	UPROPERTY(EditAnywhere)
+	float Damage = 20.f;
+ 
+	UPROPERTY(EditAnywhere)
+	bool bUseServerSideRewind = false;
+ 
+	UPROPERTY()
+	class AMainCharacter* OwnerCharacter;
+	UPROPERTY()
+	class AMyPlayerController* OwnerController;
+
 public:
 	UPROPERTY(VisibleAnywhere, Category = "Weapon Properties")
 	USkeletalMeshComponent* WeaponMesh;
@@ -125,11 +136,7 @@ public:
  
 	UPROPERTY(EditAnywhere)
 	int32 MagCapacity;
- 
-	UPROPERTY()
-	class AMainCharacter* OwnerCharacter;
-	UPROPERTY()
-	class AMyPlayerController* OwnerController;
+
 
 
 public:
@@ -139,6 +146,7 @@ public:
 	FORCEINLINE USkeletalMeshComponent* GetWeaponMesh() const { return WeaponMesh; }
 	FORCEINLINE float GetZoomedFOV() const { return ZoomedFOV; }
 	FORCEINLINE float GetZoomInterpSpeed() const { return ZoomInterpSpeed; }
-
+	FORCEINLINE float GetDamage() const { return Damage; }
+	
 	bool IsEmpty();
 };

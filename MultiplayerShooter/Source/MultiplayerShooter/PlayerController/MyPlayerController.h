@@ -29,6 +29,8 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
 
  	void OnMatchStateSet(FName State);
  	void HandleCooldown();
+
+ 	float SingleTripTime = 0.f;
  	
  protected:
  	virtual void BeginPlay() override;

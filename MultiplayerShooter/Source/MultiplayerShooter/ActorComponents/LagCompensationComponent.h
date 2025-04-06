@@ -67,6 +67,15 @@ public:
 		 const FVector_NetQuantize& HitLocation, 
 		 float HitTime);
 
+	UFUNCTION(Server, Reliable)
+	void ServerScoreRequest(
+		AMainCharacter* HitCharacter,
+		const FVector_NetQuantize& TraceStart,
+		const FVector_NetQuantize& HitLocation,
+		float HitTime,
+		class ABaseWeapon* DamageCauser
+	);
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -84,6 +93,7 @@ protected:
 	void MoveBoxes(AMainCharacter* HitCharacter, const FFramePackage& Package);
 	void ResetHitBoxes(AMainCharacter* HitCharacter, const FFramePackage& Package);
 	void EnableCharacterMeshCollision(AMainCharacter* HitCharacter, ECollisionEnabled::Type CollisionEnabled);
+	void SaveFramePackage();
 
 private:
 	UPROPERTY()

@@ -219,7 +219,8 @@ void AMyPlayerController::ServerRequestServerTime_Implementation(float TimeOfCli
 void AMyPlayerController::ClientReportServerTime_Implementation(float TimeOfClientRequest, float TimeServerReceivedClientRequest)
  {
  	float RoundTripTime = GetWorld()->GetTimeSeconds() - TimeOfClientRequest;
- 	float CurrentServerTime = TimeServerReceivedClientRequest + (0.5f * RoundTripTime);
+	SingleTripTime = 0.5f * RoundTripTime;
+	float CurrentServerTime = TimeServerReceivedClientRequest + SingleTripTime;
  	ClientServerDelta = CurrentServerTime - GetWorld()->GetTimeSeconds();
  }
  

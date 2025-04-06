@@ -14,7 +14,12 @@ class MULTIPLAYERSHOOTER_API AProjectileBullet : public AProjectile
 {
 	GENERATED_BODY()
 
+public:
+	AProjectileBullet();
+	
 protected:
+
+	virtual void BeginPlay() override;
 	
 	virtual void OnHit(UPrimitiveComponent* HitComp,
 		AActor* OtherActor,
