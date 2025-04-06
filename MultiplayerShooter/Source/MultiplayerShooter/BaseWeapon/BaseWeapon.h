@@ -76,6 +76,8 @@ public:
  
 	UPROPERTY(EditAnywhere, Category = Combat)
 	bool bAutomatic = true;
+
+	virtual void Fire(const FVector& HitTarget);
 	
 protected:
 	virtual void BeginPlay() override;

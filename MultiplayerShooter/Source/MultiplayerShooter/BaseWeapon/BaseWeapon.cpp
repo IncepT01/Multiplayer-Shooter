@@ -234,3 +234,10 @@ bool ABaseWeapon::IsEmpty()
 {
 	return Ammo <= 0;
 }
+
+
+void ABaseWeapon::Fire(const FVector& HitTarget)
+{
+	
+	SpendRound();
+}

@@ -13,9 +13,16 @@ UCLASS()
 class MULTIPLAYERSHOOTER_API AProjectileWeapon : public ABaseWeapon
 {
 	GENERATED_BODY()
+	
+public:
+	virtual void Multicast_StartFiring_Implementation(const FVector& HitTarget) override;
+	void Fire(const FVector& HitTarget) override;
+
+private:
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class AProjectile> ProjectileClass;
 	
-	virtual void Multicast_StartFiring_Implementation(const FVector& HitTarget) override;
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AProjectile> ServerSideRewindProjectileClass;
 };
