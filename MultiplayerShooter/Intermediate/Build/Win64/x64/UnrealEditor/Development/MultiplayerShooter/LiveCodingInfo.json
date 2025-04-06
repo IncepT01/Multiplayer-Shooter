@@ -23,6 +23,9 @@
 			"TurningInPlace.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"CombatComponent.cpp.obj",
+			"LagCompensationComponent.cpp.obj",
+			"BaseWeapon.cpp.obj",
+			"Projectile.cpp.obj",
 			"ProjectileWeapon.cpp.obj",
 			"LobbyGameMode.cpp.obj",
 			"MainGameMode.cpp.obj",
@@ -34,12 +37,9 @@
 			"MainCharacter.cpp.obj",
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
+			"MyPlayerController.cpp.obj",
 			"MainPlayerState.cpp.obj",
-			"LagCompensationComponent.cpp.obj",
-			"BaseWeapon.cpp.obj",
-			"Projectile.cpp.obj",
-			"ProjectileBullet.cpp.obj",
-			"MyPlayerController.cpp.obj"
+			"ProjectileBullet.cpp.obj"
 		]
 	}
 }

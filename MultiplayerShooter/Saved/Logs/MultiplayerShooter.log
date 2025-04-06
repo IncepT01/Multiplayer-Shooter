@@ -1913,3 +1913,100 @@ Script Stack (0 frames) :
 [2025.04.06-14.28.57:508][937]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
 [2025.04.06-14.28.57:525][938]LogPlayLevel: Display: Destroying online subsystem :Context_2
 [2025.04.06-14.28.57:525][938]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2025.04.06-14.33.26:149][813]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 674.498230
+[2025.04.06-14.33.27:148][816]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.04.06-14.33.27:148][816]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 675.163025, Update Interval: 337.056183
+[2025.04.06-14.36.01:680][676]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_0
+[2025.04.06-14.36.01:716][679]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_1
+[2025.04.06-14.36.02:429][763]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BaseWeapon/BP_AssaultRifle.BP_AssaultRifle
+[2025.04.06-14.36.02:430][763]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_2
+[2025.04.06-14.36.02:479][763]LogSlate: Took 0.000113 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.04.06-14.36.02:510][763]LogStreaming: Display: FlushAsyncLoading(491): 1 QueuedPackages, 0 AsyncPackages
+[2025.04.06-14.36.03:315][764]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_3
+[2025.04.06-14.36.03:377][767]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_4
+[2025.04.06-14.36.05:079][959]LogSlate: Window 'BP_AssaultRifle' being destroyed
+[2025.04.06-14.36.05:086][959]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2025.04.06-14.36.05:086][959]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.06-14.36.05:100][959]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BaseWeapon/BP_AssaultRifle.BP_AssaultRifle
+[2025.04.06-14.36.05:100][959]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_5
+[2025.04.06-14.36.05:155][959]LogStreaming: Display: FlushAsyncLoading(647): 1 QueuedPackages, 0 AsyncPackages
+[2025.04.06-14.36.05:834][959]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2025.04.06-14.36.05:843][959]LogSlate: Took 0.004776 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2025.04.06-14.36.09:825][378]LogSlate: Window 'BP_AssaultRifle' being destroyed
+[2025.04.06-14.36.09:830][378]LogSlate: Window 'BP_AssaultRifle' being destroyed
+[2025.04.06-14.36.09:832][378]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2025.04.06-14.36.09:832][378]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.06-14.36.09:870][378]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2025.04.06-14.36.11:987][626]LogStreaming: Display: FlushAsyncLoading(656): 1 QueuedPackages, 0 AsyncPackages
+[2025.04.06-14.36.12:372][626]LogStaticMesh: Display: Building static mesh SM_Arrow (Required Memory Estimate: 0.292003 MB)...
+[2025.04.06-14.36.12:378][626]LogTexture: Display: Building textures: /Game/MixedVFX/Textures/T_Trail_04.T_Trail_04 (TFO_AutoDXT, 1024x256 x1x1x1) (Required Memory Estimate: 46.083323 MB), EncodeSpeed: Fast
+[2025.04.06-14.36.12:382][626]LogTexture: Display: Building textures: /Game/MixedVFX/Textures/T_Trail_03.T_Trail_03 (TFO_AutoDXT, 1280x500 x1x1x1) (Required Memory Estimate: 107.419261 MB), EncodeSpeed: Fast
+[2025.04.06-14.36.12:386][626]LogStaticMesh: Built static mesh [0.02s] /Game/MixedVFX/Meshes/SM_Arrow.SM_Arrow
+[2025.04.06-14.36.12:393][626]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile.BP_Projectile
+[2025.04.06-14.36.12:394][626]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_6
+[2025.04.06-14.36.12:400][626]LogTexture: Display: Building textures: /Game/MixedVFX/Textures/T_Trail_01.T_Trail_01 (TFO_AutoDXT, 2048x2048 x1x1x1) (Required Memory Estimate: 328.583323 MB), EncodeSpeed: Fast
+[2025.04.06-14.36.12:439][626]LogTexture: Display: Building textures: /Game/MixedVFX/Textures/T_Embers_01.T_Embers_01 (TFO_AutoDXT, 2048x2048 x1x1x1) (Required Memory Estimate: 344.583323 MB), EncodeSpeed: Fast
+[2025.04.06-14.36.12:501][626]LogTexture: Display: Building textures: /Game/MixedVFX/Textures/T_Galaxy.T_Galaxy (TFO_AutoDXT, 2048x2048 x1x1x1) (Required Memory Estimate: 328.583323 MB), EncodeSpeed: Fast
+[2025.04.06-14.36.13:886][774]LogSlate: Window 'BP_Projectile' being destroyed
+[2025.04.06-14.36.13:896][774]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2025.04.06-14.36.13:896][774]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.06-14.36.13:909][774]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile.BP_Projectile
+[2025.04.06-14.36.13:909][774]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_7
+[2025.04.06-14.36.14:142][774]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2025.04.06-14.36.21:362][233]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BaseWeapon/Projectiles/BP_ProjectileBullet.BP_ProjectileBullet
+[2025.04.06-14.36.21:362][233]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_8
+[2025.04.06-14.36.22:955][397]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2025.04.06-14.36.22:955][397]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.06-14.36.22:968][397]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BaseWeapon/Projectiles/BP_ProjectileBullet.BP_ProjectileBullet
+[2025.04.06-14.36.22:968][397]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_9
+[2025.04.06-14.36.23:175][397]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2025.04.06-14.36.33:159][575]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2025.04.06-14.36.40:491][436]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2025.04.06-14.37.21:644][599]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2025.04.06-14.37.21:646][599]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Level1' took 0.035
+[2025.04.06-14.37.21:647][599]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile] ([2] browsable assets)...
+[2025.04.06-14.37.21:647][599]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile]
+[2025.04.06-14.37.21:652][599]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile_Auto1
+[2025.04.06-14.37.21:652][599]LogSavePackage: Moving 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Saved/BP_Projectile_Auto1E63BE84D4100BFE9F647DAAC74E1FFD1.tmp' to 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Saved/Autosaves/Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile_Auto1.uasset'
+[2025.04.06-14.37.21:655][599]LogFileHelpers: Auto-saving content packages took 0.009
+[2025.04.06-14.39.08:606][920]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1016.955139
+[2025.04.06-14.39.09:605][923]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.04.06-14.39.09:605][923]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1017.624207, Update Interval: 343.941162
+[2025.04.06-14.40.13:366][293]LogHotReload: New module detected: UnrealEditor-MultiplayerShooter-0001.dll
+[2025.04.06-14.40.13:708][294]LogHotReload: Starting Hot-Reload from IDE
+[2025.04.06-14.40.13:772][294]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2025.04.06-14.40.14:031][294]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2025.04.06-14.40.14:058][294]LogStreaming: Display: FlushAsyncLoading(657): 1 QueuedPackages, 0 AsyncPackages
+[2025.04.06-14.40.14:060][294]Display: HotReload took  0.4s.
+[2025.04.06-14.40.14:060][294]Display: Reload/Re-instancing Complete: 1 package changed, 17 classes unchanged, 2 enums unchanged, 4 scriptstructs unchanged, 25 functions remapped, 4 scriptstructs remapped
+[2025.04.06-14.44.07:611][422]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2025.04.06-14.44.08:500][521]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.06-14.44.08:529][521]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/BaseWeapon/Projectiles/BP_ProjectileBullet] ([2] browsable assets)...
+[2025.04.06-14.44.08:529][521]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BaseWeapon/Projectiles/BP_ProjectileBullet]
+[2025.04.06-14.44.08:531][521]LogSavePackage: Moving output files for package: /Game/Blueprints/BaseWeapon/Projectiles/BP_ProjectileBullet
+[2025.04.06-14.44.08:531][521]LogSavePackage: Moving 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Saved/BP_ProjectileBulletB60634C34D11512A330D8BB7E677E95E.tmp' to 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Content/Blueprints/BaseWeapon/Projectiles/BP_ProjectileBullet.uasset'
+[2025.04.06-14.44.08:549][521]LogFileHelpers: InternalPromptForCheckoutAndSave took 48.932 ms
+[2025.04.06-14.44.08:576][521]LogContentValidation: Display: Starting to validate 1 assets
+[2025.04.06-14.44.08:576][521]LogContentValidation: Enabled validators:
+[2025.04.06-14.44.08:576][521]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.04.06-14.44.08:576][521]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.04.06-14.44.08:576][521]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.04.06-14.44.08:576][521]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.04.06-14.44.08:576][521]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.04.06-14.44.08:576][521]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.04.06-14.44.08:577][521]AssetCheck: /Game/Blueprints/BaseWeapon/Projectiles/BP_ProjectileBullet Validating asset
+[2025.04.06-14.44.10:411][737]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.06-14.44.10:438][737]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile] ([2] browsable assets)...
+[2025.04.06-14.44.10:438][737]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile]
+[2025.04.06-14.44.10:440][737]LogSavePackage: Moving output files for package: /Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile
+[2025.04.06-14.44.10:440][737]LogSavePackage: Moving 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Saved/BP_Projectile6546A34341000A2AFFA7519BB4F1E096.tmp' to 'D:/Projects/MultiplayerShooter/Multiplayer-Shooter/MultiplayerShooter/Content/Blueprints/BaseWeapon/Projectiles/BP_Projectile.uasset'
+[2025.04.06-14.44.10:445][737]LogFileHelpers: InternalPromptForCheckoutAndSave took 34.000 ms (total: 82.932 ms)
+[2025.04.06-14.44.10:471][737]LogContentValidation: Display: Starting to validate 1 assets
+[2025.04.06-14.44.10:471][737]LogContentValidation: Enabled validators:
+[2025.04.06-14.44.10:471][737]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.04.06-14.44.10:471][737]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.04.06-14.44.10:472][737]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.04.06-14.44.10:472][737]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.04.06-14.44.10:472][737]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.04.06-14.44.10:472][737]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.04.06-14.44.10:472][737]AssetCheck: /Game/Blueprints/BaseWeapon/Projectiles/BP_Projectile Validating asset
