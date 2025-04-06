@@ -144,6 +144,11 @@ void ABaseWeapon::Tick(float DeltaTime)
 void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 {
 	//SpendRound();
+	if (!OwnerCharacter->IsValidLowLevel())
+	{
+		return;
+	}
+	
 	if (OwnerCharacter->IsLocallyControlled())
 	{
 		return;

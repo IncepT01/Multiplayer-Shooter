@@ -269,6 +269,14 @@ FServerSideRewindResult ULagCompensationComponent::ConfirmHit(const FFramePackag
  				
  				ResetHitBoxes(HitCharacter, CurrentFrame);
  				EnableCharacterMeshCollision(HitCharacter, ECollisionEnabled::QueryAndPhysics);
+
+ 				GEngine->AddOnScreenDebugMessage(
+							 -1,
+							 15.f,
+							 FColor::Blue,
+							 FString(TEXT("Scored a hit with Lag compensation!"))
+						 );
+ 				
  				return FServerSideRewindResult{ true, false };
  			}
  		}
@@ -300,11 +308,18 @@ FServerSideRewindResult ULagCompensationComponent::ConfirmHit(const FFramePackag
  	if (HitCharacter == nullptr) return;
  	for (auto& HitBoxPair : HitCharacter->HitCollisionBoxes)
  	{
- 		if (HitBoxPair.Value != nullptr)
+ 		if (const FBoxInformation* BoxInfo = Package.HitBoxInfo.Find(HitBoxPair.Key))
  		{
- 			HitBoxPair.Value->SetWorldLocation(Package.HitBoxInfo[HitBoxPair.Key].Location);
- 			HitBoxPair.Value->SetWorldRotation(Package.HitBoxInfo[HitBoxPair.Key].Rotation);
- 			HitBoxPair.Value->SetBoxExtent(Package.HitBoxInfo[HitBoxPair.Key].BoxExtent);
+ 			if (HitBoxPair.Value != nullptr)
+ 			{
+ 				//HitBoxPair.Value->SetWorldLocation(Package.HitBoxInfo[HitBoxPair.Key].Location);
+ 				//HitBoxPair.Value->SetWorldRotation(Package.HitBoxInfo[HitBoxPair.Key].Rotation);
+ 				//HitBoxPair.Value->SetBoxExtent(Package.HitBoxInfo[HitBoxPair.Key].BoxExtent);
+
+ 				HitBoxPair.Value->SetWorldLocation(BoxInfo->Location);
+ 				HitBoxPair.Value->SetWorldRotation(BoxInfo->Rotation);
+ 				HitBoxPair.Value->SetBoxExtent(BoxInfo->BoxExtent);
+ 			}
  		}
  	}
  }
@@ -396,6 +411,13 @@ FServerSideRewindResult ULagCompensationComponent::ProjectileConfirmHit(const FF
  					DrawDebugBox(GetWorld(), Box->GetComponentLocation(), Box->GetScaledBoxExtent(), FQuat(Box->GetComponentRotation()), FColor::Blue, false, 8.f);
  				}
  			}
+
+ 			GEngine->AddOnScreenDebugMessage(
+			-1,
+			15.f,
+			FColor::Blue,
+			FString(TEXT("Confirmed Projectile hit with SSR!"))
+		);
  
  			ResetHitBoxes(HitCharacter, CurrentFrame);
  			EnableCharacterMeshCollision(HitCharacter, ECollisionEnabled::QueryAndPhysics);
@@ -470,3 +492,19 @@ FFramePackage ULagCompensationComponent::GetFrameToCheck(AMainCharacter* HitChar
  	FrameToCheck.Character = HitCharacter;
  	return FrameToCheck;
  }
+
+void ULagCompensationComponent::ProjectileServerScoreRequest_Implementation(AMainCharacter* HitCharacter, const FVector_NetQuantize& TraceStart, const FVector_NetQuantize100& InitialVelocity, float HitTime)
+{
+	FServerSideRewindResult Confirm = ProjectileServerSideRewind(HitCharacter, TraceStart, InitialVelocity, HitTime);
+ 
+	if (Character && HitCharacter && Confirm.bHitConfirmed)
+	{
+		UGameplayStatics::ApplyDamage(
+			HitCharacter,
+			Character->GetEquippedWeapon()->GetDamage(),
+			Character->Controller,
+			Character->GetEquippedWeapon(),
+			UDamageType::StaticClass()
+		);
+	}
+}

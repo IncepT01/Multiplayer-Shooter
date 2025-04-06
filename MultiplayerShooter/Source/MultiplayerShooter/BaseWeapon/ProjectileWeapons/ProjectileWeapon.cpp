@@ -11,6 +11,11 @@ void AProjectileWeapon::Multicast_StartFiring_Implementation(const FVector& HitT
 {
 	Super::Multicast_StartFiring_Implementation(HitTarget);
 
+	if (!OwnerCharacter->IsValidLowLevel())
+	{
+		return;
+	}
+	
 	if (OwnerCharacter->IsLocallyControlled())
 	{
 		return;
@@ -48,10 +53,10 @@ void AProjectileWeapon::Multicast_StartFiring_Implementation(const FVector& HitT
 					SpawnedProjectile->bUseServerSideRewind = false;
 					SpawnedProjectile->Damage = Damage;
 				}
-				else // server, not locally controlled - spawn non-replicated projectile, no SSR
+				else // server, not locally controlled - spawn non-replicated projectile, SSR
 				{
 					SpawnedProjectile = World->SpawnActor<AProjectile>(ServerSideRewindProjectileClass, SocketTransform.GetLocation(), TargetRotation, SpawnParameters);
-					SpawnedProjectile->bUseServerSideRewind = false;
+					SpawnedProjectile->bUseServerSideRewind = true;
 				}
 			}
 			else // client, using SSR
@@ -125,10 +130,10 @@ void AProjectileWeapon::Fire(const FVector& HitTarget)
 					SpawnedProjectile->bUseServerSideRewind = false;
 					SpawnedProjectile->Damage = Damage;
 				}
-				else // server, not locally controlled - spawn non-replicated projectile, no SSR
+				else // server, not locally controlled - spawn non-replicated projectile, SSR
 				{
 					SpawnedProjectile = World->SpawnActor<AProjectile>(ServerSideRewindProjectileClass, SocketTransform.GetLocation(), TargetRotation, SpawnParameters);
-					SpawnedProjectile->bUseServerSideRewind = false;
+					SpawnedProjectile->bUseServerSideRewind = true;
 				}
 			}
 			else // client, using SSR

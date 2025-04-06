@@ -91,6 +91,14 @@ public:
 		float HitTime,
 		class ABaseWeapon* DamageCauser
 	);
+
+	UFUNCTION(Server, Reliable)
+	void ProjectileServerScoreRequest(
+		AMainCharacter* HitCharacter,
+		const FVector_NetQuantize& TraceStart,
+		const FVector_NetQuantize100& InitialVelocity,
+		float HitTime
+	);
 	
 protected:
 	// Called when the game starts
