@@ -32,6 +32,9 @@ struct FFramePackage
  
 	UPROPERTY()
 	TMap<FName, FBoxInformation> HitBoxInfo;
+
+	UPROPERTY()
+	AMainCharacter* Character;
 };
 
 USTRUCT(BlueprintType)
@@ -61,11 +64,24 @@ public:
 
 	void ShowFramePackage(const FFramePackage& Package, const FColor& Color);
 
+	/**
+	 * HitScan
+	 */
 	FServerSideRewindResult ServerSideRewind(
 		 class AMainCharacter* HitCharacter, 
 		 const FVector_NetQuantize& TraceStart, 
 		 const FVector_NetQuantize& HitLocation, 
 		 float HitTime);
+
+	/** 
+	 * Projectile
+	 */
+	FServerSideRewindResult ProjectileServerSideRewind(
+		AMainCharacter* HitCharacter,
+		const FVector_NetQuantize& TraceStart,
+		const FVector_NetQuantize100& InitialVelocity,
+		float HitTime
+	);
 
 	UFUNCTION(Server, Reliable)
 	void ServerScoreRequest(
@@ -83,17 +99,33 @@ protected:
 
 	FFramePackage InterpBetweenFrames(const FFramePackage& OlderFrame, const FFramePackage& YoungerFrame, float HitTime);
 	
-	FServerSideRewindResult ConfirmHit(
-		 const FFramePackage& Package, 
-		 AMainCharacter* HitCharacter, 
-		 const FVector_NetQuantize& TraceStart, 
-		 const FVector_NetQuantize& HitLocation);
-	
 	void CacheBoxPositions(AMainCharacter* HitCharacter, FFramePackage& OutFramePackage);
 	void MoveBoxes(AMainCharacter* HitCharacter, const FFramePackage& Package);
 	void ResetHitBoxes(AMainCharacter* HitCharacter, const FFramePackage& Package);
 	void EnableCharacterMeshCollision(AMainCharacter* HitCharacter, ECollisionEnabled::Type CollisionEnabled);
 	void SaveFramePackage();
+
+	FFramePackage GetFrameToCheck(AMainCharacter* HitCharacter, float HitTime);
+
+	/** 
+	 * Hitscan
+	 */
+	FServerSideRewindResult ConfirmHit(
+		const FFramePackage& Package,
+		AMainCharacter* HitCharacter,
+		const FVector_NetQuantize& TraceStart,
+		const FVector_NetQuantize& HitLocation);
+ 
+	/** 
+	* Projectile
+	*/
+	FServerSideRewindResult ProjectileConfirmHit(
+		const FFramePackage& Package,
+		AMainCharacter* HitCharacter,
+		const FVector_NetQuantize& TraceStart,
+		const FVector_NetQuantize100& InitialVelocity,
+		float HitTime
+	);
 
 private:
 	UPROPERTY()
