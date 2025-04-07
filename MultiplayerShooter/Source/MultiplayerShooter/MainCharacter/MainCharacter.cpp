@@ -516,7 +516,12 @@ void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDa
                                    class AController* InstigatorController, AActor* DamageCauser)
 {
 	Health = FMath::Clamp(Health - Damage, 0.f, MaxHealth);
-	UpdateHUDHealth();
+	
+	if (HasAuthority())
+	{
+		UpdateHUDHealth();
+		PlayHitReactMontage();
+	}
 	//This call here does not update on clients
 	//PlayHitReactMontage();
 
@@ -671,8 +676,6 @@ void AMainCharacter::SimProxiesTurn()
 	ProxyRotation = GetActorRotation();
 	ProxyYaw = UKismetMathLibrary::NormalizedDeltaRotator(ProxyRotation, ProxyRotationLastFrame).Yaw;
 
-	//UE_LOG(LogTemp, Warning, TEXT("ProxyYaw: %f"), ProxyYaw);
-
 	if (FMath::Abs(ProxyYaw) > TurnThreshold)
 	{
 		if (ProxyYaw > TurnThreshold)
@@ -708,6 +711,7 @@ void AMainCharacter::OnRep_ReplicatedMovement()
 	TimeSinceLastMovementReplication = 0.f;
 }
 
+//Replication only happens on clients!
 void AMainCharacter::OnRep_Health()
 {
 	UpdateHUDHealth();
@@ -715,7 +719,6 @@ void AMainCharacter::OnRep_Health()
 	{
 		PlayHitReactMontage();
 	}
-	//PlayHitReactMontage();
 }
 
 void AMainCharacter::MulticastFire_Implementation()
