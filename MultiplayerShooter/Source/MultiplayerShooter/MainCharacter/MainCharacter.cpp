@@ -570,7 +570,10 @@ void AMainCharacter::Multicast_Elim_Implementation()
 	bDisableGameplay = true;
 	if (Combat)
 	{
-		Combat->FireButtonPressed(false);
+		if (Combat->bFireButtonPressed == true)
+		{
+			Combat->FireButtonPressed(false);
+		}
 	}
 	
 	// Disable collision

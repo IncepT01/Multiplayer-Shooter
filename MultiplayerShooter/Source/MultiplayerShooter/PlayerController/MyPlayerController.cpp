@@ -140,10 +140,12 @@ void AMyPlayerController::SetHUDScore(float Score)
 
 void AMyPlayerController::SetHUDWeaponAmmo(int32 Ammo)
  {
+	
  	if (!IsValid(MainHUD))
  	{
  		MainHUD = Cast<AMainHUD>(GetHUD());
  	}
+	
  	
  	if (IsValid(MainHUD) && IsValid(MainHUD->CharacterOverlay) && IsValid(MainHUD->CharacterOverlay->WeaponAmmoAmount))
  	{
@@ -153,6 +155,10 @@ void AMyPlayerController::SetHUDWeaponAmmo(int32 Ammo)
  	}
  	else
  	{
+ 		if (HasAuthority())
+ 		{
+ 			UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDWeaponAmmo Server"));
+ 		}
  		//UE_LOG(LogTemp, Warning, TEXT("HUD components are invalid in SetHUDWeaponAmmo"));
  	}
  }

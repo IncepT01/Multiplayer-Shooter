@@ -15,6 +15,11 @@ void AMainHUD::BeginPlay()
  
 void AMainHUD::AddCharacterOverlay()
  {
+	if (CharacterOverlay)
+	{
+		return;
+	}
+	
  	APlayerController* PlayerController = GetOwningPlayerController();
  	if (PlayerController && CharacterOverlayClass)
  	{

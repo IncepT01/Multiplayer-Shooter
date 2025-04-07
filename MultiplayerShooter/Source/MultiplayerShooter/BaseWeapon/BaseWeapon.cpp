@@ -163,7 +163,7 @@ void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 	if (MuzzleFlashNiagaraSystem && WeaponMesh)
 	{
 		// Spawn the Niagara particle system at the muzzle socket and set it to loop
-		UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
+		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
 		MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
 			MuzzleFlashNiagaraSystem,
 			WeaponMesh,
@@ -178,15 +178,39 @@ void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 
 void ABaseWeapon::SetHUDAmmo()
 {
-	OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
+	//UE_LOG(LogTemp, Warning, TEXT("SetHUD Ammo"));
+	//OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
+	OwnerCharacter = Cast<AMainCharacter>(GetOwner());
 	if (OwnerCharacter)
 	{
+		//UE_LOG(LogTemp, Warning, TEXT("Wep's new owner: %s"), *OwnerCharacter->GetName());
+		
 		OwnerController = OwnerController == nullptr
 			                  ? Cast<AMyPlayerController>(OwnerCharacter->Controller)
 			                  : OwnerController;
 		if (OwnerController)
 		{
+			if (OwnerCharacter->IsLocallyControlled())
+			{
+				AMainHUD* MainHUD = Cast<AMainHUD>(OwnerController->GetHUD());
+				//Retry if no MainHUD
+				if (IsValid(MainHUD))
+				{
+					if (HasAuthority())
+					{
+						//UE_LOG(LogTemp, Warning, TEXT("Local MainHUD found, adding overlay"));
+						MainHUD->AddCharacterOverlay();
+					}
+				}
+			}
 			OwnerController->SetHUDWeaponAmmo(Ammo);
+		}
+	}
+	else
+	{
+		if (HasAuthority())
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Server No ownerCharacter in SetHUDAmmo"));
 		}
 	}
 }

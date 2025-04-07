@@ -169,6 +169,7 @@ void UCombatComponent::EquipWeapon(ABaseWeapon* WeaponToEquip)
 	else {
 		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, FString(TEXT("No hand socket found")));
 	}
+	//UE_LOG(LogTemp, Warning, TEXT("Setting owner to: %p"), *Character->GetName())
 	EquippedWeapon->SetOwner(Character);
 	EquippedWeapon->SetHUDAmmo();
 	Character->GetCharacterMovement()->bOrientRotationToMovement = false;
@@ -228,7 +229,8 @@ void UCombatComponent::Fire()
 {
 	if (CanFire())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Firing (CombatComponent.cpp/Fire)"));
+		//UE_LOG(LogTemp, Warning, TEXT("Firing (CombatComponent.cpp/Fire)"));
+		EquippedWeapon->SetHUDAmmo();
 		bCanFire = false;
 		Server_Fire(bFireButtonPressed, HitTarget);
 		LocalFire(HitTarget);
@@ -243,7 +245,7 @@ void UCombatComponent::Fire()
 
 void UCombatComponent::LocalFire(const FVector_NetQuantize& fnHitTarget)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Round spent in local fire"));
+	//UE_LOG(LogTemp, Warning, TEXT("Round spent in local fire"));
 	EquippedWeapon->Fire(fnHitTarget);
 	EquippedWeapon->SpendRound();
 	if (EquippedWeapon->MuzzleFlashComponent)
@@ -256,7 +258,7 @@ void UCombatComponent::LocalFire(const FVector_NetQuantize& fnHitTarget)
 	if (EquippedWeapon->MuzzleFlashNiagaraSystem && EquippedWeapon->WeaponMesh)
 	{
 		// Spawn the Niagara particle system at the muzzle socket and set it to loop
-		UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
+		//UE_LOG(LogTemp, Warning, TEXT("MuzzleFlash spawning"));
 		EquippedWeapon->MuzzleFlashComponent = UNiagaraFunctionLibrary::SpawnSystemAttached(
 			EquippedWeapon->MuzzleFlashNiagaraSystem,
 			EquippedWeapon->WeaponMesh,
@@ -289,6 +291,7 @@ void UCombatComponent::Server_Fire_Implementation(bool bLocalFireButtonPressed, 
 		{
 			//Enable to player Fire Montage
 			Character->MulticastFire();
+			EquippedWeapon->SetHUDAmmo();
 		}
 	}
 	else
