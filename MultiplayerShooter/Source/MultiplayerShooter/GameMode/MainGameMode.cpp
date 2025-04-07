@@ -2,12 +2,16 @@
 
 
 #include "MainGameMode.h"
+
+#include "ModuleDescriptor.h"
+#include "SNegativeActionButton.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "MultiplayerShooter/PlayerController/MYPlayerController.h"
 #include "Kismet/GameplayStatics.h"
  #include "GameFramework/PlayerStart.h"
 #include "MultiplayerShooter/GameState/MainGameState.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
+#include "GameFramework/GameSession.h"
 
 namespace MatchState
 {
@@ -24,6 +28,18 @@ void AMainGameMode::BeginPlay()
 	Super::BeginPlay();
  
 	LevelStartingTime = GetWorld()->GetTimeSeconds();
+}
+
+void AMainGameMode::PostLogin(APlayerController* NewPlayer)
+{
+	Super::PostLogin(NewPlayer);
+
+	AMyPlayerController* MyPC = Cast<AMyPlayerController>(NewPlayer);
+	if (MyPC)
+	{
+		MyPC->HighPingDelegate.AddDynamic(this, &AMainGameMode::HandleHighPing);
+		UE_LOG(LogTemp, Warning, TEXT("Subscribed to HighPingDelegate for: %s"), *MyPC->GetName());
+	}
 }
  
 void AMainGameMode::Tick(float DeltaTime)
@@ -104,6 +120,21 @@ void AMainGameMode::OnMatchStateSet()
 		if (Player)
 		{
 			Player->OnMatchStateSet(MatchState);
+		}
+	}
+}
+
+void AMainGameMode::HandleHighPing(bool bHighPing, APlayerController* PlayerController)
+{
+	if (bHighPing && PlayerController)
+	{
+		GameSession = GetWorld()->GetAuthGameMode()->GameSession;
+        
+		if (GameSession)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Kicked player %s due to high ping."), *PlayerController->GetName());
+			//This line will kick the player!
+			//GameSession->KickPlayer(PlayerController, FText::FromString(TEXT("KickPlayer")));
 		}
 	}
 }

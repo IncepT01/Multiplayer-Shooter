@@ -91,6 +91,7 @@ public:
 		float HitTime,
 		class ABaseWeapon* DamageCauser
 	);
+	
 
 	UFUNCTION(Server, Reliable)
 	void ProjectileServerScoreRequest(
@@ -134,6 +135,7 @@ protected:
 		const FVector_NetQuantize100& InitialVelocity,
 		float HitTime
 	);
+	
 
 private:
 	UPROPERTY()

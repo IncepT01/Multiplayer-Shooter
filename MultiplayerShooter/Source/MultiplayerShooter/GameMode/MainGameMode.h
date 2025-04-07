@@ -39,6 +39,11 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void OnMatchStateSet() override;
+
+	UFUNCTION()
+	void HandleHighPing(bool bHighPing, APlayerController* PlayerController);
+
+	virtual void PostLogin(APlayerController* NewPlayer) override;
  
 private:
 	float CountdownTime = 0.f;

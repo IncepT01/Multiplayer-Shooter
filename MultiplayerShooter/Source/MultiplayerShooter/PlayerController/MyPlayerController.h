@@ -9,6 +9,9 @@
  /**
   * 
   */
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FHighPingDelegate, bool, bHighPing, APlayerController*, PlayerController);
+
  UCLASS()
 class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  {
@@ -31,6 +34,8 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	void HandleCooldown();
 
  	float SingleTripTime = 0.f;
+
+ 	FHighPingDelegate HighPingDelegate;
  	
  protected:
  	virtual void BeginPlay() override;
@@ -105,4 +110,7 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  
  	UPROPERTY(EditAnywhere)
  	float HighPingThreshold = 50.f;
+
+ 	UFUNCTION(Server, Reliable)
+ 	void ServerReportPingStatus(bool bHighPing);
  };

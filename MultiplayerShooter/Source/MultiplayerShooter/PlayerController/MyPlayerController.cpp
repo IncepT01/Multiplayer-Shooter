@@ -454,19 +454,24 @@ void AMyPlayerController::ServerTryCheckMatchState_Implementation()
 
 void AMyPlayerController::CheckPing(float DeltaTime)
 {
+	if (HasAuthority()) return;
+	
 	HighPingRunningTime += DeltaTime;
 	if (HighPingRunningTime > CheckPingFrequency)
 	{
 		PlayerState = PlayerState == nullptr ? TObjectPtr<APlayerState>(GetPlayerState<APlayerState>()) : PlayerState;
 		if (PlayerState)
 		{
+			//UE_LOG(LogTemp, Warning, TEXT("PlayerState->ExactPing: %f"), PlayerState->ExactPing);
 			if (PlayerState->ExactPing > HighPingThreshold) // ping is compressed; it's actually ping / 4
 			{
 				HighPingWarning();
+				ServerReportPingStatus(true);
 			}
 			else
 			{
 				StopHighPingWarning();
+				ServerReportPingStatus(false);
 			}
 		}
 		HighPingRunningTime = 0.f;
@@ -495,4 +500,9 @@ void AMyPlayerController::StopHighPingWarning()
 	{
 		MainHUD->CharacterOverlay->HighPingText->SetOpacity(0.f);
 	}
+}
+
+void AMyPlayerController::ServerReportPingStatus_Implementation(bool bHighPing)
+{
+	HighPingDelegate.Broadcast(bHighPing, this);
 }
