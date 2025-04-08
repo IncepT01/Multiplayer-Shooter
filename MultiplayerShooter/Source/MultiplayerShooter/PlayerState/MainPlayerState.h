@@ -30,4 +30,9 @@ private:
 
 	UPROPERTY()
 	class AMyPlayerController* Controller;
+
+	FTimerHandle TimerHandle_CanGetPoints;
+	bool canGetPoints = true;
+
+	void ResetCanGetPoints();
 };

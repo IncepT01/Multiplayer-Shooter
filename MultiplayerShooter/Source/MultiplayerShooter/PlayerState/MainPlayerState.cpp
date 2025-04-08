@@ -14,6 +14,9 @@
  
 void AMainPlayerState::AddToScore(float ScoreAmount)
  {
+
+	if (!canGetPoints){return;}
+ 	
  	SetScore(GetScore() + ScoreAmount);
  	Character = Character == nullptr ? Cast<AMainCharacter>(GetPawn()) : Character;
  	if (Character)
@@ -24,6 +27,15 @@ void AMainPlayerState::AddToScore(float ScoreAmount)
  			Controller->SetHUDScore(GetScore());
  		}
  	}
+
+ 	//A terrible, horrible, no good, very bad solution
+ 	canGetPoints = false;
+ 	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CanGetPoints, this, &AMainPlayerState::ResetCanGetPoints, 1.0f, false);
+ }
+
+void AMainPlayerState::ResetCanGetPoints()
+ {
+ 	canGetPoints = true;
  }
  
 void AMainPlayerState::OnRep_Score()

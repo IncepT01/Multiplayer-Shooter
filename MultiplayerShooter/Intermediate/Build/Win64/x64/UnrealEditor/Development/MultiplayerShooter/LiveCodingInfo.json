@@ -32,7 +32,9 @@
 			"Projectile.cpp.obj",
 			"ProjectileBullet.cpp.obj",
 			"ProjectileWeapon.cpp.obj",
+			"BuffDatabaseManager.cpp.obj",
 			"LobbyGameMode.cpp.obj",
+			"MainGameMode.cpp.obj",
 			"MainGameState.cpp.obj",
 			"Announcement.cpp.obj",
 			"CharacterOverlay.cpp.obj",
@@ -43,9 +45,7 @@
 			"MultiplayerShooter.cpp.obj",
 			"Pickup.cpp.obj",
 			"MyPlayerController.cpp.obj",
-			"MainPlayerState.cpp.obj",
-			"BuffDatabaseManager.cpp.obj",
-			"MainGameMode.cpp.obj"
+			"MainPlayerState.cpp.obj"
 		]
 	}
 }
