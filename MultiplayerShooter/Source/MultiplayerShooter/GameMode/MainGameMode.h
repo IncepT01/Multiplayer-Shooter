@@ -35,6 +35,8 @@ public:
 	float CooldownTime = 5.f;
  
 	float LevelStartingTime = 0.f;
+
+	TMap<FString, float> BuffList;
  
 protected:
 	virtual void BeginPlay() override;

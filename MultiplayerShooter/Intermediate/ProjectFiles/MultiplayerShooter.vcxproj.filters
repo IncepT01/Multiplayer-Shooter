@@ -90,6 +90,12 @@
     <Filter Include="Source\MultiplayerShooter\ActorComponents">
       <UniqueIdentifier>{0E6884E2-05A8-3D6F-BFB4-048E357E2B21}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\BuffComponent.cpp">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\BuffComponent.h">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\CombatComponent.cpp">
       <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
     </ClCompile>
@@ -131,6 +137,15 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons\ProjectileWeapon.h">
       <Filter>Source\MultiplayerShooter\BaseWeapon\ProjectileWeapons</Filter>
+    </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\Database">
+      <UniqueIdentifier>{209EE813-5A50-3965-BF39-455C07C6A17E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Database\BuffDatabaseManager.cpp">
+      <Filter>Source\MultiplayerShooter\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Database\BuffDatabaseManager.h">
+      <Filter>Source\MultiplayerShooter\Database</Filter>
     </ClCompile>
     <Filter Include="Source\MultiplayerShooter\GameMode">
       <UniqueIdentifier>{CAB1BC10-849D-3AFF-BE1D-E626A63A0027}</UniqueIdentifier>
@@ -197,6 +212,15 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MyAnimInstance.h">
       <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
+    </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\Pickups">
+      <UniqueIdentifier>{6763D19A-45E1-3F7B-8AE5-176019164006}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\Pickup.cpp">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\Pickup.h">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
     </ClCompile>
     <Filter Include="Source\MultiplayerShooter\PlayerController">
       <UniqueIdentifier>{182FE8DE-D5E7-3026-8281-503CF45E9B56}</UniqueIdentifier>

@@ -304,6 +304,12 @@
 /I "..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT"
 /I "..\Plugins\EnhancedInput\Source"
 /I "..\Plugins\EnhancedInput\Source\EnhancedInput\Public"
+/I "..\Plugins\Runtime\Database\SQLiteCore\Source"
+/I "..\Plugins\Runtime\Database\SQLiteCore\Source\SQLiteCore\Public"
+/I "..\Plugins\Runtime\Database\SQLiteSupport\Source"
+/I "..\Plugins\Runtime\Database\SQLiteSupport\Source\SQLiteSupport\Public"
+/I "..\Plugins\Runtime\Database\DatabaseSupport\Source"
+/I "..\Plugins\Runtime\Database\DatabaseSupport\Source\DatabaseSupport\Public"
 /external:W0
 /external:I "ThirdParty\GuidelinesSupportLibrary\GSL-1144\include"
 /external:I "ThirdParty\RapidJSON\1.1.0"

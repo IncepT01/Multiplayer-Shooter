@@ -12,6 +12,7 @@
 #include "MultiplayerShooter/GameState/MainGameState.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 #include "GameFramework/GameSession.h"
+#include "MultiplayerShooter/Database/BuffDatabaseManager.h"
 
 namespace MatchState
 {
@@ -28,6 +29,19 @@ void AMainGameMode::BeginPlay()
 	Super::BeginPlay();
  
 	LevelStartingTime = GetWorld()->GetTimeSeconds();
+
+
+	//The server should read the buffs
+	if (HasAuthority())
+	{
+		BuffList = UBuffDatabaseManager::Get()->LoadBuffs();
+
+		for (auto i : BuffList)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Buff Name: %s, Amount: %f"), *i.Key,i.Value);
+		}
+	}
+	
 }
 
 void AMainGameMode::PostLogin(APlayerController* NewPlayer)
