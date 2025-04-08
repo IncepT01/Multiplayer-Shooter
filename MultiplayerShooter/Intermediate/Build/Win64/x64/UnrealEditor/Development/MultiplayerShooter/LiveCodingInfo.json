@@ -40,12 +40,12 @@
 			"CharacterOverlay.cpp.obj",
 			"MainHUD.cpp.obj",
 			"OverheadWidget.cpp.obj",
-			"MainCharacter.cpp.obj",
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
 			"Pickup.cpp.obj",
 			"MyPlayerController.cpp.obj",
-			"MainPlayerState.cpp.obj"
+			"MainPlayerState.cpp.obj",
+			"MainCharacter.cpp.obj"
 		]
 	}
 }

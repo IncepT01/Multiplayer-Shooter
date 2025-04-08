@@ -571,9 +571,12 @@ void AMainCharacter::Multicast_Elim_Implementation()
 	{
 		MyPlayerController->SetHUDWeaponAmmo(0);
 	}
-	
-	bElimmed = true;
-	PlayElimMontage();
+
+	if (bElimmed == false)
+	{
+		bElimmed = true;
+		PlayElimMontage();
+	}
 
 	//Disable Character Movement
 	bDisableGameplay = true;
