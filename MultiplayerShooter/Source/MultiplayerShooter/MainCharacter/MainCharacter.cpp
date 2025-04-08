@@ -21,6 +21,7 @@
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 #include "MultiplayerShooter/ActorComponents/CombatComponent.h"
 #include "MultiplayerShooter/ActorComponents/LagCompensationComponent.h"
+#include "MultiplayerShooter/ActorComponents/BuffComponent.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -45,6 +46,9 @@ AMainCharacter::AMainCharacter()
 
 	Combat = CreateDefaultSubobject<UCombatComponent>(TEXT("CombatComponent"));
 	Combat->SetIsReplicated(true);
+
+	Buff = CreateDefaultSubobject<UBuffComponent>(TEXT("BuffComponent"));
+	Buff->SetIsReplicated(true);
 
 	LagCompensation = CreateDefaultSubobject<ULagCompensationComponent>(TEXT("LagCompensation"));
 
@@ -376,6 +380,11 @@ void AMainCharacter::PostInitializeComponents()
 		{
 			LagCompensation->Controller = Cast<AMyPlayerController>(Controller);
 		}
+	}
+
+	if (Buff)
+	{
+		Buff->Character = this;
 	}
 }
 

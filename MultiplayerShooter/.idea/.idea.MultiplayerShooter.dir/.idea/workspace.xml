@@ -18,14 +18,9 @@
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/LiveCodingInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/LiveCodingInfo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.dll.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.dll.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.lib.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerShooter/UnrealEditor-MultiplayerShooter.lib.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/LagCompensationComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/LagCompensationComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/LagCompensationComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/ActorComponents/LagCompensationComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/GameMode/MainGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/MultiplayerShooter/PlayerController/MyPlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +163,8 @@
       <workItem from="1744021272748" duration="1966000" />
       <workItem from="1744025291837" duration="3995000" />
       <workItem from="1744041385616" duration="1687000" />
-      <workItem from="1744044057267" duration="8840000" />
+      <workItem from="1744044057267" duration="9358000" />
+      <workItem from="1744133807534" duration="926000" />
     </task>
     <servers />
   </component>
