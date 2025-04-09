@@ -216,6 +216,12 @@
     <Filter Include="Source\MultiplayerShooter\Pickups">
       <UniqueIdentifier>{6763D19A-45E1-3F7B-8AE5-176019164006}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\DamagePickup.cpp">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\DamagePickup.h">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\HealthPickup.cpp">
       <Filter>Source\MultiplayerShooter\Pickups</Filter>
     </ClCompile>
@@ -226,6 +232,12 @@
       <Filter>Source\MultiplayerShooter\Pickups</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\Pickup.h">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\SpeedPickup.cpp">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\SpeedPickup.h">
       <Filter>Source\MultiplayerShooter\Pickups</Filter>
     </ClCompile>
     <Filter Include="Source\MultiplayerShooter\PlayerController">

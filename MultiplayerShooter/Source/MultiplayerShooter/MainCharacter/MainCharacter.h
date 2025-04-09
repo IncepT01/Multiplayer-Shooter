@@ -125,6 +125,9 @@ protected:
  
 	UPROPERTY(ReplicatedUsing = OnRep_Health, VisibleAnywhere, Category = "Player Stats")
 	float Health = 100.f;
+
+	UPROPERTY(EditAnywhere)
+	float DamageMultiplier = 1.f;
  
 	UFUNCTION()
 	void OnRep_Health(float LastHealth);
@@ -174,6 +177,9 @@ public:
 
 	FORCEINLINE UCombatComponent* GetCombat() const { return Combat; }
 	FORCEINLINE bool GetDisableGameplay() const { return bDisableGameplay; }
+
+	FORCEINLINE float GetDamageMultiplier() const { return DamageMultiplier; }
+	FORCEINLINE void SetDamageMultiplier(float Amount) { DamageMultiplier = Amount; }
 
 	FORCEINLINE ULagCompensationComponent* GetLagCompensation() const { return LagCompensation; }
 

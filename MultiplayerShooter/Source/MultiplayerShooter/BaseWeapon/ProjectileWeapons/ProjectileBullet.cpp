@@ -52,7 +52,8 @@ void AProjectileBullet::BeginPlay()
  		{
  			if (OwnerCharacter->HasAuthority() && !bUseServerSideRewind)
  			{
- 				UGameplayStatics::ApplyDamage(OtherActor, Damage, OwnerController, this, UDamageType::StaticClass());
+ 				UE_LOG(LogTemp, Warning, TEXT("Server Damaging for: %f"), Damage * OwnerCharacter->GetDamageMultiplier());
+ 				UGameplayStatics::ApplyDamage(OtherActor, Damage * OwnerCharacter->GetDamageMultiplier(), OwnerController, this, UDamageType::StaticClass());
  				Super::OnHit(HitComp, OtherActor, OtherComp, NormalImpulse, Hit);
  				return;
  			}

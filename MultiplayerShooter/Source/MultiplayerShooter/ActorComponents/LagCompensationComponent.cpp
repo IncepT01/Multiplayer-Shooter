@@ -494,9 +494,10 @@ void ULagCompensationComponent::ProjectileServerScoreRequest_Implementation(AMai
  
 	if (Character && HitCharacter && Confirm.bHitConfirmed)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("SSR Damaging for: %f"), Character->GetEquippedWeapon()->GetDamage() * Character->GetDamageMultiplier());
 		UGameplayStatics::ApplyDamage(
 			HitCharacter,
-			Character->GetEquippedWeapon()->GetDamage(),
+			Character->GetEquippedWeapon()->GetDamage() * Character->GetDamageMultiplier(),
 			Character->Controller,
 			Character->GetEquippedWeapon(),
 			UDamageType::StaticClass()

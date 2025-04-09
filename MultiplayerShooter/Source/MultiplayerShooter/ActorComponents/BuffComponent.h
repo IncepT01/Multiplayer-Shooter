@@ -19,6 +19,8 @@ public:
 
 	void BuffSpeed(float BuffBaseSpeed, float BuffCrouchSpeed, float BuffTime);
 	void SetInitialSpeeds(float BaseSpeed, float CrouchSpeed);
+
+	void BuffDamage(float DamageMul, float BuffTime);
 protected:
 	virtual void BeginPlay() override;
 
@@ -41,12 +43,17 @@ private:
 	 */
  
 	FTimerHandle SpeedBuffTimer;
+	FTimerHandle DamageBuffTimer;
 	void ResetSpeeds();
+	void ResetDamage();
 	float InitialBaseSpeed;
 	float InitialCrouchSpeed;
  
 	UFUNCTION(NetMulticast, Reliable)
 	void MulticastSpeedBuff(float BaseSpeed, float CrouchSpeed);
+
+	UFUNCTION(NetMulticast, Reliable)
+	void MulticastDamageBuff(float DamageMul);
  
 public:	
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;

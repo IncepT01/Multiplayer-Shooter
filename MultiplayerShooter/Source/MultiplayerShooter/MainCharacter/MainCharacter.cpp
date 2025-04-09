@@ -247,7 +247,7 @@ void AMainCharacter::Tick(float DeltaTime)
 	HideCameraIfCharacterClose();
 	PollInit();
 
-	//UE_LOG(LogTemp, Warning, TEXT("Speed: %f!"), GetCharacterMovement()->GetMaxSpeed());
+	//UE_LOG(LogTemp, Warning, TEXT("DamageMul: %f!"), DamageMultiplier);
 }
 
 void AMainCharacter::RotateInPlace(float DeltaTime)
