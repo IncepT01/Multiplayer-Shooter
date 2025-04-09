@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "MultiplayerShooter/Types/TurningInPlace.h"
 #include "Camera/CameraComponent.h"
+#include "MultiplayerShooter/ActorComponents/BuffComponent.h"
 #include "MultiplayerShooter/ActorComponents/CombatComponent.h"
 #include "MainCharacter.generated.h"
 
@@ -47,6 +48,8 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	class ULagCompensationComponent* LagCompensation;
 
+	void UpdateHUDHealth();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -67,7 +70,6 @@ protected:
 	void FireButtonReleased();
 	UFUNCTION()
 	void ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* InstigatorController, AActor* DamageCauser);
-	void UpdateHUDHealth();
 	void PollInit();
 	
 	UPROPERTY(ReplicatedUsing = OnRep_OverlappingWeapon)
@@ -125,7 +127,7 @@ protected:
 	float Health = 100.f;
  
 	UFUNCTION()
-	void OnRep_Health();
+	void OnRep_Health(float LastHealth);
 
 	UPROPERTY()
 	class AMyPlayerController* MyPlayerController;
@@ -167,12 +169,15 @@ public:
 	FORCEINLINE bool IsElimmed() const { return bElimmed; }
 	
 	FORCEINLINE float GetHealth() const { return Health; }
+	FORCEINLINE void SetHealth(float Amount) { Health = Amount; }
 	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
 
 	FORCEINLINE UCombatComponent* GetCombat() const { return Combat; }
 	FORCEINLINE bool GetDisableGameplay() const { return bDisableGameplay; }
 
 	FORCEINLINE ULagCompensationComponent* GetLagCompensation() const { return LagCompensation; }
+
+	FORCEINLINE UBuffComponent* GetBuff() const { return Buff; }
 
 	UPROPERTY()
 	class AMainPlayerState* MainPlayerState;

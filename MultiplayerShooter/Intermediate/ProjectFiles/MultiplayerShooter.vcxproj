@@ -694,6 +694,14 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\HealthPickup.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\HealthPickup.h">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\Pickup.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>

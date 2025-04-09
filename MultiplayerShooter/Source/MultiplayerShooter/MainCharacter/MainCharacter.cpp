@@ -246,6 +246,8 @@ void AMainCharacter::Tick(float DeltaTime)
 	RotateInPlace(DeltaTime);
 	HideCameraIfCharacterClose();
 	PollInit();
+
+	//UE_LOG(LogTemp, Warning, TEXT("Speed: %f!"), GetCharacterMovement()->GetMaxSpeed());
 }
 
 void AMainCharacter::RotateInPlace(float DeltaTime)
@@ -371,6 +373,8 @@ void AMainCharacter::PostInitializeComponents()
 	if (Combat)
 	{
 		Combat->Character = this;
+		Combat->BaseWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+		Combat->AimWalkSpeed = GetCharacterMovement()->MaxWalkSpeed * 0.8f;
 	}
 
 	if (LagCompensation)
@@ -385,6 +389,10 @@ void AMainCharacter::PostInitializeComponents()
 	if (Buff)
 	{
 		Buff->Character = this;
+		Buff->SetInitialSpeeds(
+			 Combat->BaseWalkSpeed, 
+			 Combat->AimWalkSpeed
+		 );
 	}
 }
 
@@ -727,10 +735,10 @@ void AMainCharacter::OnRep_ReplicatedMovement()
 }
 
 //Replication only happens on clients!
-void AMainCharacter::OnRep_Health()
+void AMainCharacter::OnRep_Health(float LastHealth)
 {
 	UpdateHUDHealth();
-	if (Health > 0)
+	if (Health > 0 && Health < LastHealth)
 	{
 		PlayHitReactMontage();
 	}

@@ -216,6 +216,12 @@
     <Filter Include="Source\MultiplayerShooter\Pickups">
       <UniqueIdentifier>{6763D19A-45E1-3F7B-8AE5-176019164006}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\HealthPickup.cpp">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\HealthPickup.h">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\Pickup.cpp">
       <Filter>Source\MultiplayerShooter\Pickups</Filter>
     </ClCompile>

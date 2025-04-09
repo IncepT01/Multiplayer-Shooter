@@ -21,11 +21,6 @@
 UCombatComponent::UCombatComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
-
-	BaseWalkSpeed = 600.f;
-	AimWalkSpeed = 300.f;
-	
-
 }
 
 
@@ -431,4 +426,5 @@ bool UCombatComponent::CanFire()
 	if (EquippedWeapon == nullptr) return false;
 	return !EquippedWeapon->IsEmpty() && bCanFire;
 }
+
 
