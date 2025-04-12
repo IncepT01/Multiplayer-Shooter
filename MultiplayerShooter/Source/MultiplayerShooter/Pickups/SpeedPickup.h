@@ -20,13 +20,13 @@ public:
 	FString Name = "SPEED";
  
 	UPROPERTY(EditAnywhere)
-	float BaseSpeedBuff = 1600.f;
+	float BaseSpeedBuff = 400.f;
  
 	UPROPERTY(EditAnywhere)
-	float CrouchSpeedBuff = 850.f;
+	float CrouchSpeedBuff = 400.f;
  
 	UPROPERTY(EditAnywhere)
-	float SpeedBuffTime = 30.f;
+	float SpeedBuffTime = 10.f;
 
 	
 protected:
