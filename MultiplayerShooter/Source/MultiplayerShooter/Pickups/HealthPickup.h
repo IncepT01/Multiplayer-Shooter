@@ -15,6 +15,15 @@ class MULTIPLAYERSHOOTER_API AHealthPickup : public APickup
 	GENERATED_BODY()
 public:
 	AHealthPickup();
+
+	UPROPERTY(EditAnywhere)
+	FString Name = "HEALTH";;
+	
+	UPROPERTY(EditAnywhere)
+	float HealAmount = 100.f;
+ 
+	UPROPERTY(EditAnywhere)
+	float HealingTime = 5.f;
 	
 protected:
 	virtual void OnSphereOverlap(
@@ -25,12 +34,6 @@ protected:
 		bool bFromSweep,
 		const FHitResult& SweepResult
 	);
-private:
- 
-	UPROPERTY(EditAnywhere)
-	float HealAmount = 100.f;
- 
-	UPROPERTY(EditAnywhere)
-	float HealingTime = 5.f;
+	
 	
 };

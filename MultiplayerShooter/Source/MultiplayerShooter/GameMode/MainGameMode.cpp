@@ -13,6 +13,7 @@
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 #include "GameFramework/GameSession.h"
 #include "MultiplayerShooter/Database/BuffDatabaseManager.h"
+#include "MultiplayerShooter/Pickups/HealthPickup.h"
 
 namespace MatchState
 {

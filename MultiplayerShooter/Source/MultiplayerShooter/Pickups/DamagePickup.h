@@ -14,6 +14,16 @@ class MULTIPLAYERSHOOTER_API ADamagePickup : public APickup
 {
 	GENERATED_BODY()
 
+public:
+	UPROPERTY(EditAnywhere)
+	FString Name = "DAMAGE";
+	
+	UPROPERTY(EditAnywhere)
+	float BaseDamageBuff = 2.f;
+ 
+	UPROPERTY(EditAnywhere)
+	float DamageBuffTime = 15.f;
+
 protected:
 	virtual void OnSphereOverlap(
 		UPrimitiveComponent* OverlappedComponent,
@@ -23,11 +33,4 @@ protected:
 		bool bFromSweep,
 		const FHitResult& SweepResult
 	);
-private:
- 
-	UPROPERTY(EditAnywhere)
-	float BaseDamageBuff = 2.f;
- 
-	UPROPERTY(EditAnywhere)
-	float DamageBuffTime = 15.f;
 };

@@ -13,16 +13,11 @@ UCLASS()
 class MULTIPLAYERSHOOTER_API ASpeedPickup : public APickup
 {
 	GENERATED_BODY()
-protected:
-	virtual void OnSphereOverlap(
-		UPrimitiveComponent* OverlappedComponent,
-		AActor* OtherActor,
-		UPrimitiveComponent* OtherComp,
-		int32 OtherBodyIndex,
-		bool bFromSweep,
-		const FHitResult& SweepResult
-	);
-private:
+
+public:
+
+	UPROPERTY(EditAnywhere)
+	FString Name = "SPEED";
  
 	UPROPERTY(EditAnywhere)
 	float BaseSpeedBuff = 1600.f;
@@ -32,4 +27,16 @@ private:
  
 	UPROPERTY(EditAnywhere)
 	float SpeedBuffTime = 30.f;
+
+	
+protected:
+	virtual void OnSphereOverlap(
+		UPrimitiveComponent* OverlappedComponent,
+		AActor* OtherActor,
+		UPrimitiveComponent* OtherComp,
+		int32 OtherBodyIndex,
+		bool bFromSweep,
+		const FHitResult& SweepResult
+	);
+
 };

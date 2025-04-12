@@ -234,6 +234,12 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\Pickup.h">
       <Filter>Source\MultiplayerShooter\Pickups</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\PickupSpawnPoint.cpp">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\PickupSpawnPoint.h">
+      <Filter>Source\MultiplayerShooter\Pickups</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\Pickups\SpeedPickup.cpp">
       <Filter>Source\MultiplayerShooter\Pickups</Filter>
     </ClCompile>
