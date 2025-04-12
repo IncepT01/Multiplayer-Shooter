@@ -7,6 +7,7 @@
 			"BuffComponent.gen.cpp.obj",
 			"BuffDatabaseManager.gen.cpp.obj",
 			"CharacterOverlay.gen.cpp.obj",
+			"Chat.gen.cpp.obj",
 			"CombatComponent.gen.cpp.obj",
 			"DamagePickup.gen.cpp.obj",
 			"HealthPickup.gen.cpp.obj",
@@ -28,7 +29,7 @@
 			"ProjectileWeapon.gen.cpp.obj",
 			"SpeedPickup.gen.cpp.obj",
 			"TurningInPlace.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
+			"BuffComponent.cpp.obj",
 			"CombatComponent.cpp.obj",
 			"LagCompensationComponent.cpp.obj",
 			"BaseWeapon.cpp.obj",
@@ -41,19 +42,20 @@
 			"MainGameState.cpp.obj",
 			"Announcement.cpp.obj",
 			"CharacterOverlay.cpp.obj",
-			"MainHUD.cpp.obj",
 			"OverheadWidget.cpp.obj",
-			"MainCharacter.cpp.obj",
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
 			"DamagePickup.cpp.obj",
 			"HealthPickup.cpp.obj",
 			"Pickup.cpp.obj",
-			"MyPlayerController.cpp.obj",
-			"MainPlayerState.cpp.obj",
-			"BuffComponent.cpp.obj",
 			"PickupSpawnPoint.cpp.obj",
-			"SpeedPickup.cpp.obj"
+			"SpeedPickup.cpp.obj",
+			"MainPlayerState.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"Chat.cpp.obj",
+			"MainHUD.cpp.obj",
+			"MainCharacter.cpp.obj",
+			"MyPlayerController.cpp.obj"
 		]
 	}
 }

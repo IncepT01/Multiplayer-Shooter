@@ -186,6 +186,12 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\CharacterOverlay.h">
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\Chat.cpp">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\Chat.h">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\MainHUD.cpp">
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>

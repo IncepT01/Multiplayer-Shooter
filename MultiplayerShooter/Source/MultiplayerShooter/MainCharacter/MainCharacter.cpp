@@ -2,6 +2,8 @@
 
 
 #include "MainCharacter.h"
+
+#include "NetworkMessage.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -17,11 +19,15 @@
 #include "MultiplayerShooter/GameMode/MainGameMode.h"
 #include "TimerManager.h"
 #include "Components/BoxComponent.h"
+#include "Components/EditableTextBox.h"
+#include "Components/MultiLineEditableTextBox.h"
 #include "Components/SphereComponent.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 #include "MultiplayerShooter/ActorComponents/CombatComponent.h"
 #include "MultiplayerShooter/ActorComponents/LagCompensationComponent.h"
 #include "MultiplayerShooter/ActorComponents/BuffComponent.h"
+#include "MultiplayerShooter/HUD/Chat.h"
+#include "Components/Widget.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -152,6 +158,8 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AMainCharacter::MoveRight);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &AMainCharacter::Turn);
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AMainCharacter::LookUp);
+
+	PlayerInputComponent->BindAction("Chat", IE_Pressed,this, &AMainCharacter::ChatButtonPressed);
 
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &AMainCharacter::EquipButtonPressed);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AMainCharacter::CrouchButtonPressed);
@@ -527,6 +535,63 @@ void AMainCharacter::FireButtonReleased()
 	{
 		Combat->FireButtonPressed(false);
 	}
+}
+
+void AMainCharacter::ChatButtonPressed()
+{
+	MyPlayerController = MyPlayerController == nullptr
+									 ? Cast<AMyPlayerController>(Controller)
+									 : MyPlayerController;
+	if (MyPlayerController)
+	{
+		AMainHUD* MainHUD = Cast<AMainHUD>(MyPlayerController->GetHUD());
+
+		if (MainHUD)
+		{
+			// Assuming you already have a reference to your UMG widget, let's say ChatWidget is your widget
+			UChat* ChatWidget = MainHUD->Chat;
+			if (ChatWidget)
+			{
+				if (ChatWidget->InputField)
+				{
+					// Check if the input field has focus
+					if (ChatWidget->InputField->HasUserFocus(MyPlayerController))
+					{
+						UE_LOG(LogTemp, Display, TEXT("Chat Input was in focus -> removing focus"));
+		
+						// Unfocus and re-enable player input
+						MyPlayerController->SetInputMode(FInputModeGameOnly());
+						MyPlayerController->bShowMouseCursor = false;
+
+						// Clear text input if needed
+						ChatWidget->InputField->SetText(FText::GetEmpty());
+					}
+					else
+					{
+						UE_LOG(LogTemp, Display, TEXT("Chat Input was not in focus -> focusing now"));
+
+						// Focus input field and disable movement/game input
+						ChatWidget->InputField->SetFocus();
+						MyPlayerController->SetInputMode(FInputModeUIOnly());
+						MyPlayerController->bShowMouseCursor = true;
+					}
+				}
+			}
+			else
+			{
+				UE_LOG(LogTemp, Display, TEXT("No ChatWidget"));
+			}
+		}
+		else
+		{
+			UE_LOG(LogTemp, Display, TEXT("No MainHUD"));
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Display, TEXT("No PlayerController"));
+	}
+	UE_LOG(LogTemp, Display, TEXT("ChatButtonPressed"));
 }
 
 void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType,

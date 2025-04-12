@@ -5,6 +5,7 @@
 #include "GameFramework/PlayerController.h"
 #include "CharacterOverlay.h"
 #include "Announcement.h"
+#include "Chat.h"
 #include "Components/TextBlock.h"
 
 void AMainHUD::BeginPlay()
@@ -122,3 +123,26 @@ void AMainHUD::AddAnnouncement()
  		}
  	}
  }
+
+void AMainHUD::AddChat()
+{
+
+	if (Chat)
+	{
+		return;
+	}
+	APlayerController* PlayerController = GetOwningPlayerController();
+	if (PlayerController && ChatClass)
+	{
+		Chat = CreateWidget<UChat>(PlayerController, ChatClass);
+		if (Chat)
+		{
+			Chat->AddToViewport();
+			//UE_LOG(LogTemp, Warning, TEXT("Announcement widget successfully created and added to viewport"));
+		}
+		else
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("Failed to create Announcement widget"));
+		}
+	}
+}

@@ -68,6 +68,7 @@ protected:
 	virtual void Jump() override;
 	void FireButtonPressed();
 	void FireButtonReleased();
+	void ChatButtonPressed();
 	UFUNCTION()
 	void ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* InstigatorController, AActor* DamageCauser);
 	void PollInit();

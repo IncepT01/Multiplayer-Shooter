@@ -320,6 +320,7 @@ void AMyPlayerController::ClientJoinMidgame_Implementation(FName StateOfMatch, f
 	if (MainHUD && MatchState == MatchState::WaitingToStart)
 	{
 		MainHUD->AddAnnouncement();
+		MainHUD->AddChat();
 	}
 }
 
