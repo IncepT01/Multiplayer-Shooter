@@ -8,6 +8,8 @@
 #include "GameFramework/PlayerController.h"
 #include "GameFramework/Actor.h"
 #include "Components/InputComponent.h"
+#include "MultiplayerShooter/HUD/MainHUD.h"
+#include "MultiplayerShooter/PlayerController/MyPlayerController.h"
 
 void ALobbyGameMode::PostLogin(APlayerController* NewPlayer)
 {
@@ -20,6 +22,7 @@ void ALobbyGameMode::PostLogin(APlayerController* NewPlayer)
 void ALobbyGameMode::SetupInput()
 {
 	APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
+	
 	if (PlayerController)
 	{
 		UInputComponent* InputComponentLocal = PlayerController->InputComponent;

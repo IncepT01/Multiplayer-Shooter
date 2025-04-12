@@ -11,7 +11,6 @@
 void AMainHUD::BeginPlay()
  {
  	Super::BeginPlay();
-
  }
  
 void AMainHUD::AddCharacterOverlay()

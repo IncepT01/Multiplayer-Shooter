@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\MultiplayerShooter.uproject.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -190,6 +191,12 @@
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\Chat.h">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\ChatMessageWidget.cpp">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\ChatMessageWidget.h">
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\MainHUD.cpp">

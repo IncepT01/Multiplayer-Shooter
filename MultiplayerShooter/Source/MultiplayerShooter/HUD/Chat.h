@@ -15,19 +15,20 @@ class MULTIPLAYERSHOOTER_API UChat : public UUserWidget
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(meta = (BindWidget))
-	class UTextBlock* ChatText;
 
 	UPROPERTY(meta = (BindWidget))
 	class UEditableTextBox* InputField;
-	//virtual FReply NativeOnKeyDown(const FGeometry& InGeometry, const FKeyEvent& InKeyEvent) override;
+
+	UPROPERTY(meta=(BindWidget))
+	class UScrollBox* ChatHistoryBox;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Chat")
+	TSubclassOf<class UChatMessageWidget> ChatMessageWidgetClass;
 
 	virtual void NativeConstruct() override;
 
 	// Handles message commit from InputField (if using OnTextCommitted)
 	UFUNCTION()
 	void OnChatTextCommitted(const FText& Text, ETextCommit::Type CommitMethod);
-
-	// Optional helper function to send message and reset input mode
-	void SendChatMessage(const FText& Text);
+	
 };

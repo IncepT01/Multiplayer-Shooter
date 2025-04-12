@@ -54,7 +54,7 @@ public:
  
 	void AddAnnouncement();
 	void AddChat();
-	
+
 protected:
 	virtual void BeginPlay() override;
 	

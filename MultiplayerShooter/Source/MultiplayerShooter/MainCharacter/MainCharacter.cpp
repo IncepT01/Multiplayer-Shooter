@@ -28,6 +28,7 @@
 #include "MultiplayerShooter/ActorComponents/BuffComponent.h"
 #include "MultiplayerShooter/HUD/Chat.h"
 #include "Components/Widget.h"
+#include "MultiplayerShooter/ActorComponents/ChatComponent.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -55,6 +56,9 @@ AMainCharacter::AMainCharacter()
 
 	Buff = CreateDefaultSubobject<UBuffComponent>(TEXT("BuffComponent"));
 	Buff->SetIsReplicated(true);
+
+	Chat = CreateDefaultSubobject<UChatComponent>(TEXT("ChatComponent"));
+	Chat->SetIsReplicated(true);
 
 	LagCompensation = CreateDefaultSubobject<ULagCompensationComponent>(TEXT("LagCompensation"));
 
@@ -562,9 +566,6 @@ void AMainCharacter::ChatButtonPressed()
 						// Unfocus and re-enable player input
 						MyPlayerController->SetInputMode(FInputModeGameOnly());
 						MyPlayerController->bShowMouseCursor = false;
-
-						// Clear text input if needed
-						ChatWidget->InputField->SetText(FText::GetEmpty());
 					}
 					else
 					{

@@ -256,6 +256,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	class UBuffComponent* Buff;
+
+	UPROPERTY(VisibleAnywhere)
+	class UChatComponent* Chat;
 };
 
 

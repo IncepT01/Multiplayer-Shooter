@@ -143,6 +143,8 @@ void ABaseWeapon::Tick(float DeltaTime)
 //Reducing Ammo
 void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 {
+
+	UE_LOG(LogTemp, Warning, TEXT("Multicast_StartFiring_Implementation"))
 	//SpendRound();
 	if (!OwnerCharacter->IsValidLowLevel())
 	{

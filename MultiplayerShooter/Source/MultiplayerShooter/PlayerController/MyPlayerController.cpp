@@ -5,6 +5,7 @@
 #include "MultiplayerShooter/HUD/MainHUD.h"
 #include "MultiplayerShooter//HUD/CharacterOverlay.h"
 #include "Components/ProgressBar.h"
+#include "Components/ScrollBox.h"
 #include "Components/TextBlock.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Net/UnrealNetwork.h"
@@ -15,6 +16,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "Math/UnitConversion.h"
 #include "MultiplayerShooter/GameState/MainGameState.h"
+#include "MultiplayerShooter/HUD/Chat.h"
+#include "MultiplayerShooter/HUD/ChatMessageWidget.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 
 void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
@@ -27,9 +30,20 @@ void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
  void AMyPlayerController::BeginPlay()
  {
  	Super::BeginPlay();
+	bReplicates = true;
 
 	
  	MainHUD = Cast<AMainHUD>(GetHUD());
+
+	if (!IsValid(MainHUD))
+	{
+		//UE_LOG(LogTemp, Error, TEXT("AMyPlayerController::BeginPlay() no MAINHUD"));
+	}
+	else
+	{
+		//UE_LOG(LogTemp, Error, TEXT("MainHUD ok"));
+		MainHUD->AddChat();
+	}
 
 	/*
 	GetWorldTimerManager().SetTimer(
@@ -257,6 +271,20 @@ void AMyPlayerController::OnMatchStateSet(FName State)
  	{
  		HandleCooldown();
  	}
+ 	else if (MatchState == MatchState::WaitingToStart)
+ 	{
+ 		UE_LOG(LogTemp, Error, TEXT("Waiting to start!"))
+ 		MainHUD = MainHUD = Cast<AMainHUD>(GetHUD());
+ 		if (MainHUD)
+ 		{
+ 			MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
+ 			//MainHUD->RemoveChat();
+ 		}
+ 		else
+ 		{
+ 			UE_LOG(LogTemp, Warning, TEXT("AMyPlayerController::OnRep_MatchState no MainHUD"));
+ 		}
+ 	}
  }
  
 void AMyPlayerController::OnRep_MatchState()
@@ -264,11 +292,26 @@ void AMyPlayerController::OnRep_MatchState()
  	if (MatchState == MatchState::InProgress)
  	{
  		HandleMatchHasStarted();
+ 		
  	}
  	else if (MatchState == MatchState::Cooldown)
  	{
  		HandleCooldown();
  	}
+    else if (MatchState == MatchState::WaitingToStart)
+    {
+    	UE_LOG(LogTemp, Error, TEXT("Waiting to start!"))
+    	MainHUD = MainHUD = Cast<AMainHUD>(GetHUD());
+    	if (MainHUD)
+    	{
+    		MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
+    		//MainHUD->RemoveChat();
+    	}
+    	else
+    	{
+    		UE_LOG(LogTemp, Warning, TEXT("AMyPlayerController::OnRep_MatchState no MainHUD"));
+    	}
+    }
  }
 
 void AMyPlayerController::HandleMatchHasStarted()
@@ -281,6 +324,8 @@ void AMyPlayerController::HandleMatchHasStarted()
 		if (!MainHUD->CharacterOverlay)
 		{
 			MainHUD->AddCharacterOverlay();
+			MainHUD->AddChat();
+			MainHUD->Chat->SetVisibility(ESlateVisibility::Visible);
 		}
 		if (MainHUD->Announcement)
 		{
@@ -320,7 +365,7 @@ void AMyPlayerController::ClientJoinMidgame_Implementation(FName StateOfMatch, f
 	if (MainHUD && MatchState == MatchState::WaitingToStart)
 	{
 		MainHUD->AddAnnouncement();
-		MainHUD->AddChat();
+		//MainHUD->AddChat();
 	}
 }
 

@@ -36,6 +36,9 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	float SingleTripTime = 0.f;
 
  	FHighPingDelegate HighPingDelegate;
+
+ 	UPROPERTY()
+ 	class AMainHUD* MainHUD;
  	
  protected:
  	virtual void BeginPlay() override;
@@ -78,9 +81,6 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  private:
  	UFUNCTION(Server, Reliable)
  	void ServerTryCheckMatchState();
- 	
- 	UPROPERTY()
- 	class AMainHUD* MainHUD;
 
  	float LevelStartingTime = 0.f;
  	float MatchTime = 0.f;
