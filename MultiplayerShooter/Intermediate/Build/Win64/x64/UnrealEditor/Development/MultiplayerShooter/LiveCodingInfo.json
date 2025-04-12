@@ -33,6 +33,7 @@
 			"TurningInPlace.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"BuffComponent.cpp.obj",
+			"ChatComponent.cpp.obj",
 			"CombatComponent.cpp.obj",
 			"LagCompensationComponent.cpp.obj",
 			"Projectile.cpp.obj",
@@ -43,7 +44,11 @@
 			"MainGameState.cpp.obj",
 			"Announcement.cpp.obj",
 			"CharacterOverlay.cpp.obj",
+			"Chat.cpp.obj",
+			"ChatMessageWidget.cpp.obj",
+			"MainHUD.cpp.obj",
 			"OverheadWidget.cpp.obj",
+			"MainCharacter.cpp.obj",
 			"MyAnimInstance.cpp.obj",
 			"MultiplayerShooter.cpp.obj",
 			"DamagePickup.cpp.obj",
@@ -52,13 +57,8 @@
 			"PickupSpawnPoint.cpp.obj",
 			"SpeedPickup.cpp.obj",
 			"MainPlayerState.cpp.obj",
-			"ChatComponent.cpp.obj",
 			"BaseWeapon.cpp.obj",
 			"LobbyGameMode.cpp.obj",
-			"Chat.cpp.obj",
-			"ChatMessageWidget.cpp.obj",
-			"MainHUD.cpp.obj",
-			"MainCharacter.cpp.obj",
 			"MyPlayerController.cpp.obj"
 		]
 	}

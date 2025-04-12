@@ -15,10 +15,12 @@
 #include "MultiplayerShooter/HUD/Announcement.h"
 #include "Kismet/GameplayStatics.h"
 #include "Math/UnitConversion.h"
+#include "MultiplayerShooter/GameMode/LobbyGameMode.h"
 #include "MultiplayerShooter/GameState/MainGameState.h"
 #include "MultiplayerShooter/HUD/Chat.h"
 #include "MultiplayerShooter/HUD/ChatMessageWidget.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
+#include "Sections/MovieSceneLevelVisibilitySection.h"
 
 void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -43,18 +45,11 @@ void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
 	{
 		//UE_LOG(LogTemp, Error, TEXT("MainHUD ok"));
 		MainHUD->AddChat();
+		if (MainHUD->CharacterOverlay)
+		{
+			MainHUD->CharacterOverlay->RemoveFromParent();
+		}
 	}
-
-	/*
-	GetWorldTimerManager().SetTimer(
-		CheckMatchStateTimerHandle, 
-		this, 
-		&AMyPlayerController::ServerCheckMatchState, 
-		0.5f, 
-		false
-	);*/
-	
-	//ServerCheckMatchState();
 
 	ServerTryCheckMatchState();
  }
@@ -273,16 +268,14 @@ void AMyPlayerController::OnMatchStateSet(FName State)
  	}
  	else if (MatchState == MatchState::WaitingToStart)
  	{
- 		UE_LOG(LogTemp, Error, TEXT("Waiting to start!"))
  		MainHUD = MainHUD = Cast<AMainHUD>(GetHUD());
  		if (MainHUD)
  		{
  			MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
- 			//MainHUD->RemoveChat();
- 		}
- 		else
- 		{
- 			UE_LOG(LogTemp, Warning, TEXT("AMyPlayerController::OnRep_MatchState no MainHUD"));
+ 			if (MainHUD->CharacterOverlay)
+ 			{
+ 				MainHUD->CharacterOverlay->SetVisibility(ESlateVisibility::Hidden);
+ 			}
  		}
  	}
  }
@@ -292,7 +285,6 @@ void AMyPlayerController::OnRep_MatchState()
  	if (MatchState == MatchState::InProgress)
  	{
  		HandleMatchHasStarted();
- 		
  	}
  	else if (MatchState == MatchState::Cooldown)
  	{
@@ -300,16 +292,20 @@ void AMyPlayerController::OnRep_MatchState()
  	}
     else if (MatchState == MatchState::WaitingToStart)
     {
-    	UE_LOG(LogTemp, Error, TEXT("Waiting to start!"))
+    	UE_LOG(LogTemp, Warning, TEXT("Waiting to start!"))
     	MainHUD = MainHUD = Cast<AMainHUD>(GetHUD());
     	if (MainHUD)
     	{
     		MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
+    		if (MainHUD->CharacterOverlay)
+    		{
+    			MainHUD->CharacterOverlay->SetVisibility(ESlateVisibility::Hidden);
+    		}
     		//MainHUD->RemoveChat();
     	}
     	else
     	{
-    		UE_LOG(LogTemp, Warning, TEXT("AMyPlayerController::OnRep_MatchState no MainHUD"));
+    		//UE_LOG(LogTemp, Warning, TEXT("AMyPlayerController::OnRep_MatchState no MainHUD"));
     	}
     }
  }
@@ -317,20 +313,23 @@ void AMyPlayerController::OnRep_MatchState()
 void AMyPlayerController::HandleMatchHasStarted()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Match has started!"));
-	MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
-	//MainHUD = Cast<AMainHUD>(GetHUD());
+	//MainHUD = MainHUD == nullptr ? Cast<AMainHUD>(GetHUD()) : MainHUD;
+	MainHUD = Cast<AMainHUD>(GetHUD());
 	if (MainHUD)
 	{
-		if (!MainHUD->CharacterOverlay)
-		{
-			MainHUD->AddCharacterOverlay();
-			MainHUD->AddChat();
-			MainHUD->Chat->SetVisibility(ESlateVisibility::Visible);
-		}
+		MainHUD->AddCharacterOverlay();
+		MainHUD->AddChat();
+		MainHUD->Chat->SetVisibility(ESlateVisibility::Visible);
+		MainHUD->CharacterOverlay->SetVisibility(ESlateVisibility::Visible);
+		
 		if (MainHUD->Announcement)
 		{
 			MainHUD->Announcement->SetVisibility(ESlateVisibility::Hidden);
 		}
+	}
+	else
+	{
+		//UE_LOG(LogTemp, Error, TEXT("NO amin HUD in Handle match start!"));
 	}
 }
 

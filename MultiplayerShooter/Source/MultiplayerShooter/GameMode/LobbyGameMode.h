@@ -23,4 +23,5 @@ public:
 
 	// Function to register input bindings
 	void SetupInput();
+	
 };
