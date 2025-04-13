@@ -4,7 +4,6 @@
 #include "MainGameMode.h"
 
 #include "ModuleDescriptor.h"
-#include "SNegativeActionButton.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "MultiplayerShooter/PlayerController/MYPlayerController.h"
 #include "Kismet/GameplayStatics.h"
@@ -14,7 +13,7 @@
 #include "GameFramework/GameSession.h"
 #include "MultiplayerShooter/Database/BuffDatabaseManager.h"
 #include "MultiplayerShooter/Pickups/HealthPickup.h"
-#include "Sound/SoundCue.h"
+
 
 namespace MatchState
 {
@@ -34,7 +33,7 @@ void AMainGameMode::BeginPlay()
 
 	if (BackgroundMusic)
 	{
-		MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
+		//MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
 	}
 	
 	//The server should read the buffs
@@ -159,8 +158,3 @@ void AMainGameMode::HandleHighPing(bool bHighPing, APlayerController* PlayerCont
 	}
 }
 
-
-UAudioComponent* AMainGameMode::GetMusicAudioComponent() const
-{
-	return MusicAudioComponent;
-}

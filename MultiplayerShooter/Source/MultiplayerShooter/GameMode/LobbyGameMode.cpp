@@ -11,7 +11,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "MultiplayerShooter/HUD/MainHUD.h"
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
-#include "Sound/SoundCue.h"
 
 
 void ALobbyGameMode::BeginPlay()
@@ -20,7 +19,7 @@ void ALobbyGameMode::BeginPlay()
 
 	if (BackgroundMusic)
 	{
-		MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
+		//MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
 	}
 }
 
@@ -58,9 +57,5 @@ void ALobbyGameMode::TravelToLevel()
 	}
 }
 
-UAudioComponent* ALobbyGameMode::GetMusicAudioComponent() const
-{
-	return MusicAudioComponent;
-}
 
 

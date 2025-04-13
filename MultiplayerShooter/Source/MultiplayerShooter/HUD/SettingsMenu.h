@@ -27,6 +27,9 @@ public:
 	void NativeConstruct();
 	virtual FReply NativeOnKeyDown(const FGeometry& InGeometry, const FKeyEvent& InKeyEvent) override;
 
+	UPROPERTY(EditAnywhere, meta = (BindWidgetAnim), Transient)
+	UWidgetAnimation* SlideInAnimation;
+
 	UFUNCTION()
 	void OnVolumeChanged(float Value);
 };

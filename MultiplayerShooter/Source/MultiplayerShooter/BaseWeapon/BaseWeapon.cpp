@@ -9,7 +9,9 @@
 #include "NiagaraComponent.h"
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
+#include "Kismet/GameplayStatics.h"
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
+#include "Sound/SoundCue.h"
 
 
 // Sets default values
@@ -175,6 +177,17 @@ void ABaseWeapon::Multicast_StartFiring_Implementation(const FVector& HitTarget)
 			EAttachLocation::SnapToTarget,
 			true
 		);
+	}
+
+	if (FireSound)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Playing FireSound"));
+		//UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+		UGameplayStatics::PlaySound2D(this, FireSound);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No FireSound"));
 	}
 }
 

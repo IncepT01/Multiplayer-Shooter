@@ -130,6 +130,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
 	UNiagaraSystem* MuzzleFlashNiagaraSystem;
 
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+	class USoundCue* FireSound;
+	
 	UFUNCTION()
 	void OnRep_WeaponState();
 

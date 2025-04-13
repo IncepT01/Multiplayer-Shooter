@@ -4,6 +4,7 @@
  
  #include "CoreMinimal.h"
  #include "GameFramework/PlayerController.h"
+#include "Sound/SoundClass.h"
 #include "MyPlayerController.generated.h"
  
  /**
@@ -57,6 +58,12 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
 
  	UPROPERTY()
  	class USettingsSaveGame* SaveGameObject;
+
+ 	UPROPERTY(EditAnywhere)
+ 	class USoundCue* BackgroundMusic;
+
+ 	UPROPERTY()
+ 	UAudioComponent* MusicAudioComponent;
  	
  protected:
  	virtual void BeginPlay() override;

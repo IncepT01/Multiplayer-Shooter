@@ -35,7 +35,10 @@ void APickupSpawnPoint::SpawnPickup()
  		if (SpawnedPickup->IsA(AHealthPickup::StaticClass()) && MainGameMode)
  		{
  			AHealthPickup* HealthPickup = Cast<AHealthPickup>(SpawnedPickup);
- 			HealthPickup->HealAmount = MainGameMode->BuffList["HEALTH"];
+ 			if (MainGameMode->BuffList.Contains("HEALTH"))
+ 			{
+ 				HealthPickup->HealAmount = MainGameMode->BuffList["HEALTH"];
+ 			}
  			UE_LOG(LogTemp, Warning, TEXT("SPawning Health pickup with amount: %f"), HealthPickup->HealAmount);
  		}
 
@@ -43,17 +46,23 @@ void APickupSpawnPoint::SpawnPickup()
  		if (SpawnedPickup->IsA(ASpeedPickup::StaticClass()) && MainGameMode)
  		{
  			ASpeedPickup* SpeedPickup = Cast<ASpeedPickup>(SpawnedPickup);
- 			SpeedPickup->BaseSpeedBuff = MainGameMode->BuffList["SPEED"];
- 			SpeedPickup->CrouchSpeedBuff = MainGameMode->BuffList["SPEED"];
- 			UE_LOG(LogTemp, Warning, TEXT("SPawning Health pickup with amount: %f"), SpeedPickup->BaseSpeedBuff);
+ 			if (MainGameMode->BuffList.Contains("SPEED"))
+ 			{
+ 				SpeedPickup->BaseSpeedBuff = MainGameMode->BuffList["SPEED"];
+ 				SpeedPickup->CrouchSpeedBuff = MainGameMode->BuffList["SPEED"];
+ 			}
+ 			UE_LOG(LogTemp, Warning, TEXT("SPawning Speed pickup with amount: %f"), SpeedPickup->BaseSpeedBuff);
  		}
 
  		//Set Damage pickup
  		if (SpawnedPickup->IsA(ADamagePickup::StaticClass()) && MainGameMode)
  		{
  			ADamagePickup* DamagePickup = Cast<ADamagePickup>(SpawnedPickup);
- 			DamagePickup->BaseDamageBuff = MainGameMode->BuffList["DAMAGE"];
- 			UE_LOG(LogTemp, Warning, TEXT("SPawning Health pickup with amount: %f"), DamagePickup->BaseDamageBuff);
+ 			if (MainGameMode->BuffList.Contains("DAMAGE"))
+ 			{
+ 				DamagePickup->BaseDamageBuff = MainGameMode->BuffList["DAMAGE"];
+ 			}
+ 			UE_LOG(LogTemp, Warning, TEXT("SPawning Damage pickup with amount: %f"), DamagePickup->BaseDamageBuff);
  		}
  
  		if (HasAuthority() && SpawnedPickup)

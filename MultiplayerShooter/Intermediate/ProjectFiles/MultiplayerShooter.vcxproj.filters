@@ -238,6 +238,15 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\MainCharacter\MyAnimInstance.h">
       <Filter>Source\MultiplayerShooter\MainCharacter</Filter>
     </ClCompile>
+    <Filter Include="Source\MultiplayerShooter\Persistence">
+      <UniqueIdentifier>{44849C49-7061-3A26-8871-F51DED5CB76E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Persistence\SettingsSaveGame.cpp">
+      <Filter>Source\MultiplayerShooter\Persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\Persistence\SettingsSaveGame.h">
+      <Filter>Source\MultiplayerShooter\Persistence</Filter>
+    </ClCompile>
     <Filter Include="Source\MultiplayerShooter\Pickups">
       <UniqueIdentifier>{6763D19A-45E1-3F7B-8AE5-176019164006}</UniqueIdentifier>
     </Filter>

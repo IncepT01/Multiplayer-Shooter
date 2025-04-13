@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Sound/SoundCue.h"
 #include "GameFramework/GameMode.h"
 #include "LobbyGameMode.generated.h"
 
@@ -28,7 +29,5 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	USoundCue* BackgroundMusic;
-
-	UPROPERTY()
-	UAudioComponent* MusicAudioComponent;
+	
 };

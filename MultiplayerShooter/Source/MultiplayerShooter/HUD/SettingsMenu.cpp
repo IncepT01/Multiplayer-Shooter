@@ -33,7 +33,7 @@ void USettingsMenu::NativeConstruct()
 
 FReply USettingsMenu::NativeOnKeyDown(const FGeometry& InGeometry, const FKeyEvent& InKeyEvent)
 {
-	if (InKeyEvent.GetKey() == EKeys::I)
+	if (InKeyEvent.GetKey() == EKeys::I || InKeyEvent.GetKey() == EKeys::Escape)
 	{
 		// Call back to controller to close menu
 		if (APlayerController* PC = GetOwningPlayer())

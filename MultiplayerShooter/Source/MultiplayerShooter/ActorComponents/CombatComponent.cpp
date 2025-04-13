@@ -16,6 +16,7 @@
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
 #include "Camera/CameraComponent.h"
 #include "TimerManager.h"
+#include "Sound/SoundCue.h"
 
 
 UCombatComponent::UCombatComponent()
@@ -263,6 +264,17 @@ void UCombatComponent::LocalFire(const FVector_NetQuantize& fnHitTarget)
 			EAttachLocation::SnapToTarget,
 			true
 		);
+	}
+
+	if (EquippedWeapon->FireSound)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Playing FireSound"));
+		UGameplayStatics::PlaySoundAtLocation(this, EquippedWeapon->FireSound, EquippedWeapon->GetActorLocation());
+		//UGameplayStatics::PlaySound2D(this, EquippedWeapon->FireSound);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No FireSound"));
 	}
 }
 

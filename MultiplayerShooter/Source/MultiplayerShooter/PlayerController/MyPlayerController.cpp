@@ -27,7 +27,6 @@
 #include "MultiplayerShooter/Persistence/SettingsSaveGame.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 #include "Sections/MovieSceneLevelVisibilitySection.h"
-#include "Sound/SoundClass.h"
 
 void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -74,6 +73,15 @@ void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
 	{
 		SetMouseSensitivity(SaveGameObject->SavedSensitivity);
 		SetVolume(SaveGameObject->SavedVolume);
+	}
+
+	if (IsLocalController() && BackgroundMusic)
+	{
+		MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
+		if (MusicAudioComponent)
+		{
+			MusicAudioComponent->SetVolumeMultiplier(SaveGameObject->SavedVolume);
+		}
 	}
 
 	ServerTryCheckMatchState();
@@ -283,8 +291,6 @@ void AMyPlayerController::ToggleSettingsMenu()
 {
 	if (!IsValid(MainHUD)) return;
 
-	//SetVolume(SFXClass, MyMix, 0.f);
-
 	UE_LOG(LogTemp, Display, TEXT("Toggling settings menu"));
 	
 	if (SettingsMenuIsOpen)
@@ -308,6 +314,16 @@ void AMyPlayerController::ToggleSettingsMenu()
 		MainHUD->Settigns->VolumeSlider->SetValue(SaveGameObject->SavedVolume);
 		MainHUD->Settigns->SensitivitySlider->SetValue(SaveGameObject->SavedSensitivity);
 		MainHUD->Settigns->SetVisibility(ESlateVisibility::Visible);
+
+		if (MainHUD->Settigns->SlideInAnimation)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Playing SlideInAnimation"));
+			MainHUD->Settigns->PlayAnimation(MainHUD->Settigns->SlideInAnimation);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("No SlideInAnimation"));
+		}
 
 		// Set input mode to UI only or game and UI
 		FInputModeUIOnly InputMode;
@@ -336,7 +352,10 @@ void AMyPlayerController::OnMatchStateSet(FName State)
  		MainHUD = MainHUD = Cast<AMainHUD>(GetHUD());
  		if (MainHUD)
  		{
- 			MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
+ 			if (MainHUD->Chat)
+ 			{
+ 				MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
+ 			}
  			if (MainHUD->CharacterOverlay)
  			{
  				MainHUD->CharacterOverlay->SetVisibility(ESlateVisibility::Hidden);
@@ -631,25 +650,11 @@ void AMyPlayerController::SetVolumeWithMix(USoundClass* SoundClass, USoundMix* S
 
 	if (Volume > 0.f)
 	{
-		ALobbyGameMode* LobbyGM = Cast<ALobbyGameMode>(UGameplayStatics::GetGameMode(this));
-		if (LobbyGM)
+		if (MusicAudioComponent && !MusicAudioComponent->IsPlaying())
 		{
-			UAudioComponent* MusicComponent = LobbyGM->GetMusicAudioComponent();
-			if (MusicComponent && !MusicComponent->IsPlaying())
-			{
-				MusicComponent->Play();
-			}
+			MusicAudioComponent->Play();
 		}
-
-		AMainGameMode* MainGM = Cast<AMainGameMode>(UGameplayStatics::GetGameMode(this));
-		if (MainGM)
-		{
-			UAudioComponent* MusicComponent = MainGM->GetMusicAudioComponent();
-			if (MusicComponent && !MusicComponent->IsPlaying())
-			{
-				MusicComponent->Play();
-			}
-		}
+		
 	}
 
 	// Apply override
