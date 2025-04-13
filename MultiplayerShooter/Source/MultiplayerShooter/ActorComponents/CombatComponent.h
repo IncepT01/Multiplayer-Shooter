@@ -32,6 +32,8 @@ public:
  
 	UPROPERTY(EditAnywhere)
 	float AimWalkSpeed;
+
+	FORCEINLINE bool GetFireButtonPressed() const { return bFireButtonPressed; }
 protected:
 	virtual void BeginPlay() override;
 	void SetAiming(bool bIsAiming);
@@ -77,6 +79,7 @@ private:
 
 	bool bFireButtonPressed;
 
+private:
 	float CrosshairVelocityFactor;
 	float CrosshairInAirFactor;
 	float CrosshairAimFactor;

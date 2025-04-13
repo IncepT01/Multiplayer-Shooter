@@ -537,7 +537,10 @@ void AMyPlayerController::HandleCooldown()
 	if (MainCharacter && MainCharacter->GetCombat())
 	{
 		MainCharacter->bDisableGameplay = true;
-		MainCharacter->GetCombat()->FireButtonPressed(false);
+		if (MainCharacter->GetCombat()->GetFireButtonPressed())
+		{
+			MainCharacter->GetCombat()->FireButtonPressed(false);
+		}
 	}
 }
 
