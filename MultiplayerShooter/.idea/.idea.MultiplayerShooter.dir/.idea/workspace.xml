@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dad2d1da-0242-49f2-b764-1b6a0be61356" name="Changes" comment="" />
+    <list default="true" id="dad2d1da-0242-49f2-b764-1b6a0be61356" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/MultiplayerShooter.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +130,7 @@
       <workItem from="1744549152928" duration="81000" />
       <workItem from="1744549290833" duration="1313000" />
       <workItem from="1744550839825" duration="203000" />
-      <workItem from="1744551404199" duration="6735000" />
+      <workItem from="1744551404199" duration="7027000" />
     </task>
     <servers />
   </component>

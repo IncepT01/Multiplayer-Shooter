@@ -15,13 +15,20 @@ class MULTIPLAYERSHOOTER_API ALobbyGameMode : public AGameMode
 	GENERATED_BODY()
 
 public:
+	virtual void BeginPlay() override;
 	// Called when a player joins the lobby
 	virtual void PostLogin(APlayerController* NewPlayer) override;
 
 	// Function to travel to the next level
 	void TravelToLevel();
+	UAudioComponent* GetMusicAudioComponent() const;
 
 	// Function to register input bindings
 	void SetupInput();
-	
+
+	UPROPERTY(EditAnywhere)
+	USoundCue* BackgroundMusic;
+
+	UPROPERTY()
+	UAudioComponent* MusicAudioComponent;
 };

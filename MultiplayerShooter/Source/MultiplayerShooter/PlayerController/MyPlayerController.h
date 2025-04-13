@@ -51,6 +51,9 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
 
  	UPROPERTY(EditAnywhere)
  	USoundClass* SFXClass;
+ 	
+ 	UPROPERTY(EditAnywhere)
+ 	USoundClass* BackgroundMusicClass;
 
  	UPROPERTY()
  	class USettingsSaveGame* SaveGameObject;

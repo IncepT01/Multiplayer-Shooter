@@ -36,14 +36,13 @@
 			"PerModuleInline.gen.cpp.obj",
 			"BuffComponent.cpp.obj",
 			"ChatComponent.cpp.obj",
+			"CombatComponent.cpp.obj",
 			"LagCompensationComponent.cpp.obj",
 			"BaseWeapon.cpp.obj",
 			"Projectile.cpp.obj",
 			"ProjectileBullet.cpp.obj",
 			"ProjectileWeapon.cpp.obj",
 			"BuffDatabaseManager.cpp.obj",
-			"LobbyGameMode.cpp.obj",
-			"MainGameMode.cpp.obj",
 			"MainGameState.cpp.obj",
 			"Announcement.cpp.obj",
 			"CharacterOverlay.cpp.obj",
@@ -62,7 +61,8 @@
 			"PickupSpawnPoint.cpp.obj",
 			"SpeedPickup.cpp.obj",
 			"MainPlayerState.cpp.obj",
-			"CombatComponent.cpp.obj",
+			"LobbyGameMode.cpp.obj",
+			"MainGameMode.cpp.obj",
 			"MyPlayerController.cpp.obj"
 		]
 	}

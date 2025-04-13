@@ -14,6 +14,7 @@
 #include "GameFramework/GameSession.h"
 #include "MultiplayerShooter/Database/BuffDatabaseManager.h"
 #include "MultiplayerShooter/Pickups/HealthPickup.h"
+#include "Sound/SoundCue.h"
 
 namespace MatchState
 {
@@ -31,7 +32,11 @@ void AMainGameMode::BeginPlay()
  
 	LevelStartingTime = GetWorld()->GetTimeSeconds();
 
-
+	if (BackgroundMusic)
+	{
+		MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
+	}
+	
 	//The server should read the buffs
 	if (HasAuthority())
 	{
@@ -152,4 +157,10 @@ void AMainGameMode::HandleHighPing(bool bHighPing, APlayerController* PlayerCont
 			//GameSession->KickPlayer(PlayerController, FText::FromString(TEXT("KickPlayer")));
 		}
 	}
+}
+
+
+UAudioComponent* AMainGameMode::GetMusicAudioComponent() const
+{
+	return MusicAudioComponent;
 }

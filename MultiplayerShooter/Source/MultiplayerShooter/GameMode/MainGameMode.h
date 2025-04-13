@@ -37,6 +37,14 @@ public:
 	float LevelStartingTime = 0.f;
 
 	TMap<FString, float> BuffList;
+
+	UPROPERTY(EditAnywhere)
+	USoundCue* BackgroundMusic;
+
+	UPROPERTY()
+	UAudioComponent* MusicAudioComponent;
+
+	UAudioComponent* GetMusicAudioComponent() const;
  
 protected:
 	virtual void BeginPlay() override;

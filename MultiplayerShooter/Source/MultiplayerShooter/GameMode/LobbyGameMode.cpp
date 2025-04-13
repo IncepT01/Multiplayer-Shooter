@@ -8,8 +8,21 @@
 #include "GameFramework/PlayerController.h"
 #include "GameFramework/Actor.h"
 #include "Components/InputComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "MultiplayerShooter/HUD/MainHUD.h"
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
+#include "Sound/SoundCue.h"
+
+
+void ALobbyGameMode::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if (BackgroundMusic)
+	{
+		MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
+	}
+}
 
 void ALobbyGameMode::PostLogin(APlayerController* NewPlayer)
 {
@@ -43,6 +56,11 @@ void ALobbyGameMode::TravelToLevel()
 		World->ServerTravel(FString("/Game/Maps/Level1?listen"));
 		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, TEXT("After travel"));
 	}
+}
+
+UAudioComponent* ALobbyGameMode::GetMusicAudioComponent() const
+{
+	return MusicAudioComponent;
 }
 
 

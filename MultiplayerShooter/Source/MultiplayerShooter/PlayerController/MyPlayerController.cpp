@@ -73,6 +73,7 @@ void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
 	if (SaveGameObject)
 	{
 		SetMouseSensitivity(SaveGameObject->SavedSensitivity);
+		SetVolume(SaveGameObject->SavedVolume);
 	}
 
 	ServerTryCheckMatchState();
@@ -628,6 +629,29 @@ void AMyPlayerController::SetVolumeWithMix(USoundClass* SoundClass, USoundMix* S
 	SaveGameObject->SavedVolume = Volume;
 	UGameplayStatics::SaveGameToSlot(SaveGameObject, TEXT("PlayerSettings"), 0);
 
+	if (Volume > 0.f)
+	{
+		ALobbyGameMode* LobbyGM = Cast<ALobbyGameMode>(UGameplayStatics::GetGameMode(this));
+		if (LobbyGM)
+		{
+			UAudioComponent* MusicComponent = LobbyGM->GetMusicAudioComponent();
+			if (MusicComponent && !MusicComponent->IsPlaying())
+			{
+				MusicComponent->Play();
+			}
+		}
+
+		AMainGameMode* MainGM = Cast<AMainGameMode>(UGameplayStatics::GetGameMode(this));
+		if (MainGM)
+		{
+			UAudioComponent* MusicComponent = MainGM->GetMusicAudioComponent();
+			if (MusicComponent && !MusicComponent->IsPlaying())
+			{
+				MusicComponent->Play();
+			}
+		}
+	}
+
 	// Apply override
 	UGameplayStatics::SetSoundMixClassOverride(this, SoundMix, SoundClass, Volume, 1.0f, 0.0f, true);
 	UGameplayStatics::PushSoundMixModifier(this, SoundMix);
@@ -636,6 +660,7 @@ void AMyPlayerController::SetVolumeWithMix(USoundClass* SoundClass, USoundMix* S
 void AMyPlayerController::SetVolume(float Volume)
 {
 	SetVolumeWithMix(SFXClass, MyMix, Volume);
+	SetVolumeWithMix(BackgroundMusicClass, MyMix, Volume);
 }
 
 void AMyPlayerController::SetMouseSensitivity(float Sensitivity)
