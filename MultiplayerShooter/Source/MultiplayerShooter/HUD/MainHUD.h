@@ -48,12 +48,19 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Chat")
 	TSubclassOf<UUserWidget> ChatClass;
+
+	UPROPERTY(EditAnywhere, Category = "Settigns")
+	TSubclassOf<UUserWidget> SettignsClass;
  
 	UPROPERTY()
 	class UChat* Chat;
+
+	UPROPERTY()
+	class USettingsMenu* Settigns;
  
 	void AddAnnouncement();
 	void AddChat();
+	void AddSettings();
 
 protected:
 	virtual void BeginPlay() override;

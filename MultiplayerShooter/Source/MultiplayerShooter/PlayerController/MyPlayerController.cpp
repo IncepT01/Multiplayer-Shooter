@@ -2,11 +2,15 @@
 
 
 #include "MyPlayerController.h"
+
+#include "AudioDevice.h"
 #include "MultiplayerShooter/HUD/MainHUD.h"
 #include "MultiplayerShooter//HUD/CharacterOverlay.h"
 #include "Components/ProgressBar.h"
 #include "Components/ScrollBox.h"
+#include "Components/Slider.h"
 #include "Components/TextBlock.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "Net/UnrealNetwork.h"
 #include "MultiplayerShooter/GameMode/MainGameMode.h"
@@ -19,8 +23,11 @@
 #include "MultiplayerShooter/GameState/MainGameState.h"
 #include "MultiplayerShooter/HUD/Chat.h"
 #include "MultiplayerShooter/HUD/ChatMessageWidget.h"
+#include "MultiplayerShooter/HUD/SettingsMenu.h"
+#include "MultiplayerShooter/Persistence/SettingsSaveGame.h"
 #include "MultiplayerShooter/PlayerState/MainPlayerState.h"
 #include "Sections/MovieSceneLevelVisibilitySection.h"
+#include "Sound/SoundClass.h"
 
 void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
@@ -49,6 +56,23 @@ void AMyPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
 		{
 			MainHUD->CharacterOverlay->RemoveFromParent();
 		}
+		//MainHUD->AddSettings();
+		//MainHUD->Settigns->SetVisibility(ESlateVisibility::Hidden);
+	}
+
+	if (UGameplayStatics::DoesSaveGameExist(TEXT("PlayerSettings"), 0))
+	{
+		SaveGameObject = Cast<USettingsSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("PlayerSettings"), 0));
+	}
+	else
+	{
+		SaveGameObject = Cast<USettingsSaveGame>(UGameplayStatics::CreateSaveGameObject(USettingsSaveGame::StaticClass()));
+		UGameplayStatics::SaveGameToSlot(SaveGameObject, TEXT("PlayerSettings"), 0);
+	}
+	
+	if (SaveGameObject)
+	{
+		SetMouseSensitivity(SaveGameObject->SavedSensitivity);
 	}
 
 	ServerTryCheckMatchState();
@@ -253,6 +277,46 @@ void AMyPlayerController::ReceivedPlayer()
  		ServerRequestServerTime(GetWorld()->GetTimeSeconds());
  	}
  }
+
+void AMyPlayerController::ToggleSettingsMenu()
+{
+	if (!IsValid(MainHUD)) return;
+
+	//SetVolume(SFXClass, MyMix, 0.f);
+
+	UE_LOG(LogTemp, Display, TEXT("Toggling settings menu"));
+	
+	if (SettingsMenuIsOpen)
+	{
+		if (MainHUD->Settigns)
+		{
+			bShowMouseCursor = false;
+			//MainHUD->Settigns->RemoveFromParent();
+			//MainHUD->Settigns = nullptr;
+			MainHUD->Settigns->SetVisibility(ESlateVisibility::Hidden);
+			SettingsMenuIsOpen = false;
+			SetInputMode(FInputModeGameOnly());
+		}
+	}
+	else
+	{
+		bShowMouseCursor = true;
+		MainHUD->AddSettings();
+		SettingsMenuIsOpen = true;
+
+		MainHUD->Settigns->VolumeSlider->SetValue(SaveGameObject->SavedVolume);
+		MainHUD->Settigns->SensitivitySlider->SetValue(SaveGameObject->SavedSensitivity);
+		MainHUD->Settigns->SetVisibility(ESlateVisibility::Visible);
+
+		// Set input mode to UI only or game and UI
+		FInputModeUIOnly InputMode;
+		InputMode.SetWidgetToFocus(MainHUD->Settigns->TakeWidget());
+		InputMode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+		SetInputMode(InputMode);
+		
+		FlushPressedKeys();
+	}
+}
 
 void AMyPlayerController::OnMatchStateSet(FName State)
  {
@@ -550,4 +614,42 @@ void AMyPlayerController::StopHighPingWarning()
 void AMyPlayerController::ServerReportPingStatus_Implementation(bool bHighPing)
 {
 	HighPingDelegate.Broadcast(bHighPing, this);
+}
+
+
+void AMyPlayerController::SetVolumeWithMix(USoundClass* SoundClass, USoundMix* SoundMix, float Volume)
+{
+	if (!SoundClass || !SoundMix) return;
+
+	Volume = FMath::Clamp(Volume, 0.f, 1.f);
+	SaveGameObject->SavedVolume = Volume;
+	UGameplayStatics::SaveGameToSlot(SaveGameObject, TEXT("PlayerSettings"), 0);
+
+	// Apply override
+	UGameplayStatics::SetSoundMixClassOverride(this, SoundMix, SoundClass, Volume, 1.0f, 0.0f, true);
+	UGameplayStatics::PushSoundMixModifier(this, SoundMix);
+}
+
+void AMyPlayerController::SetVolume(float Volume)
+{
+	SetVolumeWithMix(SFXClass, MyMix, Volume);
+}
+
+void AMyPlayerController::SetMouseSensitivity(float Sensitivity)
+{
+	Sensitivity = FMath::Clamp(Sensitivity, 0.1f, 10.0f); // Use whatever range feels good
+	SaveGameObject->SavedSensitivity = Sensitivity;
+
+	// Apply it to player character
+	APawn* ControlledPawn = GetPawn();
+	if (ControlledPawn)
+	{
+		if (AMainCharacter* MyChar = Cast<AMainCharacter>(ControlledPawn))
+		{
+			MyChar->MouseSensitivity = Sensitivity; // Assume you added this in the character
+		}
+	}
+
+	// Save it
+	UGameplayStatics::SaveGameToSlot(SaveGameObject, TEXT("PlayerSettings"), 0);
 }

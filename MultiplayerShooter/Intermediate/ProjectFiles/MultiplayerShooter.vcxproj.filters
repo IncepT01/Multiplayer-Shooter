@@ -97,6 +97,12 @@
     <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\BuffComponent.h">
       <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\ChatComponent.cpp">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\ChatComponent.h">
+      <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\ActorComponents\CombatComponent.cpp">
       <Filter>Source\MultiplayerShooter\ActorComponents</Filter>
     </ClCompile>
@@ -209,6 +215,12 @@
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\OverheadWidget.h">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\SettingsMenu.cpp">
+      <Filter>Source\MultiplayerShooter\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MultiplayerShooter\HUD\SettingsMenu.h">
       <Filter>Source\MultiplayerShooter\HUD</Filter>
     </ClCompile>
     <Filter Include="Source\MultiplayerShooter\MainCharacter">

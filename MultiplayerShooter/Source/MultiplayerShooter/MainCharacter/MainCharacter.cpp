@@ -28,7 +28,9 @@
 #include "MultiplayerShooter/ActorComponents/BuffComponent.h"
 #include "MultiplayerShooter/HUD/Chat.h"
 #include "Components/Widget.h"
+#include "Kismet/GameplayStatics.h"
 #include "MultiplayerShooter/ActorComponents/ChatComponent.h"
+#include "MultiplayerShooter/Persistence/SettingsSaveGame.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -72,6 +74,12 @@ AMainCharacter::AMainCharacter()
 	SetNetUpdateFrequency(66.f);
 	SetMinNetUpdateFrequency(33.f);
 
+	if (UGameplayStatics::DoesSaveGameExist(TEXT("PlayerSettings"), 0))
+	{
+		USettingsSaveGame* SaveGameObject = Cast<USettingsSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("PlayerSettings"), 0));
+		MouseSensitivity = SaveGameObject->SavedSensitivity;
+	}
+	
 	/** 
  	* Hit boxes for server-side rewind
  	*/
@@ -164,6 +172,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AMainCharacter::LookUp);
 
 	PlayerInputComponent->BindAction("Chat", IE_Pressed,this, &AMainCharacter::ChatButtonPressed);
+	PlayerInputComponent->BindAction("Settings", IE_Pressed,this, &AMainCharacter::SettingsMenuButtonPressed);
 
 	PlayerInputComponent->BindAction("Equip", IE_Pressed, this, &AMainCharacter::EquipButtonPressed);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AMainCharacter::CrouchButtonPressed);
@@ -235,12 +244,12 @@ void AMainCharacter::MoveRight(float Value)
 
 void AMainCharacter::Turn(float Value)
 {
-	AddControllerYawInput(Value);
+	AddControllerYawInput(Value * MouseSensitivity);
 }
 
 void AMainCharacter::LookUp(float Value)
 {
-	AddControllerPitchInput(Value);
+	AddControllerPitchInput(Value * MouseSensitivity);
 }
 
 // Called every frame
@@ -593,6 +602,19 @@ void AMainCharacter::ChatButtonPressed()
 		UE_LOG(LogTemp, Display, TEXT("No PlayerController"));
 	}
 	UE_LOG(LogTemp, Display, TEXT("ChatButtonPressed"));
+}
+
+void AMainCharacter::SettingsMenuButtonPressed()
+{
+	UE_LOG(LogTemp, Display, TEXT("SettingsMenuButtonPressed"));
+	if (Controller)
+	{
+		MyPlayerController = Cast<AMyPlayerController>(Controller);
+		if (MyPlayerController)
+		{
+			MyPlayerController->ToggleSettingsMenu();
+		}
+	}
 }
 
 void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType,

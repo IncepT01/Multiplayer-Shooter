@@ -8,7 +8,7 @@ public class MultiplayerShooter : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "SQLiteCore", "SQLiteSupport", "Slate", "SlateCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "SQLiteCore", "SQLiteSupport", "Slate", "SlateCore"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] { "Niagara" });
 

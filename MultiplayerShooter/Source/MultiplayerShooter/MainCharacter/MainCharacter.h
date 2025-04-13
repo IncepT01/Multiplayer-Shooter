@@ -21,7 +21,7 @@ public:
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
@@ -47,6 +47,8 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	class ULagCompensationComponent* LagCompensation;
+	
+	float MouseSensitivity = 1.f;
 
 	void UpdateHUDHealth();
 
@@ -69,6 +71,8 @@ protected:
 	void FireButtonPressed();
 	void FireButtonReleased();
 	void ChatButtonPressed();
+	void SettingsMenuButtonPressed();
+	
 	UFUNCTION()
 	void ReceiveDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType, class AController* InstigatorController, AActor* DamageCauser);
 	void PollInit();

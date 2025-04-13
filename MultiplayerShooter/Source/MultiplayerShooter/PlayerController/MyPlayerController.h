@@ -4,7 +4,7 @@
  
  #include "CoreMinimal.h"
  #include "GameFramework/PlayerController.h"
- #include "MyPlayerController.generated.h"
+#include "MyPlayerController.generated.h"
  
  /**
   * 
@@ -30,8 +30,14 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  	virtual float GetServerTime(); // Synced with server world clock
  	virtual void ReceivedPlayer() override; // Sync with server clock as soon as possible
 
+ 	void ToggleSettingsMenu();
+
  	void OnMatchStateSet(FName State);
  	void HandleCooldown();
+ 	
+ 	void SetVolume(float Volume);
+    void SetMouseSensitivity(float Sensitivity);
+    void SetVolumeWithMix(USoundClass* SoundClass, USoundMix* SoundMix, float Volume);
 
  	float SingleTripTime = 0.f;
 
@@ -39,6 +45,15 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
 
  	UPROPERTY()
  	class AMainHUD* MainHUD;
+
+ 	UPROPERTY(EditAnywhere)
+ 	USoundMix* MyMix;
+
+ 	UPROPERTY(EditAnywhere)
+ 	USoundClass* SFXClass;
+
+ 	UPROPERTY()
+ 	class USettingsSaveGame* SaveGameObject;
  	
  protected:
  	virtual void BeginPlay() override;
@@ -76,11 +91,13 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
 
  	void HighPingWarning();
  	void StopHighPingWarning();
- 	void CheckPing(float DeltaTime);
+    void CheckPing(float DeltaTime);
  	
  private:
  	UFUNCTION(Server, Reliable)
  	void ServerTryCheckMatchState();
+
+ 	bool SettingsMenuIsOpen = false;
 
  	float LevelStartingTime = 0.f;
  	float MatchTime = 0.f;

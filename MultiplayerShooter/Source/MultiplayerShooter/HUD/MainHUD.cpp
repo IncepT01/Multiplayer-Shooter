@@ -6,6 +6,7 @@
 #include "CharacterOverlay.h"
 #include "Announcement.h"
 #include "Chat.h"
+#include "SettingsMenu.h"
 #include "Components/TextBlock.h"
 
 void AMainHUD::BeginPlay()
@@ -137,6 +138,29 @@ void AMainHUD::AddChat()
 		if (Chat)
 		{
 			Chat->AddToViewport();
+			//UE_LOG(LogTemp, Warning, TEXT("Announcement widget successfully created and added to viewport"));
+		}
+		else
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("Failed to create Announcement widget"));
+		}
+	}
+}
+
+void AMainHUD::AddSettings()
+{
+
+	if (Settigns)
+	{
+		return;
+	}
+	APlayerController* PlayerController = GetOwningPlayerController();
+	if (PlayerController && SettignsClass)
+	{
+		Settigns = CreateWidget<USettingsMenu>(PlayerController, SettignsClass);
+		if (Settigns)
+		{
+			Settigns->AddToViewport();
 			//UE_LOG(LogTemp, Warning, TEXT("Announcement widget successfully created and added to viewport"));
 		}
 		else

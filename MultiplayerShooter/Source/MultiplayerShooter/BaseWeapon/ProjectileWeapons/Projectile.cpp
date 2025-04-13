@@ -77,7 +77,7 @@ void AProjectile::Destroyed()
 	//Play sound
 	if (ImpactSound)
 	{
-		//UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
 	}
 }
 
