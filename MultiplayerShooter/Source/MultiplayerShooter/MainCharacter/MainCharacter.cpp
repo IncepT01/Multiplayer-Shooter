@@ -264,6 +264,10 @@ void AMainCharacter::Tick(float DeltaTime)
 		Combat->TickComponent(DeltaTime, LEVELTICK_All, nullptr);
 	}
 
+	if (IsLocallyControlled()){
+		UpdateHUDHealth();
+	}
+
 	RotateInPlace(DeltaTime);
 	HideCameraIfCharacterClose();
 	PollInit();

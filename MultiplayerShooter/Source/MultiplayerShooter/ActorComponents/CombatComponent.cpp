@@ -140,6 +140,15 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 
 		SetHUDCrosshairs(DeltaTime);
 		InterpFOV(DeltaTime);
+
+		if(Character->HasAuthority())
+		{
+			if (EquippedWeapon)
+			{
+				UE_LOG(LogTemp,Warning, TEXT("Setting ammo on server in Combat tick"));
+				EquippedWeapon->SetHUDAmmo();
+			}
+		}
 	}
 	
 }
