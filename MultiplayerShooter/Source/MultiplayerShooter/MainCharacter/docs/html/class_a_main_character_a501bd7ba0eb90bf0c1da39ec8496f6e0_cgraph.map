@@ -1,0 +1,17 @@
+<map id="AMainCharacter::MulticastFire" name="AMainCharacter::MulticastFire">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,121,204,148"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="66,122,59,113,64,103,79,97,105,95,132,97,147,104,144,109,131,102,104,100,80,102,67,107,64,112,70,119"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a9d0b7a05e0580099815730100ad9bfb6" title="Elimination." alt="" coords="259,92,408,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,119,243,114,244,119,204,125"/>
+<area shape="rect" id="Node000005" href="$class_a_main_character.html#a0d4eb83adaa4bae05412bdc575f9c50b" title=" " alt="" coords="252,143,416,185"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="204,145,237,149,236,154,204,150"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#aea17dde5a15443622f0bf918c57cce6f" title=" " alt="" coords="481,5,663,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,89,463,57,484,51,486,56,465,63,374,94"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a5691a3d428c1f9d6f6ed3d28cb29df10" title=" " alt="" coords="468,96,677,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="409,104,452,105,452,110,409,109"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="532,97,525,87,530,77,546,71,572,69,601,72,616,79,614,84,600,77,572,75,547,77,533,81,530,87,536,94"/>
+<area shape="rect" id="Node000006" href="$class_a_main_character.html#ad664d0ab39058e928e96c8abf84f36bf" title=" " alt="" coords="464,151,680,177"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="416,161,448,161,448,167,416,167"/>
+<area shape="rect" id="Node000007" href="$class_a_main_character.html#a9596fe587a29a2671db7db619b16b46d" title=" " alt="" coords="728,143,907,185"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="681,161,713,161,713,167,681,167"/>
+</map>

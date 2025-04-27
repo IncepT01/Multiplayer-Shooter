@@ -1,0 +1,28 @@
+\doxysection{Chat\+Message\+Widget.\+h}
+\hypertarget{_chat_message_widget_8h_source}{}\label{_chat_message_widget_8h_source}\mbox{\hyperlink{_chat_message_widget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Blueprint/UserWidget.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}ChatMessageWidget.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ UCLASS()}
+\DoxyCodeLine{00013\ class\ MULTIPLAYERSHOOTER\_API\ \mbox{\hyperlink{class_u_chat_message_widget}{UChatMessageWidget}}\ :\ public\ UUserWidget}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00019\ \ \ \ \ class\ UTextBlock*\ \mbox{\hyperlink{class_u_chat_message_widget_a26fc6462c0f1a51e24eaa9bd9e612cb1}{SenderText}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00022\ \ \ \ \ class\ UTextBlock*\ \mbox{\hyperlink{class_u_chat_message_widget_a5d8dd93c9771a5b27f95db4fe29dffcb}{MessageText}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ UFUNCTION(BlueprintCallable)}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_chat_message_widget_ab044b28942ba7b05b3db192bd37a0026}{SetMessage}}(const\ FString\&\ Sender,\ const\ FString\&\ Message);}
+\DoxyCodeLine{00026\ \};}
+
+\end{DoxyCode}

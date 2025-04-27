@@ -1,0 +1,36 @@
+\doxysection{Chat.\+h}
+\hypertarget{_chat_8h_source}{}\label{_chat_8h_source}\mbox{\hyperlink{_chat_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Blueprint/UserWidget.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Chat.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ UCLASS()}
+\DoxyCodeLine{00013\ class\ MULTIPLAYERSHOOTER\_API\ \mbox{\hyperlink{class_u_chat}{UChat}}\ :\ public\ UUserWidget}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00020\ \ \ \ \ class\ UEditableTextBox*\ \mbox{\hyperlink{class_u_chat_ac6372b8b696d2124b6757985d9fa65d3}{InputField}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ UPROPERTY(meta=(BindWidget))}
+\DoxyCodeLine{00023\ \ \ \ \ class\ UScrollBox*\ \mbox{\hyperlink{class_u_chat_aaf53eea448716be1a729130b6a91e589}{ChatHistoryBox}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Chat"{}})}
+\DoxyCodeLine{00026\ \ \ \ \ TSubclassOf<class\ \mbox{\hyperlink{class_u_chat_message_widget}{UChatMessageWidget}}>\ \mbox{\hyperlink{class_u_chat_a4679ffa402dec02382a21dde7db8fd43}{ChatMessageWidgetClass}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_chat_ae63e456f57df685aaa94a9bf6c8309dc}{NativeConstruct}}()\ override;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Handles\ message\ commit\ from\ InputField\ (if\ using\ OnTextCommitted)}}
+\DoxyCodeLine{00031\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_chat_ae36d9e8302a59e21a385d32fcfd10707}{OnChatTextCommitted}}(const\ FText\&\ Text,\ ETextCommit::Type\ CommitMethod);}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}

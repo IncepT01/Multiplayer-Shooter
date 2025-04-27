@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,81,67,108"/>
+<area shape="rect" id="Node000001" href="$class_a_pickup.html" title=" " alt="" coords="150,56,220,83"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="82,84,149,73,150,78,83,90"/>
+<area shape="rect" id="Node000005" href="$class_a_pickup_spawn_point.html" title=" " alt="" coords="115,107,255,133"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="83,100,115,105,114,111,82,105"/>
+<area shape="rect" id="Node000002" href="$class_a_damage_pickup.html" title=" " alt="" coords="303,5,422,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="234,53,313,30,314,35,236,58"/>
+<area shape="rect" id="Node000003" href="$class_a_health_pickup.html" title=" " alt="" coords="308,56,417,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="235,67,308,67,308,72,235,72"/>
+<area shape="rect" id="Node000004" href="$class_a_speed_pickup.html" title=" " alt="" coords="309,107,416,133"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="236,81,314,104,313,109,234,86"/>
+</map>

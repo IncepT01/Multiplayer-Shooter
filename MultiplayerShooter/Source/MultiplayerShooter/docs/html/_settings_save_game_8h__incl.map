@@ -1,0 +1,9 @@
+<map id="MultiplayerShooter/Persistence/SettingsSaveGame.h" name="MultiplayerShooter/Persistence/SettingsSaveGame.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="124,5,346,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,111,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,51,101,92,98,87,189,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,96,336,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,49,238,80,233,80,233,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="360,96,566,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="295,46,414,88,412,93,293,51"/>
+</map>

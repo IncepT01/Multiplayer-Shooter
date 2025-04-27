@@ -1,2 +1,20 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AEditableTextBox_002Ecpp_002Fl_003AC_0021_003FProgram_0020Files_003FEpic_0020Games_003FUE_005F5_002E5_003FEngine_003FSource_003FRuntime_003FUMG_003FPrivate_003FComponents_003FEditableTextBox_002Ecpp/@EntryIndexedValue">ForceIncluded</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AEditableTextBox_002Ecpp_002Fl_003AC_0021_003FProgram_0020Files_003FEpic_0020Games_003FUE_005F5_002E5_003FEngine_003FSource_003FRuntime_003FUMG_003FPrivate_003FComponents_003FEditableTextBox_002Ecpp/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d6fd57d7_002D561b_002D4e2c_002Db971_002D12788a27022f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OnRep_ReplicatedMovement" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;UnrealTest::7B9865EA-6C79-D00C-6B7E-478D1F502FC8::::Game.MainCharacter.OnRep_ReplicatedMovement&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;UnrealTest::7B9865EA-6C79-D00C-6B7E-478D1F502FC8::::MultiplayerShooter.PlayerController.ClientJoinMidgame&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;UnrealTest::7B9865EA-6C79-D00C-6B7E-478D1F502FC8::::Game.BuffComponent.Heal&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;UnrealTest::7B9865EA-6C79-D00C-6B7E-478D1F502FC8::::Game.BuffComponent.BuffSpeed&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;UnrealTest::7B9865EA-6C79-D00C-6B7E-478D1F502FC8::::Game.BuffComponent.BuffDamage&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;UnrealTest::7B9865EA-6C79-D00C-6B7E-478D1F502FC8::::Game.MainGameMode.BeginPlay&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;7B9865EA-6C79-D00C-6B7E-478D1F502FC8/d:Tests/f:BaseWeaponTests.cpp&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;7B9865EA-6C79-D00C-6B7E-478D1F502FC8/d:Tests/f:MainGameModeTests.cpp&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	</wpf:ResourceDictionary>

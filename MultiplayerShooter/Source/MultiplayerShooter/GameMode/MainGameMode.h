@@ -20,6 +20,13 @@ class MULTIPLAYERSHOOTER_API AMainGameMode : public AGameMode
 {
 	GENERATED_BODY()
 public:
+	friend class FMainGameModeOnMatchStateSetTest;
+	friend class FMainGameModeRequestRespawnTest;
+	friend class FMainGameModePlayerEliminatedTest;
+	friend class FMainGameModeTickTest;
+	friend class FMainGameModePostLoginTest;
+	friend class FMainGameModeBeginPlayTest;
+	
 	AMainGameMode();
 	virtual void Tick(float DeltaTime) override;
 	virtual void PlayerEliminated(class AMainCharacter* ElimmedCharacter, class AMyPlayerController* VictimController, AMyPlayerController*
@@ -44,6 +51,7 @@ public:
 	
 
 	UAudioComponent* GetMusicAudioComponent() const;
+
  
 protected:
 	virtual void BeginPlay() override;

@@ -1,0 +1,7 @@
+<map id="AMyPlayerController::HandleCooldown" name="AMyPlayerController::HandleCooldown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,147,69"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#afd1dc526cd36c5de139a7e5ff2b48432" title=" " alt="" coords="216,5,406,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,37,200,30,201,35,147,42"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a23312ab13b910b000bc7bfaf675a2899" title=" " alt="" coords="195,56,427,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,54,180,58,179,64,147,59"/>
+</map>

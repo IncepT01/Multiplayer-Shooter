@@ -1,0 +1,10 @@
+<map id="APickupSpawnPoint::BeginPlay" name="APickupSpawnPoint::BeginPlay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,154,77"/>
+<area shape="rect" id="Node000002" href="$class_a_pickup_spawn_point.html#af0bf24b834398d646efdc4bbe69835a9" title=" " alt="" coords="202,35,364,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,53,186,53,186,59,154,59"/>
+<area shape="rect" id="Node000003" href="$class_a_pickup_spawn_point.html#a95e0f3f39e010b2150defbd852441661" title=" " alt="" coords="412,5,595,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,43,396,38,397,44,365,48"/>
+<area shape="rect" id="Node000004" href="$class_a_pickup_spawn_point.html#a001dc948b03105ab7d05ed184af4abf9" title=" " alt="" coords="643,35,792,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,37,629,41,628,46,595,42"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="643,61,595,63,412,63,380,62,380,57,412,57,595,57,643,56"/>
+</map>

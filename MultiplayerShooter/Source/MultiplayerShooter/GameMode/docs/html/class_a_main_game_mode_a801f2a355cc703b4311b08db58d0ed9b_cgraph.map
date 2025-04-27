@@ -1,0 +1,5 @@
+<map id="AMainGameMode::PostLogin" name="AMainGameMode::PostLogin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,197,32"/>
+<area shape="rect" id="Node000002" href="$class_a_main_game_mode.html#aac3b82e6acfa520c65769ca3c2f60c2b" title=" " alt="" coords="245,5,472,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,16,229,16,229,21,197,21"/>
+</map>

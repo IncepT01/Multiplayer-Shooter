@@ -28,7 +28,6 @@ void AMainPlayerState::AddToScore(float ScoreAmount)
  		}
  	}
 
- 	//A terrible, horrible, no good, very bad solution
  	canGetPoints = false;
  	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CanGetPoints, this, &AMainPlayerState::ResetCanGetPoints, 1.0f, false);
  }

@@ -1,0 +1,100 @@
+\doxysection{USettings\+Menu Class Reference}
+\hypertarget{class_u_settings_menu}{}\label{class_u_settings_menu}\index{USettingsMenu@{USettingsMenu}}
+
+
+{\ttfamily \#include $<$Settings\+Menu.\+h$>$}
+
+
+
+Inheritance diagram for USettings\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_u_settings_menu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for USettings\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_u_settings_menu__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_settings_menu_af9d0078a2316aa30ef18d9bac5c68578}{On\+Sensitivity\+Changed}} (float Value)
+\item 
+void \mbox{\hyperlink{class_u_settings_menu_a52446398a6c223f91f9b5126122fdc73}{Native\+Construct}} ()
+\item 
+virtual FReply \mbox{\hyperlink{class_u_settings_menu_a0139721feee85745300120c06494d99f}{Native\+On\+Key\+Down}} (const FGeometry \&In\+Geometry, const FKey\+Event \&In\+Key\+Event) override
+\item 
+void \mbox{\hyperlink{class_u_settings_menu_a8870ee9e15fdfda491e2c784a397539d}{On\+Volume\+Changed}} (float Value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+USlider \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_settings_menu_ae8006f7eb652b99d8ceb23364beeb168}{Volume\+Slider}}
+\item 
+USlider \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_settings_menu_a87c2c792f5777385d71ad2f96cea1799}{Sensitivity\+Slider}}
+\item 
+UWidget\+Animation \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_settings_menu_a39f905175e144f0167f5d166b43d91b2}{Slide\+In\+Animation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_settings_menu_a52446398a6c223f91f9b5126122fdc73}\index{USettingsMenu@{USettingsMenu}!NativeConstruct@{NativeConstruct}}
+\index{NativeConstruct@{NativeConstruct}!USettingsMenu@{USettingsMenu}}
+\doxysubsubsection{\texorpdfstring{NativeConstruct()}{NativeConstruct()}}
+{\footnotesize\ttfamily \label{class_u_settings_menu_a52446398a6c223f91f9b5126122fdc73} 
+void USettings\+Menu\+::\+Native\+Construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_u_settings_menu_a0139721feee85745300120c06494d99f}\index{USettingsMenu@{USettingsMenu}!NativeOnKeyDown@{NativeOnKeyDown}}
+\index{NativeOnKeyDown@{NativeOnKeyDown}!USettingsMenu@{USettingsMenu}}
+\doxysubsubsection{\texorpdfstring{NativeOnKeyDown()}{NativeOnKeyDown()}}
+{\footnotesize\ttfamily \label{class_u_settings_menu_a0139721feee85745300120c06494d99f} 
+FReply USettings\+Menu\+::\+Native\+On\+Key\+Down (\begin{DoxyParamCaption}\item[{const FGeometry \&}]{In\+Geometry}{, }\item[{const FKey\+Event \&}]{In\+Key\+Event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_u_settings_menu_af9d0078a2316aa30ef18d9bac5c68578}\index{USettingsMenu@{USettingsMenu}!OnSensitivityChanged@{OnSensitivityChanged}}
+\index{OnSensitivityChanged@{OnSensitivityChanged}!USettingsMenu@{USettingsMenu}}
+\doxysubsubsection{\texorpdfstring{OnSensitivityChanged()}{OnSensitivityChanged()}}
+{\footnotesize\ttfamily \label{class_u_settings_menu_af9d0078a2316aa30ef18d9bac5c68578} 
+void USettings\+Menu\+::\+On\+Sensitivity\+Changed (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_u_settings_menu_a8870ee9e15fdfda491e2c784a397539d}\index{USettingsMenu@{USettingsMenu}!OnVolumeChanged@{OnVolumeChanged}}
+\index{OnVolumeChanged@{OnVolumeChanged}!USettingsMenu@{USettingsMenu}}
+\doxysubsubsection{\texorpdfstring{OnVolumeChanged()}{OnVolumeChanged()}}
+{\footnotesize\ttfamily \label{class_u_settings_menu_a8870ee9e15fdfda491e2c784a397539d} 
+void USettings\+Menu\+::\+On\+Volume\+Changed (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_settings_menu_a87c2c792f5777385d71ad2f96cea1799}\index{USettingsMenu@{USettingsMenu}!SensitivitySlider@{SensitivitySlider}}
+\index{SensitivitySlider@{SensitivitySlider}!USettingsMenu@{USettingsMenu}}
+\doxysubsubsection{\texorpdfstring{SensitivitySlider}{SensitivitySlider}}
+{\footnotesize\ttfamily \label{class_u_settings_menu_a87c2c792f5777385d71ad2f96cea1799} 
+USlider\texorpdfstring{$\ast$}{*} USettings\+Menu\+::\+Sensitivity\+Slider}
+
+\Hypertarget{class_u_settings_menu_a39f905175e144f0167f5d166b43d91b2}\index{USettingsMenu@{USettingsMenu}!SlideInAnimation@{SlideInAnimation}}
+\index{SlideInAnimation@{SlideInAnimation}!USettingsMenu@{USettingsMenu}}
+\doxysubsubsection{\texorpdfstring{SlideInAnimation}{SlideInAnimation}}
+{\footnotesize\ttfamily \label{class_u_settings_menu_a39f905175e144f0167f5d166b43d91b2} 
+UWidget\+Animation\texorpdfstring{$\ast$}{*} USettings\+Menu\+::\+Slide\+In\+Animation}
+
+\Hypertarget{class_u_settings_menu_ae8006f7eb652b99d8ceb23364beeb168}\index{USettingsMenu@{USettingsMenu}!VolumeSlider@{VolumeSlider}}
+\index{VolumeSlider@{VolumeSlider}!USettingsMenu@{USettingsMenu}}
+\doxysubsubsection{\texorpdfstring{VolumeSlider}{VolumeSlider}}
+{\footnotesize\ttfamily \label{class_u_settings_menu_ae8006f7eb652b99d8ceb23364beeb168} 
+USlider\texorpdfstring{$\ast$}{*} USettings\+Menu\+::\+Volume\+Slider}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_settings_menu_8h}{Settings\+Menu.\+h}}\item 
+\mbox{\hyperlink{_settings_menu_8cpp}{Settings\+Menu.\+cpp}}\end{DoxyCompactItemize}

@@ -16,18 +16,12 @@
 void ALobbyGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-
-	if (BackgroundMusic)
-	{
-		//MusicAudioComponent = UGameplayStatics::SpawnSound2D(this, BackgroundMusic);
-	}
 }
 
 void ALobbyGameMode::PostLogin(APlayerController* NewPlayer)
 {
 	Super::PostLogin(NewPlayer);
 
-	// Ensure input is set up
 	SetupInput();
 }
 
@@ -51,9 +45,7 @@ void ALobbyGameMode::TravelToLevel()
 	if (World)
 	{
 		bUseSeamlessTravel = true;
-		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, TEXT("Before travel"));
 		World->ServerTravel(FString("/Game/Maps/Level1?listen"));
-		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Blue, TEXT("After travel"));
 	}
 }
 

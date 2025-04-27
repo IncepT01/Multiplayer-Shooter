@@ -1,0 +1,6 @@
+<map id="AMyPlayerController::CheckTimeSync" name="AMyPlayerController::CheckTimeSync">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,147,72"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a1f81abb01f1991867b9eff228a1164c0" title="Sync time between client and server." alt="" coords="195,29,378,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,48,179,48,179,53,147,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="246,29,245,19,251,10,265,5,286,3,309,5,323,11,320,16,308,10,286,8,267,10,255,15,250,21,251,28"/>
+</map>

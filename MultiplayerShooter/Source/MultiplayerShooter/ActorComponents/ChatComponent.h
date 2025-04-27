@@ -25,7 +25,7 @@ protected:
 
 public:	
 	// Function to send chat messages
-	UFUNCTION(Server, Reliable, WithValidation)
+	UFUNCTION(Server, Reliable)
 	void Server_SendChatMessage(const FString& Sender, const FText& Text);
 
 	// Multicast function to update all clients

@@ -1,0 +1,12 @@
+<map id="AMyPlayerController::BeginPlay" name="AMyPlayerController::BeginPlay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,147,139"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a82ed1b7abab5e27703bfa9567fa90efc" title=" " alt="" coords="195,29,386,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,93,204,75,205,80,147,98"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a128da3faf9060eabbd9783b49149eade" title=" " alt="" coords="216,96,365,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="147,115,200,115,200,120,147,120"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a147aa1a47bf488d0b951ba5370db1753" title=" " alt="" coords="220,163,361,205"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="147,137,205,155,204,160,146,142"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="249,29,248,19,255,10,269,5,290,3,313,5,327,11,325,16,312,10,290,8,270,10,258,15,253,21,255,28"/>
+<area shape="rect" id="Node000005" href="$class_a_my_player_controller.html#a7d744ca0a148f69209448f14d5b521d7" title=" " alt="" coords="434,163,575,205"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="362,181,419,181,419,187,362,187"/>
+</map>

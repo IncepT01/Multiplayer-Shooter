@@ -1,0 +1,37 @@
+\doxysection{Settings\+Menu.\+h}
+\hypertarget{_settings_menu_8h_source}{}\label{_settings_menu_8h_source}\mbox{\hyperlink{_settings_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Blueprint/UserWidget.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SettingsMenu.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }USlider;}
+\DoxyCodeLine{00013\ UCLASS()}
+\DoxyCodeLine{00014\ class\ MULTIPLAYERSHOOTER\_API\ \mbox{\hyperlink{class_u_settings_menu}{USettingsMenu}}\ :\ public\ UUserWidget}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00021\ \ \ \ \ USlider*\ \mbox{\hyperlink{class_u_settings_menu_ae8006f7eb652b99d8ceb23364beeb168}{VolumeSlider}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00024\ \ \ \ \ USlider*\ \mbox{\hyperlink{class_u_settings_menu_a87c2c792f5777385d71ad2f96cea1799}{SensitivitySlider}};}
+\DoxyCodeLine{00025\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_settings_menu_af9d0078a2316aa30ef18d9bac5c68578}{OnSensitivityChanged}}(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_settings_menu_a52446398a6c223f91f9b5126122fdc73}{NativeConstruct}}();}
+\DoxyCodeLine{00028\ \ \ \ \ virtual\ FReply\ \mbox{\hyperlink{class_u_settings_menu_a0139721feee85745300120c06494d99f}{NativeOnKeyDown}}(const\ FGeometry\&\ InGeometry,\ const\ FKeyEvent\&\ InKeyEvent)\ override;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ UPROPERTY(EditAnywhere,\ meta\ =\ (BindWidgetAnim),\ Transient)}
+\DoxyCodeLine{00031\ \ \ \ \ UWidgetAnimation*\ \mbox{\hyperlink{class_u_settings_menu_a39f905175e144f0167f5d166b43d91b2}{SlideInAnimation}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ UFUNCTION()}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_settings_menu_a8870ee9e15fdfda491e2c784a397539d}{OnVolumeChanged}}(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00035\ \};}
+
+\end{DoxyCode}

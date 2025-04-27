@@ -12,7 +12,9 @@ class MULTIPLAYERSHOOTER_API UBuffComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
+	friend class FBuffComponentSpeedBuffTest;
+	
 	UBuffComponent();
 	friend class AMainCharacter;
 	void Heal(float HealAmount, float HealingTime);
@@ -21,8 +23,12 @@ public:
 	void SetInitialSpeeds(float BaseSpeed, float CrouchSpeed);
 
 	void BuffDamage(float DamageMul, float BuffTime);
-protected:
+
+	void ResetSpeeds();
+	void ResetDamage();
+
 	virtual void BeginPlay() override;
+protected:
 
 	void HealRampUp(float DeltaTime);
  
@@ -44,8 +50,6 @@ private:
  
 	FTimerHandle SpeedBuffTimer;
 	FTimerHandle DamageBuffTimer;
-	void ResetSpeeds();
-	void ResetDamage();
 	float InitialBaseSpeed;
 	float InitialCrouchSpeed;
  
@@ -57,4 +61,7 @@ private:
  
 public:	
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	FORCEINLINE AMainCharacter* GetCharacter() const { return Character; }
+	FORCEINLINE bool bIsHealing() const { return bHealing; }
 };

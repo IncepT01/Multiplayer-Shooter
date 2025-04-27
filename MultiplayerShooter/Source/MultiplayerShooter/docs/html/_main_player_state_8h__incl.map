@@ -1,0 +1,9 @@
+<map id="MultiplayerShooter/PlayerState/MainPlayerState.h" name="MultiplayerShooter/PlayerState/MainPlayerState.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="134,5,339,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,111,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,51,101,92,99,87,190,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,96,339,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,49,239,80,234,80,234,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="363,96,553,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="295,46,410,88,408,93,293,51"/>
+</map>

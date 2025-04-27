@@ -1,0 +1,14 @@
+<map id="ProjectileWeapons/ProjectileWeapon.h" name="ProjectileWeapons/ProjectileWeapon.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="118,5,305,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,187,111,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,51,134,71,104,98,81,135,67,173,62,171,76,133,100,94,130,67,164,46"/>
+<area shape="rect" id="Node000003" href="$_base_weapon_8h.html" title=" " alt="" coords="114,96,308,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,48,214,81,209,81,209,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="333,104,527,131"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="264,46,386,95,384,100,262,51"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="173,142,97,181,94,177,171,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="134,187,302,213"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="216,139,218,171,213,171,210,139"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="326,187,496,213"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="264,137,367,178,365,183,262,142"/>
+</map>

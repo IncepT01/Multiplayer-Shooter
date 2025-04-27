@@ -1,0 +1,32 @@
+<map id="AMainCharacter::BeginPlay" name="AMainCharacter::BeginPlay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,155,188,181"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a4df727af98f00c25d8f7411e5dd6a9de" title=" " alt="" coords="249,59,443,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,152,268,105,270,110,138,157"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a33d3267c0046be93c39178a2ed3944b3" title=" " alt="" coords="236,155,456,181"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="188,165,220,165,220,171,188,171"/>
+<area shape="rect" id="Node000014" href="$class_a_main_character.html#a489b2bbf70c72576dba98e67627a5a2e" title=" " alt="" coords="504,213,737,240"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="167,179,236,191,366,205,489,216,488,221,365,211,235,196,166,185"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#af136e423dc50ae1dbf560911dd07d353" title=" " alt="" coords="524,29,718,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,67,508,60,509,65,444,72"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="570,29,568,19,577,10,594,5,621,3,649,5,666,11,664,16,648,10,621,8,595,10,580,15,573,21,576,28"/>
+<area shape="rect" id="Node000005" href="$class_a_main_game_mode.html#a67e1cb2f93133f0c044f3f0ed73c970c" title=" " alt="" coords="505,96,736,123"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="411,151,539,124,541,129,413,157"/>
+<area shape="rect" id="Node000013" href="$class_a_main_character.html#a1be3a32212f8b037dd4eeae9720e2348" title=" " alt="" coords="520,147,721,189"/>
+<area shape="poly" id="edge14_Node000004_Node000013" title=" " alt="" coords="456,165,504,165,504,171,456,171"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="413,179,541,207,539,212,411,185"/>
+<area shape="rect" id="Node000006" href="$class_a_main_player_state.html#abba13b280e637d9cc041999392596805" title=" " alt="" coords="785,37,991,64"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="685,93,737,81,809,65,810,71,738,87,686,98"/>
+<area shape="rect" id="Node000008" href="$class_a_main_character.html#a9d0b7a05e0580099815730100ad9bfb6" title="Elimination." alt="" coords="813,96,963,123"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="737,107,798,107,798,112,737,112"/>
+<area shape="rect" id="Node000012" href="$class_a_main_game_state.html#a4e6bfb94716b9006ee0783d95b027732" title=" " alt="" coords="790,147,986,189"/>
+<area shape="poly" id="edge13_Node000005_Node000012" title=" " alt="" coords="686,121,738,132,776,140,774,146,737,137,685,126"/>
+<area shape="rect" id="Node000007" href="$class_a_main_player_state.html#ad9548a5e9fb8bea3102cc8fd8689bcfa" title=" " alt="" coords="1047,21,1240,64"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="991,45,1031,44,1031,49,991,50"/>
+<area shape="rect" id="Node000009" href="$class_a_main_character.html#aea17dde5a15443622f0bf918c57cce6f" title=" " alt="" coords="1052,88,1234,131"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="963,107,1036,107,1036,112,963,112"/>
+<area shape="rect" id="Node000011" href="$class_a_main_character.html#a5691a3d428c1f9d6f6ed3d28cb29df10" title=" " alt="" coords="1039,179,1248,205"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="951,121,991,132,1096,170,1094,175,990,137,949,126"/>
+<area shape="rect" id="Node000010" href="$class_a_main_game_mode.html#a3713d86d5420f9c8fc8c0e5b055955a2" title=" " alt="" coords="1296,96,1533,123"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1235,107,1281,107,1281,112,1235,112"/>
+<area shape="poly" id="edge12_Node000011_Node000011" title=" " alt="" coords="1101,180,1093,170,1098,160,1115,154,1143,152,1174,155,1190,161,1188,166,1173,160,1143,157,1116,159,1102,164,1098,169,1105,176"/>
+</map>

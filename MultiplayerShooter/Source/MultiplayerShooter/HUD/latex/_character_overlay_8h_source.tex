@@ -1,0 +1,36 @@
+\doxysection{Character\+Overlay.\+h}
+\hypertarget{_character_overlay_8h_source}{}\label{_character_overlay_8h_source}\mbox{\hyperlink{_character_overlay_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Blueprint/UserWidget.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}CharacterOverlay.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ UCLASS()}
+\DoxyCodeLine{00013\ class\ MULTIPLAYERSHOOTER\_API\ \mbox{\hyperlink{class_u_character_overlay}{UCharacterOverlay}}\ :\ public\ UUserWidget}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//UPROPERTY(meta\ =\ (BindWidget))}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//class\ UProgressBar*\ HealthBar;}}
+\DoxyCodeLine{00019\ \ }
+\DoxyCodeLine{00020\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00021\ \ \ \ \ class\ UTextBlock*\ \mbox{\hyperlink{class_u_character_overlay_a0aec9c3108d354c8c117c7500a15acf7}{HealthText}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00024\ \ \ \ \ UTextBlock*\ \mbox{\hyperlink{class_u_character_overlay_a654edf1c3eefe990b5736a3f04e486aa}{ScoreAmount}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00027\ \ \ \ \ UTextBlock*\ \mbox{\hyperlink{class_u_character_overlay_a8653472facfa80cc1b720cf54ec9777b}{WeaponAmmoAmount}};}
+\DoxyCodeLine{00028\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00030\ \ \ \ \ UTextBlock*\ \mbox{\hyperlink{class_u_character_overlay_aae290a550f48fac002cc45f5de8ee4e1}{MatchCountdownText}};}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ UPROPERTY(meta\ =\ (BindWidget))}
+\DoxyCodeLine{00033\ \ \ \ \ UTextBlock*\ \mbox{\hyperlink{class_u_character_overlay_a50d066047a98d0cdf0ccc737985ff3c9}{HighPingText}};}
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}

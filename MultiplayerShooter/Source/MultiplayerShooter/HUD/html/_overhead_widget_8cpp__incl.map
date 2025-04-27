@@ -1,0 +1,13 @@
+<map id="OverheadWidget.cpp" name="OverheadWidget.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="243,5,399,34"/>
+<area shape="rect" id="Node000002" href="$_overhead_widget_8h.html" title=" " alt="" coords="158,82,300,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,37,260,74,256,70,303,32"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="324,82,505,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="340,32,388,70,384,74,337,37"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,159,120,187"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="200,114,108,154,106,150,198,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="144,159,314,187"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="232,111,232,143,226,143,226,111"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="339,159,549,187"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="269,109,391,151,389,156,268,114"/>
+</map>

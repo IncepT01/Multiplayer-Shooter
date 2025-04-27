@@ -1,0 +1,9 @@
+<map id="Chat.h" name="Chat.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="197,5,261,34"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,82,120,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,37,108,78,106,73,198,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="144,82,314,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,35,232,66,226,66,226,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="338,82,472,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="262,32,360,73,358,78,260,37"/>
+</map>

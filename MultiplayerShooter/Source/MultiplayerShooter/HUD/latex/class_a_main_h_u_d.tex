@@ -1,0 +1,194 @@
+\doxysection{AMain\+HUD Class Reference}
+\hypertarget{class_a_main_h_u_d}{}\label{class_a_main_h_u_d}\index{AMainHUD@{AMainHUD}}
+
+
+{\ttfamily \#include $<$Main\+HUD.\+h$>$}
+
+
+
+Inheritance diagram for AMain\+HUD\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_a_main_h_u_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for AMain\+HUD\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_main_h_u_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_main_h_u_d_a27020e1bae0b52c40a59a65ea7fb70a9}{Draw\+HUD}} () override
+\item 
+void \mbox{\hyperlink{class_a_main_h_u_d_a2ae17e00cbe88b6ba57fc6ee166827d4}{Draw\+Crosshair}} (UTexture2D \texorpdfstring{$\ast$}{*}Texture, FVector2D Viewport\+Center, FVector2D Spread)
+\item 
+void \mbox{\hyperlink{class_a_main_h_u_d_a3109ae3556f10687da6dc383ac708f47}{Add\+Character\+Overlay}} ()
+\item 
+void \mbox{\hyperlink{class_a_main_h_u_d_a449856d30166c95c496a00aee8697896}{Add\+Announcement}} ()
+\item 
+void \mbox{\hyperlink{class_a_main_h_u_d_a31dcaef0343ac4ae98aa497bf29b005d}{Add\+Chat}} ()
+\item 
+void \mbox{\hyperlink{class_a_main_h_u_d_ab947b6434a24c56a6acb0b4e13a0b2c5}{Add\+Settings}} ()
+\item 
+FORCEINLINE void \mbox{\hyperlink{class_a_main_h_u_d_a4099fcacf5bec8f24cfd994ad91bc0e2}{Set\+HUDPackage}} (const \mbox{\hyperlink{struct_f_h_u_d_package}{FHUDPackage}} \&Package)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_a_main_h_u_d_acdd6ec2d7bde3cb7ba465e08532ae487}{Crosshair\+Spread\+Max}} = 16.f
+\item 
+TSubclass\+Of$<$ class UUser\+Widget $>$ \mbox{\hyperlink{class_a_main_h_u_d_ac307a9269854d1eb58b40e5bed7bfc48}{Character\+Overlay\+Class}}
+\item 
+class \mbox{\hyperlink{class_u_character_overlay}{UCharacter\+Overlay}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_main_h_u_d_a5f447080a10e128c8b3831505e1816e1}{Character\+Overlay}}
+\item 
+TSubclass\+Of$<$ UUser\+Widget $>$ \mbox{\hyperlink{class_a_main_h_u_d_aeeadf0ea1c57cbe537f92e01657aeb09}{Announcement\+Class}}
+\item 
+class \mbox{\hyperlink{class_u_announcement}{UAnnouncement}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_main_h_u_d_aaab3a5645075cd43b0ee3459675452bc}{Announcement}}
+\item 
+TSubclass\+Of$<$ UUser\+Widget $>$ \mbox{\hyperlink{class_a_main_h_u_d_a14b21d2e8663f2abe880cc910cc2afb8}{Chat\+Class}}
+\item 
+TSubclass\+Of$<$ UUser\+Widget $>$ \mbox{\hyperlink{class_a_main_h_u_d_a5797237ce28ad1c264a69b216d8e82dd}{Settigns\+Class}}
+\item 
+class \mbox{\hyperlink{class_u_chat}{UChat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_main_h_u_d_a3e0725f61903916966251775c3e4c600}{Chat}}
+\item 
+class \mbox{\hyperlink{class_u_settings_menu}{USettings\+Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_main_h_u_d_a8102e8f8aa1eb3a91522487f8baf06bb}{Settigns}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_main_h_u_d_af2edf5394cfe2f34c00fcb62a6a4c0ff}{Begin\+Play}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_f_h_u_d_package}{FHUDPackage}} \mbox{\hyperlink{class_a_main_h_u_d_ac7f66f600ce9a8b1a81e7a1f1da002bb}{HUDPackage}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_main_h_u_d_a449856d30166c95c496a00aee8697896}\index{AMainHUD@{AMainHUD}!AddAnnouncement@{AddAnnouncement}}
+\index{AddAnnouncement@{AddAnnouncement}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{AddAnnouncement()}{AddAnnouncement()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a449856d30166c95c496a00aee8697896} 
+void AMain\+HUD\+::\+Add\+Announcement (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_a_main_h_u_d_a3109ae3556f10687da6dc383ac708f47}\index{AMainHUD@{AMainHUD}!AddCharacterOverlay@{AddCharacterOverlay}}
+\index{AddCharacterOverlay@{AddCharacterOverlay}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{AddCharacterOverlay()}{AddCharacterOverlay()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a3109ae3556f10687da6dc383ac708f47} 
+void AMain\+HUD\+::\+Add\+Character\+Overlay (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_a_main_h_u_d_a31dcaef0343ac4ae98aa497bf29b005d}\index{AMainHUD@{AMainHUD}!AddChat@{AddChat}}
+\index{AddChat@{AddChat}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{AddChat()}{AddChat()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a31dcaef0343ac4ae98aa497bf29b005d} 
+void AMain\+HUD\+::\+Add\+Chat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_a_main_h_u_d_ab947b6434a24c56a6acb0b4e13a0b2c5}\index{AMainHUD@{AMainHUD}!AddSettings@{AddSettings}}
+\index{AddSettings@{AddSettings}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{AddSettings()}{AddSettings()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_ab947b6434a24c56a6acb0b4e13a0b2c5} 
+void AMain\+HUD\+::\+Add\+Settings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_a_main_h_u_d_af2edf5394cfe2f34c00fcb62a6a4c0ff}\index{AMainHUD@{AMainHUD}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_af2edf5394cfe2f34c00fcb62a6a4c0ff} 
+void AMain\+HUD\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_main_h_u_d_a2ae17e00cbe88b6ba57fc6ee166827d4}\index{AMainHUD@{AMainHUD}!DrawCrosshair@{DrawCrosshair}}
+\index{DrawCrosshair@{DrawCrosshair}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{DrawCrosshair()}{DrawCrosshair()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a2ae17e00cbe88b6ba57fc6ee166827d4} 
+void AMain\+HUD\+::\+Draw\+Crosshair (\begin{DoxyParamCaption}\item[{UTexture2D \texorpdfstring{$\ast$}{*}}]{Texture}{, }\item[{FVector2D}]{Viewport\+Center}{, }\item[{FVector2D}]{Spread}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_a_main_h_u_d_a27020e1bae0b52c40a59a65ea7fb70a9}\index{AMainHUD@{AMainHUD}!DrawHUD@{DrawHUD}}
+\index{DrawHUD@{DrawHUD}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{DrawHUD()}{DrawHUD()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a27020e1bae0b52c40a59a65ea7fb70a9} 
+void AMain\+HUD\+::\+Draw\+HUD (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_main_h_u_d_a4099fcacf5bec8f24cfd994ad91bc0e2}\index{AMainHUD@{AMainHUD}!SetHUDPackage@{SetHUDPackage}}
+\index{SetHUDPackage@{SetHUDPackage}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{SetHUDPackage()}{SetHUDPackage()}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a4099fcacf5bec8f24cfd994ad91bc0e2} 
+FORCEINLINE void AMain\+HUD\+::\+Set\+HUDPackage (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_f_h_u_d_package}{FHUDPackage}} \&}]{Package}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_main_h_u_d_aaab3a5645075cd43b0ee3459675452bc}\index{AMainHUD@{AMainHUD}!Announcement@{Announcement}}
+\index{Announcement@{Announcement}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{Announcement}{Announcement}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_aaab3a5645075cd43b0ee3459675452bc} 
+class \mbox{\hyperlink{class_u_announcement}{UAnnouncement}}\texorpdfstring{$\ast$}{*} AMain\+HUD\+::\+Announcement}
+
+\Hypertarget{class_a_main_h_u_d_aeeadf0ea1c57cbe537f92e01657aeb09}\index{AMainHUD@{AMainHUD}!AnnouncementClass@{AnnouncementClass}}
+\index{AnnouncementClass@{AnnouncementClass}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{AnnouncementClass}{AnnouncementClass}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_aeeadf0ea1c57cbe537f92e01657aeb09} 
+TSubclass\+Of$<$UUser\+Widget$>$ AMain\+HUD\+::\+Announcement\+Class}
+
+\Hypertarget{class_a_main_h_u_d_a5f447080a10e128c8b3831505e1816e1}\index{AMainHUD@{AMainHUD}!CharacterOverlay@{CharacterOverlay}}
+\index{CharacterOverlay@{CharacterOverlay}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{CharacterOverlay}{CharacterOverlay}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a5f447080a10e128c8b3831505e1816e1} 
+class \mbox{\hyperlink{class_u_character_overlay}{UCharacter\+Overlay}}\texorpdfstring{$\ast$}{*} AMain\+HUD\+::\+Character\+Overlay}
+
+\Hypertarget{class_a_main_h_u_d_ac307a9269854d1eb58b40e5bed7bfc48}\index{AMainHUD@{AMainHUD}!CharacterOverlayClass@{CharacterOverlayClass}}
+\index{CharacterOverlayClass@{CharacterOverlayClass}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{CharacterOverlayClass}{CharacterOverlayClass}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_ac307a9269854d1eb58b40e5bed7bfc48} 
+TSubclass\+Of$<$class UUser\+Widget$>$ AMain\+HUD\+::\+Character\+Overlay\+Class}
+
+\Hypertarget{class_a_main_h_u_d_a3e0725f61903916966251775c3e4c600}\index{AMainHUD@{AMainHUD}!Chat@{Chat}}
+\index{Chat@{Chat}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{Chat}{Chat}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a3e0725f61903916966251775c3e4c600} 
+class \mbox{\hyperlink{class_u_chat}{UChat}}\texorpdfstring{$\ast$}{*} AMain\+HUD\+::\+Chat}
+
+\Hypertarget{class_a_main_h_u_d_a14b21d2e8663f2abe880cc910cc2afb8}\index{AMainHUD@{AMainHUD}!ChatClass@{ChatClass}}
+\index{ChatClass@{ChatClass}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{ChatClass}{ChatClass}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a14b21d2e8663f2abe880cc910cc2afb8} 
+TSubclass\+Of$<$UUser\+Widget$>$ AMain\+HUD\+::\+Chat\+Class}
+
+\Hypertarget{class_a_main_h_u_d_acdd6ec2d7bde3cb7ba465e08532ae487}\index{AMainHUD@{AMainHUD}!CrosshairSpreadMax@{CrosshairSpreadMax}}
+\index{CrosshairSpreadMax@{CrosshairSpreadMax}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{CrosshairSpreadMax}{CrosshairSpreadMax}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_acdd6ec2d7bde3cb7ba465e08532ae487} 
+float AMain\+HUD\+::\+Crosshair\+Spread\+Max = 16.f}
+
+\Hypertarget{class_a_main_h_u_d_ac7f66f600ce9a8b1a81e7a1f1da002bb}\index{AMainHUD@{AMainHUD}!HUDPackage@{HUDPackage}}
+\index{HUDPackage@{HUDPackage}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{HUDPackage}{HUDPackage}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_ac7f66f600ce9a8b1a81e7a1f1da002bb} 
+\mbox{\hyperlink{struct_f_h_u_d_package}{FHUDPackage}} AMain\+HUD\+::\+HUDPackage\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_a_main_h_u_d_a8102e8f8aa1eb3a91522487f8baf06bb}\index{AMainHUD@{AMainHUD}!Settigns@{Settigns}}
+\index{Settigns@{Settigns}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{Settigns}{Settigns}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a8102e8f8aa1eb3a91522487f8baf06bb} 
+class \mbox{\hyperlink{class_u_settings_menu}{USettings\+Menu}}\texorpdfstring{$\ast$}{*} AMain\+HUD\+::\+Settigns}
+
+\Hypertarget{class_a_main_h_u_d_a5797237ce28ad1c264a69b216d8e82dd}\index{AMainHUD@{AMainHUD}!SettignsClass@{SettignsClass}}
+\index{SettignsClass@{SettignsClass}!AMainHUD@{AMainHUD}}
+\doxysubsubsection{\texorpdfstring{SettignsClass}{SettignsClass}}
+{\footnotesize\ttfamily \label{class_a_main_h_u_d_a5797237ce28ad1c264a69b216d8e82dd} 
+TSubclass\+Of$<$UUser\+Widget$>$ AMain\+HUD\+::\+Settigns\+Class}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_main_h_u_d_8h}{Main\+HUD.\+h}}\item 
+\mbox{\hyperlink{_main_h_u_d_8cpp}{Main\+HUD.\+cpp}}\end{DoxyCompactItemize}

@@ -152,6 +152,8 @@ public:
 	FORCEINLINE float GetZoomedFOV() const { return ZoomedFOV; }
 	FORCEINLINE float GetZoomInterpSpeed() const { return ZoomInterpSpeed; }
 	FORCEINLINE float GetDamage() const { return Damage; }
+	FORCEINLINE int32 GetAmmo() const { return Ammo; }
+	FORCEINLINE EWeaponState GetWeaponState() const { return WeaponState; }
 	
 	bool IsEmpty();
 };

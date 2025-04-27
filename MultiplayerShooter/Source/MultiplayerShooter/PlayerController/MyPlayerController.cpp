@@ -378,14 +378,17 @@ void AMyPlayerController::OnRep_MatchState()
     {
     	UE_LOG(LogTemp, Warning, TEXT("Waiting to start!"))
     	MainHUD = MainHUD = Cast<AMainHUD>(GetHUD());
+    	MainHUD = MainHUD = Cast<AMainHUD>(GetHUD());
     	if (MainHUD)
     	{
-    		MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
+    		if (MainHUD->Chat)
+    		{
+    			MainHUD->Chat->SetVisibility(ESlateVisibility::Hidden);
+    		}
     		if (MainHUD->CharacterOverlay)
     		{
     			MainHUD->CharacterOverlay->SetVisibility(ESlateVisibility::Hidden);
     		}
-    		//MainHUD->RemoveChat();
     	}
     	else
     	{

@@ -1,0 +1,31 @@
+<map id="AMyPlayerController::Tick" name="AMyPlayerController::Tick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,287,147,329"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#ab60304264b2877374fc0ebb6fcdb7b26" title=" " alt="" coords="195,129,336,172"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,284,225,180,228,184,105,288"/>
+<area shape="rect" id="Node000006" href="$class_a_my_player_controller.html#aef5597dc7824ce9dafdd5eeb6a520d10" title=" " alt="" coords="195,253,336,296"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="146,293,179,287,180,292,147,298"/>
+<area shape="rect" id="Node000008" href="$class_a_my_player_controller.html#ab7a7687bc55949e4e94af53a715aee3e" title=" " alt="" coords="195,320,336,363"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="147,318,180,324,179,329,146,323"/>
+<area shape="rect" id="Node000011" href="$class_a_my_player_controller.html#a5e7f3a4755da2121e0e81ac727883566" title=" " alt="" coords="195,487,336,529"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="100,328,236,474,232,477,96,332"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a9db98d926dabd4c014f63e3d20879abd" title=" " alt="" coords="430,5,571,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,127,330,91,383,58,414,45,416,50,385,62,333,96,291,131"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a89ce730f701917d573d70cc049e32180" title=" " alt="" coords="415,96,585,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="336,138,399,129,400,134,337,143"/>
+<area shape="rect" id="Node000005" href="$class_a_my_player_controller.html#a857b9e58fbef75850758a1f731fb14b3" title=" " alt="" coords="422,163,578,205"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="337,158,407,168,406,173,336,163"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="456,96,454,86,461,77,477,71,500,69,525,72,540,78,538,83,524,77,500,75,478,77,464,81,459,87,461,95"/>
+<area shape="rect" id="Node000007" href="$class_a_my_player_controller.html#a1f81abb01f1991867b9eff228a1164c0" title="Sync time between client and server." alt="" coords="408,253,592,296"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="336,272,393,272,393,277,336,277"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="456,253,454,243,461,234,477,229,500,227,525,229,540,235,538,240,524,234,500,232,478,234,464,239,459,245,461,252"/>
+<area shape="rect" id="Node000009" href="$class_a_my_player_controller.html#a339037ab7ba08490ad88dc609882acab" title=" " alt="" coords="430,320,571,363"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="336,339,414,339,414,344,336,344"/>
+<area shape="rect" id="Node000010" href="$class_a_my_player_controller.html#abde84cf822cf9428f2892b3d30113811" title=" " alt="" coords="430,387,571,429"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="337,359,416,381,414,386,336,364"/>
+<area shape="rect" id="Node000012" href="$class_a_my_player_controller.html#a72a209272a3fddb39a6446c83d1dd330" title=" " alt="" coords="430,453,571,496"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="336,495,414,484,414,489,337,501"/>
+<area shape="rect" id="Node000013" href="$class_a_my_player_controller.html#a23312ab13b910b000bc7bfaf675a2899" title=" " alt="" coords="384,520,616,563"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="337,515,369,520,368,525,336,521"/>
+<area shape="rect" id="Node000014" href="$class_a_my_player_controller.html#aad0794e91f63e1b8196024960dc5ec4a" title=" " alt="" coords="410,587,591,629"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="301,527,341,551,385,572,401,579,400,584,383,577,338,555,299,532"/>
+</map>

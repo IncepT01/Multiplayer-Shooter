@@ -1,0 +1,9 @@
+<map id="AMainCharacter::GetBuff" name="AMainCharacter::GetBuff">
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,56,451,83"/>
+<area shape="rect" id="Node000002" href="$class_a_damage_pickup.html#ab977e9731322c529a542706384ea3d3a" title=" " alt="" coords="5,5,236,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,55,188,35,190,30,284,50"/>
+<area shape="rect" id="Node000003" href="$class_a_health_pickup.html#a99fbf8162b4487c10530aff6f49304e2" title=" " alt="" coords="11,56,230,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,72,231,72,231,67,268,67"/>
+<area shape="rect" id="Node000004" href="$class_a_speed_pickup.html#a49d8539bd54e1c1d414158fc573f4d44" title=" " alt="" coords="11,107,230,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="284,89,190,109,188,103,283,84"/>
+</map>

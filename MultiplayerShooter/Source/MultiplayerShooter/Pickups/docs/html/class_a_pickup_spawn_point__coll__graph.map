@@ -1,0 +1,8 @@
+<map id="APickupSpawnPoint" name="APickupSpawnPoint">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,492,199,732"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="72,5,122,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,90,104,492,99,492,95,90"/>
+<area shape="rect" id="Node000003" href="$class_a_pickup.html" title=" " alt="" coords="118,124,303,428"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="122,87,140,123,135,125,117,89"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,429,149,477,143,475,159,427"/>
+</map>

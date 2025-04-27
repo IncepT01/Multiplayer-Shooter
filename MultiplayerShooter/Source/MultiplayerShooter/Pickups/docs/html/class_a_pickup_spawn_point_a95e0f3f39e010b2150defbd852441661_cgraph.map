@@ -1,0 +1,8 @@
+<map id="APickupSpawnPoint::SpawnPickupTimerFinished" name="APickupSpawnPoint::SpawnPickupTimerFinished">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,189,77"/>
+<area shape="rect" id="Node000002" href="$class_a_pickup_spawn_point.html#a001dc948b03105ab7d05ed184af4abf9" title=" " alt="" coords="237,5,385,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,41,221,36,222,42,189,46"/>
+<area shape="rect" id="Node000003" href="$class_a_pickup_spawn_point.html#af0bf24b834398d646efdc4bbe69835a9" title=" " alt="" coords="433,35,595,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,35,418,39,417,45,385,40"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="432,62,385,63,237,63,204,62,204,57,237,57,385,57,432,56"/>
+</map>

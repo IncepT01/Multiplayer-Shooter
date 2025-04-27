@@ -1,0 +1,10 @@
+<map id="ABaseWeapon::Multicast_StartFiring" name="ABaseWeapon::Multicast_StartFiring">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,174,72"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="49,29,47,19,54,10,68,5,90,3,113,5,126,11,124,16,111,10,89,8,69,10,57,15,52,21,54,28"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#a25b946563e149541edc2fa7b4ddd6aff" title=" " alt="" coords="222,37,386,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,48,206,48,206,53,174,53"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#aae35128d6be3419b9168545b83b85ef3" title=" " alt="" coords="434,37,647,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,48,418,48,418,53,386,53"/>
+<area shape="rect" id="Node000004" href="$class_a_base_weapon.html#ab36fec83b451fb0e7850ba06f4e6d2b2" title=" " alt="" coords="695,37,925,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="648,48,680,48,680,53,648,53"/>
+</map>

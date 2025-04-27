@@ -1,0 +1,7 @@
+<map id="ABaseWeapon::GetWeaponMesh" name="ABaseWeapon::GetWeaponMesh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="215,39,430,65"/>
+<area shape="rect" id="Node000002" href="$class_a_projectile_weapon.html#ab2705c3fbd6d07e43c0dc19c64d15078" title=" " alt="" coords="5,5,167,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,39,167,33,167,27,208,33"/>
+<area shape="rect" id="Node000003" href="$class_a_projectile_weapon.html#a98a6a21f098a7c795a4224d312437776" title=" " alt="" coords="15,56,157,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,71,157,78,157,73,207,66"/>
+</map>

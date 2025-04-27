@@ -178,7 +178,13 @@ public:
 	
 	FORCEINLINE float GetHealth() const { return Health; }
 	FORCEINLINE void SetHealth(float Amount) { Health = Amount; }
+	FORCEINLINE void SetMaxHealth(float Amount) { MaxHealth = Amount; }
 	FORCEINLINE float GetMaxHealth() const { return MaxHealth; }
+
+	FORCEINLINE void SetCombatComponent(UCombatComponent* CombatComp) { Combat = CombatComp; }
+	
+	FORCEINLINE float GetTimeSinceLastMovementReplication() const { return TimeSinceLastMovementReplication; }
+	FORCEINLINE void SetTimeSinceLastMovementReplication(float value) { TimeSinceLastMovementReplication = value; }
 
 	FORCEINLINE UCombatComponent* GetCombat() const { return Combat; }
 	FORCEINLINE bool GetDisableGameplay() const { return bDisableGameplay; }

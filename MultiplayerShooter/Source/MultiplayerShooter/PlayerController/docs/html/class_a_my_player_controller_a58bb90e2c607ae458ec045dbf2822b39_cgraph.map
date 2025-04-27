@@ -1,0 +1,9 @@
+<map id="AMyPlayerController::OnMatchStateSet" name="AMyPlayerController::OnMatchStateSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,147,81"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a572fee9304cdf938bb02635e9eb91f66" title=" " alt="" coords="210,5,352,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,46,194,38,195,43,147,51"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a60eda2b87c5436856db0f5b2167af8a6" title=" " alt="" coords="195,72,367,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,69,180,74,179,79,146,74"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a23312ab13b910b000bc7bfaf675a2899" title=" " alt="" coords="415,5,647,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,24,400,24,400,29,352,29"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="AProjectile" name="AProjectile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,211,491"/>
+<area shape="rect" id="Node000003" href="$class_a_projectile_bullet.html" title=" " alt="" coords="44,539,172,651"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,506,111,539,106,539,106,506"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="83,5,134,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,89,111,123,106,123,106,89"/>
+</map>

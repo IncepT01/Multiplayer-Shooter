@@ -1,0 +1,13 @@
+<map id="ABaseWeapon::SetHUDAmmo" name="ABaseWeapon::SetHUDAmmo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="521,43,724,69"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#ab553b4dcd042276efd67166d2cef9d4d" title=" " alt="" coords="300,5,456,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="505,45,456,39,457,33,506,39"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#aca65357c857be2de97da359100804be2" title=" " alt="" coords="283,72,473,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="506,73,474,77,473,71,505,67"/>
+<area shape="rect" id="Node000004" href="$class_a_base_weapon.html#a87839af8ca6d3be01b6521ce105772e2" title=" " alt="" coords="5,72,235,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,97,235,97,235,92,267,92"/>
+<area shape="rect" id="Node000005" href="$class_a_base_weapon.html#a106c429cae78229f74086bb175e1cf7e" title=" " alt="" coords="51,123,189,149"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="292,105,190,125,189,120,291,100"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="250,74,282,74,282,79,250,79"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="165,60,150,53,120,51,93,53,78,58,74,63,81,70,77,73,69,63,74,53,92,47,120,45,151,48,167,55"/>
+</map>

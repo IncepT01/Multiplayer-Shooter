@@ -48,12 +48,10 @@ void UCombatComponent::BeginPlay()
 	}
 
 	//UE_LOG(LogTemp, Warning, TEXT("UCombatComponent BeginPlay Called!"));
-
-	// Manually enable ticking if needed
+	
 	PrimaryComponentTick.SetTickFunctionEnable(true);
 	SetComponentTickEnabled(true);
-
-	// Manually register component
+	
 	if (!IsRegistered())
 	{
 		RegisterComponent();
@@ -143,6 +141,7 @@ void UCombatComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 		SetHUDCrosshairs(DeltaTime);
 		InterpFOV(DeltaTime);
 	}
+	
 }
 
 void UCombatComponent::EquipWeapon(ABaseWeapon* WeaponToEquip)

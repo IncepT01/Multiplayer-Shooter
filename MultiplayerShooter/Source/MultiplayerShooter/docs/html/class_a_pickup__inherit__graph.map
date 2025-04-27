@@ -1,0 +1,11 @@
+<map id="APickup" name="APickup">
+<area shape="rect" id="Node000001" title=" " alt="" coords="139,123,324,427"/>
+<area shape="rect" id="Node000003" href="$class_a_damage_pickup.html" title=" " alt="" coords="5,485,140,597"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,441,108,487,103,484,131,438"/>
+<area shape="rect" id="Node000004" href="$class_a_health_pickup.html" title=" " alt="" coords="164,475,299,608"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,442,234,475,229,475,229,442"/>
+<area shape="rect" id="Node000005" href="$class_a_speed_pickup.html" title=" " alt="" coords="323,475,458,608"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="332,438,353,473,349,476,327,441"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="206,5,257,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,90,234,123,229,123,229,90"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="AMainCharacter::CalculateSpeed" name="AMainCharacter::CalculateSpeed">
+<area shape="rect" id="Node000001" title=" " alt="" coords="942,35,1120,77"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a6fa9a33c3dd4522ed81944aabc3114b8" title=" " alt="" coords="448,13,629,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="926,52,630,35,630,29,927,47"/>
+<area shape="rect" id="Node000005" href="$class_a_main_character.html#ad664d0ab39058e928e96c8abf84f36bf" title=" " alt="" coords="677,68,894,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="927,69,894,73,894,67,926,64"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#a909b1b0adf502bef351cceca49e4eb68" title=" " alt="" coords="214,5,388,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="432,29,388,29,388,24,432,24"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a44a6be77fb1c8617c144a85fc084ad2b" title=" " alt="" coords="5,13,154,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="199,29,154,29,154,24,199,24"/>
+<area shape="rect" id="Node000006" href="$class_a_main_character.html#a0d4eb83adaa4bae05412bdc575f9c50b" title=" " alt="" coords="456,64,621,107"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="661,86,621,87,621,81,661,81"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="441,64,387,51,389,46,442,59"/>
+<area shape="rect" id="Node000007" href="$class_a_main_character.html#a501bd7ba0eb90bf0c1da39ec8496f6e0" title=" " alt="" coords="202,96,400,123"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="442,98,401,102,400,97,441,92"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="339,83,326,77,301,75,278,77,265,81,262,87,268,94,264,97,257,87,261,77,276,71,301,69,327,72,341,78"/>
+</map>

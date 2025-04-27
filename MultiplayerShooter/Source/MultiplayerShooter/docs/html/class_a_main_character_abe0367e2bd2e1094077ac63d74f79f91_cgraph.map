@@ -1,0 +1,5 @@
+<map id="AMainCharacter::OnRep_OverlappingWeapon" name="AMainCharacter::OnRep_OverlappingWeapon">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,170,48"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#ab36fec83b451fb0e7850ba06f4e6d2b2" title=" " alt="" coords="218,13,447,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,24,202,24,202,29,170,29"/>
+</map>

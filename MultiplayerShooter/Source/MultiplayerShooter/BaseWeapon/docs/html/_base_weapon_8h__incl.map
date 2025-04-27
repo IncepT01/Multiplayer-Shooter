@@ -1,0 +1,9 @@
+<map id="BaseWeapon.h" name="BaseWeapon.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="163,5,273,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,111,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,35,101,76,99,71,189,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,80,302,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,33,221,64,215,64,215,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="326,80,496,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="253,30,364,72,362,77,251,35"/>
+</map>

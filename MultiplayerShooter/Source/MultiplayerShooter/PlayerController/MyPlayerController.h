@@ -16,8 +16,11 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FHighPingDelegate, bool, bHighPing,
  UCLASS()
 class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
  {
- 	GENERATED_BODY()
+ private:
+	 GENERATED_BODY()
+
  public:
+ 	
  	void SetHUDHealth(float Health, float MaxHealth);
  	void SetHUDScore(float Score);
  	void SetHUDWeaponAmmo(int32 Ammo);
@@ -104,6 +107,9 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
     void CheckPing(float DeltaTime);
  	
  private:
+
+ 	friend class FMyPlayerControllerTests;
+ 	
  	UFUNCTION(Server, Reliable)
  	void ServerTryCheckMatchState();
 
@@ -140,4 +146,18 @@ class MULTIPLAYERSHOOTER_API AMyPlayerController : public APlayerController
 
  	UFUNCTION(Server, Reliable)
  	void ServerReportPingStatus(bool bHighPing);
+
+ 	bool bMatchStateUpdated = false;
+
+
+ 	//Getters
+ public:
+ 	FORCEINLINE float GetWarmupTime() const { return WarmupTime; }
+ 	FORCEINLINE float GetMatchTime() const { return MatchTime; }
+ 	FORCEINLINE float GetCooldownTime() const { return CooldownTime; }
+ 	FORCEINLINE float GetLevelStartingTime() const { return LevelStartingTime; }
+ 	FORCEINLINE FName GetMatchState() const { return MatchState; }
+
+ 	void SetMatchStateUpdated(bool bUpdated) { bMatchStateUpdated = bUpdated; }
+ 	bool IsMatchStateUpdated() const { return bMatchStateUpdated; }
  };

@@ -1,0 +1,10 @@
+<map id="AMyPlayerController::CheckPing" name="AMyPlayerController::CheckPing">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,147,139"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a9db98d926dabd4c014f63e3d20879abd" title=" " alt="" coords="209,5,350,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,93,194,58,207,52,209,57,196,62,121,98"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a89ce730f701917d573d70cc049e32180" title=" " alt="" coords="195,96,365,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,115,179,115,179,120,147,120"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a857b9e58fbef75850758a1f731fb14b3" title=" " alt="" coords="202,163,358,205"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="144,137,199,155,197,160,142,142"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="241,96,239,86,246,77,259,71,280,69,302,72,315,78,313,83,300,77,280,75,261,77,249,81,244,87,246,95"/>
+</map>

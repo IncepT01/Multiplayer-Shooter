@@ -136,9 +136,10 @@ void AMainGameMode::OnMatchStateSet()
 	for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
 	{
 		AMyPlayerController* Player = Cast<AMyPlayerController>(*It);
-		if (Player)
+		if (Player && Player->IsValidLowLevel())
 		{
 			Player->OnMatchStateSet(MatchState);
+			Player->SetMatchStateUpdated(true);
 		}
 	}
 }
@@ -157,4 +158,6 @@ void AMainGameMode::HandleHighPing(bool bHighPing, APlayerController* PlayerCont
 		}
 	}
 }
+
+
 

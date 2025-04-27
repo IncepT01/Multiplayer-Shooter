@@ -490,11 +490,11 @@ FFramePackage ULagCompensationComponent::GetFrameToCheck(AMainCharacter* HitChar
 
 void ULagCompensationComponent::ProjectileServerScoreRequest_Implementation(AMainCharacter* HitCharacter, const FVector_NetQuantize& TraceStart, const FVector_NetQuantize100& InitialVelocity, float HitTime)
 {
-	FServerSideRewindResult Confirm = ProjectileServerSideRewind(HitCharacter, TraceStart, InitialVelocity, HitTime);
+		FServerSideRewindResult Confirm = ProjectileServerSideRewind(HitCharacter, TraceStart, InitialVelocity, HitTime);
  
 	if (Character && HitCharacter && Confirm.bHitConfirmed)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("SSR Damaging for: %f"), Character->GetEquippedWeapon()->GetDamage() * Character->GetDamageMultiplier());
+		//UE_LOG(LogTemp, Warning, TEXT("SSR Damaging for: %f"), Character->GetEquippedWeapon()->GetDamage() * Character->GetDamageMultiplier());
 		UGameplayStatics::ApplyDamage(
 			HitCharacter,
 			Character->GetEquippedWeapon()->GetDamage() * Character->GetDamageMultiplier(),

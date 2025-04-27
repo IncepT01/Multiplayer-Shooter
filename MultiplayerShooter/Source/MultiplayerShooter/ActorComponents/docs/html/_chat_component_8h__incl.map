@@ -1,0 +1,9 @@
+<map id="ChatComponent.h" name="ChatComponent.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="176,5,303,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,111,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,35,105,76,103,71,207,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,80,344,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,33,242,64,237,64,237,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="368,80,556,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="279,30,410,72,408,77,277,35"/>
+</map>

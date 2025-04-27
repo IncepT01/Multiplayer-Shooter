@@ -66,10 +66,8 @@ void UBuffComponent::BuffDamage(float DamageMul, float BuffTime)
 		&UBuffComponent::ResetDamage,
 		BuffTime
 	);
-
-	//UE_LOG(LogTemp, Warning, TEXT("Damage Mul before: %f!"), Character->GetDamageMultiplier());
+	
 	Character->SetDamageMultiplier(DamageMul);
-	//UE_LOG(LogTemp, Warning, TEXT("Damage Mul after: %f!"), Character->GetDamageMultiplier());
 	MulticastDamageBuff(DamageMul);
 }
 
@@ -86,13 +84,11 @@ void UBuffComponent::BuffSpeed(float BuffBaseSpeed, float BuffCrouchSpeed, float
  
 	if (Character->GetCharacterMovement())
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("Speed before: %f!"), Character->GetCharacterMovement()->MaxWalkSpeed);
 		Character->GetCombat()->BaseWalkSpeed += BuffBaseSpeed;
 		Character->GetCombat()->AimWalkSpeed += BuffCrouchSpeed;
 		Character->GetCharacterMovement()->MaxWalkSpeed += BuffBaseSpeed;
 		Character->GetCharacterMovement()->MaxWalkSpeedCrouched += BuffCrouchSpeed;
-
-		//UE_LOG(LogTemp, Warning, TEXT("Speed after: %f!"), Character->GetCharacterMovement()->MaxWalkSpeed);
+		
 	}
 	MulticastSpeedBuff(Character->GetCharacterMovement()->MaxWalkSpeed, Character->GetCharacterMovement()->MaxWalkSpeedCrouched);
 }

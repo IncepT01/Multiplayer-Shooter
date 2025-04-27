@@ -1,0 +1,13 @@
+<map id="AMainGameMode::GetMusicAudioComponent" name="AMainGameMode::GetMusicAudioComponent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,228,116"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="64,73,62,63,71,54,89,49,117,47,146,49,164,55,162,60,145,54,116,52,90,54,74,59,67,65,69,72"/>
+<area shape="rect" id="Node000002" href="$class_a_main_game_mode.html#adcc0f620c93ea4cef3b00ca95dea68e7" title=" " alt="" coords="298,5,490,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,70,275,48,326,34,328,39,276,53,197,75"/>
+<area shape="rect" id="Node000003" href="$class_a_main_game_mode.html#aac3b82e6acfa520c65769ca3c2f60c2b" title=" " alt="" coords="561,107,788,133"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="228,87,364,86,513,92,586,101,585,106,513,97,364,91,228,93"/>
+<area shape="rect" id="Node000004" href="$class_a_main_game_mode.html#a9ce74e01903ba5be1fe712f629b2aa77" title=" " alt="" coords="276,107,513,133"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="228,102,261,105,260,110,228,107"/>
+<area shape="rect" id="Node000005" href="$class_a_main_game_mode.html#a801f2a355cc703b4311b08db58d0ed9b" title=" " alt="" coords="299,157,490,184"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="182,114,276,143,309,151,308,156,275,148,180,119"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="472,154,582,134,583,139,473,159"/>
+</map>

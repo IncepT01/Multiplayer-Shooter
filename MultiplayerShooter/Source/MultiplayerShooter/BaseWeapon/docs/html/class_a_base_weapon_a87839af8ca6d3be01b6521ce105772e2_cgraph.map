@@ -1,0 +1,9 @@
+<map id="ABaseWeapon::ClientUpdateAmmo" name="ABaseWeapon::ClientUpdateAmmo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,235,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="77,31,69,21,74,11,92,5,120,3,151,5,167,12,165,17,150,10,120,8,93,10,78,15,74,20,81,27"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#aca65357c857be2de97da359100804be2" title=" " alt="" coords="283,29,473,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="235,49,267,49,267,54,235,54"/>
+<area shape="poly" id="edge3_Node000002_Node000001" title=" " alt="" coords="282,37,250,36,250,31,282,31"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#a87d9c1d39b25aae299790b857b07182d" title=" " alt="" coords="521,29,724,56"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="473,40,505,40,505,45,473,45"/>
+</map>

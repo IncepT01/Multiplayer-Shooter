@@ -1,0 +1,9 @@
+<map id="MainPlayerState.h" name="MainPlayerState.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="172,5,301,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,111,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,35,104,76,102,71,205,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,80,339,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,33,239,64,234,64,234,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="363,80,553,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="276,30,405,72,404,77,274,35"/>
+</map>

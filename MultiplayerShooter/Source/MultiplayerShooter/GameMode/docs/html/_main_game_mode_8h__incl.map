@@ -1,0 +1,11 @@
+<map id="MainGameMode.h" name="MainGameMode.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="234,5,362,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,111,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,35,116,78,114,72,255,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,80,269,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,35,232,73,229,68,280,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="294,80,497,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="317,30,368,69,365,73,313,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="521,80,710,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="354,30,545,73,544,79,353,35"/>
+</map>

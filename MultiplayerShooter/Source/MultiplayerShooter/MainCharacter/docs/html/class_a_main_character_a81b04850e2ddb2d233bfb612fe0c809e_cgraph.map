@@ -1,0 +1,7 @@
+<map id="AMainCharacter::OnRep_Health" name="AMainCharacter::OnRep_Health">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,170,77"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a1be3a32212f8b037dd4eeae9720e2348" title=" " alt="" coords="234,5,435,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,44,218,38,219,43,170,49"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#a489b2bbf70c72576dba98e67627a5a2e" title=" " alt="" coords="218,72,451,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,63,203,67,202,72,170,68"/>
+</map>

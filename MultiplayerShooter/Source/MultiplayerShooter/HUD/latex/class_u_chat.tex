@@ -1,0 +1,84 @@
+\doxysection{UChat Class Reference}
+\hypertarget{class_u_chat}{}\label{class_u_chat}\index{UChat@{UChat}}
+
+
+{\ttfamily \#include $<$Chat.\+h$>$}
+
+
+
+Inheritance diagram for UChat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_u_chat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UChat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_u_chat__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_chat_ae63e456f57df685aaa94a9bf6c8309dc}{Native\+Construct}} () override
+\item 
+void \mbox{\hyperlink{class_u_chat_ae36d9e8302a59e21a385d32fcfd10707}{On\+Chat\+Text\+Committed}} (const FText \&Text, EText\+Commit\+::\+Type Commit\+Method)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class UEditable\+Text\+Box \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_chat_ac6372b8b696d2124b6757985d9fa65d3}{Input\+Field}}
+\item 
+class UScroll\+Box \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_chat_aaf53eea448716be1a729130b6a91e589}{Chat\+History\+Box}}
+\item 
+TSubclass\+Of$<$ class \mbox{\hyperlink{class_u_chat_message_widget}{UChat\+Message\+Widget}} $>$ \mbox{\hyperlink{class_u_chat_a4679ffa402dec02382a21dde7db8fd43}{Chat\+Message\+Widget\+Class}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_chat_ae63e456f57df685aaa94a9bf6c8309dc}\index{UChat@{UChat}!NativeConstruct@{NativeConstruct}}
+\index{NativeConstruct@{NativeConstruct}!UChat@{UChat}}
+\doxysubsubsection{\texorpdfstring{NativeConstruct()}{NativeConstruct()}}
+{\footnotesize\ttfamily \label{class_u_chat_ae63e456f57df685aaa94a9bf6c8309dc} 
+void UChat\+::\+Native\+Construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_u_chat_ae36d9e8302a59e21a385d32fcfd10707}\index{UChat@{UChat}!OnChatTextCommitted@{OnChatTextCommitted}}
+\index{OnChatTextCommitted@{OnChatTextCommitted}!UChat@{UChat}}
+\doxysubsubsection{\texorpdfstring{OnChatTextCommitted()}{OnChatTextCommitted()}}
+{\footnotesize\ttfamily \label{class_u_chat_ae36d9e8302a59e21a385d32fcfd10707} 
+void UChat\+::\+On\+Chat\+Text\+Committed (\begin{DoxyParamCaption}\item[{const FText \&}]{Text}{, }\item[{EText\+Commit\+::\+Type}]{Commit\+Method}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_chat_aaf53eea448716be1a729130b6a91e589}\index{UChat@{UChat}!ChatHistoryBox@{ChatHistoryBox}}
+\index{ChatHistoryBox@{ChatHistoryBox}!UChat@{UChat}}
+\doxysubsubsection{\texorpdfstring{ChatHistoryBox}{ChatHistoryBox}}
+{\footnotesize\ttfamily \label{class_u_chat_aaf53eea448716be1a729130b6a91e589} 
+class UScroll\+Box\texorpdfstring{$\ast$}{*} UChat\+::\+Chat\+History\+Box}
+
+\Hypertarget{class_u_chat_a4679ffa402dec02382a21dde7db8fd43}\index{UChat@{UChat}!ChatMessageWidgetClass@{ChatMessageWidgetClass}}
+\index{ChatMessageWidgetClass@{ChatMessageWidgetClass}!UChat@{UChat}}
+\doxysubsubsection{\texorpdfstring{ChatMessageWidgetClass}{ChatMessageWidgetClass}}
+{\footnotesize\ttfamily \label{class_u_chat_a4679ffa402dec02382a21dde7db8fd43} 
+TSubclass\+Of$<$class \mbox{\hyperlink{class_u_chat_message_widget}{UChat\+Message\+Widget}}$>$ UChat\+::\+Chat\+Message\+Widget\+Class}
+
+\Hypertarget{class_u_chat_ac6372b8b696d2124b6757985d9fa65d3}\index{UChat@{UChat}!InputField@{InputField}}
+\index{InputField@{InputField}!UChat@{UChat}}
+\doxysubsubsection{\texorpdfstring{InputField}{InputField}}
+{\footnotesize\ttfamily \label{class_u_chat_ac6372b8b696d2124b6757985d9fa65d3} 
+class UEditable\+Text\+Box\texorpdfstring{$\ast$}{*} UChat\+::\+Input\+Field}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_chat_8h}{Chat.\+h}}\item 
+\mbox{\hyperlink{_chat_8cpp}{Chat.\+cpp}}\end{DoxyCompactItemize}

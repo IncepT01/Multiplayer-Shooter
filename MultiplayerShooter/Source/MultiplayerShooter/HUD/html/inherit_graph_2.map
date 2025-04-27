@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,139,114,167"/>
+<area shape="rect" id="Node000001" href="$class_u_announcement.html" title=" " alt="" coords="180,5,310,34"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="78,124,113,83,160,44,184,32,187,37,163,49,117,87,82,128"/>
+<area shape="rect" id="Node000002" href="$class_u_character_overlay.html" title=" " alt="" coords="172,59,318,87"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="98,128,161,97,192,85,194,90,163,102,100,133"/>
+<area shape="rect" id="Node000003" href="$class_u_chat.html" title=" " alt="" coords="213,112,276,141"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="129,140,212,128,213,133,130,146"/>
+<area shape="rect" id="Node000004" href="$class_u_chat_message_widget.html" title=" " alt="" coords="162,165,328,194"/>
+<area shape="poly" id="edge5_Node000000_Node000004" title=" " alt="" coords="130,160,162,165,161,170,129,166"/>
+<area shape="rect" id="Node000005" href="$class_u_overhead_widget.html" title=" " alt="" coords="175,219,315,247"/>
+<area shape="poly" id="edge6_Node000000_Node000005" title=" " alt="" coords="100,173,163,204,194,216,192,221,161,209,98,178"/>
+<area shape="rect" id="Node000006" href="$class_u_settings_menu.html" title=" " alt="" coords="185,272,305,301"/>
+<area shape="poly" id="edge7_Node000000_Node000006" title=" " alt="" coords="82,178,117,219,163,257,187,269,184,274,160,262,113,223,78,182"/>
+</map>

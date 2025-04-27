@@ -1,0 +1,10 @@
+<map id="AMainCharacter::Elim" name="AMainCharacter::Elim">
+<area shape="rect" id="Node000001" title="Elimination." alt="" coords="5,55,155,81"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#aea17dde5a15443622f0bf918c57cce6f" title=" " alt="" coords="216,5,398,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,52,200,43,201,49,155,57"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a5691a3d428c1f9d6f6ed3d28cb29df10" title=" " alt="" coords="203,96,412,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,79,215,90,214,95,154,84"/>
+<area shape="rect" id="Node000003" href="$class_a_main_game_mode.html#a3713d86d5420f9c8fc8c0e5b055955a2" title=" " alt="" coords="460,13,697,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,24,445,24,445,29,399,29"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="269,97,262,87,267,77,282,71,307,69,335,72,349,79,347,84,333,77,307,75,283,77,270,81,267,87,273,94"/>
+</map>

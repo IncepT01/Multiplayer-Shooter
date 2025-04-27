@@ -16,8 +16,7 @@ UChatComponent::UChatComponent()
 void UChatComponent::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// Reference to MainHUD on BeginPlay
+	
 	APlayerController* PlayerController = Cast<APlayerController>(GetOwner());
 	if (PlayerController)
 	{
@@ -27,21 +26,11 @@ void UChatComponent::BeginPlay()
 
 void UChatComponent::Server_SendChatMessage_Implementation(const FString& Sender, const FText& Text)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Server sending text"));
-
-	// Send message to all clients (multicast)
 	Multicast_SendChatMessage(Sender, Text);
-}
-
-bool UChatComponent::Server_SendChatMessage_Validate(const FString& Sender, const FText& Text)
-{
-	// Optionally validate message here (e.g., check for forbidden words)
-	return true;
 }
 
 void UChatComponent::Multicast_SendChatMessage_Implementation(const FString& Sender, const FText& Text)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Multicast sending message to all clients"));
 	
 	APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
 	if (PlayerController)
@@ -66,8 +55,6 @@ void UChatComponent::Multicast_SendChatMessage_Implementation(const FString& Sen
 void UChatComponent::AddChatMessageToUI(const FString& Sender, const FText& Text)
 {
 
-	UE_LOG(LogTemp, Warning, TEXT("AddCharMessageToUI entered"));
-
 	if (MainHUD && MainHUD->Chat)
 	{
 		// Create the widget using the PlayerController as the owner
@@ -81,7 +68,7 @@ void UChatComponent::AddChatMessageToUI(const FString& Sender, const FText& Text
 				NewMessageWidget->SetMessage(Sender, Text.ToString());
 				MainHUD->Chat->ChatHistoryBox->AddChild(NewMessageWidget);
 				MainHUD->Chat->ChatHistoryBox->ScrollToEnd();
-				UE_LOG(LogTemp, Warning, TEXT("Message added"));
+				//UE_LOG(LogTemp, Warning, TEXT("Message added"));
 			}
 			else
 			{

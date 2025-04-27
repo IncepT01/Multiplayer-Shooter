@@ -1,0 +1,12 @@
+<map id="ABaseWeapon::ShowPickupWidget" name="ABaseWeapon::ShowPickupWidget">
+<area shape="rect" id="Node000001" title=" " alt="" coords="695,43,925,69"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#a6a2f8355b56bb3093877f0747ec77fd9" title=" " alt="" coords="462,5,619,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="679,44,619,38,620,33,680,39"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#aae35128d6be3419b9168545b83b85ef3" title=" " alt="" coords="434,72,647,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="680,73,648,76,648,71,679,68"/>
+<area shape="rect" id="Node000004" href="$class_a_base_weapon.html#a25b946563e149541edc2fa7b4ddd6aff" title=" " alt="" coords="222,72,386,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="418,88,387,88,387,83,418,83"/>
+<area shape="rect" id="Node000005" href="$class_a_base_weapon.html#aae5c981a3ac5618a7a2fb82f5e288b8e" title=" " alt="" coords="5,64,174,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="206,88,174,88,174,83,206,83"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="124,51,111,45,89,43,69,45,57,49,52,55,54,63,49,64,47,54,54,45,68,39,90,37,113,40,126,46"/>
+</map>

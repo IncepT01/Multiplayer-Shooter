@@ -1,0 +1,13 @@
+<map id="MultiplayerShooter/Database/BuffDatabaseManager.h" name="MultiplayerShooter/Database/BuffDatabaseManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="317,5,543,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,111,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,51,124,99,113,102,111,97,123,93,327,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,104,309,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="382,51,267,100,265,95,380,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="333,104,527,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="433,48,433,88,427,88,427,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="552,96,727,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="480,46,577,87,575,92,478,51"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="751,104,973,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="532,46,786,98,785,103,531,51"/>
+</map>

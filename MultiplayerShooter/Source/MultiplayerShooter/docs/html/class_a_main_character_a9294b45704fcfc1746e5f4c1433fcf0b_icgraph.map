@@ -1,0 +1,10 @@
+<map id="AMainCharacter::CalculateAO_Pitch" name="AMainCharacter::CalculateAO_Pitch">
+<area shape="rect" id="Node000001" title=" " alt="" coords="652,23,831,65"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a6fa9a33c3dd4522ed81944aabc3114b8" title=" " alt="" coords="423,5,604,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="637,35,605,31,605,26,637,30"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#a909b1b0adf502bef351cceca49e4eb68" title=" " alt="" coords="202,23,375,65"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="637,47,376,47,376,41,637,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,33,376,37,375,32,407,28"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a44a6be77fb1c8617c144a85fc084ad2b" title=" " alt="" coords="5,31,154,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="186,47,154,47,154,41,186,41"/>
+</map>

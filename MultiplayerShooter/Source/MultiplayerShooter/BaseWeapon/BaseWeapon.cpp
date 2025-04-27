@@ -195,6 +195,10 @@ void ABaseWeapon::SetHUDAmmo()
 {
 	//UE_LOG(LogTemp, Warning, TEXT("SetHUD Ammo"));
 	//OwnerCharacter = OwnerCharacter == nullptr ? Cast<AMainCharacter>(GetOwner()) : OwnerCharacter;
+	if (!IsValid(GetOwner()))
+	{
+		return;
+	}
 	OwnerCharacter = Cast<AMainCharacter>(GetOwner());
 	if (OwnerCharacter)
 	{

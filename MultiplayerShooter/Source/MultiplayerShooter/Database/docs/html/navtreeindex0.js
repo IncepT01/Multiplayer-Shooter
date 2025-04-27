@@ -1,0 +1,21 @@
+var NAVTREEINDEX0 =
+{
+"_buff_database_manager_8cpp.html":[1,0,0],
+"_buff_database_manager_8cpp_source.html":[1,0,0],
+"_buff_database_manager_8h.html":[1,0,1],
+"_buff_database_manager_8h_source.html":[1,0,1],
+"annotated.html":[0,0],
+"class_u_buff_database_manager.html":[0,0,0],
+"class_u_buff_database_manager.html#abe0d0f39929b126a6f911df6b1555228":[0,0,0,1],
+"class_u_buff_database_manager.html#ae866f9a543fc1382dfa84a64cc7e8384":[0,0,0,0],
+"class_u_buff_database_manager.html#aea9f48d29b9c6a5162758bfe27729899":[0,0,0,2],
+"class_u_buff_database_manager.html#aec44515f910fa2f671a402e4d83b2eec":[0,0,0,3],
+"classes.html":[0,1],
+"files.html":[1,0],
+"functions.html":[0,3,0],
+"functions_func.html":[0,3,1],
+"functions_vars.html":[0,3,2],
+"hierarchy.html":[0,2],
+"index.html":[],
+"pages.html":[]
+};

@@ -1,0 +1,26 @@
+var class_u_my_anim_instance =
+[
+    [ "NativeInitializeAnimation", "class_u_my_anim_instance.html#ac623c7bbaa7c92a96c5273fc5edb4f69", null ],
+    [ "NativeUpdateAnimation", "class_u_my_anim_instance.html#a3e19aabcec6ccc0869e79208625b610f", null ],
+    [ "AO_Pitch", "class_u_my_anim_instance.html#a7bdc6ab6bea1669b0e00eb7dd7deb331", null ],
+    [ "AO_Yaw", "class_u_my_anim_instance.html#a973114d268c5a878adc716ea07299bcd", null ],
+    [ "bAiming", "class_u_my_anim_instance.html#ae45a67e31eb3cfb09149f194a758e083", null ],
+    [ "bElimmed", "class_u_my_anim_instance.html#ae9aacbf9629c855bb4c34c0f988576ec", null ],
+    [ "bIsAccelerating", "class_u_my_anim_instance.html#ae1e54e91e5ce3c702be8041a34c975a7", null ],
+    [ "bIsCrouched", "class_u_my_anim_instance.html#a5f34a3004a4cdc87e08ed49f3f333608", null ],
+    [ "bIsInAir", "class_u_my_anim_instance.html#ae49ecda2c6f1c469db5094c2ab0a3906", null ],
+    [ "bLocallyControlled", "class_u_my_anim_instance.html#a7c8bfd4369961b1831239c734af8d36a", null ],
+    [ "bRotateRootBone", "class_u_my_anim_instance.html#a9c26d749e51fc7a3806cbabeb447e410", null ],
+    [ "bWeaponEquipped", "class_u_my_anim_instance.html#a1896dbeb6a9908166f1b3c2c042d3383", null ],
+    [ "CharacterRotation", "class_u_my_anim_instance.html#ae53fd6e91f82140702ea6ae1b3e3dad0", null ],
+    [ "CharacterRotationLastFrame", "class_u_my_anim_instance.html#ab2916c8c6800dd344b627f13cfe23084", null ],
+    [ "DeltaRotation", "class_u_my_anim_instance.html#a6c7ddd2d480e5033face40d14cb53464", null ],
+    [ "EquippedWeapon", "class_u_my_anim_instance.html#abf8d24d57382e34988aa5609226699a6", null ],
+    [ "Lean", "class_u_my_anim_instance.html#a62ee8564ba91203d6cb1488007361195", null ],
+    [ "LeftHandTransform", "class_u_my_anim_instance.html#a9d8a78d9d63d4007143d1d9a44b7e153", null ],
+    [ "MainCharacter", "class_u_my_anim_instance.html#a10e906f94c88c18b2d5e95af3c20cde5", null ],
+    [ "RightHandRotation", "class_u_my_anim_instance.html#a00bcd4577b920fc2c39ce18fd834a342", null ],
+    [ "Speed", "class_u_my_anim_instance.html#a3d6e1ec329fefe06e069442e805df63d", null ],
+    [ "TurningInPlace", "class_u_my_anim_instance.html#a0fdcbaee01ad64cb8e36476eec6ff958", null ],
+    [ "YawOffset", "class_u_my_anim_instance.html#a06dd9c6e8496ac7dd1ff62745099ce3f", null ]
+];

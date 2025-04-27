@@ -1,0 +1,17 @@
+<map id="SettingsMenu.cpp" name="SettingsMenu.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="434,5,571,34"/>
+<area shape="rect" id="Node000002" href="$_settings_menu_8h.html" title=" " alt="" coords="168,100,290,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,37,303,85,274,96,272,91,302,79,452,32"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="314,100,470,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="488,37,421,92,418,88,484,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="493,91,733,138"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="521,33,576,79,573,83,517,37"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="758,82,951,147"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="559,32,743,79,742,84,558,37"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,195,120,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,132,102,189,99,184,203,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="144,195,314,223"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="232,129,232,179,226,179,226,129"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="338,195,528,223"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="260,127,390,185,388,190,258,132"/>
+</map>
