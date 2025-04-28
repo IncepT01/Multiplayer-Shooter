@@ -1,0 +1,9 @@
+<map id="MultiplayerShooter/HUD/CharacterOverlay.h" name="MultiplayerShooter/HUD/CharacterOverlay.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,5,372,48"/>
+<area shape="rect" id="Node000002" href="$_character_overlay_8cpp.html" title=" " alt="" coords="5,104,191,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,58,139,106,137,101,231,53"/>
+<area shape="rect" id="Node000003" href="$_main_h_u_d_8cpp.html" title=" " alt="" coords="215,104,357,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,63,289,104,283,104,283,63"/>
+<area shape="rect" id="Node000004" href="$_my_player_controller_8cpp.html" title=" " alt="" coords="381,96,559,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="340,53,416,93,414,98,338,58"/>
+</map>

@@ -1,5 +1,6 @@
 ﻿// BaseWeaponTests.cpp
 
+#if WITH_EDITOR
 #include "Misc/AutomationTest.h"
 #include "MultiplayerShooter/BaseWeapon/BaseWeapon.h"
 
@@ -42,3 +43,5 @@ bool FBaseWeaponSetWeaponStateTest::RunTest(const FString& Parameters)
 
 	return true;
 }
+
+#endif

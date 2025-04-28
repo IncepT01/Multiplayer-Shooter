@@ -1,0 +1,17 @@
+<map id="AMainCharacter::RotateInPlace" name="AMainCharacter::RotateInPlace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,179,107"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a6fa9a33c3dd4522ed81944aabc3114b8" title=" " alt="" coords="227,72,408,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,83,211,83,211,88,179,88"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#a9294b45704fcfc1746e5f4c1433fcf0b" title=" " alt="" coords="475,5,653,48"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="179,65,226,57,347,43,459,32,460,37,347,48,227,63,180,70"/>
+<area shape="rect" id="Node000006" href="$class_a_main_character.html#a0d4eb83adaa4bae05412bdc575f9c50b" title=" " alt="" coords="235,144,400,187"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="155,105,241,136,240,141,153,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,69,459,49,460,54,377,74"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a9596fe587a29a2671db7db619b16b46d" title=" " alt="" coords="720,115,899,157"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="409,86,534,94,673,108,705,113,705,118,672,113,533,99,408,92"/>
+<area shape="rect" id="Node000005" href="$class_a_main_character.html#a11a0d4e525d8b74552333de269a1e59d" title=" " alt="" coords="468,123,661,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="387,97,481,116,480,122,385,102"/>
+<area shape="rect" id="Node000007" href="$class_a_main_character.html#ad664d0ab39058e928e96c8abf84f36bf" title=" " alt="" coords="456,173,672,200"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="400,170,441,173,440,179,400,175"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="632,170,705,155,706,160,633,175"/>
+</map>

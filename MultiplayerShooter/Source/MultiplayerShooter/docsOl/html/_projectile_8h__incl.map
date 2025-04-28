@@ -1,0 +1,9 @@
+<map id="MultiplayerShooter/BaseWeapon/ProjectileWeapons/Projectile.h" name="MultiplayerShooter/BaseWeapon/ProjectileWeapons/Projectile.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,325,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,111,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,67,95,107,92,102,165,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,112,302,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,64,221,96,215,96,215,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="326,112,473,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="278,62,361,102,359,107,276,67"/>
+</map>

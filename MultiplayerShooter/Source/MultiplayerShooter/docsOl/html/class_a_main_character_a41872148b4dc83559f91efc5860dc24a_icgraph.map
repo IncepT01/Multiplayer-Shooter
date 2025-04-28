@@ -1,0 +1,5 @@
+<map id="AMainCharacter::GetHealth" name="AMainCharacter::GetHealth">
+<area shape="rect" id="Node000001" title=" " alt="" coords="195,13,377,40"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a7176c61b19f598867d5e25c944453488" title=" " alt="" coords="5,5,147,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,29,147,29,147,24,179,24"/>
+</map>

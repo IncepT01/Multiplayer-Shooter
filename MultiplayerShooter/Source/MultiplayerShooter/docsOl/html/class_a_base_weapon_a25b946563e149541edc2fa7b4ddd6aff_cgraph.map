@@ -1,0 +1,7 @@
+<map id="ABaseWeapon::Dropped" name="ABaseWeapon::Dropped">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,170,32"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#aae35128d6be3419b9168545b83b85ef3" title=" " alt="" coords="218,5,431,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,16,202,16,202,21,170,21"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#ab36fec83b451fb0e7850ba06f4e6d2b2" title=" " alt="" coords="479,5,708,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,16,463,16,463,21,431,21"/>
+</map>

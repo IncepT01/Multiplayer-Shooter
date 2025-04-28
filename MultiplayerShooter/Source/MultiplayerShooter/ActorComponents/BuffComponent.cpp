@@ -74,7 +74,7 @@ void UBuffComponent::BuffDamage(float DamageMul, float BuffTime)
 void UBuffComponent::BuffSpeed(float BuffBaseSpeed, float BuffCrouchSpeed, float BuffTime)
 {
 	if (Character == nullptr) return;
- 
+	
 	Character->GetWorldTimerManager().SetTimer(
 		SpeedBuffTimer,
 		this,
@@ -84,10 +84,10 @@ void UBuffComponent::BuffSpeed(float BuffBaseSpeed, float BuffCrouchSpeed, float
  
 	if (Character->GetCharacterMovement())
 	{
-		Character->GetCombat()->BaseWalkSpeed += BuffBaseSpeed;
-		Character->GetCombat()->AimWalkSpeed += BuffCrouchSpeed;
-		Character->GetCharacterMovement()->MaxWalkSpeed += BuffBaseSpeed;
-		Character->GetCharacterMovement()->MaxWalkSpeedCrouched += BuffCrouchSpeed;
+		Character->GetCombat()->BaseWalkSpeed = InitialBaseSpeed + BuffBaseSpeed;
+		Character->GetCombat()->AimWalkSpeed = InitialCrouchSpeed + BuffCrouchSpeed;
+		Character->GetCharacterMovement()->MaxWalkSpeed = InitialBaseSpeed + BuffBaseSpeed;
+		Character->GetCharacterMovement()->MaxWalkSpeedCrouched = InitialCrouchSpeed + BuffCrouchSpeed;
 		
 	}
 	MulticastSpeedBuff(Character->GetCharacterMovement()->MaxWalkSpeed, Character->GetCharacterMovement()->MaxWalkSpeedCrouched);

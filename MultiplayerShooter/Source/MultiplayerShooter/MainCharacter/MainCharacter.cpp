@@ -330,7 +330,7 @@ void AMainCharacter::SetOverlappingWeapon(ABaseWeapon* Weapon)
 	OverlappingWeapon = Weapon;
 	if (IsLocallyControlled())
 	{
-		if (OverlappingWeapon)
+		if (OverlappingWeapon && Health > 0.f)
 		{
 			OverlappingWeapon->ShowPickupWidget(true);
 		}
@@ -342,7 +342,10 @@ void AMainCharacter::OnRep_OverlappingWeapon(ABaseWeapon* LastWeapon)
 {
 	if (OverlappingWeapon)
 	{
-		OverlappingWeapon->ShowPickupWidget(true);
+		if (Health > 0.f)
+		{
+			OverlappingWeapon->ShowPickupWidget(true);
+		}
 	}
 	if (LastWeapon)
 	{
@@ -637,6 +640,7 @@ void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDa
 	if (Health <= 0.f)
 	{
 		AMainGameMode* MainGameMode = GetWorld()->GetAuthGameMode<AMainGameMode>();
+		
 		if (MainGameMode)
 		{
 			MyPlayerController = MyPlayerController == nullptr
@@ -648,14 +652,18 @@ void AMainCharacter::ReceiveDamage(AActor* DamagedActor, float Damage, const UDa
 	}
 }
 
-///Elimination
-
 void AMainCharacter::Elim()
 {
 	if (Combat && Combat->EquippedWeapon)
 	{
 		Combat->EquippedWeapon->Dropped();
 	}
+
+	if (OverlappingWeapon)
+	{
+		OverlappingWeapon->ShowPickupWidget(false);
+	}
+	
 	Multicast_Elim();
 	GetWorldTimerManager().SetTimer(
 		ElimTimer,

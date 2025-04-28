@@ -1,0 +1,9 @@
+<map id="ABaseWeapon::SpendRound" name="ABaseWeapon::SpendRound">
+<area shape="rect" id="Node000001" title=" " alt="" coords="283,29,473,56"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#a87839af8ca6d3be01b6521ce105772e2" title=" " alt="" coords="5,29,235,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,54,235,54,235,49,267,49"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#a106c429cae78229f74086bb175e1cf7e" title=" " alt="" coords="51,80,189,107"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="292,62,190,82,189,77,291,57"/>
+<area shape="poly" id="edge3_Node000002_Node000001" title=" " alt="" coords="250,31,282,31,282,37,250,36"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="165,17,150,10,120,8,93,10,78,15,74,20,81,27,77,31,69,21,74,11,92,5,120,3,151,5,167,12"/>
+</map>

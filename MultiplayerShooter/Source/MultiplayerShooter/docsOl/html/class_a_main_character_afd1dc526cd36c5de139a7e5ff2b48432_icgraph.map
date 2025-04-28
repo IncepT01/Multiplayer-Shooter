@@ -1,0 +1,14 @@
+<map id="AMainCharacter::GetCombat" name="AMainCharacter::GetCombat">
+<area shape="rect" id="Node000001" title=" " alt="" coords="943,71,1133,97"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a572fee9304cdf938bb02635e9eb91f66" title=" " alt="" coords="753,63,895,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="927,87,895,87,895,81,927,81"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a58bb90e2c607ae458ec045dbf2822b39" title=" " alt="" coords="562,29,704,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="738,72,704,66,705,60,739,66"/>
+<area shape="rect" id="Node000006" href="$class_a_my_player_controller.html#a6dc3bb158cda98a6fe1dab6933d2ca5d" title=" " alt="" coords="561,96,705,139"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="739,102,706,107,705,102,738,96"/>
+<area shape="rect" id="Node000004" href="$class_a_main_game_mode.html#a9ce74e01903ba5be1fe712f629b2aa77" title=" " alt="" coords="276,37,513,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="547,53,513,53,513,48,547,48"/>
+<area shape="rect" id="Node000005" href="$class_a_main_game_mode.html#ad1f68127027609b6b9083e860ffdeaf1" title=" " alt="" coords="5,29,228,72"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,53,228,53,228,48,260,48"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="162,16,145,10,116,8,90,10,74,15,67,21,69,28,64,29,62,19,71,10,89,5,117,3,146,5,164,11"/>
+</map>

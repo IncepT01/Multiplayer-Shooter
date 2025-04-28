@@ -135,7 +135,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-214.5" font-family="Arial" font-size="10.00">Multicast_Elim()</text>
 <text text-anchor="start" x="4" y="-198.5" font-family="Arial" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-198.5" font-family="Arial" font-size="10.00">UpdateHUDHealth()</text>
-<text text-anchor="start" x="14" y="-182.5" font-family="Arial" font-size="10.00">and 21 more...</text>
+<text text-anchor="start" x="14" y="-182.5" font-family="Arial" font-size="10.00">and 25 more...</text>
 <text text-anchor="start" x="4.38" y="-166.5" font-family="Arial" font-size="10.00">#</text>
 <text text-anchor="start" x="14" y="-166.5" font-family="Arial" font-size="10.00">BeginPlay()</text>
 <text text-anchor="start" x="4.38" y="-150.5" font-family="Arial" font-size="10.00">#</text>

@@ -1,4 +1,6 @@
-﻿#include "Components/AudioComponent.h"
+﻿#if WITH_EDITOR
+
+#include "Components/AudioComponent.h"
 #include "Misc/AutomationTest.h"
 #include "MultiplayerShooter/Persistence/SettingsSaveGame.h"
 #include "MultiplayerShooter/PlayerController/MyPlayerController.h"
@@ -32,3 +34,6 @@ bool FMyPlayerControllerJoinMidgameTest::RunTest(const FString& Parameters)
 
     return true;
 }
+
+
+#endif

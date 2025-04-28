@@ -34,9 +34,8 @@
 			"SpeedPickup.gen.cpp.obj",
 			"TurningInPlace.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
-			"BuffComponent.cpp.obj",
 			"ChatComponent.cpp.obj",
-			"LagCompensationComponent.cpp.obj",
+			"BaseWeapon.cpp.obj",
 			"Projectile.cpp.obj",
 			"ProjectileBullet.cpp.obj",
 			"ProjectileWeapon.cpp.obj",
@@ -61,15 +60,16 @@
 			"SpeedPickup.cpp.obj",
 			"MyPlayerController.cpp.obj",
 			"MainPlayerState.cpp.obj",
+			"BuffComponent.cpp.obj",
+			"CombatComponent.cpp.obj",
+			"LagCompensationComponent.cpp.obj",
+			"MainCharacter.cpp.obj",
 			"BaseWeaponTests.cpp.obj",
 			"BuffComponentTests.cpp.obj",
 			"ExampleTests.cpp.obj",
 			"MainCharacterTests.cpp.obj",
 			"MainGameModeTests.cpp.obj",
-			"MyPlayerControllerTests.cpp.obj",
-			"CombatComponent.cpp.obj",
-			"BaseWeapon.cpp.obj",
-			"MainCharacter.cpp.obj"
+			"MyPlayerControllerTests.cpp.obj"
 		]
 	}
 }

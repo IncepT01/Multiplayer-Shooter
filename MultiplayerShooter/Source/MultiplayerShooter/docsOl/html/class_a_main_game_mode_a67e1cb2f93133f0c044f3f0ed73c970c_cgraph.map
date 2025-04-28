@@ -1,0 +1,18 @@
+<map id="AMainGameMode::PlayerEliminated" name="AMainGameMode::PlayerEliminated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,237,107"/>
+<area shape="rect" id="Node000002" href="$class_a_main_player_state.html#abba13b280e637d9cc041999392596805" title=" " alt="" coords="285,21,490,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,77,308,49,309,54,186,82"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a9d0b7a05e0580099815730100ad9bfb6" title="Elimination." alt="" coords="313,80,462,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,91,297,91,297,96,237,96"/>
+<area shape="rect" id="Node000008" href="$class_a_main_game_state.html#a4e6bfb94716b9006ee0783d95b027732" title=" " alt="" coords="290,131,485,173"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="186,105,275,125,274,130,185,110"/>
+<area shape="rect" id="Node000003" href="$class_a_main_player_state.html#ad9548a5e9fb8bea3102cc8fd8689bcfa" title=" " alt="" coords="546,5,739,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,29,531,28,531,33,490,34"/>
+<area shape="rect" id="Node000005" href="$class_a_main_character.html#aea17dde5a15443622f0bf918c57cce6f" title=" " alt="" coords="552,72,734,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="462,91,536,91,536,96,462,96"/>
+<area shape="rect" id="Node000007" href="$class_a_main_character.html#a5691a3d428c1f9d6f6ed3d28cb29df10" title=" " alt="" coords="538,163,747,189"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="450,105,491,116,595,154,593,159,489,121,449,110"/>
+<area shape="rect" id="Node000006" href="$class_a_main_game_mode.html#a3713d86d5420f9c8fc8c0e5b055955a2" title=" " alt="" coords="795,80,1033,107"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="734,91,780,91,780,96,734,96"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="600,164,592,154,598,144,615,138,643,136,673,139,689,145,687,150,672,144,643,141,616,143,601,148,598,153,604,160"/>
+</map>

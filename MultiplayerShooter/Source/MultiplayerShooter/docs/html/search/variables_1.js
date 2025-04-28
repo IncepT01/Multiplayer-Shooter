@@ -17,10 +17,11 @@ var searchData=
   ['biscrouched_14',['bIsCrouched',['../class_u_my_anim_instance.html#a5f34a3004a4cdc87e08ed49f3f333608',1,'UMyAnimInstance']]],
   ['bisinair_15',['bIsInAir',['../class_u_my_anim_instance.html#ae49ecda2c6f1c469db5094c2ab0a3906',1,'UMyAnimInstance']]],
   ['blocallycontrolled_16',['bLocallyControlled',['../class_u_my_anim_instance.html#a7c8bfd4369961b1831239c734af8d36a',1,'UMyAnimInstance']]],
-  ['boxextent_17',['BoxExtent',['../struct_f_box_information.html#af05792261ffca7a4e3641f5114e71bdb',1,'FBoxInformation']]],
-  ['brotaterootbone_18',['bRotateRootBone',['../class_a_main_character.html#ac690a5a44562478b93b7e16f358c8c3b',1,'AMainCharacter::bRotateRootBone'],['../class_u_my_anim_instance.html#a9c26d749e51fc7a3806cbabeb447e410',1,'UMyAnimInstance::bRotateRootBone']]],
-  ['buff_19',['Buff',['../class_a_main_character.html#a45dc7eee49cc0fc2023a12e4f9ebc912',1,'AMainCharacter']]],
-  ['bufflist_20',['BuffList',['../class_a_main_game_mode.html#a93bd2a0417e38e5955f1bc6d278d3766',1,'AMainGameMode']]],
-  ['buseserversiderewind_21',['bUseServerSideRewind',['../class_a_base_weapon.html#ad61f925621157187d778573e91790170',1,'ABaseWeapon::bUseServerSideRewind'],['../class_a_projectile.html#a2545db2507877b34ea42d6382fa598c9',1,'AProjectile::bUseServerSideRewind']]],
-  ['bweaponequipped_22',['bWeaponEquipped',['../class_u_my_anim_instance.html#a1896dbeb6a9908166f1b3c2c042d3383',1,'UMyAnimInstance']]]
+  ['bmatchstateupdated_17',['bMatchStateUpdated',['../class_a_my_player_controller.html#af9529db62f9f6486facb8dda165bd394',1,'AMyPlayerController']]],
+  ['boxextent_18',['BoxExtent',['../struct_f_box_information.html#af05792261ffca7a4e3641f5114e71bdb',1,'FBoxInformation']]],
+  ['brotaterootbone_19',['bRotateRootBone',['../class_a_main_character.html#ac690a5a44562478b93b7e16f358c8c3b',1,'AMainCharacter::bRotateRootBone'],['../class_u_my_anim_instance.html#a9c26d749e51fc7a3806cbabeb447e410',1,'UMyAnimInstance::bRotateRootBone']]],
+  ['buff_20',['Buff',['../class_a_main_character.html#a45dc7eee49cc0fc2023a12e4f9ebc912',1,'AMainCharacter']]],
+  ['bufflist_21',['BuffList',['../class_a_main_game_mode.html#a93bd2a0417e38e5955f1bc6d278d3766',1,'AMainGameMode']]],
+  ['buseserversiderewind_22',['bUseServerSideRewind',['../class_a_base_weapon.html#ad61f925621157187d778573e91790170',1,'ABaseWeapon::bUseServerSideRewind'],['../class_a_projectile.html#a2545db2507877b34ea42d6382fa598c9',1,'AProjectile::bUseServerSideRewind']]],
+  ['bweaponequipped_23',['bWeaponEquipped',['../class_u_my_anim_instance.html#a1896dbeb6a9908166f1b3c2c042d3383',1,'UMyAnimInstance']]]
 ];

@@ -63,8 +63,7 @@ void UCombatComponent::BeginPlay()
 
 void UCombatComponent::TraceUnderCrosshairs(FHitResult& TraceHitResult)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("Traceing!"));
-	FVector2D ViewportSize;
+	FVector2D ViewportSize = FVector2D::ZeroVector;
 	if (GEngine && GEngine->GameViewport)
 	{
 		GEngine->GameViewport->GetViewportSize(ViewportSize);

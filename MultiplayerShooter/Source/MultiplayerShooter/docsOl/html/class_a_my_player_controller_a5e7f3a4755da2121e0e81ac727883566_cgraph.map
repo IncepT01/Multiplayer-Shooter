@@ -1,0 +1,9 @@
+<map id="AMyPlayerController::SetHUDTime" name="AMyPlayerController::SetHUDTime">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,147,115"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a72a209272a3fddb39a6446c83d1dd330" title=" " alt="" coords="240,5,382,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,71,225,48,226,53,148,76"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a23312ab13b910b000bc7bfaf675a2899" title=" " alt="" coords="195,72,427,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,91,179,91,179,96,147,96"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#aad0794e91f63e1b8196024960dc5ec4a" title=" " alt="" coords="220,139,402,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,111,219,131,218,136,146,116"/>
+</map>

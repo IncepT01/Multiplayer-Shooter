@@ -172,6 +172,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a716d288ac62e9f2037a6ab0c82e92f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d8d4e92875cf34582422c56ce20b63" id="r_a60d8d4e92875cf34582422c56ce20b63"><td class="memItemLeft" align="right" valign="top">FORCEINLINE FName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60d8d4e92875cf34582422c56ce20b63">GetMatchState</a> () const</td></tr>
 <tr class="separator:a60d8d4e92875cf34582422c56ce20b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340478fbf93615262721ae64cee4274d" id="r_a340478fbf93615262721ae64cee4274d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a340478fbf93615262721ae64cee4274d">SetMatchStateUpdated</a> (bool bUpdated)</td></tr>
+<tr class="separator:a340478fbf93615262721ae64cee4274d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375c1a6243ee603f5159dc35ac9589de" id="r_a375c1a6243ee603f5159dc35ac9589de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a375c1a6243ee603f5159dc35ac9589de">IsMatchStateUpdated</a> () const</td></tr>
+<tr class="separator:a375c1a6243ee603f5159dc35ac9589de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -274,6 +278,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a9fd59b6efec9b41f838403b7fb931bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f3ea4ebfac3469b090e5c423f693c1" id="r_a24f3ea4ebfac3469b090e5c423f693c1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f3ea4ebfac3469b090e5c423f693c1">HighPingThreshold</a> = 50.f</td></tr>
 <tr class="separator:a24f3ea4ebfac3469b090e5c423f693c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9529db62f9f6486facb8dda165bd394" id="r_af9529db62f9f6486facb8dda165bd394"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9529db62f9f6486facb8dda165bd394">bMatchStateUpdated</a> = false</td></tr>
+<tr class="separator:af9529db62f9f6486facb8dda165bd394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -605,8 +611,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00155">155</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a798f5a4d529bf99a1f9c7874fd07b816">CooldownTime</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00157">157</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a798f5a4d529bf99a1f9c7874fd07b816">CooldownTime</a>; }</div>
 <div class="ttc" id="aclass_a_my_player_controller_html_a798f5a4d529bf99a1f9c7874fd07b816"><div class="ttname"><a href="#a798f5a4d529bf99a1f9c7874fd07b816">AMyPlayerController::CooldownTime</a></div><div class="ttdeci">float CooldownTime</div><div class="ttdef"><b>Definition</b> <a href="_my_player_controller_8h_source.html#l00121">MyPlayerController.h:121</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -634,8 +640,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00156">156</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  156</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a007b3e0b421934e9ebda3ca4894fbc62">LevelStartingTime</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00158">158</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a007b3e0b421934e9ebda3ca4894fbc62">LevelStartingTime</a>; }</div>
 <div class="ttc" id="aclass_a_my_player_controller_html_a007b3e0b421934e9ebda3ca4894fbc62"><div class="ttname"><a href="#a007b3e0b421934e9ebda3ca4894fbc62">AMyPlayerController::LevelStartingTime</a></div><div class="ttdeci">float LevelStartingTime</div><div class="ttdef"><b>Definition</b> <a href="_my_player_controller_8h_source.html#l00118">MyPlayerController.h:118</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -696,8 +702,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00157">157</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  157</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac0618197614ae608d57743c7e71cf492">MatchState</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00159">159</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  159</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac0618197614ae608d57743c7e71cf492">MatchState</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -724,8 +730,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00154">154</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  154</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a885acbff59c1ac125f4a39d598dad74a">MatchTime</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00156">156</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  156</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a885acbff59c1ac125f4a39d598dad74a">MatchTime</a>; }</div>
 <div class="ttc" id="aclass_a_my_player_controller_html_a885acbff59c1ac125f4a39d598dad74a"><div class="ttname"><a href="#a885acbff59c1ac125f4a39d598dad74a">AMyPlayerController::MatchTime</a></div><div class="ttdeci">float MatchTime</div><div class="ttdef"><b>Definition</b> <a href="_my_player_controller_8h_source.html#l00119">MyPlayerController.h:119</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -790,8 +796,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00153">153</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  153</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a835bf2d5ef705bc75889f02e9e6a6c52">WarmupTime</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00155">155</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  155</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a835bf2d5ef705bc75889f02e9e6a6c52">WarmupTime</a>; }</div>
 <div class="ttc" id="aclass_a_my_player_controller_html_a835bf2d5ef705bc75889f02e9e6a6c52"><div class="ttname"><a href="#a835bf2d5ef705bc75889f02e9e6a6c52">AMyPlayerController::WarmupTime</a></div><div class="ttdeci">float WarmupTime</div><div class="ttdef"><b>Definition</b> <a href="_my_player_controller_8h_source.html#l00120">MyPlayerController.h:120</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -909,7 +915,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  567</span>    }</div>
 <div class="line"><span class="lineno">  568</span>}</div>
 <div class="ttc" id="aclass_a_main_character_html_a088c491561cbe1bcba341e2bfe2c5e7f"><div class="ttname"><a href="class_a_main_character.html#a088c491561cbe1bcba341e2bfe2c5e7f">AMainCharacter::bDisableGameplay</a></div><div class="ttdeci">bool bDisableGameplay</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8h_source.html#l00043">MainCharacter.h:43</a></div></div>
-<div class="ttc" id="aclass_a_main_character_html_afd1dc526cd36c5de139a7e5ff2b48432"><div class="ttname"><a href="class_a_main_character.html#afd1dc526cd36c5de139a7e5ff2b48432">AMainCharacter::GetCombat</a></div><div class="ttdeci">FORCEINLINE UCombatComponent * GetCombat() const</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8h_source.html#l00183">MainCharacter.h:183</a></div></div>
+<div class="ttc" id="aclass_a_main_character_html_afd1dc526cd36c5de139a7e5ff2b48432"><div class="ttname"><a href="class_a_main_character.html#afd1dc526cd36c5de139a7e5ff2b48432">AMainCharacter::GetCombat</a></div><div class="ttdeci">FORCEINLINE UCombatComponent * GetCombat() const</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8h_source.html#l00189">MainCharacter.h:189</a></div></div>
 <div class="ttc" id="aclass_a_main_game_state_html_ae6823ade956c11c71d6d45c2e03a8501"><div class="ttname"><a href="class_a_main_game_state.html#ae6823ade956c11c71d6d45c2e03a8501">AMainGameState::TopScoringPlayers</a></div><div class="ttdeci">TArray&lt; AMainPlayerState * &gt; TopScoringPlayers</div><div class="ttdef"><b>Definition</b> <a href="_main_game_state_8h_source.html#l00022">MainGameState.h:22</a></div></div>
 <div class="ttc" id="aclass_a_my_player_controller_html_a23312ab13b910b000bc7bfaf675a2899"><div class="ttname"><a href="#a23312ab13b910b000bc7bfaf675a2899">AMyPlayerController::SetHUDAnnouncementCountdown</a></div><div class="ttdeci">void SetHUDAnnouncementCountdown(float CountdownTime)</div><div class="ttdef"><b>Definition</b> <a href="_my_player_controller_8cpp_source.html#l00458">MyPlayerController.cpp:458</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -1012,6 +1018,35 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a375c1a6243ee603f5159dc35ac9589de" name="a375c1a6243ee603f5159dc35ac9589de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375c1a6243ee603f5159dc35ac9589de">&#9670;&#160;</a></span>IsMatchStateUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AMyPlayerController::IsMatchStateUpdated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00162">162</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  162</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#af9529db62f9f6486facb8dda165bd394">bMatchStateUpdated</a>; }</div>
+<div class="ttc" id="aclass_a_my_player_controller_html_af9529db62f9f6486facb8dda165bd394"><div class="ttname"><a href="#af9529db62f9f6486facb8dda165bd394">AMyPlayerController::bMatchStateUpdated</a></div><div class="ttdeci">bool bMatchStateUpdated</div><div class="ttdef"><b>Definition</b> <a href="_my_player_controller_8h_source.html#l00150">MyPlayerController.h:150</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a58bb90e2c607ae458ec045dbf2822b39" name="a58bb90e2c607ae458ec045dbf2822b39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58bb90e2c607ae458ec045dbf2822b39">&#9670;&#160;</a></span>OnMatchStateSet()</h2>
 
@@ -1104,7 +1139,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  134</span>    }</div>
 <div class="line"><span class="lineno">  135</span> }</div>
 <div class="ttc" id="aclass_a_main_character_html_a41872148b4dc83559f91efc5860dc24a"><div class="ttname"><a href="class_a_main_character.html#a41872148b4dc83559f91efc5860dc24a">AMainCharacter::GetHealth</a></div><div class="ttdeci">FORCEINLINE float GetHealth() const</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8h_source.html#l00179">MainCharacter.h:179</a></div></div>
-<div class="ttc" id="aclass_a_main_character_html_a6452297e758d54c183fa4a3d9b6bc768"><div class="ttname"><a href="class_a_main_character.html#a6452297e758d54c183fa4a3d9b6bc768">AMainCharacter::GetMaxHealth</a></div><div class="ttdeci">FORCEINLINE float GetMaxHealth() const</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8h_source.html#l00181">MainCharacter.h:181</a></div></div>
+<div class="ttc" id="aclass_a_main_character_html_a6452297e758d54c183fa4a3d9b6bc768"><div class="ttname"><a href="class_a_main_character.html#a6452297e758d54c183fa4a3d9b6bc768">AMainCharacter::GetMaxHealth</a></div><div class="ttdeci">FORCEINLINE float GetMaxHealth() const</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8h_source.html#l00182">MainCharacter.h:182</a></div></div>
 <div class="ttc" id="aclass_a_my_player_controller_html_a339037ab7ba08490ad88dc609882acab"><div class="ttname"><a href="#a339037ab7ba08490ad88dc609882acab">AMyPlayerController::SetHUDHealth</a></div><div class="ttdeci">void SetHUDHealth(float Health, float MaxHealth)</div><div class="ttdef"><b>Definition</b> <a href="_my_player_controller_8cpp_source.html#l00137">MyPlayerController.cpp:137</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1709,6 +1744,39 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a340478fbf93615262721ae64cee4274d" name="a340478fbf93615262721ae64cee4274d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340478fbf93615262721ae64cee4274d">&#9670;&#160;</a></span>SetMatchStateUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AMyPlayerController::SetMatchStateUpdated </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bUpdated</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00161">161</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{ <a class="code hl_variable" href="#af9529db62f9f6486facb8dda165bd394">bMatchStateUpdated</a> = bUpdated; }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_a_my_player_controller_a340478fbf93615262721ae64cee4274d_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="a128da3faf9060eabbd9783b49149eade" name="a128da3faf9060eabbd9783b49149eade"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a128da3faf9060eabbd9783b49149eade">&#9670;&#160;</a></span>SetMouseSensitivity()</h2>
 
@@ -2071,6 +2139,30 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00132">132</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
+
+</div>
+</div>
+<a id="af9529db62f9f6486facb8dda165bd394" name="af9529db62f9f6486facb8dda165bd394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9529db62f9f6486facb8dda165bd394">&#9670;&#160;</a></span>bMatchStateUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AMyPlayerController::bMatchStateUpdated = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_my_player_controller_8h_source.html#l00150">150</a> of file <a class="el" href="_my_player_controller_8h_source.html">MyPlayerController.h</a>.</p>
 
 </div>
 </div>

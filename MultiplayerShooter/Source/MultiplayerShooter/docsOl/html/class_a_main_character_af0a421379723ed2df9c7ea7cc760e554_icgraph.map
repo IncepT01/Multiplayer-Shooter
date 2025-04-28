@@ -1,0 +1,10 @@
+<map id="AMainCharacter::SetOverlappingWeapon" name="AMainCharacter::SetOverlappingWeapon">
+<area shape="rect" id="Node000001" title=" " alt="" coords="494,35,706,77"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#ad77388ee16e510acd1991a7e041d4a91" title=" " alt="" coords="239,5,435,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="478,45,435,40,436,35,479,40"/>
+<area shape="rect" id="Node000004" href="$class_a_base_weapon.html#a961a7c76a6ab11f316c2e4fa2ccf2c39" title=" " alt="" coords="228,72,446,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="479,72,447,76,446,71,478,67"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#a4a74e461d7c371a1d0ec9626d1325229" title=" " alt="" coords="5,43,180,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,43,180,48,180,43,223,38"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="212,73,180,69,181,64,212,68"/>
+</map>

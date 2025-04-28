@@ -1,0 +1,9 @@
+<map id="AMyPlayerController::OnPossess" name="AMyPlayerController::OnPossess">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,147,91"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a41872148b4dc83559f91efc5860dc24a" title=" " alt="" coords="207,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,51,221,33,222,39,147,56"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#a6452297e758d54c183fa4a3d9b6bc768" title=" " alt="" coords="195,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,67,179,67,179,72,147,72"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a339037ab7ba08490ad88dc609882acab" title=" " alt="" coords="228,107,369,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,85,213,103,212,108,146,90"/>
+</map>

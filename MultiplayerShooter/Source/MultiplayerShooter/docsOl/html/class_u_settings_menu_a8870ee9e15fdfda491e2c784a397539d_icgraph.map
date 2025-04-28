@@ -1,0 +1,5 @@
+<map id="USettingsMenu::OnVolumeChanged" name="USettingsMenu::OnVolumeChanged">
+<area shape="rect" id="Node000001" title=" " alt="" coords="268,5,499,32"/>
+<area shape="rect" id="Node000002" href="$class_u_settings_menu.html#a52446398a6c223f91f9b5126122fdc73" title=" " alt="" coords="5,5,220,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,21,220,21,220,16,252,16"/>
+</map>

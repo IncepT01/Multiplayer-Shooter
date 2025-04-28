@@ -1,0 +1,15 @@
+<map id="AMyPlayerController::ClientJoinMidgame" name="AMyPlayerController::ClientJoinMidgame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,147,139"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="40,96,38,86,44,77,57,71,76,69,96,72,109,78,106,83,95,77,76,75,58,77,48,81,43,87,45,95"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#ab60304264b2877374fc0ebb6fcdb7b26" title=" " alt="" coords="195,96,336,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,115,179,115,179,120,147,120"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a9db98d926dabd4c014f63e3d20879abd" title=" " alt="" coords="398,5,540,48"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="147,94,194,81,383,40,384,45,195,87,148,99"/>
+<area shape="rect" id="Node000005" href="$class_a_my_player_controller.html#a857b9e58fbef75850758a1f731fb14b3" title=" " alt="" coords="391,163,547,205"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="148,136,195,148,288,163,376,174,376,179,287,169,194,153,146,142"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,93,383,58,396,52,399,57,385,62,310,98"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a89ce730f701917d573d70cc049e32180" title=" " alt="" coords="384,96,554,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="336,115,368,115,368,120,336,120"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="333,137,388,155,386,160,332,142"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="430,96,429,86,435,77,449,71,469,69,491,72,504,78,502,83,490,77,469,75,450,77,438,81,434,87,435,95"/>
+</map>

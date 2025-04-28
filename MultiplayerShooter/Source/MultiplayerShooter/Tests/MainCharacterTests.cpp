@@ -1,4 +1,6 @@
-﻿#include "Misc/AutomationTest.h"
+﻿#if WITH_EDITOR
+
+#include "Misc/AutomationTest.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FOnRepReplicatedMovementTest, "Game.MainCharacter.OnRep_ReplicatedMovement",
@@ -20,3 +22,5 @@ bool FOnRepReplicatedMovementTest::RunTest(const FString& Parameters)
 
 	return true;
 }
+
+#endif

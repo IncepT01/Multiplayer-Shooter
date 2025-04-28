@@ -1,3 +1,4 @@
+#if WITH_EDITOR
 #include "Misc/AutomationTest.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMyBasicTest, "MultiplayerShooter.Unit.MyOwnTests", EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
@@ -17,3 +18,5 @@ bool FMySecondTest::RunTest(const FString& Parameters)
     TestEqual(TEXT("2 + 2 should be 4"), Result, 4);
     return true;
 }
+
+#endif

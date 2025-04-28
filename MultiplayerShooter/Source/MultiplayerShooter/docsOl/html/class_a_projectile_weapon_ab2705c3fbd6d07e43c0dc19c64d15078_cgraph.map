@@ -1,0 +1,5 @@
+<map id="AProjectileWeapon::Fire" name="AProjectileWeapon::Fire">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#a55c619ce23a54c6519a17198da66afa4" title=" " alt="" coords="215,5,430,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+</map>

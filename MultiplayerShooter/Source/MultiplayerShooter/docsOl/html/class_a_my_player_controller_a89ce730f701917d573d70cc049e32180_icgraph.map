@@ -1,0 +1,11 @@
+<map id="AMyPlayerController::ServerReportPingStatus" name="AMyPlayerController::ServerReportPingStatus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="384,63,554,105"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="502,49,490,44,469,41,450,43,438,48,434,54,435,62,430,63,429,53,435,44,449,38,469,36,491,38,504,45"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#ab60304264b2877374fc0ebb6fcdb7b26" title=" " alt="" coords="195,63,336,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,87,336,87,336,81,368,81"/>
+<area shape="rect" id="Node000003" href="$class_a_my_player_controller.html#a024c5466e70a2cabb7aa26cbd558778f" title=" " alt="" coords="5,29,147,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,72,146,66,147,60,180,66"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#ad0cd7f4f1cfcf6d8abd038d6a090f87e" title=" " alt="" coords="5,96,147,139"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="180,102,147,108,146,102,179,96"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="106,16,95,10,76,8,58,10,48,15,43,21,45,28,40,29,38,19,44,10,57,5,76,3,96,5,109,11"/>
+</map>

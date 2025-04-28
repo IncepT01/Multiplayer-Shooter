@@ -106,25 +106,28 @@ $(function(){initNavTree('_example_tests_8cpp_source.html',''); initResizable(tr
   <div class="headertitle"><div class="title">ExampleTests.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_example_tests_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;Misc/AutomationTest.h&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMyBasicTest, <span class="stringliteral">&quot;MultiplayerShooter.Unit.MyOwnTests&quot;</span>, EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keywordtype">bool</span> FMyBasicTest::RunTest(<span class="keyword">const</span> FString&amp; Parameters)</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    TestTrue(TEXT(<span class="stringliteral">&quot;True should be true&quot;</span>), <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Second test</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMySecondTest, <span class="stringliteral">&quot;MultiplayerShooter.Unit.MathCheck&quot;</span>, EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">bool</span> FMySecondTest::RunTest(<span class="keyword">const</span> FString&amp; Parameters)</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    int32 Result = 2 + 2;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    TestEqual(TEXT(<span class="stringliteral">&quot;2 + 2 should be 4&quot;</span>), Result, 4);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<a href="_example_tests_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#if WITH_EDITOR</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;Misc/AutomationTest.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMyBasicTest, <span class="stringliteral">&quot;MultiplayerShooter.Unit.MyOwnTests&quot;</span>, EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keywordtype">bool</span> FMyBasicTest::RunTest(<span class="keyword">const</span> FString&amp; Parameters)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    TestTrue(TEXT(<span class="stringliteral">&quot;True should be true&quot;</span>), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Second test</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMySecondTest, <span class="stringliteral">&quot;MultiplayerShooter.Unit.MathCheck&quot;</span>, EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">bool</span> FMySecondTest::RunTest(<span class="keyword">const</span> FString&amp; Parameters)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    int32 Result = 2 + 2;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    TestEqual(TEXT(<span class="stringliteral">&quot;2 + 2 should be 4&quot;</span>), Result, 4);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

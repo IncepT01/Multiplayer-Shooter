@@ -1,0 +1,9 @@
+<map id="MultiplayerShooter/HUD/SettingsMenu.h" name="MultiplayerShooter/HUD/SettingsMenu.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="179,5,329,48"/>
+<area shape="rect" id="Node000002" href="$_main_h_u_d_8cpp.html" title=" " alt="" coords="5,104,148,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,58,116,106,113,101,201,53"/>
+<area shape="rect" id="Node000003" href="$_settings_menu_8cpp.html" title=" " alt="" coords="172,104,336,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,63,256,104,251,104,251,63"/>
+<area shape="rect" id="Node000004" href="$_my_player_controller_8cpp.html" title=" " alt="" coords="360,96,537,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,53,392,93,389,98,308,58"/>
+</map>

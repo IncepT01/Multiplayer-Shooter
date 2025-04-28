@@ -1,0 +1,11 @@
+<map id="AMyPlayerController::OnMatchStateSet" name="AMyPlayerController::OnMatchStateSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,60,147,103"/>
+<area shape="rect" id="Node000002" href="$class_a_my_player_controller.html#a572fee9304cdf938bb02635e9eb91f66" title=" " alt="" coords="210,27,352,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,67,194,59,195,65,147,72"/>
+<area shape="rect" id="Node000005" href="$class_a_my_player_controller.html#a60eda2b87c5436856db0f5b2167af8a6" title=" " alt="" coords="195,93,367,136"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="147,90,180,96,179,101,146,95"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#afd1dc526cd36c5de139a7e5ff2b48432" title=" " alt="" coords="436,5,626,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,37,420,29,421,34,352,42"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a23312ab13b910b000bc7bfaf675a2899" title=" " alt="" coords="415,56,647,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="352,54,400,59,399,65,352,59"/>
+</map>

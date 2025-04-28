@@ -163,6 +163,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a591768941f8018928ea4d25a531fc052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6c05b067346ccb9e2b43dd1a07d18e5" id="r_af6c05b067346ccb9e2b43dd1a07d18e5"><td class="memItemLeft" align="right" valign="top">FORCEINLINE float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6c05b067346ccb9e2b43dd1a07d18e5">GetDamage</a> () const</td></tr>
 <tr class="separator:af6c05b067346ccb9e2b43dd1a07d18e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebc45fcd6fa3f599645e945923c1727" id="r_abebc45fcd6fa3f599645e945923c1727"><td class="memItemLeft" align="right" valign="top">FORCEINLINE int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abebc45fcd6fa3f599645e945923c1727">GetAmmo</a> () const</td></tr>
+<tr class="separator:abebc45fcd6fa3f599645e945923c1727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8599fded28bf3066721115d937e694a5" id="r_a8599fded28bf3066721115d937e694a5"><td class="memItemLeft" align="right" valign="top">FORCEINLINE <a class="el" href="_base_weapon_8h.html#a0c1aaf35d516ec773fcbb71c16ce1503">EWeaponState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8599fded28bf3066721115d937e694a5">GetWeaponState</a> () const</td></tr>
+<tr class="separator:a8599fded28bf3066721115d937e694a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35d78f70f18364e1cf395698d1070ba" id="r_ac35d78f70f18364e1cf395698d1070ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac35d78f70f18364e1cf395698d1070ba">IsEmpty</a> ()</td></tr>
 <tr class="separator:ac35d78f70f18364e1cf395698d1070ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -413,18 +417,47 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="class_a_projectile_weapon.html#ab2705c3fbd6d07e43c0dc19c64d15078">AProjectileWeapon</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00283">283</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  284</span>{</div>
-<div class="line"><span class="lineno">  285</span>    </div>
-<div class="line"><span class="lineno">  286</span>    <a class="code hl_function" href="#aca65357c857be2de97da359100804be2">SpendRound</a>();</div>
-<div class="line"><span class="lineno">  287</span>}</div>
-<div class="ttc" id="aclass_a_base_weapon_html_aca65357c857be2de97da359100804be2"><div class="ttname"><a href="#aca65357c857be2de97da359100804be2">ABaseWeapon::SpendRound</a></div><div class="ttdeci">void SpendRound()</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8cpp_source.html#l00234">BaseWeapon.cpp:234</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00286">286</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  287</span>{</div>
+<div class="line"><span class="lineno">  288</span>    </div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_function" href="#aca65357c857be2de97da359100804be2">SpendRound</a>();</div>
+<div class="line"><span class="lineno">  290</span>}</div>
+<div class="ttc" id="aclass_a_base_weapon_html_aca65357c857be2de97da359100804be2"><div class="ttname"><a href="#aca65357c857be2de97da359100804be2">ABaseWeapon::SpendRound</a></div><div class="ttdeci">void SpendRound()</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8cpp_source.html#l00237">BaseWeapon.cpp:237</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_a_base_weapon_a106c429cae78229f74086bb175e1cf7e_cgraph.svg" width="100%" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
+</div>
+</div>
+<a id="abebc45fcd6fa3f599645e945923c1727" name="abebc45fcd6fa3f599645e945923c1727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebc45fcd6fa3f599645e945923c1727">&#9670;&#160;</a></span>GetAmmo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FORCEINLINE int32 ABaseWeapon::GetAmmo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_base_weapon_8h_source.html#l00155">155</a> of file <a class="el" href="_base_weapon_8h_source.html">BaseWeapon.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  155</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a>; }</div>
+<div class="ttc" id="aclass_a_base_weapon_html_a587aedcde6bde60a542062ea793802d4"><div class="ttname"><a href="#a587aedcde6bde60a542062ea793802d4">ABaseWeapon::Ammo</a></div><div class="ttdeci">int32 Ammo</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8h_source.html#l00140">BaseWeapon.h:140</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0856d48124b9af8b196260f4f1ecd1b9" name="a0856d48124b9af8b196260f4f1ecd1b9"></a>
@@ -566,6 +599,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a8599fded28bf3066721115d937e694a5" name="a8599fded28bf3066721115d937e694a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8599fded28bf3066721115d937e694a5">&#9670;&#160;</a></span>GetWeaponState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FORCEINLINE <a class="el" href="_base_weapon_8h.html#a0c1aaf35d516ec773fcbb71c16ce1503">EWeaponState</a> ABaseWeapon::GetWeaponState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_base_weapon_8h_source.html#l00156">156</a> of file <a class="el" href="_base_weapon_8h_source.html">BaseWeapon.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  156</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#abc4370adbed340cbee1081e010a6bac0">WeaponState</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ae3cecbd289aab6fb711b25cdd35326d3" name="ae3cecbd289aab6fb711b25cdd35326d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3cecbd289aab6fb711b25cdd35326d3">&#9670;&#160;</a></span>GetZoomedFOV()</h2>
 
@@ -639,11 +700,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00277">277</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  278</span>{</div>
-<div class="line"><span class="lineno">  279</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a> &lt;= 0;</div>
-<div class="line"><span class="lineno">  280</span>}</div>
-<div class="ttc" id="aclass_a_base_weapon_html_a587aedcde6bde60a542062ea793802d4"><div class="ttname"><a href="#a587aedcde6bde60a542062ea793802d4">ABaseWeapon::Ammo</a></div><div class="ttdeci">int32 Ammo</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8h_source.html#l00140">BaseWeapon.h:140</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00280">280</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  281</span>{</div>
+<div class="line"><span class="lineno">  282</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a> &lt;= 0;</div>
+<div class="line"><span class="lineno">  283</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -705,21 +765,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00262">262</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
-<div class="line"><span class="lineno">  264</span>    Super::OnRep_Owner();</div>
-<div class="line"><span class="lineno">  265</span>    <span class="keywordflow">if</span> (Owner == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  266</span>    {</div>
-<div class="line"><span class="lineno">  267</span>        <a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  268</span>        <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  269</span>    }</div>
-<div class="line"><span class="lineno">  270</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  271</span>    {</div>
-<div class="line"><span class="lineno">  272</span>        <a class="code hl_function" href="#a87d9c1d39b25aae299790b857b07182d">SetHUDAmmo</a>();</div>
-<div class="line"><span class="lineno">  273</span>    }</div>
-<div class="line"><span class="lineno">  274</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00265">265</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  266</span>{</div>
+<div class="line"><span class="lineno">  267</span>    Super::OnRep_Owner();</div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">if</span> (Owner == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  269</span>    {</div>
+<div class="line"><span class="lineno">  270</span>        <a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  271</span>        <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  272</span>    }</div>
+<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  274</span>    {</div>
+<div class="line"><span class="lineno">  275</span>        <a class="code hl_function" href="#a87d9c1d39b25aae299790b857b07182d">SetHUDAmmo</a>();</div>
+<div class="line"><span class="lineno">  276</span>    }</div>
+<div class="line"><span class="lineno">  277</span>}</div>
 <div class="ttc" id="aclass_a_base_weapon_html_a6a0f024f29f8e06be3f7460cd08da34c"><div class="ttname"><a href="#a6a0f024f29f8e06be3f7460cd08da34c">ABaseWeapon::OwnerController</a></div><div class="ttdeci">class AMyPlayerController * OwnerController</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8h_source.html#l00112">BaseWeapon.h:112</a></div></div>
-<div class="ttc" id="aclass_a_base_weapon_html_a87d9c1d39b25aae299790b857b07182d"><div class="ttname"><a href="#a87d9c1d39b25aae299790b857b07182d">ABaseWeapon::SetHUDAmmo</a></div><div class="ttdeci">void SetHUDAmmo()</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8cpp_source.html#l00194">BaseWeapon.cpp:194</a></div></div>
+<div class="ttc" id="aclass_a_base_weapon_html_a87d9c1d39b25aae299790b857b07182d"><div class="ttname"><a href="#a87d9c1d39b25aae299790b857b07182d">ABaseWeapon::SetHUDAmmo</a></div><div class="ttdeci">void SetHUDAmmo()</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8cpp_source.html#l00189">BaseWeapon.cpp:189</a></div></div>
 <div class="ttc" id="aclass_a_base_weapon_html_ae5eb779c46f64b66603f7268b2022232"><div class="ttname"><a href="#ae5eb779c46f64b66603f7268b2022232">ABaseWeapon::OwnerCharacter</a></div><div class="ttdeci">class AMainCharacter * OwnerCharacter</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8h_source.html#l00110">BaseWeapon.h:110</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -815,7 +875,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   71</span>        Character-&gt;<a class="code hl_function" href="class_a_main_character.html#af0a421379723ed2df9c7ea7cc760e554">SetOverlappingWeapon</a>(<span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">   72</span>    }</div>
 <div class="line"><span class="lineno">   73</span>}</div>
-<div class="ttc" id="aclass_a_main_character_html_af0a421379723ed2df9c7ea7cc760e554"><div class="ttname"><a href="class_a_main_character.html#af0a421379723ed2df9c7ea7cc760e554">AMainCharacter::SetOverlappingWeapon</a></div><div class="ttdeci">void SetOverlappingWeapon(ABaseWeapon *Weapon)</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8cpp_source.html#l00320">MainCharacter.cpp:320</a></div></div>
+<div class="ttc" id="aclass_a_main_character_html_af0a421379723ed2df9c7ea7cc760e554"><div class="ttname"><a href="class_a_main_character.html#af0a421379723ed2df9c7ea7cc760e554">AMainCharacter::SetOverlappingWeapon</a></div><div class="ttdeci">void SetOverlappingWeapon(ABaseWeapon *Weapon)</div><div class="ttdef"><b>Definition</b> <a href="_main_character_8cpp_source.html#l00324">MainCharacter.cpp:324</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -912,44 +972,52 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00194">194</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  195</span>{</div>
-<div class="line"><span class="lineno">  196</span>    <span class="comment">//UE_LOG(LogTemp, Warning, TEXT(&quot;SetHUD Ammo&quot;));</span></div>
-<div class="line"><span class="lineno">  197</span>    <span class="comment">//OwnerCharacter = OwnerCharacter == nullptr ? Cast&lt;AMainCharacter&gt;(GetOwner()) : OwnerCharacter;</span></div>
-<div class="line"><span class="lineno">  198</span>    <a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a> = Cast&lt;AMainCharacter&gt;(GetOwner());</div>
-<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a>)</div>
-<div class="line"><span class="lineno">  200</span>    {</div>
-<div class="line"><span class="lineno">  201</span>        <span class="comment">//UE_LOG(LogTemp, Warning, TEXT(&quot;Wep&#39;s new owner: %s&quot;), *OwnerCharacter-&gt;GetName());</span></div>
-<div class="line"><span class="lineno">  202</span>        </div>
-<div class="line"><span class="lineno">  203</span>        <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a> = <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a> == <span class="keyword">nullptr</span></div>
-<div class="line"><span class="lineno">  204</span>                              ? Cast&lt;AMyPlayerController&gt;(<a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a>-&gt;Controller)</div>
-<div class="line"><span class="lineno">  205</span>                              : <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>;</div>
-<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>)</div>
-<div class="line"><span class="lineno">  207</span>        {</div>
-<div class="line"><span class="lineno">  208</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a>-&gt;IsLocallyControlled())</div>
-<div class="line"><span class="lineno">  209</span>            {</div>
-<div class="line"><span class="lineno">  210</span>                AMainHUD* MainHUD = Cast&lt;AMainHUD&gt;(<a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>-&gt;GetHUD());</div>
-<div class="line"><span class="lineno">  211</span>                <span class="comment">//Retry if no MainHUD</span></div>
-<div class="line"><span class="lineno">  212</span>                <span class="keywordflow">if</span> (IsValid(MainHUD))</div>
-<div class="line"><span class="lineno">  213</span>                {</div>
-<div class="line"><span class="lineno">  214</span>                    <span class="keywordflow">if</span> (HasAuthority())</div>
-<div class="line"><span class="lineno">  215</span>                    {</div>
-<div class="line"><span class="lineno">  216</span>                        <span class="comment">//UE_LOG(LogTemp, Warning, TEXT(&quot;Local MainHUD found, adding overlay&quot;));</span></div>
-<div class="line"><span class="lineno">  217</span>                        MainHUD-&gt;<a class="code hl_function" href="class_a_main_h_u_d.html#a3109ae3556f10687da6dc383ac708f47">AddCharacterOverlay</a>();</div>
-<div class="line"><span class="lineno">  218</span>                    }</div>
-<div class="line"><span class="lineno">  219</span>                }</div>
-<div class="line"><span class="lineno">  220</span>            }</div>
-<div class="line"><span class="lineno">  221</span>            <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>-&gt;SetHUDWeaponAmmo(<a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a>);</div>
-<div class="line"><span class="lineno">  222</span>        }</div>
-<div class="line"><span class="lineno">  223</span>    }</div>
-<div class="line"><span class="lineno">  224</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  225</span>    {</div>
-<div class="line"><span class="lineno">  226</span>        <span class="keywordflow">if</span> (HasAuthority())</div>
-<div class="line"><span class="lineno">  227</span>        {</div>
-<div class="line"><span class="lineno">  228</span>            UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;Server No ownerCharacter in SetHUDAmmo&quot;</span>));</div>
-<div class="line"><span class="lineno">  229</span>        }</div>
-<div class="line"><span class="lineno">  230</span>    }</div>
-<div class="line"><span class="lineno">  231</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00189">189</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  190</span>{</div>
+<div class="line"><span class="lineno">  191</span>    <span class="keywordflow">if</span> (HasAuthority())</div>
+<div class="line"><span class="lineno">  192</span>    {</div>
+<div class="line"><span class="lineno">  193</span>        UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;Server SetHUD Ammo!&quot;</span>));</div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="line"><span class="lineno">  195</span>    <span class="comment">//OwnerCharacter = OwnerCharacter == nullptr ? Cast&lt;AMainCharacter&gt;(GetOwner()) : OwnerCharacter;</span></div>
+<div class="line"><span class="lineno">  196</span>    </div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">if</span> (!IsValid(GetOwner()))</div>
+<div class="line"><span class="lineno">  198</span>    {</div>
+<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  200</span>    }</div>
+<div class="line"><span class="lineno">  201</span>    <a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a> = Cast&lt;AMainCharacter&gt;(GetOwner());</div>
+<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a>)</div>
+<div class="line"><span class="lineno">  203</span>    {</div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">//UE_LOG(LogTemp, Warning, TEXT(&quot;Wep&#39;s new owner: %s&quot;), *OwnerCharacter-&gt;GetName());</span></div>
+<div class="line"><span class="lineno">  205</span>        </div>
+<div class="line"><span class="lineno">  206</span>        <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a> = <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a> == <span class="keyword">nullptr</span></div>
+<div class="line"><span class="lineno">  207</span>                              ? Cast&lt;AMyPlayerController&gt;(<a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a>-&gt;Controller)</div>
+<div class="line"><span class="lineno">  208</span>                              : <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>;</div>
+<div class="line"><span class="lineno">  209</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>)</div>
+<div class="line"><span class="lineno">  210</span>        {</div>
+<div class="line"><span class="lineno">  211</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae5eb779c46f64b66603f7268b2022232">OwnerCharacter</a>-&gt;IsLocallyControlled())</div>
+<div class="line"><span class="lineno">  212</span>            {</div>
+<div class="line"><span class="lineno">  213</span>                AMainHUD* MainHUD = Cast&lt;AMainHUD&gt;(<a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>-&gt;GetHUD());</div>
+<div class="line"><span class="lineno">  214</span>                <span class="comment">//Retry if no MainHUD</span></div>
+<div class="line"><span class="lineno">  215</span>                <span class="keywordflow">if</span> (IsValid(MainHUD))</div>
+<div class="line"><span class="lineno">  216</span>                {</div>
+<div class="line"><span class="lineno">  217</span>                    <span class="keywordflow">if</span> (HasAuthority())</div>
+<div class="line"><span class="lineno">  218</span>                    {</div>
+<div class="line"><span class="lineno">  219</span>                        <span class="comment">//UE_LOG(LogTemp, Warning, TEXT(&quot;Local MainHUD found, adding overlay&quot;));</span></div>
+<div class="line"><span class="lineno">  220</span>                        MainHUD-&gt;<a class="code hl_function" href="class_a_main_h_u_d.html#a3109ae3556f10687da6dc383ac708f47">AddCharacterOverlay</a>();</div>
+<div class="line"><span class="lineno">  221</span>                    }</div>
+<div class="line"><span class="lineno">  222</span>                }</div>
+<div class="line"><span class="lineno">  223</span>            }</div>
+<div class="line"><span class="lineno">  224</span>            <a class="code hl_variable" href="#a6a0f024f29f8e06be3f7460cd08da34c">OwnerController</a>-&gt;SetHUDWeaponAmmo(<a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a>);</div>
+<div class="line"><span class="lineno">  225</span>        }</div>
+<div class="line"><span class="lineno">  226</span>    }</div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  228</span>    {</div>
+<div class="line"><span class="lineno">  229</span>        <span class="keywordflow">if</span> (HasAuthority())</div>
+<div class="line"><span class="lineno">  230</span>        {</div>
+<div class="line"><span class="lineno">  231</span>            UE_LOG(LogTemp, Warning, TEXT(<span class="stringliteral">&quot;Server No ownerCharacter in SetHUDAmmo&quot;</span>));</div>
+<div class="line"><span class="lineno">  232</span>        }</div>
+<div class="line"><span class="lineno">  233</span>    }</div>
+<div class="line"><span class="lineno">  234</span>}</div>
 <div class="ttc" id="aclass_a_main_h_u_d_html_a3109ae3556f10687da6dc383ac708f47"><div class="ttname"><a href="class_a_main_h_u_d.html#a3109ae3556f10687da6dc383ac708f47">AMainHUD::AddCharacterOverlay</a></div><div class="ttdeci">void AddCharacterOverlay()</div><div class="ttdef"><b>Definition</b> <a href="_main_h_u_d_8cpp_source.html#l00017">MainHUD.cpp:17</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1060,21 +1128,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00234">234</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  235</span>{</div>
-<div class="line"><span class="lineno">  236</span>    <span class="comment">//UE_LOG(LogTemp, Warning, TEXT(&quot;Spending round&quot;));</span></div>
-<div class="line"><span class="lineno">  237</span>    <a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a> = FMath::Clamp(<a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a> - 1, 0, <a class="code hl_variable" href="#af1ac6f94285290eb99efee634ad82b89">MagCapacity</a>);</div>
-<div class="line"><span class="lineno">  238</span>    <a class="code hl_function" href="#a87d9c1d39b25aae299790b857b07182d">SetHUDAmmo</a>();</div>
-<div class="line"><span class="lineno">  239</span>    <span class="keywordflow">if</span> (HasAuthority())</div>
-<div class="line"><span class="lineno">  240</span>    {</div>
-<div class="line"><span class="lineno">  241</span>        <a class="code hl_function" href="#a87839af8ca6d3be01b6521ce105772e2">ClientUpdateAmmo</a>(<a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a>);</div>
-<div class="line"><span class="lineno">  242</span>    }</div>
-<div class="line"><span class="lineno">  243</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  244</span>    {</div>
-<div class="line"><span class="lineno">  245</span>        <a class="code hl_variable" href="#aa986a4e3f66a1e3c3c313787f7346a56">Sequence</a>++;</div>
-<div class="line"><span class="lineno">  246</span>    }</div>
-<div class="line"><span class="lineno">  247</span>    </div>
-<div class="line"><span class="lineno">  248</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_base_weapon_8cpp_source.html#l00237">237</a> of file <a class="el" href="_base_weapon_8cpp_source.html">BaseWeapon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  238</span>{</div>
+<div class="line"><span class="lineno">  239</span>    <span class="comment">//UE_LOG(LogTemp, Warning, TEXT(&quot;Spending round&quot;));</span></div>
+<div class="line"><span class="lineno">  240</span>    <a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a> = FMath::Clamp(<a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a> - 1, 0, <a class="code hl_variable" href="#af1ac6f94285290eb99efee634ad82b89">MagCapacity</a>);</div>
+<div class="line"><span class="lineno">  241</span>    <a class="code hl_function" href="#a87d9c1d39b25aae299790b857b07182d">SetHUDAmmo</a>();</div>
+<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">if</span> (HasAuthority())</div>
+<div class="line"><span class="lineno">  243</span>    {</div>
+<div class="line"><span class="lineno">  244</span>        <a class="code hl_function" href="#a87839af8ca6d3be01b6521ce105772e2">ClientUpdateAmmo</a>(<a class="code hl_variable" href="#a587aedcde6bde60a542062ea793802d4">Ammo</a>);</div>
+<div class="line"><span class="lineno">  245</span>    }</div>
+<div class="line"><span class="lineno">  246</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  247</span>    {</div>
+<div class="line"><span class="lineno">  248</span>        <a class="code hl_variable" href="#aa986a4e3f66a1e3c3c313787f7346a56">Sequence</a>++;</div>
+<div class="line"><span class="lineno">  249</span>    }</div>
+<div class="line"><span class="lineno">  250</span>    </div>
+<div class="line"><span class="lineno">  251</span>}</div>
 <div class="ttc" id="aclass_a_base_weapon_html_a87839af8ca6d3be01b6521ce105772e2"><div class="ttname"><a href="#a87839af8ca6d3be01b6521ce105772e2">ABaseWeapon::ClientUpdateAmmo</a></div><div class="ttdeci">void ClientUpdateAmmo(int32 ServerAmmo)</div></div>
 <div class="ttc" id="aclass_a_base_weapon_html_aa986a4e3f66a1e3c3c313787f7346a56"><div class="ttname"><a href="#aa986a4e3f66a1e3c3c313787f7346a56">ABaseWeapon::Sequence</a></div><div class="ttdeci">int32 Sequence</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8h_source.html#l00035">BaseWeapon.h:35</a></div></div>
 <div class="ttc" id="aclass_a_base_weapon_html_af1ac6f94285290eb99efee634ad82b89"><div class="ttname"><a href="#af1ac6f94285290eb99efee634ad82b89">ABaseWeapon::MagCapacity</a></div><div class="ttdeci">int32 MagCapacity</div><div class="ttdef"><b>Definition</b> <a href="_base_weapon_8h_source.html#l00143">BaseWeapon.h:143</a></div></div>

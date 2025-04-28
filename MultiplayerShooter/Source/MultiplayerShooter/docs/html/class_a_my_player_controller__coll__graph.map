@@ -1,13 +1,13 @@
 <map id="AMyPlayerController" name="AMyPlayerController">
-<area shape="rect" id="Node000001" title=" " alt="" coords="259,732,494,1847"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="259,732,494,1761"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="152,481,265,551"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,565,262,749,257,750,217,566"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,565,262,736,257,737,217,566"/>
 <area shape="rect" id="Node000003" href="$class_a_main_h_u_d.html" title=" " alt="" coords="447,364,607,668"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="501,668,491,716,486,715,495,667"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="499,668,489,716,484,715,494,667"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="726,177,776,247"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="735,262,716,301,693,340,667,378,609,443,605,440,662,374,689,337,712,299,730,259"/>
 <area shape="rect" id="Node000005" href="$class_u_character_overlay.html" title=" " alt="" coords="209,135,363,289"/>
-<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="295,289,331,715,326,715,290,290"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="295,289,328,668,332,715,327,715,323,668,290,289"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="329,287,350,314,374,338,388,346,401,349,415,353,430,362,437,368,434,372,427,366,413,358,400,355,386,351,370,342,346,318,325,290"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="294,5,384,75"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="327,89,312,136,307,134,322,88"/>
@@ -23,7 +23,7 @@
 <area shape="rect" id="Node000010" href="$struct_f_h_u_d_package.html" title=" " alt="" coords="574,124,702,300"/>
 <area shape="poly" id="edge12_Node000003_Node000010" title=" " alt="" coords="609,301,591,349,586,347,604,299"/>
 <area shape="rect" id="Node000011" href="$class_u_settings_save_game.html" title=" " alt="" coords="760,471,894,561"/>
-<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="804,562,505,1074,500,1071,800,560"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="802,563,505,1043,501,1040,798,560"/>
 <area shape="rect" id="Node000012" title=" " alt="" coords="960,177,1046,247"/>
 <area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="982,261,939,341,858,472,854,469,934,339,977,259"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="UBuffDatabaseManager::LoadBuffs" name="UBuffDatabaseManager::LoadBuffs">
+<area shape="rect" id="Node000001" title=" " alt="" coords="516,29,676,72"/>
+<area shape="rect" id="Node000002" href="$class_a_main_game_mode.html#adcc0f620c93ea4cef3b00ca95dea68e7" title=" " alt="" coords="276,37,468,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="500,53,468,53,468,48,500,48"/>
+<area shape="rect" id="Node000003" href="$class_a_main_game_mode.html#ad1f68127027609b6b9083e860ffdeaf1" title=" " alt="" coords="5,29,228,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,53,228,53,228,48,260,48"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="158,16,142,10,116,8,92,10,77,15,72,21,74,28,68,29,66,19,74,10,91,5,117,3,144,5,160,11"/>
+</map>

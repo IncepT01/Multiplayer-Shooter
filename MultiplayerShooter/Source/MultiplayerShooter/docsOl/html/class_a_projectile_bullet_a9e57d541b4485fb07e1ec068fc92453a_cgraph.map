@@ -1,0 +1,9 @@
+<map id="AProjectileBullet::OnHit" name="AProjectileBullet::OnHit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,131,107"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a8d65d0a87c24d6dad50502cbd01ae7ef" title=" " alt="" coords="207,5,400,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,67,200,50,201,55,132,72"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#a5a6433b6b91ca0944568e9f217648fdd" title=" " alt="" coords="179,72,428,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,83,163,83,163,88,131,88"/>
+<area shape="rect" id="Node000004" href="$class_a_my_player_controller.html#a72a209272a3fddb39a6446c83d1dd330" title=" " alt="" coords="233,123,374,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,98,218,120,217,125,130,103"/>
+</map>

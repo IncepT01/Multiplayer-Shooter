@@ -1,10 +1,12 @@
 <map id="AMainCharacter::UpdateHUDHealth" name="AMainCharacter::UpdateHUDHealth">
-<area shape="rect" id="Node000001" title=" " alt="" coords="504,34,737,60"/>
-<area shape="rect" id="Node000002" href="$class_a_main_character.html#a096ef46022cd84777b571482729ed02f" title=" " alt="" coords="5,34,188,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="550,32,456,16,346,8,236,16,188,25,144,36,143,30,187,19,235,11,346,3,456,11,551,27"/>
-<area shape="rect" id="Node000003" href="$class_a_main_character.html#a81b04850e2ddb2d233bfb612fe0c809e" title=" " alt="" coords="264,26,428,68"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="489,50,428,50,428,44,489,44"/>
-<area shape="rect" id="Node000004" href="$class_a_main_character.html#a33d3267c0046be93c39178a2ed3944b3" title=" " alt="" coords="236,92,456,119"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="540,67,413,94,411,89,539,61"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="269,91,235,83,155,63,156,58,236,78,270,86"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="504,66,737,93"/>
+<area shape="rect" id="Node000002" href="$class_a_main_character.html#a096ef46022cd84777b571482729ed02f" title=" " alt="" coords="5,37,188,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,61,521,38,455,19,394,10,346,8,236,19,188,28,144,39,143,34,187,23,235,14,346,3,395,5,457,14,522,33,580,57"/>
+<area shape="rect" id="Node000003" href="$class_a_main_character.html#a81b04850e2ddb2d233bfb612fe0c809e" title=" " alt="" coords="264,29,428,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="488,68,428,61,429,56,489,63"/>
+<area shape="rect" id="Node000004" href="$class_a_main_character.html#a33d3267c0046be93c39178a2ed3944b3" title=" " alt="" coords="236,95,456,122"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="489,96,457,100,456,94,488,91"/>
+<area shape="rect" id="Node000005" href="$class_a_main_character.html#a44a6be77fb1c8617c144a85fc084ad2b" title=" " alt="" coords="272,146,420,173"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="568,101,457,137,412,148,411,143,455,132,566,96"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="269,94,235,86,155,67,156,61,236,81,270,89"/>
 </map>

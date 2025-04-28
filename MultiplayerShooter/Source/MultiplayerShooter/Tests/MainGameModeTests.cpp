@@ -1,4 +1,6 @@
-﻿#include "Misc/AutomationTest.h"
+﻿#if WITH_EDITOR
+
+#include "Misc/AutomationTest.h"
 #include "Tests/AutomationEditorCommon.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "MultiplayerShooter/PlayerController/MYPlayerController.h"
@@ -60,3 +62,6 @@ bool FMainGameModeTickTest::RunTest(const FString& Parameters)
 
     return true;
 }
+
+
+ #endif

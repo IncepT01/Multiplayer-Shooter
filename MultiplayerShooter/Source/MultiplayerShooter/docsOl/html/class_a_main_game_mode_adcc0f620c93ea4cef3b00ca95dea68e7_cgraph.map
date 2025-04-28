@@ -1,0 +1,7 @@
+<map id="AMainGameMode::BeginPlay" name="AMainGameMode::BeginPlay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,198,61"/>
+<area shape="rect" id="Node000002" href="$class_u_buff_database_manager.html#ae866f9a543fc1382dfa84a64cc7e8384" title=" " alt="" coords="246,5,435,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,34,230,30,231,35,199,39"/>
+<area shape="rect" id="Node000003" href="$class_u_buff_database_manager.html#abe0d0f39929b126a6f911df6b1555228" title=" " alt="" coords="260,56,420,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,57,245,63,244,68,198,62"/>
+</map>

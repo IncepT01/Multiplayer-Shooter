@@ -1,4 +1,6 @@
-﻿#include "Misc/AutomationTest.h"
+﻿#if WITH_EDITOR
+
+#include "Misc/AutomationTest.h"
 #include "Tests/AutomationEditorCommon.h"
 #include "MultiplayerShooter/MainCharacter/MainCharacter.h"
 #include "MultiplayerShooter/ActorComponents/BuffComponent.h"
@@ -70,3 +72,5 @@ bool FBuffComponentSpeedBuffTest::RunTest(const FString& Parameters)
     return true;
 }
 
+
+#endif

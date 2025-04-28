@@ -1,0 +1,13 @@
+<map id="ABaseWeapon::Fire" name="ABaseWeapon::Fire">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,143,56"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#aca65357c857be2de97da359100804be2" title=" " alt="" coords="191,29,381,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,40,175,40,175,45,143,45"/>
+<area shape="rect" id="Node000003" href="$class_a_base_weapon.html#a87839af8ca6d3be01b6521ce105772e2" title=" " alt="" coords="429,29,658,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,49,413,49,413,54,381,54"/>
+<area shape="rect" id="Node000004" href="$class_a_base_weapon.html#a87d9c1d39b25aae299790b857b07182d" title=" " alt="" coords="442,80,645,107"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="358,54,458,74,457,79,357,59"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="429,36,397,36,397,31,429,31"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="501,31,493,21,498,11,515,5,544,3,575,5,591,12,589,17,573,10,544,8,516,10,501,15,498,20,505,27"/>
+<area shape="rect" id="Node000005" href="$class_a_main_h_u_d.html#a3109ae3556f10687da6dc383ac708f47" title=" " alt="" coords="706,80,928,107"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="646,91,691,91,691,96,646,96"/>
+</map>

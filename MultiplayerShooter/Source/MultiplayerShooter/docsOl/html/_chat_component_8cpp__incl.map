@@ -1,0 +1,39 @@
+<map id="MultiplayerShooter/ActorComponents/ChatComponent.cpp" name="MultiplayerShooter/ActorComponents/ChatComponent.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="886,5,1141,48"/>
+<area shape="rect" id="Node000002" href="$_chat_component_8h.html" title=" " alt="" coords="256,104,384,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="886,39,657,61,526,78,397,99,379,102,378,97,396,93,526,72,657,56,886,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="408,104,638,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="899,51,609,103,608,98,898,46"/>
+<area shape="rect" id="Node000007" href="$_main_h_u_d_8h.html" title=" " alt="" coords="662,96,792,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="947,51,807,94,806,89,946,46"/>
+<area shape="rect" id="Node000010" href="$_chat_message_widget_8h.html" title=" " alt="" coords="816,96,1008,139"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="992,50,949,88,945,84,988,46"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1033,104,1199,131"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="1039,46,1092,92,1089,96,1036,50"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1223,104,1332,131"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="1076,46,1226,96,1224,101,1075,51"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1356,104,1471,131"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="1125,46,1345,93,1358,97,1356,102,1344,99,1124,51"/>
+<area shape="rect" id="Node000016" href="$_chat_8h.html" title=" " alt="" coords="1496,96,1625,139"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1141,40,1299,62,1480,93,1480,98,1298,67,1141,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="826,187,932,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,129,397,136,511,154,602,162,694,170,811,184,811,189,694,175,602,168,510,159,396,141,363,134"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,187,214,213"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="288,134,157,183,155,178,286,129"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="238,187,426,213"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="325,131,331,171,325,172,319,132"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="767,137,843,177,840,181,765,142"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="461,187,627,213"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="681,142,588,183,585,178,679,137"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="651,187,802,213"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="730,139,730,171,724,171,724,139"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="906,140,892,173,887,171,901,138"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1257,187,1413,213"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1009,134,1254,181,1253,186,1008,140"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="955,187,1170,213"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="952,137,1027,177,1025,181,950,142"/>
+<area shape="poly" id="edge18_Node000016_Node000003" title=" " alt="" coords="1495,139,1483,141,1335,161,1217,168,1098,174,947,189,947,184,1098,169,1217,163,1334,156,1482,136,1494,134"/>
+<area shape="poly" id="edge19_Node000016_Node000011" title=" " alt="" coords="1503,142,1385,184,1384,178,1501,137"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1500,187,1621,213"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="1563,139,1563,171,1558,171,1558,139"/>
+</map>

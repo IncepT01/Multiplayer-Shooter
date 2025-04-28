@@ -1,0 +1,7 @@
+<map id="ABaseWeapon::OnRep_Owner" name="ABaseWeapon::OnRep_Owner">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,162,48"/>
+<area shape="rect" id="Node000002" href="$class_a_base_weapon.html#a87d9c1d39b25aae299790b857b07182d" title=" " alt="" coords="210,13,413,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,24,194,24,194,29,162,29"/>
+<area shape="rect" id="Node000003" href="$class_a_main_h_u_d.html#a3109ae3556f10687da6dc383ac708f47" title=" " alt="" coords="461,13,682,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="413,24,446,24,446,29,413,29"/>
+</map>
