@@ -1,2 +1,2 @@
 # Multiplayer Shooter
- ELTE IK Szakdolgozat
+A third person multiplayer shooter, created in Unreal Engine 5, using mostly C++. The main focus was to experiment and implement different methods that allows the players to have a smooth gameplay even in case of latency. Some of the key technologies are Server Side Rewind and Client Prediction. It also implements the Steamworks API, so users do not need to set up port forwarding.
